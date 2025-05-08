@@ -1,0 +1,165 @@
+<div class="languageContainer">
+  <div class="btn-group btn-group-sm">
+    <span class="sep"></span>
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary"
+      (click)="changeLanguage('ory')"
+      [class.active]="translateService.currentLang === 'ory'"
+    >
+      ଓଡ଼ିଆ
+    </button>
+    <button
+      type="button"
+      class="btn btn-sm btn-outline-secondary"
+      (click)="changeLanguage('en')"
+      [class.active]="
+        !translateService.currentLang || translateService.currentLang === 'en'
+      "
+    >
+      En
+    </button>
+  </div>
+</div>
+<div [ngClass]="{ header: 1, banner: isHomePage, bannerInner: !isHomePage }">
+  <header>
+    <div class="row">
+      <div class="col-xxl-2 col-xl-2 col-lg-4 col-sm-12 logo">
+        <a routerLink="/">
+          <img src="assets/images/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="col-xxl-8 col-xl-7 col-lg-11 col-md-11 col-sm-12">
+        <div class="top-menu">
+          <nav>
+            <a
+              routerLink="/"
+              routerLinkActive="active"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >{{ "home" | translate }}</a
+            >
+            @for( topMenu of menus;track $index;let iI=$index) {
+            <ng-template #nosubmenuItem>
+              <a
+                [routerLink]="topMenu.link"
+                routerLinkActive="active"
+                mat-button
+              >
+                {{ topMenu.name | translate }}
+              </a>
+            </ng-template>
+            <a
+              *ngIf="topMenu.subMenu; else nosubmenuItem"
+              routerLinkActive="active"
+              mat-button
+              [matMenuTriggerFor]="submenu"
+            >
+              {{ topMenu.name | translate }}
+
+              <mat-menu #submenu="matMenu" class="top_submenu">
+                @for( subMenu of topMenu.subMenu;track $index;let iI=$index) {
+                <button
+                  mat-menu-item
+                  [routerLink]="topMenu.link + subMenu.link"
+                  routerLinkActive="active"
+                >
+                  {{ subMenu.name | translate }}
+                </button>
+                }
+              </mat-menu>
+            </a>
+            }
+          </nav>
+        </div>
+      </div>
+      <div class="col-xxl-2 col-xl-3 col-lg-1 col-md-1 col-sm-12">
+        <div class="right-menu">
+          <div class="row">
+            <div class="col-xl-2">
+              <a class="notificationLink">
+                <fa-icon [icon]="bellIcon"></fa-icon>
+              </a>
+            </div>
+            <div class="col-xl-5 d-lg-none d-none d-xl-block">
+              <button class="btn btn-light">Login</button>
+            </div>
+            <div class="col-xl-5 d-lg-none d-none d-xl-block">
+              <button class="btn btn-primary">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="logo">
+      <a routerLink="/">
+        <img src="assets/images/logo.png" alt="logo" />
+      </a>
+    </div>
+    <nav>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >{{ "home" | translate }}</a
+      >
+      @for( topMenu of menus;track $index;let iI=$index) {
+      <ng-template #nosubmenuItem>
+        <a [routerLink]="topMenu.link" routerLinkActive="active" mat-button>
+          {{ topMenu.name | translate }}
+        </a>
+      </ng-template>
+      <a
+        *ngIf="topMenu.subMenu; else nosubmenuItem"
+        routerLinkActive="active"
+        mat-button
+        [matMenuTriggerFor]="submenu"
+      >
+        {{ topMenu.name | translate }}
+
+        <mat-menu #submenu="matMenu" class="top_submenu">
+          @for( subMenu of topMenu.subMenu;track $index;let iI=$index) {
+          <button
+            mat-menu-item
+            [routerLink]="topMenu.link + subMenu.link"
+            routerLinkActive="active"
+          >
+            {{ subMenu.name | translate }}
+          </button>
+          }
+        </mat-menu>
+      </a>
+      }
+
+      <div class="btn-group btn-group-sm">
+        <span class="sep"></span>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-secondary"
+          (click)="changeLanguage('ory')"
+          [class.active]="translateService.currentLang === 'ory'"
+        >
+          ଓଡ଼ିଆ
+        </button>
+        <button
+          type="button"
+          class="btn btn-sm btn-outline-secondary"
+          (click)="changeLanguage('en')"
+          [class.active]="
+            !translateService.currentLang ||
+            translateService.currentLang === 'en'
+          "
+        >
+          English
+        </button>
+      </div>
+    </nav>
+    <div class="right-menu">
+      <a class="notificationLink">
+        <fa-icon [icon]="bellIcon"></fa-icon>
+      </a>
+      <button class="btn btn-light">Login</button>
+      <button class="btn btn-primary">Register</button>
+    </div> -->
+  </header>
+</div>

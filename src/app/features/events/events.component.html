@@ -1,0 +1,52 @@
+<div class="date_containner">
+  <div class="row date_actions">
+    <div class="col-xl-64 col-sm-12">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="mmPreNxt(0)"
+      >
+        Today
+      </button>
+      &nbsp;
+      <button (click)="mmPreNxt(-1)" class="btn btn-outline-secondary">
+        &lt;
+      </button>
+      &nbsp;
+
+      <button (click)="mmPreNxt(1)" class="btn btn-outline-secondary">
+        &gt;
+      </button>
+      &nbsp;
+
+      <span class="date_text"> {{ mmText }} Events</span>
+    </div>
+    <div class="date_btn col-xl-4 col-sm-12 noShow"></div>
+    <div class="col-xl-4 col-sm-12 noShow"></div>
+  </div>
+  @for(w of weeks; track $index;let wI=$index) { @if($index===0){
+  <div class="row date_week_row">
+    @for (wday of wdays; track wday.title){
+    <div class="col date_week" [ngClass]="'wd' + wday.id">{{ wday.title }}</div>
+    }
+  </div>
+  }
+  <div class="row date_one_row">
+    @for (wday of wdays; track wday.title){
+    <div class="col date_one">
+      <div
+        class="date_number"
+        [ngClass]="ddA[(wI + 1) * 7 - 7 + (wday.id + 1)].t"
+      >
+        {{ ddA[(wI + 1) * 7 - 7 + (wday.id + 1)].d }}
+      </div>
+      <div class="date_events">
+        @if(wI<2&&wday.id<2){@for (ev of events_fixed; track $index){
+        <a class="event_text" (click)="showEvent(ev)">{{ ev.title }}</a>
+        }}
+      </div>
+    </div>
+    }
+  </div>
+  }
+</div>
