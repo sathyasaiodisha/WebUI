@@ -1,4 +1,8 @@
 import { Routes } from '@angular/router';
+import { DistrictentryComponent } from './features/admin/dataentry/districtentry/districtentry.component';
+import { SamithientryComponent } from './features/admin/dataentry/samithientry/samithientry.component';
+import { DataentryLayoutComponent } from './features/admin/dataentry/dataentry-layout/dataentry-layout.component';
+import { BmentryComponent } from './features/admin/dataentry/bmentry/bmentry.component';
 
 export const routes: Routes = [
   {
@@ -38,6 +42,23 @@ export const routes: Routes = [
       import('./features/report/report.component').then(
         (c) => c.ReportComponent
       ),
+  },
+  {
+    path: 'admin',
+    loadComponent: () =>
+      import('./features/admin/admin.component').then(
+        (c) => c.AdminComponent
+      ),
+  },
+  {
+    path: 'dataentry',
+    component: DataentryLayoutComponent,
+    children: [
+      { path: 'district', component: DistrictentryComponent },
+      { path: 'samithi', component: SamithientryComponent },
+      { path: 'bhajanmandali', component: BmentryComponent},
+      { path: '', redirectTo: 'district', pathMatch: 'full'}
+    ]
   },
   {
     path: '**',

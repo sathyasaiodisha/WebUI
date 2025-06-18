@@ -1,0 +1,20 @@
+<div class="dialog-container">
+    <h2 mat-dialog-title class="dialog-title">
+      <mat-icon color="warn">warning</mat-icon>
+      Confirm Deletion
+    </h2>
+
+    <mat-dialog-content class="dialog-content">
+      Are you sure you want to delete <strong>{{ data.item }}</strong>?
+    </mat-dialog-content>
+
+    <mat-dialog-actions align="end" class="dialog-actions">
+      <button mat-stroked-button color="primary" (click)="onCancel()">
+        <mat-icon>cancel</mat-icon> Cancel
+      </button>
+
+      <button mat-flat-button color="warn" (click)="onConfirm()">
+        <mat-icon>delete</mat-icon> Delete
+      </button>
+    </mat-dialog-actions>
+  </div>

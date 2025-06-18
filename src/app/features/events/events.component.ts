@@ -1,4 +1,5 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
+//import { inject } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import moment from 'moment';
 import { CommonModule } from '@angular/common';

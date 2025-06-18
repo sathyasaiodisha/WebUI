@@ -7,6 +7,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FixedMenuComponent } from './components/fixed-menu/fixed-menu.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 //import { NewItemDirective } from './new-item.directive';
 //import { OrdersPipe } from './orders.pipe';
 
@@ -17,6 +20,8 @@ import { FixedMenuComponent } from './components/fixed-menu/fixed-menu.component
     HeaderComponent,
     TranslateModule,
     FixedMenuComponent,
+    MatCardModule,
+    MatGridListModule
   ],
   declarations: [],
   exports: [
@@ -26,6 +31,8 @@ import { FixedMenuComponent } from './components/fixed-menu/fixed-menu.component
     FormsModule,
     TranslateModule,
     FixedMenuComponent,
+    MatCardModule,
+    MatGridListModule
   ],
 })
 export class SharedModule {}

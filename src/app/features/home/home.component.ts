@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
-import { AsyncPipe } from '@angular/common';
-import { Observable } from 'rxjs';
+//import { AsyncPipe } from '@angular/common';
+//import { Observable } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 
 import Map from 'ol/Map';
-import View from 'ol/View';
-import TileLayer from 'ol/layer/Tile';
+//import View from 'ol/View';
+//import TileLayer from 'ol/layer/Tile';
 //import OSM from 'ol/source/OSM';
-import $ from 'jquery';
+//import $ from 'jquery';
 //declare let $: any;
 @Component({
   selector: 'app-home',

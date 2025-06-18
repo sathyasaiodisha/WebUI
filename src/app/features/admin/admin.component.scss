@@ -1,0 +1,55 @@
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    padding: 16px;
+    margin-top: 2vh;
+  }
+  
+
+.tile-card {
+    flex: 0 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    background: #008DD2;
+    border-radius: 30px;
+    transition: transform 0.2s ease;
+  }
+  
+  .tile-card:hover {
+    transform: scale(1.03);
+  }
+
+  .tile-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex: 0 1 calc(33.33% - 16px); /* same as .tile-card */
+  }
+  
+  .tile-content h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .tile-content p {
+    font-size: 14px;
+    color:#555;
+  }
+
+  /* Responsive adjustments */
+@media (max-width: 900px) {
+    .tile-card {
+      flex: 0 1 calc(50% - 16px); /* 2 tiles per row */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .tile-card {
+      flex: 0 1 100%; /* 1 tile per row */
+    }
+  }

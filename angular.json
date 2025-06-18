@@ -48,7 +48,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumError": "2MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -97,7 +97,8 @@
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/ol/ol.css"
+              "node_modules/ol/ol.css",
+              "@angular/material/prebuilt-themes/indigo-pink.css"
             ],
             "scripts": [
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
@@ -115,6 +116,9 @@
     }
   },
   "cli": {
-    "schematicCollections": ["angular-eslint"]
+    "schematicCollections": [
+      "angular-eslint"
+    ],
+    "analytics": "1dd20c71-d343-4778-8061-96830b25d34a"
   }
 }
