@@ -73,7 +73,7 @@ export class HeaderComponent {
       name: 'resources',
       link: '/resources',
       subMenu: [
-        { name: 'Videos', link: '/1' },
+        { name: 'Videos', link: '/videos' },
         { name: 'Audio', link: '/2' },
         { name: 'Teaching Aid', link: '/3' },
         { name: 'Presentations', link: '/4' },
@@ -86,7 +86,7 @@ export class HeaderComponent {
     },
     { name: 'Report', link: '/report' },
     { name: 'events_announcement', link: '/events' },
-    { name: 'Admin', link: '/admin' }
+    { name: 'Admin', link: '/admin' },
   ];
   bellIcon = faBell;
   constructor(

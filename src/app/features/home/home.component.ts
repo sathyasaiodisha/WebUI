@@ -17,11 +17,11 @@ import Map from 'ol/Map';
 })
 export class HomeComponent implements OnInit {
   wings = [
-    { name: 'Service', img: 'assets/images/mahilas.png' },
-    { name: 'Spiritual', img: 'assets/images/mahilas.png' },
-    { name: 'Education', img: 'assets/images/mahilas.png' },
-    { name: 'Mahilas', img: 'assets/images/mahilas.png' },
-    { name: 'Youth', img: 'assets/images/mahilas.png' },
+    { name: 'Service', img: 'assets/images/service.jpg' },
+    { name: 'Spiritual', img: 'assets/images/spiritual.jpg' },
+    { name: 'Education', img: 'assets/images/education.jpg' },
+    { name: 'Mahilas', img: 'assets/images/ladies.jpg' },
+    { name: 'Youth', img: 'assets/images/youth.jpg' },
   ];
   map: Map = new Map({});
   //posts$!: Observable<any>;

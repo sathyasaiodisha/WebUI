@@ -75,7 +75,7 @@ body {
     padding: 9px 21px;
     border-radius: 30px;
     display: inline-block;
-    max-width: 792px;
+    max-width: 860px;
 
     .sep {
       padding: 0 10px;
@@ -125,6 +125,10 @@ body {
 
 .main_content {
   min-height: 70vh;
+}
+
+.content_topgape {
+  margin-top: 6rem;
 }
 
 .bottom {
@@ -199,9 +203,9 @@ body {
     width: 18rem;
     background-color: #fff;
     display: inline-block;
-    margin: 15px;
-    border-radius: 30px;
-    padding: 45px;
+    margin: .6rem;
+    border-radius: 1rem;
+    padding: 1.2rem;
 
     img {
       width: 100%;
