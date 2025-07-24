@@ -16,12 +16,46 @@ export const routes: Routes = [
       import('./features/wings/wings.component').then((c) => c.WingsComponent),
   },
   {
-    path: 'organization/:page',
-    loadComponent: () =>
-      import('./features/organization/organization.component').then(
-        (c) => c.OrganizationComponent
-      ),
+    path: 'organization',
+    children: [
+      {
+        path: 'stateCoordinators',
+        loadComponent: () =>
+          import('./features/organization/stateCoordinators.component').then(
+            (c) => c.StateCoordinatorsComponent
+          ),
+      },
+      {
+        path: 'sic',
+        loadComponent: () =>
+          import('./features/organization/sic.component').then(
+            (c) => c.SICComponent
+          ),
+      },
+      {
+        path: 'districtPresidents',
+        loadComponent: () =>
+          import('./features/organization/districtPresidents.component').then(
+            (c) => c.DistrictPresidentsComponent
+          ),
+      },
+      {
+        path: 'districtCoordinator',
+        loadComponent: () =>
+          import('./features/organization/districtCoordinator.component').then(
+            (c) => c.DistrictCoordinatorComponent
+          ),
+      },
+      {
+        path: ':page',
+        loadComponent: () =>
+          import('./features/organization/organization.component').then(
+            (c) => c.OrganizationComponent
+          ),
+      },
+    ],
   },
+
   {
     path: 'resources/:page',
     loadComponent: () =>
@@ -46,9 +80,7 @@ export const routes: Routes = [
   {
     path: 'admin',
     loadComponent: () =>
-      import('./features/admin/admin.component').then(
-        (c) => c.AdminComponent
-      ),
+      import('./features/admin/admin.component').then((c) => c.AdminComponent),
   },
   {
     path: 'dataentry',
@@ -56,9 +88,9 @@ export const routes: Routes = [
     children: [
       { path: 'district', component: DistrictentryComponent },
       { path: 'samithi', component: SamithientryComponent },
-      { path: 'bhajanmandali', component: BmentryComponent},
-      { path: '', redirectTo: 'district', pathMatch: 'full'}
-    ]
+      { path: 'bhajanmandali', component: BmentryComponent },
+      { path: '', redirectTo: 'district', pathMatch: 'full' },
+    ],
   },
   {
     path: '**',

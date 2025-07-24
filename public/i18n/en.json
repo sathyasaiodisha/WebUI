@@ -5,5 +5,24 @@
   "organization": "Organization",
   "resources": "Resources",
   "events_announcement": "Events & Announcement",
-  "organization_map_title": "Sathya Sai Seva Organisation in Odisha"
+  "organization_map_title": "Sathya Sai Seva Organisation in Odisha",
+  "OmSriSaiRam": "Om Sri Sai Ram",
+
+  "stateCoordinatorsTitle": "ZONAL PRESIDENT, STATE PRESIDENT AND STATE COORDINATORS",
+  "sicTitle": "Office Bearers and In-Charges for Various Activities",
+  "dpTitle": "District Presidents",
+  "slno": "Sl No",
+  "Designation": "Designation",
+  "Name": "Name",
+  "PhoneNo": "Phone No",
+  "WhatsAppNo": "WhatsApp No",
+  "emailid": "E-Mail ID",
+  "StateInCharge": "State In-Charge",
+  "InChargeName": "In-Charge Name",
+  "Contactno": "Contact no",
+  "ContinuingNew": "Continuing / New",
+  "District": "District",
+  "DistrictPresident": "District President",
+  "PhoneNo1": "Phone No-1",
+  "PhoneNo2": "Phone No-2"
 }
