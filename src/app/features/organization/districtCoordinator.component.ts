@@ -7,7 +7,6 @@ import { ApiService } from '../../core/services/api.service';
   imports: [SharedModule],
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
-      In progress...
       <h3 class="text-center">{{ 'OmSriSaiRam' | translate }}</h3>
       <h4 class="text-center">{{ 'districtCoordinatorTitle' | translate }}</h4>
       <table class="table table-striped table-bordered">
