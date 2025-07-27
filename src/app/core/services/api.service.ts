@@ -10,6 +10,7 @@ export class ApiService {
   private apiStateCoordinatorsUrl = '/assets/data/stateCoordinators.json';
   private apiSICUrl = '/assets/data/sic.json';
   private apiDistrictPresidentsUrl = '/assets/data/districtPresidents.json';
+  private apiDistrictCoordinatorsUrl = '/assets/data/districtCoordinator.json';
 
   constructor(private http: HttpClient) {}
 
@@ -24,5 +25,8 @@ export class ApiService {
   }
   getDistrictPresidents(): Observable<any> {
     return this.http.get<any>(this.apiDistrictPresidentsUrl);
+  }
+  getDistrictCoordinators(): Observable<any> {
+    return this.http.get<any>(this.apiDistrictCoordinatorsUrl);
   }
 }

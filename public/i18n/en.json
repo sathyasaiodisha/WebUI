@@ -11,6 +11,7 @@
   "stateCoordinatorsTitle": "ZONAL PRESIDENT, STATE PRESIDENT AND STATE COORDINATORS",
   "sicTitle": "Office Bearers and In-Charges for Various Activities",
   "dpTitle": "District Presidents",
+  "districtCoordinatorTitle": "District Coordinator",
   "slno": "Sl No",
   "Designation": "Designation",
   "Name": "Name",
@@ -24,5 +25,11 @@
   "District": "District",
   "DistrictPresident": "District President",
   "PhoneNo1": "Phone No-1",
-  "PhoneNo2": "Phone No-2"
+  "PhoneNo2": "Phone No-2",
+  "distSpiritualCOORDINATOR": "Dist. Spiritual Coordinator",
+  "distEduCOORDINATOR": "Dist. EDU. Coordinator",
+  "distSerCOORDINATOR": "Dist. SER. Coordinator",
+  "distYouthCOORDINATOR": "Dist. YOUTH Coordinator",
+  "distJtYouthCOORDINATOR": "Dist. JT. YOUTH Coordinator",
+  "distItCOORDINATOR": "Dist. IT. INCHARGE"
 }

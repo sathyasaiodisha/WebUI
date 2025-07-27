@@ -8,45 +8,79 @@ import { ApiService } from '../../core/services/api.service';
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
       In progress...
-      <!--h3 class="text-center">{{ 'OmSriSaiRam' | translate }}</!--h3>
-      <h4 class="text-center">{{ 'stateCoordinatorsTitle' | translate }}</h4>
+      <h3 class="text-center">{{ 'OmSriSaiRam' | translate }}</h3>
+      <h4 class="text-center">{{ 'districtCoordinatorTitle' | translate }}</h4>
       <table class="table table-striped table-bordered">
         <thead>
           <tr>
-            <th scope="col">{{ 'slno' | translate }}</th>
-            <th scope="col">{{ 'Designation' | translate }}</th>
+            <th rowspan="2">{{ 'slno' | translate }}</th>
+            <th rowspan="2">{{ 'District' | translate }}</th>
+            <th rowspan="2">{{ 'Gender' | translate }}</th>
+            <th colspan="2">{{ 'distSpiritualCOORDINATOR' | translate }}</th>
+            <th colspan="2">{{ 'distEduCOORDINATOR' | translate }}</th>
+            <th colspan="2">{{ 'distSerCOORDINATOR' | translate }}</th>
+            <th colspan="2">{{ 'distYouthCOORDINATOR' | translate }}</th>
+            <th colspan="2">{{ 'distJtYouthCOORDINATOR' | translate }}</th>
+            <th colspan="2">{{ 'distItCOORDINATOR' | translate }}</th>
+          </tr>
+          <tr>
             <th scope="col">{{ 'Name' | translate }}</th>
             <th scope="col">{{ 'PhoneNo' | translate }}</th>
-            <th scope="col">{{ 'WhatsAppNo' | translate }}</th>
-            <th scope="col">{{ 'emailid' | translate }}</th>
+            <th scope="col">{{ 'Name' | translate }}</th>
+            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+            <th scope="col">{{ 'Name' | translate }}</th>
+            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+            <th scope="col">{{ 'Name' | translate }}</th>
+            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+            <th scope="col">{{ 'Name' | translate }}</th>
+            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+            <th scope="col">{{ 'Name' | translate }}</th>
+            <th scope="col">{{ 'PhoneNo' | translate }}</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let item of data; let i = index">
-            <td>{{ i + 1 }}</td>
-            <td>{{ item.designation }}</td>
-            <td>{{ item.name }}</td>
-            <td>{{ item.phoneNo }}</td>
-            <td>{{ item.whatsAppNo }}</td>
-            <td>{{ item.emailid }}</td>
-          </tr>
+          <ng-container *ngFor="let district of data; let ii = index">
+            <ng-container
+              *ngFor="let contact of district.contacts; let i = index"
+            >
+              <tr>
+                <td *ngIf="i === 0" [attr.rowspan]="district.contacts.length">
+                  {{ ii + 1 }}
+                </td>
+                <td *ngIf="i === 0" [attr.rowspan]="district.contacts.length">
+                  {{ district.dist }}
+                </td>
+                <td>{{ contact.gender }}</td>
+                <td>{{ contact.spCoord.name }}</td>
+                <td>{{ contact.spCoord.PhoneNo }}</td>
+                <td>{{ contact.eduCoord.name }}</td>
+                <td>{{ contact.eduCoord.PhoneNo }}</td>
+                <td>{{ contact.serCoord.name }}</td>
+                <td>{{ contact.serCoord.PhoneNo }}</td>
+                <td>{{ contact.youthCoord.name }}</td>
+                <td>{{ contact.youthCoord.PhoneNo }}</td>
+                <td>{{ contact.jrYouthCoord.name }}</td>
+                <td>{{ contact.jrYouthCoord.PhoneNo }}</td>
+                <td>{{ contact.itCoord.name }}</td>
+                <td>{{ contact.itCoord.PhoneNo }}</td>
+              </tr>
+            </ng-container>
+          </ng-container>
         </tbody>
-      </!--table-->
+      </table>
     </div>
   `,
 })
 export class DistrictCoordinatorComponent implements OnInit {
   data: {
-    designation: string;
-    name: string;
-    phoneNo: string;
-    whatsAppNo: string;
-    emailid: string;
+    dist: string;
+    contacts: any[];
   }[] = [];
   constructor(private apiService: ApiService) {}
   ngOnInit(): void {
-    this.apiService.getStateCoordinators().subscribe((data) => {
+    this.apiService.getDistrictCoordinators().subscribe((data) => {
       this.data = data;
+      console.log(this.data);
     });
   }
 }
