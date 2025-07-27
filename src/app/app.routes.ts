@@ -47,6 +47,27 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'samithiConvenors',
+        loadComponent: () =>
+          import('./features/organization/samithiConvenors.component').then(
+            (c) => c.SamithiConvenorsComponent
+          ),
+      },
+      {
+        path: 'samithis',
+        loadComponent: () =>
+          import('./features/organization/samithis.component').then(
+            (c) => c.SamithisComponent
+          ),
+      },
+      {
+        path: 'bhajanMandalis',
+        loadComponent: () =>
+          import('./features/organization/BhajanMandalis.component').then(
+            (c) => c.BhajanMandalisComponent
+          ),
+      },
+      {
         path: ':page',
         loadComponent: () =>
           import('./features/organization/organization.component').then(

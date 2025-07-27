@@ -11,6 +11,9 @@ export class ApiService {
   private apiSICUrl = '/assets/data/sic.json';
   private apiDistrictPresidentsUrl = '/assets/data/districtPresidents.json';
   private apiDistrictCoordinatorsUrl = '/assets/data/districtCoordinator.json';
+  private apiSamithiConvenorsUrl = '/assets/data/samithiConvenors.json';
+  private apiSamithisUrl = '/assets/data/samithis.json';
+  private apiBhajanMandalisUrl = '/assets/data/bhajanMandalis.json';
 
   constructor(private http: HttpClient) {}
 
@@ -28,5 +31,14 @@ export class ApiService {
   }
   getDistrictCoordinators(): Observable<any> {
     return this.http.get<any>(this.apiDistrictCoordinatorsUrl);
+  }
+  getSamithiConvenors(): Observable<any> {
+    return this.http.get<any>(this.apiSamithiConvenorsUrl);
+  }
+  getSamithis(): Observable<any> {
+    return this.http.get<any>(this.apiSamithisUrl);
+  }
+  getBhajanMandalis(): Observable<any> {
+    return this.http.get<any>(this.apiBhajanMandalisUrl);
   }
 }

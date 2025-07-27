@@ -1,0 +1,4820 @@
+[
+  {
+    "dist": "Angul",
+    "samithiName": "NTPC",
+    "bhajanmandali": "Boinda",
+    "recogNo": "59"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Rengali-dam",
+    "bhajanmandali": "Khindo",
+    "recogNo": "93"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Kalingamardarajpur",
+    "bhajanmandali": "Hindol",
+    "recogNo": "114"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Angul",
+    "bhajanmandali": "Chhendipada",
+    "recogNo": "258"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Thermal",
+    "bhajanmandali": "Chainpal",
+    "recogNo": "259"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Angul",
+    "bhajanmandali": "Attamallik",
+    "recogNo": "326"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Angul",
+    "bhajanmandali": "Karabarenai",
+    "recogNo": "335"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Angul",
+    "bhajanmandali": "Lingarajodi",
+    "recogNo": "390"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Talcher",
+    "bhajanmandali": "Arkhapal",
+    "recogNo": "396"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Thermal",
+    "bhajanmandali": "Motanga",
+    "recogNo": "433"
+  },
+  {
+    "dist": "Angul",
+    "samithiName": "Talcher",
+    "bhajanmandali": "Kuchiabeda",
+    "recogNo": "717"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Kodei",
+    "recogNo": "1"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Balasore",
+    "bhajanmandali": "Srirampur",
+    "recogNo": "5"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Bidu",
+    "recogNo": "9"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Talanagar",
+    "recogNo": "21"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Govindapur",
+    "recogNo": "23"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Ajodhya",
+    "recogNo": "33"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Junia",
+    "bhajanmandali": "Barajdeuli",
+    "recogNo": "34"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Malyani",
+    "recogNo": "35"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Chhatrapur",
+    "recogNo": "38"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "kasabajaypur",
+    "recogNo": "42"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Santargadia",
+    "recogNo": "80"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Thalasada",
+    "recogNo": "141"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Junia",
+    "bhajanmandali": "Kharsahapur",
+    "recogNo": "150"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Attapur",
+    "recogNo": "152"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Bahanaga",
+    "recogNo": "154"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Andra",
+    "recogNo": "157"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Ankurakhunta",
+    "recogNo": "276"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Ankipada",
+    "recogNo": "350"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Khaira",
+    "bhajanmandali": "Gengutia",
+    "recogNo": "388"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Balasore",
+    "bhajanmandali": "Rupsa",
+    "recogNo": "427"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Balasore",
+    "bhajanmandali": "Thanagadia",
+    "recogNo": "428"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Balasore",
+    "bhajanmandali": "Parapada",
+    "recogNo": "740"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Balasore",
+    "bhajanmandali": "Nuagan",
+    "recogNo": "741"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Balasore",
+    "bhajanmandali": "Basta",
+    "recogNo": "742"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Remuna",
+    "bhajanmandali": "Nuapadhi",
+    "recogNo": "743"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Remuna",
+    "bhajanmandali": "Achyutapur",
+    "recogNo": "744"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Santa",
+    "recogNo": "745"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Khajira",
+    "recogNo": "746"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Bhalukaposi",
+    "recogNo": "747"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Darakhuli",
+    "recogNo": "748"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Jokananda",
+    "recogNo": "749"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Junia",
+    "bhajanmandali": "Talapada",
+    "recogNo": "750"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Sikidia",
+    "bhajanmandali": "Panpana",
+    "recogNo": "751"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Barchhigadia-Jagannathpur",
+    "recogNo": "752"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Keshpur",
+    "recogNo": "753"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Khirakuni",
+    "recogNo": "754"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Jamapada",
+    "recogNo": "755"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Krushnadaspur",
+    "recogNo": "756"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Khaira",
+    "bhajanmandali": "Sain",
+    "recogNo": "757"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Khaira",
+    "bhajanmandali": "Natapada",
+    "recogNo": "758"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Khaira",
+    "bhajanmandali": "Bateswar",
+    "recogNo": "759"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Khaira",
+    "bhajanmandali": "Ratina",
+    "recogNo": "760"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Podasul",
+    "recogNo": "770"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Niligiri",
+    "bhajanmandali": "Tenda",
+    "recogNo": "771"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Gangei",
+    "recogNo": "772"
+  },
+  {
+    "dist": "Balasore-1",
+    "samithiName": "Soro",
+    "bhajanmandali": "Kuligadi",
+    "recogNo": "773"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Baliapal",
+    "bhajanmandali": "Nepura",
+    "recogNo": "6"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Baliapal",
+    "bhajanmandali": "Palapada",
+    "recogNo": "7"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanj",
+    "bhajanmandali": "Bhikagadia",
+    "recogNo": "8"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanj",
+    "bhajanmandali": "Ranilcudi",
+    "recogNo": "10"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Baliapal",
+    "bhajanmandali": "Badhapal",
+    "recogNo": "13"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanj",
+    "bhajanmandali": "Kaumari",
+    "recogNo": "79"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanj",
+    "bhajanmandali": "Tikarpada",
+    "recogNo": "425"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanj",
+    "bhajanmandali": "Aladihapanta",
+    "recogNo": "426"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Bhograi",
+    "bhajanmandali": "Deula",
+    "recogNo": "553"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Jaleswar",
+    "bhajanmandali": "Amarda",
+    "recogNo": "555"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Jaleswar",
+    "bhajanmandali": "Kamarda",
+    "recogNo": "559"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Bhograi",
+    "bhajanmandali": "Raipur",
+    "recogNo": "590"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Bhograi",
+    "bhajanmandali": "Chauki",
+    "recogNo": "591"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Bhograi",
+    "bhajanmandali": "Palusia",
+    "recogNo": "592"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Bhograi",
+    "bhajanmandali": "Kanthibhanuri",
+    "recogNo": "626"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanj",
+    "bhajanmandali": "Bhanupur",
+    "recogNo": "627"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanj",
+    "bhajanmandali": "Nuagaon",
+    "recogNo": "628"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Jaleswar",
+    "bhajanmandali": "Nahanjara",
+    "recogNo": "774"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanja",
+    "bhajanmandali": "Dagara",
+    "recogNo": "775"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanja",
+    "bhajanmandali": "Manik Simulia",
+    "recogNo": "776"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanja",
+    "bhajanmandali": "Kashipur",
+    "recogNo": "777"
+  },
+  {
+    "dist": "Balasore-2",
+    "samithiName": "Karanja",
+    "bhajanmandali": "Kanchan Khulila",
+    "recogNo": "778"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Dang",
+    "recogNo": "289"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Nua - Sarsara",
+    "recogNo": "290"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Phulapali",
+    "recogNo": "291"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Katapalli",
+    "recogNo": "292"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Remta",
+    "bhajanmandali": "Kumbari",
+    "recogNo": "302"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Barpali",
+    "bhajanmandali": "Satalama",
+    "recogNo": "397"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Barpali",
+    "bhajanmandali": "Jaring",
+    "recogNo": "524"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Agalpur",
+    "bhajanmandali": "Jhulpiapali",
+    "recogNo": "529"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Agalpur",
+    "bhajanmandali": "Raksa",
+    "recogNo": "536"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Attabira",
+    "bhajanmandali": "Halditikira",
+    "recogNo": "537"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Agalpur",
+    "bhajanmandali": "Kharnunda",
+    "recogNo": "538"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Barpali",
+    "bhajanmandali": "Sargipali",
+    "recogNo": "539"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Barpali",
+    "bhajanmandali": "Khemsara",
+    "recogNo": "540"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Padampur",
+    "bhajanmandali": "Chhindeikela",
+    "recogNo": "541"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Padampur",
+    "bhajanmandali": "Mandosil",
+    "recogNo": "542"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Agalpur",
+    "bhajanmandali": "Junhabrahmin",
+    "recogNo": "544"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Agalpur",
+    "bhajanmandali": "Bandumunda",
+    "recogNo": "549"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Agalpur",
+    "bhajanmandali": "Daleipali",
+    "recogNo": "623"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Attabira",
+    "bhajanmandali": "Silet",
+    "recogNo": "629"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Sulsulia",
+    "recogNo": "630"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Mulbar",
+    "recogNo": "631"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Dhanger",
+    "recogNo": "632"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Padampur",
+    "bhajanmandali": "Paikmal",
+    "recogNo": "730"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Barpali",
+    "bhajanmandali": "Bairakpali",
+    "recogNo": "731"
+  },
+  {
+    "dist": "Bargarh",
+    "samithiName": "Bargarh",
+    "bhajanmandali": "Patikarpalli",
+    "recogNo": "732"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Sabarang",
+    "recogNo": "15"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Naguan",
+    "bhajanmandali": "Kenduapada",
+    "recogNo": "17"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Pirahat",
+    "recogNo": "18"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Naguan",
+    "bhajanmandali": "Manjuri Road",
+    "recogNo": "22"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Saya",
+    "recogNo": "25"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Rahanja",
+    "recogNo": "26"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Gandharbha Pokhari",
+    "recogNo": "28"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Ramakrishnapur",
+    "recogNo": "159"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Langudi",
+    "recogNo": "389"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Markona",
+    "bhajanmandali": "Sabanga",
+    "recogNo": "582"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Markona",
+    "bhajanmandali": "Bangalpur",
+    "recogNo": "583"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Palasa",
+    "recogNo": "584"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Birpada",
+    "recogNo": "586"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Serapur",
+    "recogNo": "587"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Amdoroli",
+    "recogNo": "588"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Agarpada",
+    "bhajanmandali": "Adia ",
+    "recogNo": "633"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Agarpada",
+    "bhajanmandali": "Mouda",
+    "recogNo": "634"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Agarpada",
+    "bhajanmandali": "Oladang",
+    "recogNo": "635"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Agarpada",
+    "bhajanmandali": "BadaMahishigotha",
+    "recogNo": "636"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Anandanagar",
+    "recogNo": "637"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Chhangadia",
+    "recogNo": "638"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Erada",
+    "recogNo": "639"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Kutari",
+    "recogNo": "640"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Paintrishi sahi",
+    "recogNo": "641"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Serpur",
+    "recogNo": "642"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Shyamasundarpur",
+    "recogNo": "643"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Somnathpur",
+    "recogNo": "644"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Andrei",
+    "recogNo": "645"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Arnapal",
+    "recogNo": "647"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Bonth",
+    "recogNo": "648"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Charampa",
+    "recogNo": "649"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Naguan",
+    "bhajanmandali": "Andhia",
+    "recogNo": "650"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Kantabania",
+    "recogNo": "651"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Mangalpur",
+    "recogNo": "652"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Doharasahi",
+    "recogNo": "653"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Senbad",
+    "recogNo": "654"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Kanatia",
+    "recogNo": "655"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Kashipur",
+    "recogNo": "657"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Talamusang",
+    "recogNo": "658"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Agarpada",
+    "bhajanmandali": "Berunapadi",
+    "recogNo": "761"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Agarpada",
+    "bhajanmandali": "Baragadia",
+    "recogNo": "762"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Kalaspur",
+    "recogNo": "763"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Balikhand",
+    "bhajanmandali": "Dalagadia",
+    "recogNo": "764"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Maharampur",
+    "recogNo": "765"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Sahapur",
+    "recogNo": "766"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Tihidi",
+    "bhajanmandali": "Gopaldohara",
+    "recogNo": "767"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Naguan",
+    "bhajanmandali": "Alauti",
+    "recogNo": "768"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Markona",
+    "bhajanmandali": "Bauripada",
+    "recogNo": "769"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Koleipada",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Dangamal",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Bhadrak",
+    "bhajanmandali": "Asura Ranital",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Kapasia",
+    "bhajanmandali": "Nachipur",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-1",
+    "samithiName": "Kapasia",
+    "bhajanmandali": "Chengagadia",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Arandua",
+    "recogNo": "2"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Bachhipur",
+    "recogNo": "11"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Basudevpur",
+    "bhajanmandali": "Malakandihapur",
+    "recogNo": "12"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Totapada",
+    "recogNo": "24"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Bajarapur",
+    "recogNo": "27"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Gangadharpurpatna",
+    "recogNo": "29"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Basudevpur",
+    "bhajanmandali": "Chandimal",
+    "recogNo": "40"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Mohanpur",
+    "recogNo": "144"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Bhatapada",
+    "recogNo": "153"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Kumarpur",
+    "recogNo": "158"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Muladihi",
+    "recogNo": "170"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Jagannathpur",
+    "recogNo": "171"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Artunga",
+    "recogNo": "175"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Nuagan",
+    "recogNo": "198"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Basudevpur",
+    "bhajanmandali": "Chudamani",
+    "recogNo": "219"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Basudevpur",
+    "bhajanmandali": "Karanjadia",
+    "recogNo": "226"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Chandbali",
+    "bhajanmandali": "Kandha",
+    "recogNo": "238"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Chandbali",
+    "bhajanmandali": "Thokara",
+    "recogNo": "254"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Manmathpur",
+    "recogNo": "454"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Bansada",
+    "recogNo": "513"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Nuasahi",
+    "recogNo": "514"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Kandaragadia",
+    "recogNo": "557"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Dhamara",
+    "recogNo": "558"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Chandbali",
+    "bhajanmandali": "Ugratara",
+    "recogNo": "579"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Basudevpur",
+    "bhajanmandali": "Kismatkrushnapur",
+    "recogNo": "580"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Basudevpur",
+    "bhajanmandali": "Mirga",
+    "recogNo": "581"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Gudsuan",
+    "recogNo": "659"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Kapagadia",
+    "recogNo": "660"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "BagdaBinayakpur",
+    "recogNo": "661"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Albaga",
+    "recogNo": "662"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Chhatria",
+    "recogNo": "663"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Lunga",
+    "recogNo": "664"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Malibrahmapur",
+    "recogNo": "665"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Chandbali",
+    "bhajanmandali": "Osthia",
+    "recogNo": "666"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Chandbali",
+    "bhajanmandali": "Nuagaon",
+    "recogNo": "667"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Jashipur",
+    "recogNo": "668"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Padmapur",
+    "recogNo": "779"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Dadhibamanpur",
+    "recogNo": "780"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Sadanandapur",
+    "recogNo": "781"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Shukadevpur",
+    "recogNo": "782"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Beherasahi",
+    "recogNo": "783"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Rampur",
+    "recogNo": "784"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Mathasahi",
+    "recogNo": "785"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Narendrapur",
+    "recogNo": "786"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Balimeda",
+    "recogNo": "787"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Agapur",
+    "recogNo": "788"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Mirajapur",
+    "recogNo": "789"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Ambagadi",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Barapur",
+    "bhajanmandali": "Mangalapa",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Binayakpur",
+    "bhajanmandali": "Saratara",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Ghanteswar",
+    "bhajanmandali": "Chhatrapada",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhadrak-2",
+    "samithiName": "Chandbali",
+    "bhajanmandali": "Kunjakalika",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Mancheswar",
+    "recogNo": "174"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-I",
+    "recogNo": "186"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-II",
+    "recogNo": "187"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-IV",
+    "recogNo": "188"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-VI",
+    "recogNo": "228"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-VIII",
+    "recogNo": "229"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-IX",
+    "recogNo": "230"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-IX flat",
+    "recogNo": "231"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Sahidnagar",
+    "recogNo": "232"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Vani Vihar",
+    "recogNo": "233"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Acharya Vihar",
+    "recogNo": "234"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Jaidev Vihar",
+    "recogNo": "235"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Baragada Brit Colony",
+    "recogNo": "250"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Unit-III",
+    "recogNo": "251"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Baramunda",
+    "recogNo": "252"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Mausima",
+    "recogNo": "253"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Kalpana",
+    "recogNo": "293"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Old town",
+    "recogNo": "294"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Laxmisagar",
+    "recogNo": "295"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Dumduma",
+    "recogNo": "296"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Forest Park",
+    "recogNo": "297"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Nageswar Tangi",
+    "recogNo": "298"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Bapujinagar",
+    "recogNo": "299"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "VSSS Nagar",
+    "recogNo": "300"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Rasulgarh",
+    "recogNo": "329"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Kedargouri",
+    "recogNo": "332"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Prachi Vihar",
+    "recogNo": "356"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "HB Colony(CSPUR)",
+    "recogNo": "362"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Nayapalli",
+    "recogNo": "363"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Sailashree Vihar",
+    "recogNo": "364"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "CSPur-BDA colony",
+    "recogNo": "375"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Sai Sivam",
+    "recogNo": "412"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Kapilaprasad",
+    "recogNo": "445"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Benupur",
+    "recogNo": "492"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Rail Vihar",
+    "recogNo": "511"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Chakeisiani",
+    "recogNo": "512"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Chintamaniswar",
+    "recogNo": "522"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Kalingavihar",
+    "recogNo": "713"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Panchupal",
+    "recogNo": "714"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Chandiprasad",
+    "recogNo": "723"
+  },
+  {
+    "dist": "Bhubaneswar",
+    "samithiName": "Bhubaneswar",
+    "bhajanmandali": "Barang",
+    "recogNo": "724"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Balangir",
+    "bhajanmandali": "Jagannathpada",
+    "recogNo": "16"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Balangir",
+    "bhajanmandali": "Kushanga",
+    "recogNo": "43"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Patnagarh",
+    "bhajanmandali": "Khaprakhoi",
+    "recogNo": "44"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Patnagarh",
+    "bhajanmandali": "Luhasingha",
+    "recogNo": "45"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Patnagarh",
+    "bhajanmandali": "Dhandamunda",
+    "recogNo": "46"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Piplamunda",
+    "recogNo": "48"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Balangir",
+    "bhajanmandali": "Keutipali",
+    "recogNo": "52"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Deuligudi",
+    "recogNo": "54"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Titlagarh",
+    "bhajanmandali": "Tatopara",
+    "recogNo": "58"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Titlagarh",
+    "bhajanmandali": "Sindhekela",
+    "recogNo": "110"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Balangir",
+    "bhajanmandali": "Ingsa",
+    "recogNo": "115"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Belpara",
+    "bhajanmandali": "Mandal",
+    "recogNo": "151"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Patnagarh",
+    "bhajanmandali": "Bhainsa",
+    "recogNo": "156"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Belpara",
+    "bhajanmandali": "Suleikela",
+    "recogNo": "199"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Babijor",
+    "recogNo": "284"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Deseimunda",
+    "recogNo": "287"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Upparjhar",
+    "recogNo": "306"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Kharda",
+    "recogNo": "313"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Saintala",
+    "bhajanmandali": "Badamal",
+    "recogNo": "320"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Saintala",
+    "bhajanmandali": "Chandrapur",
+    "recogNo": "321"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Kundeimal",
+    "recogNo": "344"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Rajendrapara",
+    "recogNo": "345"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Dungibahal",
+    "recogNo": "346"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Nuapara",
+    "recogNo": "399"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Mahalai",
+    "recogNo": "400"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Bolangir",
+    "bhajanmandali": "Pipili",
+    "recogNo": "432"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Balangir",
+    "bhajanmandali": "Khujenpali",
+    "recogNo": "438"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Balangir",
+    "bhajanmandali": "College square",
+    "recogNo": "440"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Titlagarh",
+    "bhajanmandali": "Digsira",
+    "recogNo": "441"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Belpara",
+    "bhajanmandali": "Tikrapada",
+    "recogNo": "452"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Titlagarh",
+    "bhajanmandali": "Kholam",
+    "recogNo": "466"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Thalbandh",
+    "recogNo": "620"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Jarasingha",
+    "recogNo": "621"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Patnagarh",
+    "bhajanmandali": "Jogimunda",
+    "recogNo": "622"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Belpada",
+    "bhajanmandali": "Kantabanji",
+    "recogNo": "720"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Patnagarh",
+    "bhajanmandali": "Juria",
+    "recogNo": "737"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Patnagarh",
+    "bhajanmandali": "Banjari",
+    "recogNo": "738"
+  },
+  {
+    "dist": "Bolangir",
+    "samithiName": "Tusura",
+    "bhajanmandali": "Kukurkhai",
+    "recogNo": "739"
+  },
+  {
+    "dist": "Boudh",
+    "samithiName": "Tetelenga",
+    "bhajanmandali": "Kantuani",
+    "recogNo": "357"
+  },
+  {
+    "dist": "Boudh",
+    "samithiName": "Badhigaon",
+    "bhajanmandali": "Girasinga",
+    "recogNo": "358"
+  },
+  {
+    "dist": "Boudh",
+    "samithiName": "Shyamsunderpur",
+    "bhajanmandali": "Fakirpur",
+    "recogNo": "566"
+  },
+  {
+    "dist": "Boudh",
+    "samithiName": "Shyamsunderpur",
+    "bhajanmandali": "Laigaon",
+    "recogNo": "567"
+  },
+  {
+    "dist": "Boudh",
+    "samithiName": "Palasapat",
+    "bhajanmandali": "Ramgarh",
+    "recogNo": "568"
+  },
+  {
+    "dist": "Boudh",
+    "samithiName": "Shyamsunderpur",
+    "bhajanmandali": "Khajuria",
+    "recogNo": "569"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Badambadi",
+    "recogNo": "30"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Kalyannagar",
+    "recogNo": "57"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Subhadrapur",
+    "recogNo": "64"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Salipur",
+    "bhajanmandali": "Kenduapatana",
+    "recogNo": "65"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Banki",
+    "bhajanmandali": "Ragadi",
+    "recogNo": "66"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Khapuria",
+    "recogNo": "68"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Banki",
+    "bhajanmandali": "Kurumchaini",
+    "recogNo": "77"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Professorpada",
+    "recogNo": "92"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Athagarh",
+    "bhajanmandali": "Kamaladihi",
+    "recogNo": "125"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Athagarh",
+    "bhajanmandali": "Tigiria",
+    "recogNo": "128"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Athagarh",
+    "bhajanmandali": "Kakhadi",
+    "recogNo": "133"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Athagarh",
+    "bhajanmandali": "Kantol",
+    "recogNo": "134"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Mangalabhag",
+    "recogNo": "142"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Jobra",
+    "recogNo": "143"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Bhagatpur",
+    "recogNo": "155"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Baniasahi",
+    "recogNo": "167"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "CRRI(Bidyadharpur",
+    "recogNo": "172"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Mahanadhi Vihar",
+    "recogNo": "195"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Nimchori",
+    "recogNo": "200"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Athagarh",
+    "bhajanmandali": "Nua Sasan",
+    "recogNo": "221"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Banki",
+    "bhajanmandali": "Baideswar",
+    "recogNo": "255"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Kishorenagar",
+    "bhajanmandali": "Ainipur",
+    "recogNo": "256"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Athagarh",
+    "bhajanmandali": "Nuapatna",
+    "recogNo": "257"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Marketnagar",
+    "recogNo": "275"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Bidanasi",
+    "recogNo": "318"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Kanika Chhak",
+    "recogNo": "330"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Balichandrapur",
+    "bhajanmandali": "Gunupur",
+    "recogNo": "342"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Baramba",
+    "bhajanmandali": "Kanpur",
+    "recogNo": "348"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Baramba",
+    "bhajanmandali": "Sankhamani",
+    "recogNo": "349"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Salipur",
+    "bhajanmandali": "Raisunga",
+    "recogNo": "378"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Khannagar",
+    "recogNo": "379"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Kunkeipara",
+    "recogNo": "429"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Balichandrapur",
+    "bhajanmandali": "Banamalipur",
+    "recogNo": "430"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Satabatia",
+    "bhajanmandali": "Champati",
+    "recogNo": "431"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Alisabazar",
+    "recogNo": "437"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Salipur",
+    "bhajanmandali": "Japakuda",
+    "recogNo": "464"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Sujanagarhpatna",
+    "recogNo": "468"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Banki",
+    "bhajanmandali": "Bedapur",
+    "recogNo": "472"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "chowdwar",
+    "bhajanmandali": "itua",
+    "recogNo": "475"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "kafala",
+    "recogNo": "478"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Jhinkiria",
+    "recogNo": "483"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Naraj",
+    "recogNo": "493"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Sindha",
+    "recogNo": "534"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "",
+    "bhajanmandali": "Sunakhandi",
+    "recogNo": "729"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Rahamba",
+    "recogNo": "735"
+  },
+  {
+    "dist": "Cuttack",
+    "samithiName": "Cuttack",
+    "bhajanmandali": "Khandahota",
+    "recogNo": "736"
+  },
+  {
+    "dist": "Deogarh",
+    "samithiName": "Chasagurusang",
+    "bhajanmandali": "Nua Sahi Chasagurujang",
+    "recogNo": "260"
+  },
+  {
+    "dist": "Deogarh",
+    "samithiName": "Deogarh",
+    "bhajanmandali": "Samantarapalli",
+    "recogNo": "312"
+  },
+  {
+    "dist": "Deogarh",
+    "samithiName": "Deogarh",
+    "bhajanmandali": "Tinkbir",
+    "recogNo": "517"
+  },
+  {
+    "dist": "Deogarh",
+    "samithiName": "Chhasagurujang",
+    "bhajanmandali": "Golabandha",
+    "recogNo": "519"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Bhuban",
+    "bhajanmandali": "Bentasalia",
+    "recogNo": "82"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Bhuban",
+    "bhajanmandali": "Gharganpur",
+    "recogNo": "83"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Gengtutia",
+    "recogNo": "84"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Jamunakote",
+    "bhajanmandali": "Tangarpada",
+    "recogNo": "86"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Jamunakote",
+    "bhajanmandali": "Matkangola",
+    "recogNo": "87"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagarr",
+    "bhajanmandali": "Malapura",
+    "recogNo": "88"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagarr",
+    "bhajanmandali": "Bhagirathipur",
+    "recogNo": "89"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagarr",
+    "bhajanmandali": "Badajhara",
+    "recogNo": "90"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagarr",
+    "bhajanmandali": "Mahulpal",
+    "recogNo": "91"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Bhuban",
+    "bhajanmandali": "Raibol",
+    "recogNo": "94"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Sankulei",
+    "bhajanmandali": "Tarava",
+    "recogNo": "95"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Ambapada",
+    "recogNo": "96"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Bainsia",
+    "recogNo": "97"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Bhuban",
+    "bhajanmandali": "Chandipal",
+    "recogNo": "189"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kingol",
+    "bhajanmandali": "Jayapur",
+    "recogNo": "190"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Karamul",
+    "recogNo": "261"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagarr",
+    "bhajanmandali": "Altuma",
+    "recogNo": "263"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Sankulei",
+    "bhajanmandali": "Kotapal",
+    "recogNo": "343"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Damodarali",
+    "recogNo": "497"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Majurei",
+    "recogNo": "498"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Gurujang",
+    "recogNo": "499"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagarr",
+    "bhajanmandali": "Batasingh",
+    "recogNo": "543"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagar",
+    "bhajanmandali": "Sanda",
+    "recogNo": "570"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Dhenkanal",
+    "bhajanmandali": "Sogarapasi",
+    "recogNo": "571"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Bhuban",
+    "bhajanmandali": "Bhusal",
+    "recogNo": "572"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Bhuban",
+    "bhajanmandali": "Mahulpal'B",
+    "recogNo": "573"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Jamunakote",
+    "bhajanmandali": "Surapratappur",
+    "recogNo": "574"
+  },
+  {
+    "dist": "Dhenkanal",
+    "samithiName": "Kamakhyanagar",
+    "bhajanmandali": "Kangeila",
+    "recogNo": "719"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Bodakotturi",
+    "recogNo": "104"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Mohana",
+    "recogNo": "120"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Madhusudanpur",
+    "recogNo": "129"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Kantragada",
+    "recogNo": "131"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Korasanda",
+    "recogNo": "246"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Ankudi",
+    "recogNo": "267"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Chorangipur",
+    "recogNo": "268"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Rayagada",
+    "recogNo": "270"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Uppalada",
+    "recogNo": "271"
+  },
+  {
+    "dist": "Gajapati",
+    "samithiName": "Parlakhemundi",
+    "bhajanmandali": "Adva",
+    "recogNo": "272"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Chatrapur",
+    "bhajanmandali": "Ganjam",
+    "recogNo": "56"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Khallikote",
+    "bhajanmandali": "Bhikapada",
+    "recogNo": "73"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Nua-Buxipalli",
+    "recogNo": "99"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Chatrapur",
+    "bhajanmandali": "Sana Nolia Nuagaon",
+    "recogNo": "100"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Chatrapur",
+    "bhajanmandali": "Ballibagada",
+    "recogNo": "101"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Golabandha",
+    "recogNo": "111"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Khallikote",
+    "bhajanmandali": "Duarsoni",
+    "recogNo": "117"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Khallikote",
+    "bhajanmandali": "Bania",
+    "recogNo": "118"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Khallikote",
+    "bhajanmandali": "Keshapur",
+    "recogNo": "119"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Kodala",
+    "bhajanmandali": "Chingukholo",
+    "recogNo": "121"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Khallikote",
+    "bhajanmandali": "Phasi",
+    "recogNo": "122"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Khallikote",
+    "bhajanmandali": "L-Raghunathpur",
+    "recogNo": "123"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Patrapur",
+    "recogNo": "132"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Padmanabhapur",
+    "recogNo": "137"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Goutami",
+    "recogNo": "138"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Pattisunapur",
+    "recogNo": "247"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Karapada",
+    "recogNo": "248"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Kansamari",
+    "recogNo": "314"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Bhanjabihar",
+    "recogNo": "319"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Nuapada",
+    "recogNo": "351"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Gundra",
+    "recogNo": "386"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Kurula",
+    "recogNo": "387"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Narasinghpur",
+    "recogNo": "416"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Korapalli",
+    "recogNo": "442"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Chatrapur",
+    "bhajanmandali": "Santoshpur",
+    "recogNo": "446"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Donkalapadu",
+    "recogNo": "448"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Kodala",
+    "bhajanmandali": "Beguniapada",
+    "recogNo": "482"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Digapahandi",
+    "bhajanmandali": "Dharakote",
+    "recogNo": "487"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Konkarada",
+    "bhajanmandali": "Sheragada",
+    "recogNo": "489"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Kodala",
+    "bhajanmandali": "Sankuda",
+    "recogNo": "494"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Kukudakhandi",
+    "bhajanmandali": "Gopinathpur",
+    "recogNo": "531"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Kalinganagar",
+    "bhajanmandali": "Jaleswarpur",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Kalinganagar",
+    "bhajanmandali": "Govinda Vihar",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Ganjam-1",
+    "samithiName": "Berhampur",
+    "bhajanmandali": "Gopalpur",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Aska",
+    "bhajanmandali": "Kumarpani",
+    "recogNo": "102"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Aska",
+    "bhajanmandali": "Banapatna",
+    "recogNo": "103"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Aska",
+    "bhajanmandali": "Benia",
+    "recogNo": "105"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Aska",
+    "bhajanmandali": "Sunamali",
+    "recogNo": "106"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Aska",
+    "bhajanmandali": "Kulagada",
+    "recogNo": "107"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Aska",
+    "bhajanmandali": "Ghasihili",
+    "recogNo": "108"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Bhanjanagar",
+    "bhajanmandali": "Sorada",
+    "recogNo": "113"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Buguda",
+    "bhajanmandali": "Ballipodar",
+    "recogNo": "116"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Polasara",
+    "bhajanmandali": "Kabisuryanagar",
+    "recogNo": "124"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Buguda",
+    "bhajanmandali": "Arakhapur",
+    "recogNo": "126"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Aska",
+    "bhajanmandali": "Pitalo",
+    "recogNo": "127"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Bellaguntha",
+    "bhajanmandali": "B.D.Pur",
+    "recogNo": "227"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Bhanjanagar",
+    "bhajanmandali": "Ripitapalli",
+    "recogNo": "245"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Bhanjanagar",
+    "bhajanmandali": "Lalsingh",
+    "recogNo": "264"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Buguda",
+    "bhajanmandali": "Pangidi",
+    "recogNo": "265"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Polasara",
+    "bhajanmandali": "Gareijhuli",
+    "recogNo": "266"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Buguda",
+    "bhajanmandali": "Manitara",
+    "recogNo": "269"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Buguda",
+    "bhajanmandali": "B-Karadambadi",
+    "recogNo": "286"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Bhanjanagar",
+    "bhajanmandali": "Pailipada",
+    "recogNo": "347"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Bellaguntha",
+    "bhajanmandali": "Jagannathprasad",
+    "recogNo": "394"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Polasara",
+    "bhajanmandali": "Ghodapalan",
+    "recogNo": "481"
+  },
+  {
+    "dist": "Ganjam-2",
+    "samithiName": "Bellaguntha",
+    "bhajanmandali": "Kalyanpur",
+    "recogNo": "495"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Tirtol",
+    "bhajanmandali": "Rahama",
+    "recogNo": "62"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "Jadupur",
+    "recogNo": "72"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "Phulbelari",
+    "recogNo": "74"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Jagatsinghpur",
+    "bhajanmandali": "Sudhakanti",
+    "recogNo": "76"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Tirtol",
+    "bhajanmandali": "Dandamir",
+    "recogNo": "78"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Punanga",
+    "bhajanmandali": "Haladiapara",
+    "recogNo": "81"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Jagatsinghpur",
+    "bhajanmandali": "Puran",
+    "recogNo": "139"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Jagatsinghpur",
+    "bhajanmandali": "Madhupur",
+    "recogNo": "148"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Punanga",
+    "bhajanmandali": "Mandasahi",
+    "recogNo": "239"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Jagatsinghpur",
+    "bhajanmandali": "Ghadansh",
+    "recogNo": "242"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Punanga",
+    "bhajanmandali": "Adhangagarh",
+    "recogNo": "341"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "Samjori",
+    "recogNo": "374"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Tirtol",
+    "bhajanmandali": "Manijanga",
+    "recogNo": "414"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "Badagan",
+    "recogNo": "424"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "P.P.L",
+    "recogNo": "435"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Raghunathpur",
+    "bhajanmandali": "Manijang",
+    "recogNo": "510"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "Uchhabandhapur",
+    "recogNo": "532"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "Biswali",
+    "recogNo": "545"
+  },
+  {
+    "dist": "Jagatsinghpur",
+    "samithiName": "Paradeep",
+    "bhajanmandali": "Naugaon(JSP)",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Mangalpur",
+    "bhajanmandali": "Ramachandrapur",
+    "recogNo": "135"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Binjharpur",
+    "bhajanmandali": "Ranapur",
+    "recogNo": "149"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Soti",
+    "recogNo": "182"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Sukinda",
+    "recogNo": "244"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Nilakhantapur",
+    "bhajanmandali": "Darpanigarh",
+    "recogNo": "283"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Binjharpur",
+    "bhajanmandali": "Belpal",
+    "recogNo": "301"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kalan",
+    "bhajanmandali": "Singhapur",
+    "recogNo": "304"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Nilakhantapur",
+    "bhajanmandali": "Majhipatna",
+    "recogNo": "305"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kuakhia",
+    "bhajanmandali": "Khanditara",
+    "recogNo": "340"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Town",
+    "bhajanmandali": "Sathipur",
+    "recogNo": "365"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Town",
+    "bhajanmandali": "Birajapur",
+    "recogNo": "366"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kalan",
+    "bhajanmandali": "Gopalpur",
+    "recogNo": "409"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Mangalpur",
+    "bhajanmandali": "Aruha",
+    "recogNo": "434"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Binjharpur",
+    "bhajanmandali": "Godidiha",
+    "recogNo": "443"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kantabania",
+    "bhajanmandali": "Chasakhand",
+    "recogNo": "535"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Binjharpur",
+    "bhajanmandali": "Chikkana",
+    "recogNo": "597"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Krushnachandrapur",
+    "recogNo": "598"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Korabandi",
+    "recogNo": "599"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Kacharasahi",
+    "recogNo": "600"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Ragadi",
+    "recogNo": "601"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Panikoile",
+    "recogNo": "602"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Barapatana",
+    "recogNo": "603"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Taranda Gopalpur",
+    "recogNo": "604"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Rabana",
+    "recogNo": "605"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Garh Madhupur",
+    "recogNo": "606"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Town",
+    "bhajanmandali": "Sidheswar",
+    "recogNo": "607"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kalan",
+    "bhajanmandali": "Barajupur",
+    "recogNo": "608"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Binjharpur",
+    "bhajanmandali": "Singhpur",
+    "recogNo": "609"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Binjharpur",
+    "bhajanmandali": "Haliapatana",
+    "recogNo": "611"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Binjharpur",
+    "bhajanmandali": "Rautara",
+    "recogNo": "612"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kantabania",
+    "bhajanmandali": "Uttangara",
+    "recogNo": "613"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jaraka",
+    "bhajanmandali": "Nisimala Chandikhole",
+    "recogNo": "614"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kuakhia",
+    "bhajanmandali": "Mugupal",
+    "recogNo": "615"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Nilakhantapur",
+    "bhajanmandali": "Bramhabarada",
+    "recogNo": "625"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Ichhapur",
+    "recogNo": "725"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Nilakhantapur",
+    "bhajanmandali": "Kaima",
+    "recogNo": "727"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Kalan",
+    "bhajanmandali": "Kuransha",
+    "recogNo": "728"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jaraka",
+    "bhajanmandali": "Gangadharpur",
+    "recogNo": "733"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Nilakhantapur",
+    "bhajanmandali": "Sahapada",
+    "recogNo": "734"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jaraka",
+    "bhajanmandali": "Kantigadia",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jaraja",
+    "bhajanmandali": "Chatrapada",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jaraka",
+    "bhajanmandali": "Pandua",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jaraka",
+    "bhajanmandali": "Kumari",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Jajpur",
+    "samithiName": "Jajpur Road",
+    "bhajanmandali": "Chandama",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Bhawanipatna",
+    "bhajanmandali": "Gananathpur",
+    "recogNo": "192"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Bhawanipatna",
+    "bhajanmandali": "Kesinga",
+    "recogNo": "193"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Kalopala",
+    "recogNo": "194"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Deundi",
+    "recogNo": "196"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Ranamal",
+    "recogNo": "197"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Mukhiguda",
+    "recogNo": "201"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Bhawanipatna",
+    "bhajanmandali": "Sargiduda(Borda)",
+    "recogNo": "203"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Mahichala",
+    "recogNo": "273"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Chilliguda",
+    "recogNo": "274"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Hinjilibahali",
+    "bhajanmandali": "Kharlabeda",
+    "recogNo": "315"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Sundarijore",
+    "recogNo": "316"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "M-Rampur",
+    "bhajanmandali": "Ainlapalli",
+    "recogNo": "334"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "M-Rampur",
+    "bhajanmandali": "Joradobura",
+    "recogNo": "352"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Karchala",
+    "recogNo": "367"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Jalatamunda",
+    "recogNo": "373"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Majhiguda",
+    "recogNo": "391"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Hennapada",
+    "recogNo": "450"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Bhawanipatna",
+    "bhajanmandali": "Masigaon",
+    "recogNo": "451"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Hinjilibahali",
+    "bhajanmandali": "Junagarh",
+    "recogNo": "469"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Kanter",
+    "recogNo": "470"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Dengaguda",
+    "recogNo": "471"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "M-Rampur",
+    "bhajanmandali": "Risida",
+    "recogNo": "528"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Bhawanipatna",
+    "bhajanmandali": "Karlapara",
+    "recogNo": "530"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Sanyasi Kundamal",
+    "recogNo": "548"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Tungaon",
+    "recogNo": "551"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Jaipatna",
+    "bhajanmandali": "Ainly",
+    "recogNo": "552"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Bramhaniguda",
+    "recogNo": "594"
+  },
+  {
+    "dist": "Kalahandi",
+    "samithiName": "Dharmagarh",
+    "bhajanmandali": "Biramal",
+    "recogNo": "624"
+  },
+  {
+    "dist": "Kalahandi ",
+    "samithiName": "Hinjilibahali",
+    "bhajanmandali": "Balagaon",
+    "recogNo": "161"
+  },
+  {
+    "dist": "Kalahandi ",
+    "samithiName": "M-Rampur",
+    "bhajanmandali": "Narla",
+    "recogNo": "162"
+  },
+  {
+    "dist": "Kandhamal",
+    "samithiName": "Phulbani",
+    "bhajanmandali": "Tikabali",
+    "recogNo": "136"
+  },
+  {
+    "dist": "Kandhamal",
+    "samithiName": "Balliguda",
+    "bhajanmandali": "Kotagarh ",
+    "recogNo": "262"
+  },
+  {
+    "dist": "Kandhamal",
+    "samithiName": "Balliguda",
+    "bhajanmandali": "K.Nuagam",
+    "recogNo": "669"
+  },
+  {
+    "dist": "Kandhamal",
+    "samithiName": "Raikia",
+    "bhajanmandali": "G.Udaygiri",
+    "recogNo": "670"
+  },
+  {
+    "dist": "Kandhamal",
+    "samithiName": "Raikia",
+    "bhajanmandali": "Mandakiya",
+    "recogNo": "671"
+  },
+  {
+    "dist": "Kandhamal",
+    "samithiName": "Raikia",
+    "bhajanmandali": "Paburia",
+    "recogNo": "726"
+  },
+  {
+    "dist": "Kandhamal",
+    "samithiName": "Phulbani",
+    "bhajanmandali": " R. Nuagaon",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Aul",
+    "bhajanmandali": "Shalianch",
+    "recogNo": "55"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Palai",
+    "bhajanmandali": "Panchupandab",
+    "recogNo": "60"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Nimpur",
+    "bhajanmandali": "Srirampur",
+    "recogNo": "61"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Aul",
+    "bhajanmandali": "Padamarai",
+    "recogNo": "63"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Aul",
+    "bhajanmandali": "Tentulikholi",
+    "recogNo": "70"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Indupur",
+    "bhajanmandali": "Haldharpur",
+    "recogNo": "71"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Thakurpatna",
+    "bhajanmandali": "Jahanger",
+    "recogNo": "303"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Nimpur",
+    "bhajanmandali": "Rajannagar",
+    "recogNo": "421"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Aul",
+    "bhajanmandali": "Malapatna",
+    "recogNo": "444"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Palei",
+    "bhajanmandali": "Bharatpur",
+    "recogNo": "463"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Aul",
+    "bhajanmandali": "Mahu",
+    "recogNo": "473"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Aul",
+    "bhajanmandali": "Atala",
+    "recogNo": "474"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Kendrapara",
+    "bhajanmandali": "Gandakia",
+    "recogNo": "525"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Aul",
+    "bhajanmandali": "Rajkanika",
+    "recogNo": "526"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Indupur",
+    "bhajanmandali": "Alapua",
+    "recogNo": "527"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Thakurpatna",
+    "bhajanmandali": "Madhusashan",
+    "recogNo": "575"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Indupur",
+    "bhajanmandali": "Ghagara",
+    "recogNo": "576"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Areikana",
+    "bhajanmandali": "Udayanagar",
+    "recogNo": "672"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Areikana",
+    "bhajanmandali": "Bhagabanpur",
+    "recogNo": "673"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Kendrapara",
+    "bhajanmandali": "Dihabalarampur",
+    "recogNo": "674"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Thakurpatna",
+    "bhajanmandali": "Kudanagari",
+    "recogNo": "675"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Palei",
+    "bhajanmandali": "Benipur",
+    "recogNo": "676"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Palei",
+    "bhajanmandali": "Mangalpur",
+    "recogNo": "677"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Marshaghai",
+    "bhajanmandali": "Bhalighai",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Marshaghai",
+    "bhajanmandali": "Kanpur",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Kendrapara",
+    "samithiName": "Palai",
+    "bhajanmandali": "Mahakalpara",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Pratapposi",
+    "bhajanmandali": "Nischintapur",
+    "recogNo": "146"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Keonjhar",
+    "bhajanmandali": "Noranpur",
+    "recogNo": "168"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Barbil",
+    "bhajanmandali": "Belkundi",
+    "recogNo": "223"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Keonjhar",
+    "bhajanmandali": "Childa",
+    "recogNo": "307"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Keonjhar",
+    "bhajanmandali": "Mallarpada",
+    "recogNo": "308"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Pratapposi",
+    "bhajanmandali": "Ramachandrapur",
+    "recogNo": "336"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Keonjhar",
+    "bhajanmandali": "Kholapa",
+    "recogNo": "337"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Champua",
+    "bhajanmandali": "Jagannathpur - C",
+    "recogNo": "338"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Champua",
+    "bhajanmandali": "Badanaee",
+    "recogNo": "395"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Jhatkiposi",
+    "bhajanmandali": "Telkoi",
+    "recogNo": "500"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Chautia",
+    "bhajanmandali": "Urtee",
+    "recogNo": "577"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": " Chautia",
+    "bhajanmandali": "Karanjia",
+    "recogNo": "578"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": " Matkambeda",
+    "bhajanmandali": "Barpada",
+    "recogNo": "593"
+  },
+  {
+    "dist": "Keonjhar-1",
+    "samithiName": "Joda",
+    "bhajanmandali": "Jaribahal",
+    "recogNo": "610"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Angarua",
+    "bhajanmandali": "Alati",
+    "recogNo": "140"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Belabahali",
+    "bhajanmandali": "Jalasuan",
+    "recogNo": "145"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Anandapur",
+    "bhajanmandali": "Ghasipura",
+    "recogNo": "204"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Anandapur",
+    "bhajanmandali": "Kantipal",
+    "recogNo": "205"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Belabahali",
+    "bhajanmandali": "Atta",
+    "recogNo": "382"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Danar",
+    "bhajanmandali": "Salania",
+    "recogNo": "415"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Mareigaon",
+    "bhajanmandali": "Mathakapundi",
+    "recogNo": "417"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Mareigaon",
+    "bhajanmandali": "Jagannathpur",
+    "recogNo": "436"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Anandapur",
+    "bhajanmandali": "Dhakotha",
+    "recogNo": "456"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Anandapur",
+    "bhajanmandali": "Sailong",
+    "recogNo": "501"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Ghotagaon",
+    "bhajanmandali": "Dhenkikot",
+    "recogNo": "502"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Anandapur",
+    "bhajanmandali": "Khadipal",
+    "recogNo": "503"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Angarua",
+    "bhajanmandali": "Krishnapur",
+    "recogNo": "504"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Mareigaon",
+    "bhajanmandali": "Inchol",
+    "recogNo": "505"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Belabahali",
+    "bhajanmandali": "Dihasahi",
+    "recogNo": "506"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Danar",
+    "bhajanmandali": "Brahmanikala",
+    "recogNo": "507"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Belabahali",
+    "bhajanmandali": "Godiupar",
+    "recogNo": "508"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Belabahali",
+    "bhajanmandali": "Ullola",
+    "recogNo": "509"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Mareigan",
+    "bhajanmandali": "Anatira",
+    "recogNo": "563"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Belbahali",
+    "bhajanmandali": "Barigaon",
+    "recogNo": "564"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Ghatgaon",
+    "bhajanmandali": "Berhatipura",
+    "recogNo": "565"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Jhatkiposi",
+    "bhajanmandali": "Sirigida",
+    "recogNo": "596"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Danar",
+    "bhajanmandali": "Baharipur",
+    "recogNo": "711"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Danar",
+    "bhajanmandali": "Nasirpur",
+    "recogNo": "712"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Angarua",
+    "bhajanmandali": "Badapadaba",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Keonjhar-2",
+    "samithiName": "Angarua",
+    "bhajanmandali": "Nuagaon(KEO)",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Tangi",
+    "bhajanmandali": "Sarapari",
+    "recogNo": "112"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Rajsunakhela",
+    "bhajanmandali": "Bolagarh",
+    "recogNo": "169"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Khurda",
+    "bhajanmandali": "Dalatola",
+    "recogNo": "278"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Tangi",
+    "bhajanmandali": "Ratanpur",
+    "recogNo": "282"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Khurda",
+    "bhajanmandali": "Belapada",
+    "recogNo": "310"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Tangi",
+    "bhajanmandali": "Bhusandapur",
+    "recogNo": "311"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Jatni",
+    "bhajanmandali": "Kansapada",
+    "recogNo": "331"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Banapur",
+    "bhajanmandali": "Nachuni",
+    "recogNo": "377"
+  },
+  {
+    "dist": "Khurda",
+    "samithiName": "Banapur",
+    "bhajanmandali": "Balugaon",
+    "recogNo": "447"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Koraput",
+    "bhajanmandali": "Dasamantapur",
+    "recogNo": "98"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Jeypore",
+    "bhajanmandali": "Baraniput",
+    "recogNo": "163"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Jeypore",
+    "bhajanmandali": "Borigumma",
+    "recogNo": "164"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "",
+    "bhajanmandali": "Lamanda",
+    "recogNo": "165"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Kotpad",
+    "bhajanmandali": "Sasahandi",
+    "recogNo": "243"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Jeypore",
+    "bhajanmandali": "Irrigation Colony",
+    "recogNo": "309"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Sunabeda-2",
+    "bhajanmandali": "Padwa",
+    "recogNo": "324"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Jeypore",
+    "bhajanmandali": "Baipariguda",
+    "recogNo": "360"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Sunabeda-2",
+    "bhajanmandali": "Nandapur",
+    "recogNo": "368"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Koraput",
+    "bhajanmandali": "OMP colony",
+    "recogNo": "401"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Sunabeda-2",
+    "bhajanmandali": "Balda",
+    "recogNo": "402"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Sunabeda-2",
+    "bhajanmandali": "Jolaput",
+    "recogNo": "403"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Similiguda",
+    "bhajanmandali": "Sundiput",
+    "recogNo": "404"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Koraput",
+    "bhajanmandali": "Almanda",
+    "recogNo": "408"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Jeypore",
+    "bhajanmandali": "Onukudelli",
+    "recogNo": "453"
+  },
+  {
+    "dist": "Koraput",
+    "samithiName": "Koraput",
+    "bhajanmandali": "Laxmipur",
+    "recogNo": "515"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Malkangiri",
+    "bhajanmandali": "Gobindapalli",
+    "recogNo": "67"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Malkangiri",
+    "bhajanmandali": "Pradhaniguda",
+    "recogNo": "75"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Malkangiri",
+    "bhajanmandali": "Mathili",
+    "recogNo": "85"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Tumusapally",
+    "bhajanmandali": "Chidipally",
+    "recogNo": "178"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Chitrakonda",
+    "bhajanmandali": "Rajulkonda",
+    "recogNo": "191"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Malkangiri",
+    "bhajanmandali": "Bhejguda",
+    "recogNo": "398"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Malkangiri",
+    "bhajanmandali": "Pangam",
+    "recogNo": "523"
+  },
+  {
+    "dist": "Malkangiri",
+    "samithiName": "Niladrinagar",
+    "bhajanmandali": "Surlakonda",
+    "recogNo": "595"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Kostha",
+    "recogNo": "206"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Somakhunta",
+    "recogNo": "207"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Nuagan",
+    "recogNo": "208"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Palbani",
+    "recogNo": "209"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Khanua",
+    "recogNo": "210"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Sunamuhin",
+    "recogNo": "211"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Baiganbadia",
+    "recogNo": "213"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Kisandihi",
+    "recogNo": "214"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Silda",
+    "recogNo": "216"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Bangriposi",
+    "bhajanmandali": "Nitei",
+    "recogNo": "217"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Bangriposi",
+    "bhajanmandali": "Hijili",
+    "recogNo": "218"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baisinga",
+    "bhajanmandali": "Khuntapur",
+    "recogNo": "220"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Patpur",
+    "recogNo": "222"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Khunta",
+    "recogNo": "224"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Bangriposi",
+    "bhajanmandali": "Majhigan",
+    "recogNo": "225"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Kuliana",
+    "bhajanmandali": "Goudruma",
+    "recogNo": "236"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Baghdiha",
+    "recogNo": "237"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Bangriposi",
+    "bhajanmandali": "Mahulbarai",
+    "recogNo": "241"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baisingha",
+    "bhajanmandali": "Machhapada",
+    "recogNo": "359"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Phuljhari",
+    "recogNo": "419"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Belerisole",
+    "recogNo": "420"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Ittamundia",
+    "recogNo": "457"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Tikrapada",
+    "recogNo": "458"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Machia",
+    "recogNo": "459"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Karanjia",
+    "bhajanmandali": "Jashipur",
+    "recogNo": "460"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Karanjia",
+    "bhajanmandali": "Jharbeda",
+    "recogNo": "461"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baisinga",
+    "bhajanmandali": "Gaddeulia ",
+    "recogNo": "678"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baisinga",
+    "bhajanmandali": "Merda",
+    "recogNo": "679"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baisinga",
+    "bhajanmandali": "Nachipuria",
+    "recogNo": "680"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Bangriposi",
+    "bhajanmandali": "Pandhada",
+    "recogNo": "681"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Kuliana",
+    "bhajanmandali": "Bad Nuagan",
+    "recogNo": "682"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Darkholi",
+    "recogNo": "683"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Kuliana",
+    "bhajanmandali": "Digari Astia",
+    "recogNo": "684"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Kuliana",
+    "bhajanmandali": "Koilisuta",
+    "recogNo": "685"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Sindurgowra",
+    "recogNo": "686"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Betnoti",
+    "bhajanmandali": "Chhachinapada",
+    "recogNo": "687"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Betnoti",
+    "bhajanmandali": "Agada-bhalia",
+    "recogNo": "688"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Baldia",
+    "recogNo": "689"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Bholagadia",
+    "recogNo": "690"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Khuruntia",
+    "recogNo": "691"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Mohanpur",
+    "recogNo": "692"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Morada",
+    "recogNo": "693"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Patakundia",
+    "recogNo": "694"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Phutkisole",
+    "recogNo": "695"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Raidiha",
+    "recogNo": "696"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Chitrada",
+    "bhajanmandali": "Raikama",
+    "recogNo": "697"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Karanjia",
+    "bhajanmandali": "Thakurmunda",
+    "recogNo": "698"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Rairangapur",
+    "bhajanmandali": "Anala duba",
+    "recogNo": "699"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Rairangapur",
+    "bhajanmandali": "Bazar unit",
+    "recogNo": "700"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Rairangapur",
+    "bhajanmandali": "Ichinda",
+    "recogNo": "701"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Bairatpur",
+    "recogNo": "702"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Dihirakul",
+    "recogNo": "703"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Dunduria",
+    "recogNo": "704"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Radha",
+    "recogNo": "705"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Bajratundi",
+    "recogNo": "715"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Baripada",
+    "bhajanmandali": "Naupal",
+    "recogNo": "716"
+  },
+  {
+    "dist": "Mayurbhanj",
+    "samithiName": "Udala",
+    "bhajanmandali": "Kadadakuamara",
+    "recogNo": "718"
+  },
+  {
+    "dist": "Nabarangapur",
+    "samithiName": "Nabarangapur",
+    "bhajanmandali": "Khatiguda",
+    "recogNo": "109"
+  },
+  {
+    "dist": "Nabarangapur",
+    "samithiName": "",
+    "bhajanmandali": "Bangapalli",
+    "recogNo": "418"
+  },
+  {
+    "dist": "Nabarangapur",
+    "samithiName": "Dabugan",
+    "bhajanmandali": "Boripadar",
+    "recogNo": "521"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Nayagarh",
+    "bhajanmandali": "Khali Sahi",
+    "recogNo": "181"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Odagaon",
+    "bhajanmandali": "Kurala",
+    "recogNo": "333"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Itamati",
+    "bhajanmandali": "Baghera",
+    "recogNo": "392"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Itamati",
+    "bhajanmandali": "Sankhei",
+    "recogNo": "393"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Dasapalla",
+    "bhajanmandali": "Gania",
+    "recogNo": "449"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Itamati",
+    "bhajanmandali": "Baunshiapada",
+    "recogNo": "465"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Nayagarh",
+    "bhajanmandali": "Nagamundali",
+    "recogNo": "484"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Ranapur",
+    "bhajanmandali": "Chandpur",
+    "recogNo": "485"
+  },
+  {
+    "dist": "Nayagarh",
+    "samithiName": "Ranapur",
+    "bhajanmandali": "Gopalpur",
+    "recogNo": "490"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Bhudhikomna",
+    "bhajanmandali": "Pandra Pathar",
+    "recogNo": "130"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Sinapalli",
+    "bhajanmandali": "Karangamal",
+    "recogNo": "240"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Khariar",
+    "bhajanmandali": "Kortipadar",
+    "recogNo": "411"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Bhudhikomna",
+    "bhajanmandali": "Udyanbandha",
+    "recogNo": "476"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Khariar",
+    "bhajanmandali": "Kerpadar",
+    "recogNo": "546"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Khariar",
+    "bhajanmandali": "Boden",
+    "recogNo": "547"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Khariar",
+    "bhajanmandali": "Karlakot",
+    "recogNo": "550"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Khariar",
+    "bhajanmandali": "Barkuhuti",
+    "recogNo": "616"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Khariar",
+    "bhajanmandali": "Chanabeda",
+    "recogNo": "617"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Bhudhikomnha",
+    "bhajanmandali": "Khairabhadi",
+    "recogNo": "618"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Khariar",
+    "bhajanmandali": "Barpadar",
+    "recogNo": "619"
+  },
+  {
+    "dist": "Nuapada",
+    "samithiName": "Bhudhikomna",
+    "bhajanmandali": "Choukapada",
+    "recogNo": "721"
+  },
+  {
+    "dist": "Nuapda",
+    "samithiName": "Sinapali",
+    "bhajanmandali": "Jayabahal",
+    "recogNo": "722"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Nimapara",
+    "bhajanmandali": "Dhanahara",
+    "recogNo": "160"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Konark",
+    "bhajanmandali": "Bagalai",
+    "recogNo": "166"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Balipatna",
+    "bhajanmandali": "Narada",
+    "recogNo": "173"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Puri",
+    "bhajanmandali": "Khadipada",
+    "recogNo": "176"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Balipatna",
+    "bhajanmandali": "Pampalo",
+    "recogNo": "177"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Bojpoi",
+    "bhajanmandali": "Sangalai Sasan",
+    "recogNo": "180"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Chandanpur",
+    "bhajanmandali": "Bira Ramachanbdrapur",
+    "recogNo": "212"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Gop",
+    "bhajanmandali": "Khandasahi",
+    "recogNo": "281"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Chandanpur",
+    "bhajanmandali": "Satasankha",
+    "recogNo": "322"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Puri",
+    "bhajanmandali": "Bindhana",
+    "recogNo": "423"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Konarak",
+    "bhajanmandali": "Nuagada",
+    "recogNo": "467"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Balipatna",
+    "bhajanmandali": "Rajasa",
+    "recogNo": "479"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Nimapara",
+    "bhajanmandali": "Rench",
+    "recogNo": "486"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Balipatna",
+    "bhajanmandali": "Biswanathpur",
+    "recogNo": "496"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Balipatna",
+    "bhajanmandali": "Badala",
+    "recogNo": "516"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Balipatna",
+    "bhajanmandali": "Rayaddeuli",
+    "recogNo": "520"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Chandanpur",
+    "bhajanmandali": "Nirmala",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Konark",
+    "bhajanmandali": "Tandahara",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Konark",
+    "bhajanmandali": "Abadana(Palabasta)",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Nimapara",
+    "bhajanmandali": "Chhenua",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Nimapara",
+    "bhajanmandali": "Chanarapada",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Bajpoi",
+    "bhajanmandali": "Matha Sahi",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Bajpoi",
+    "bhajanmandali": "Bilipada",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Puri",
+    "samithiName": "Bajpoi",
+    "bhajanmandali": "Sunamuhin",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Rayagada",
+    "bhajanmandali": "Gorakhpur",
+    "recogNo": "202"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Jaykaypur",
+    "bhajanmandali": "Penta",
+    "recogNo": "249"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Kolanara",
+    "bhajanmandali": "Suri",
+    "recogNo": "279"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Kolanara",
+    "bhajanmandali": "Kuli",
+    "recogNo": "280"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Koturu",
+    "recogNo": "288"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Ukkamba",
+    "recogNo": "325"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Ramanaguda",
+    "recogNo": "327"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Kujendri",
+    "recogNo": "328"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Kolanara",
+    "bhajanmandali": "Dokulguda",
+    "recogNo": "339"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Ambodola",
+    "bhajanmandali": "Bhaleri",
+    "recogNo": "353"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Challakamba",
+    "recogNo": "361"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Kalyansinghpur",
+    "bhajanmandali": "Majhiguda",
+    "recogNo": "369"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Kalyansinghpur",
+    "bhajanmandali": "Pujariguda",
+    "recogNo": "370"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Kolanara",
+    "bhajanmandali": "Mukundapur",
+    "recogNo": "371"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Padampur",
+    "recogNo": "372"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Jaykaypur",
+    "bhajanmandali": "Dondabadi",
+    "recogNo": "376"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Rayagada",
+    "bhajanmandali": "Bishnuguda",
+    "recogNo": "380"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Dambosara",
+    "recogNo": "381"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Rayagada",
+    "bhajanmandali": "Kerada",
+    "recogNo": "383"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Marathiguda",
+    "recogNo": "384"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gunupur",
+    "bhajanmandali": "Korabanka",
+    "recogNo": "385"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Jaykaypur",
+    "bhajanmandali": "Gadiseshkhal",
+    "recogNo": "405"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Ambodola",
+    "bhajanmandali": "Muniguda",
+    "recogNo": "406"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Kottapeta",
+    "bhajanmandali": "Malligaon",
+    "recogNo": "407"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Rayagada",
+    "bhajanmandali": "Kashipur",
+    "recogNo": "410"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Ambodola",
+    "bhajanmandali": "Hat-Muniguda",
+    "recogNo": "413"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Ambodola",
+    "bhajanmandali": "Durgi",
+    "recogNo": "422"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Jaykaypur",
+    "bhajanmandali": "Theruvalli",
+    "recogNo": "439"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Ambodola",
+    "bhajanmandali": "Bissam-Cuttack",
+    "recogNo": "455"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Ambodola",
+    "bhajanmandali": "Ranipaindi",
+    "recogNo": "477"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "Gudari",
+    "bhajanmandali": "Dhepaguda",
+    "recogNo": "491"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "J K.Pur",
+    "bhajanmandali": "Kometlapeta",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Rayagada",
+    "samithiName": "J.K.Pur",
+    "bhajanmandali": "Amalabhatta",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Sambalpur",
+    "samithiName": "Burla",
+    "bhajanmandali": "Anand Vihar",
+    "recogNo": "147"
+  },
+  {
+    "dist": "Sambalpur",
+    "samithiName": "Sambalpur",
+    "bhajanmandali": "Rengali",
+    "recogNo": "183"
+  },
+  {
+    "dist": "Sambalpur",
+    "samithiName": "Burla",
+    "bhajanmandali": "Chiplima",
+    "recogNo": "317"
+  },
+  {
+    "dist": "Sambalpur",
+    "samithiName": "Sambalpur",
+    "bhajanmandali": "Paramanpur",
+    "recogNo": "706"
+  },
+  {
+    "dist": "Sambalpur",
+    "samithiName": "Sambalpur",
+    "bhajanmandali": "Sahaspur",
+    "recogNo": "707"
+  },
+  {
+    "dist": "Sambalpur",
+    "samithiName": "Sambalpur",
+    "bhajanmandali": "R.Badmal",
+    "recogNo": "709"
+  },
+  {
+    "dist": "Sambalpur",
+    "samithiName": "Rairakhol",
+    "bhajanmandali": "Jagannathprasad-(B)",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Birmaharajpur",
+    "bhajanmandali": "Ghantapali",
+    "recogNo": "215"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Sonepur",
+    "bhajanmandali": "Subalaya",
+    "recogNo": "480"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Birmaharajpur",
+    "bhajanmandali": "Lankabahal",
+    "recogNo": "554"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Sonepur",
+    "bhajanmandali": "Binka",
+    "recogNo": "556"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Sonepur",
+    "bhajanmandali": "Beheramal",
+    "recogNo": "560"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Sonepur",
+    "bhajanmandali": "Kuhibahal",
+    "recogNo": "561"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Sonepur",
+    "bhajanmandali": "Dhatukipali",
+    "recogNo": "562"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Birmaharajpur",
+    "bhajanmandali": "Tikrapada",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Subarnapur",
+    "samithiName": "Sonepur",
+    "bhajanmandali": "Pandrapali",
+    "recogNo": "P"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Sundergarh",
+    "bhajanmandali": "Majhapara",
+    "recogNo": "179"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Rourkela",
+    "bhajanmandali": "Bondamunda",
+    "recogNo": "184"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "",
+    "bhajanmandali": "KUNEI",
+    "recogNo": "185"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Rourkela",
+    "bhajanmandali": "Keolnagar",
+    "recogNo": "285"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Rourkela",
+    "bhajanmandali": "R.E.College[NIT Campus]",
+    "recogNo": "323"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Sundergarh",
+    "bhajanmandali": "Telendihi",
+    "recogNo": "354"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Rourkela",
+    "bhajanmandali": "Steel Township",
+    "recogNo": "355"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Rourkela",
+    "bhajanmandali": "Fertliser Township",
+    "recogNo": "462"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Rourkela",
+    "bhajanmandali": "Bonaigarh",
+    "recogNo": "488"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Sundergarh",
+    "bhajanmandali": "Laldhipa",
+    "recogNo": "518"
+  },
+  {
+    "dist": "Sundergarh",
+    "samithiName": "Rourkela",
+    "bhajanmandali": "Koida",
+    "recogNo": "710"
+  }
+]

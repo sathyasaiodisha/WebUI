@@ -12,6 +12,10 @@
   "sicTitle": "Office Bearers and In-Charges for Various Activities",
   "dpTitle": "District Presidents",
   "districtCoordinatorTitle": "District Coordinator",
+  "samithiConvenorsTitle": "CONVENERS  List -2025 ",
+  "samithisTitle": "Samithi List",
+  "bhajanmandaliTitle": "Bhajanmandali List",
+
   "slno": "Sl No",
   "Designation": "Designation",
   "Name": "Name",
@@ -31,5 +35,14 @@
   "distSerCOORDINATOR": "Dist. SER. Coordinator",
   "distYouthCOORDINATOR": "Dist. YOUTH Coordinator",
   "distJtYouthCOORDINATOR": "Dist. JT. YOUTH Coordinator",
-  "distItCOORDINATOR": "Dist. IT. INCHARGE"
+  "distItCOORDINATOR": "Dist. IT. INCHARGE",
+  "SevaSamithi": "Seva Samithi",
+  "StateRecognitionNumber": "State Recognition Number",
+  "NameConvener": "Name of the Convener",
+  "Age": "Age",
+  "Year": "Year",
+  "SaiConnectID": "Sai Connect ID",
+  "SamithiName": "Samithi Name",
+  "RecogNo": "Recog. No.",
+  "Bhajanmandali": "Name of Bhajanmandali"
 }
