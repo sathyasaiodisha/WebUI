@@ -19,9 +19,9 @@ export class HomeComponent implements OnInit {
   wings = [
     { name: 'Service', img: 'assets/images/ServiceLogo.png' },
     { name: 'Spiritual', img: 'assets/images/SpiritualLogo.png' },
-    { name: 'Education', img: 'assets/images/education.jpg' },
-    { name: 'Mahilas', img: 'assets/images/ladies.jpg' },
-    { name: 'Youth', img: 'assets/images/youth.jpg' },
+    { name: 'Education', img: 'assets/images/EducationLogo.png' },
+    { name: 'Mahilas', img: 'assets/images/LadiesLogo.png' },
+    { name: 'Youth', img: 'assets/images/YouthLogo.png' },
   ];
   map: Map = new Map({});
   //posts$!: Observable<any>;
