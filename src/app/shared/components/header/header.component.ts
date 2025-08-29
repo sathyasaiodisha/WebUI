@@ -58,8 +58,11 @@ export class HeaderComponent {
       name: 'organization',
       link: '/organization',
       subMenu: [
-        { name: 'Sri Sathya Sai Central Trust', link: '/1' },
-        { name: 'Sri Sathya Sai Seva Organisations, Odisha', link: '/2' },
+        { name: 'Sri Sathya Sai Central Trust', link: '/centralTrust' },
+        {
+          name: 'Sri Sathya Sai Seva Organisations, Odisha',
+          link: '/sevaOrgOdisha',
+        },
         { name: 'State Coordinators', link: '/stateCoordinators' },
         { name: 'State In-Charges', link: '/sic' },
         { name: 'District Presidents', link: '/districtPresidents' },

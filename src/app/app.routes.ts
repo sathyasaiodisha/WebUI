@@ -19,6 +19,20 @@ export const routes: Routes = [
     path: 'organization',
     children: [
       {
+        path: 'centralTrust',
+        loadComponent: () =>
+          import('./features/organization/centralTrust.component').then(
+            (c) => c.CentralTrustComponent
+          ),
+      },
+      {
+        path: 'sevaOrgOdisha',
+        loadComponent: () =>
+          import('./features/organization/sevaOrgOdisha.component').then(
+            (c) => c.SevaOrgOdishaComponent
+          ),
+      },
+      {
         path: 'stateCoordinators',
         loadComponent: () =>
           import('./features/organization/stateCoordinators.component').then(
