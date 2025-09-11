@@ -11,9 +11,72 @@ export const routes: Routes = [
       import('./features/home/home.component').then((c) => c.HomeComponent),
   },
   {
-    path: 'wings/:page',
-    loadComponent: () =>
-      import('./features/wings/wings.component').then((c) => c.WingsComponent),
+    path: 'wings',
+    children: [
+      {
+        path: 'service',
+        loadComponent: () =>
+          import('./features/wings/service.component').then(
+            (c) => c.ServiceComponent
+          ),
+      },
+      {
+        path: 'spiritual',
+        loadComponent: () =>
+          import('./features/wings/spiritual.component').then(
+            (c) => c.SpiritualComponent
+          ),
+      },
+      {
+        path: 'education',
+        loadComponent: () =>
+          import('./features/wings/education.component').then(
+            (c) => c.EducationComponent
+          ),
+      },
+      {
+        path: 'ladies',
+        loadComponent: () =>
+          import('./features/wings/ladies.component').then(
+            (c) => c.LadiesComponent
+          ),
+      },
+      {
+        path: 'youth',
+        loadComponent: () =>
+          import('./features/wings/youth.component').then(
+            (c) => c.YouthComponent
+          ),
+      },
+      {
+        path: 'holisticHealthCare',
+        loadComponent: () =>
+          import('./features/wings/holisticHealthCare.component').then(
+            (c) => c.HolisticHealthCareComponent
+          ),
+      },
+      {
+        path: 'teleMedicineCenter',
+        loadComponent: () =>
+          import('./features/wings/teleMedicineCenter.component').then(
+            (c) => c.TeleMedicineCenterComponent
+          ),
+      },
+      {
+        path: 'bookTrust',
+        loadComponent: () =>
+          import('./features/wings/bookTrust.component').then(
+            (c) => c.BookTrustComponent
+          ),
+      },
+      {
+        path: ':page',
+        loadComponent: () =>
+          import('./features/wings/wings.component').then(
+            (c) => c.WingsComponent
+          ),
+      },
+    ],
   },
   {
     path: 'organization',
