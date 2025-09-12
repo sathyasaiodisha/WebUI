@@ -6,7 +6,8 @@ import { ApiService } from '../../core/services/api.service';
   selector: 'app-service',
   imports: [SharedModule],
   template: `
-    <div class="content_topgape container py-2 px-4 border-secondary">
+    <div class=" container py-2 px-4 border-secondary">
+      <!--content_topgape-->
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Service' | translate }}
@@ -29,6 +30,28 @@ import { ApiService } from '../../core/services/api.service';
           Holistic Health Care, Sri Sathya Sai Integrated Animal Care, Seva
           during Disasters / Natural calamities, National Narayan Seva etc.
         </p>
+
+        <div class="service_wrapper">
+          <div class="events">Alerts for events which are drawing near</div>
+          <div class="carousel">
+            <!-- Image carousel (Each image is linked to a page) -->
+            <app-slideshowtext></app-slideshowtext>
+          </div>
+          <div class="recent">Recent and upcoming service events</div>
+
+          <div class="serviceR1">Agri care</div>
+          <div class="serviceR1">Animal care</div>
+          <div class="serviceR1">Aqua care</div>
+          <div class="serviceR1">Digital archive</div>
+          <div class="serviceR2">Digital connectivity</div>
+          <div class="serviceR2">Holistic health</div>
+          <div class="serviceR2">Blood donation</div>
+          <div class="serviceR2">Prasanthi Seva</div>
+          <div class="serviceR3">SSSVIP</div>
+          <div class="serviceR3">SSSHP</div>
+          <div class="serviceR3">Telemedicine</div>
+          <div class="serviceR3">Service Activities</div>
+        </div>
       </div>
     </div>
   `,

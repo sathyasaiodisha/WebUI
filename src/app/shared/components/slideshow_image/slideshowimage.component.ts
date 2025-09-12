@@ -1,0 +1,75 @@
+import { Component, OnInit } from '@angular/core';
+import { NgClass } from '@angular/common';
+
+@Component({
+  selector: 'app-slideshowimage',
+  imports: [],
+  template: `
+    <div class="slideshowImage">
+      <div class="slideshow-container">
+        @for (item of data; track $index;let idx = $index, e = $even) { @if(idx
+        == slideIndex-1){
+        <div class="mySlides ">
+          <!--fade-->
+          <div class="numbertext">1 / 3</div>
+
+          <img src="{{ item.image }}" style="width:100%" />
+          @if(item.caption){
+          <div class="text">{{ item.caption }}</div>
+          }
+        </div>
+        }}
+
+        <a class="prev" (click)="plusSlides(-1)">❮</a>
+        <a class="next" (click)="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align:center">
+        @for (item of data; track $index;let idx = $index, e = $even) {
+        <span
+          class="dot"
+          [class.active]="idx == slideIndex - 1"
+          (click)="currentSlide(idx + 1)"
+        ></span>
+        }
+      </div>
+    </div>
+  `,
+})
+export class SlideShowImageComponent implements OnInit {
+  slideIndex = 1;
+  data: { image: string; caption?: string }[] = [];
+  constructor() {}
+  ngOnInit(): void {
+    this.data = [
+      {
+        image: 'https://www.w3schools.com/howto/img_nature_wide.jpg',
+        caption: 'Caption One',
+      },
+      {
+        image: 'https://www.w3schools.com/howto/img_snow_wide.jpg',
+        caption: 'Caption Two',
+      },
+      { image: 'https://www.w3schools.com/howto/img_mountains_wide.jpg' },
+    ];
+    this.showSlides(this.slideIndex);
+  }
+
+  plusSlides(n: number) {
+    this.showSlides((this.slideIndex += n));
+  }
+
+  currentSlide(n: number) {
+    this.showSlides((this.slideIndex = n));
+  }
+
+  showSlides(n: number) {
+    if (n > this.data.length) {
+      this.slideIndex = 1;
+    }
+    if (n < 1) {
+      this.slideIndex = this.data.length;
+    }
+  }
+}

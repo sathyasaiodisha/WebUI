@@ -6,7 +6,8 @@ import { ApiService } from '../../core/services/api.service';
   selector: 'app-spiritual',
   imports: [SharedModule],
   template: `
-    <div class="content_topgape container py-2 px-4 border-secondary">
+    <div class=" container py-2 px-4 border-secondary">
+      <!--content_topgape-->
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Spiritual' | translate }}
@@ -27,6 +28,19 @@ import { ApiService } from '../../core/services/api.service';
           and Service) in spreading Swami’s message to the broader community and
           in helping individuals progress on the Divine journey.
         </p>
+
+        <div class="spiritual_wrapper">
+          <div class="events">Alerts for events which are drawing near</div>
+          <div class="carousel">
+            <!--Image carousel (Each image is linked to a page)-->
+            <app-slideshowimage></app-slideshowimage>
+          </div>
+          <div class="recent">Recent and upcoming spiritual events</div>
+
+          <div class="serviceR1">Sai Symphony</div>
+          <div class="serviceR1">Vedic Prayer</div>
+          <div class="serviceR1">Spiritual Activities</div>
+        </div>
       </div>
     </div>
   `,
