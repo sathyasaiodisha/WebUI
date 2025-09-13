@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgClass } from '@angular/common';
+import { set } from 'ol/transform';
 
 @Component({
   selector: 'app-slideshowtext',
@@ -9,7 +10,13 @@ import { NgClass } from '@angular/common';
       <div class="slideshow-container">
         @for (item of data; track $index;let idx = $index, e = $even) { @if(idx
         == slideIndex-1){
-        <div class="mySlides">
+        <div class="numbertext">{{ slideIndex }} / {{ data.length }}</div>
+
+        <div
+          class="mySlides"
+          (mouseover)="onMouseOver()"
+          (mouseout)="onMouseOut()"
+        >
           <q>{{ item.text }}</q>
           @if(item.auther){
           <p class="author">- {{ item.auther }}</p>
@@ -19,6 +26,11 @@ import { NgClass } from '@angular/common';
 
         <a class="prev" (click)="plusSlides(-1)">❮</a>
         <a class="next" (click)="plusSlides(1)">❯</a>
+        @if(isActive){
+        <div class="pause">||</div>
+        } @else {
+        <div class="countDown">{{ countDown }}</div>
+        }
       </div>
 
       <div class="dot-container">
@@ -35,6 +47,11 @@ import { NgClass } from '@angular/common';
 })
 export class SlideShowTextComponent implements OnInit {
   slideIndex = 1;
+  isActive = false;
+  defaultDuration = 5000; // 5 seconds
+  timeOutVar: any;
+  countDown = 1;
+  slideDuration = this.defaultDuration + 0;
   data: { text: string; auther?: string }[] = [];
   constructor() {}
   ngOnInit(): void {
@@ -182,5 +199,29 @@ export class SlideShowTextComponent implements OnInit {
     if (n < 1) {
       this.slideIndex = this.data.length;
     }
+    this.autoSlide();
+  }
+  autoSlide() {
+    if (this.timeOutVar) clearTimeout(this.timeOutVar);
+    this.timeOutVar = setTimeout(() => {
+      if (!this.isActive) this.plusSlides(1);
+    }, this.slideDuration);
+    this.startCountDown();
+  }
+  intervalVar: any;
+  startCountDown() {
+    this.countDown = this.slideDuration / 1000;
+    if (this.intervalVar) clearInterval(this.intervalVar);
+    this.intervalVar = setInterval(() => {
+      if (!this.isActive) this.countDown--;
+      if (this.countDown <= 0) this.countDown = 0;
+    }, 1000);
+  }
+  onMouseOver() {
+    this.isActive = true;
+  }
+  onMouseOut() {
+    this.isActive = false;
+    this.autoSlide();
   }
 }

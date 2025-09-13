@@ -485,6 +485,7 @@ body {
     user-select: none;
   }
 
+
   /* Position the "next button" to the right */
   .next {
     position: absolute;
@@ -535,6 +536,46 @@ body {
   }
 }
 
+.slideshowImage,
+.slideshowText {
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #b5b5b5;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .pause {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    margin-top: -15px;
+    padding: 16px;
+    color: #b5b5b5;
+    font-weight: bold;
+    font-size: 15px;
+    user-select: none;
+  }
+
+  .countDown {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    padding: 0 6px;
+    color: #b5b5b5;
+    font-weight: bold;
+    user-select: none;
+    border-radius: 15px;
+    border: 1px solid #b5b5b5;
+    background-color: #d6d6d64d;
+  }
+
+}
+
 .slideshowImage {
 
   /* Slideshow container */
@@ -561,6 +602,7 @@ body {
     user-select: none;
   }
 
+
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -584,14 +626,6 @@ body {
     text-align: center;
   }
 
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
 
   /* The dots/bullets/indicators */
   .dot {
@@ -612,13 +646,19 @@ body {
 
   /* Fading animation */
   .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+    animation-name: fadeIn;
+    /* Name of the @keyframes rule */
+    animation-duration: 1s;
+    /* Duration of the animation */
+    animation-timing-function: ease-in-out;
+    /* Speed curve of the animation */
+    animation-fill-mode: forwards;
+    /* Ensures the element stays in its final state */
   }
 
-  @keyframes fade {
+  @keyframes fadeIn {
     from {
-      opacity: .4
+      opacity: 0.1
     }
 
     to {
@@ -631,7 +671,8 @@ body {
 
     .prev,
     .next,
-    .text {
+    .text,
+    .pause {
       font-size: 11px
     }
   }
