@@ -7,6 +7,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FixedMenuComponent } from './components/fixed-menu/fixed-menu.component';
+import { SlideShowImageComponent } from './components/slideshow_image/slideshowimage.component';
+import { SlideShowTextComponent } from './components/slideshow_text/slideshowtext.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 
@@ -20,8 +22,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
     HeaderComponent,
     TranslateModule,
     FixedMenuComponent,
+    SlideShowImageComponent,
+    SlideShowTextComponent,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
   ],
   declarations: [],
   exports: [
@@ -31,8 +35,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
     FormsModule,
     TranslateModule,
     FixedMenuComponent,
+    SlideShowImageComponent,
+    SlideShowTextComponent,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
   ],
 })
 export class SharedModule {}
