@@ -31,10 +31,10 @@ export interface DistItem {
 })
 export class BhajanmandaliService {
 
-  private apiUrl = 'http://135.235.158.227/bhajanmandalis';
-  private byDistApiUrl = 'http://135.235.158.227/district';
-  private samithiApiUrl = 'http://135.235.158.227/samithis'; 
-  private distApiUrl = 'http://135.235.158.227/saidistricts';
+  private apiUrl = 'http://172.93.223.88:8080/bhajanmandalis';
+  private byDistApiUrl = 'http://172.93.223.88:8080/district';
+  private samithiApiUrl = 'http://172.93.223.88:8080/samithis'; 
+  private distApiUrl = 'http://172.93.223.88:8080/saidistricts';
 
   constructor(private http: HttpClient) { }
 

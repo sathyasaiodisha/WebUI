@@ -22,8 +22,8 @@ export interface DistItem {
 
 export class SamithiService {
 
-  private apiUrl = 'http://135.235.158.227/samithis'; 
-  private distApiUrl = 'http://135.235.158.227/saidistricts';
+  private apiUrl = 'http://172.93.223.88:8080/samithis'; 
+  private distApiUrl = 'http://172.93.223.88:8080/saidistricts';
 
   constructor(private http: HttpClient) {}
 

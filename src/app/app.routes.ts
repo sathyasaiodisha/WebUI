@@ -3,6 +3,10 @@ import { DistrictentryComponent } from './features/admin/dataentry/districtentry
 import { SamithientryComponent } from './features/admin/dataentry/samithientry/samithientry.component';
 import { DataentryLayoutComponent } from './features/admin/dataentry/dataentry-layout/dataentry-layout.component';
 import { BmentryComponent } from './features/admin/dataentry/bmentry/bmentry.component';
+import { GuruentryComponent } from './features/admin/dataentry/guruentry/guruentry.component';
+import { StateofficebearersentryComponent } from './features/admin/dataentry/stateofficebearersentry/stateofficebearersentry.component';
+import { DistrictofficebearersentryComponent } from './features/admin/dataentry/districtofficebearersentry/districtofficebearersentry.component';
+import { SamithiofficebearersentryComponent } from './features/admin/dataentry/samithiofficebearersentry/samithiofficebearersentry.component';
 
 export const routes: Routes = [
   {
@@ -124,6 +128,10 @@ export const routes: Routes = [
       { path: 'district', component: DistrictentryComponent },
       { path: 'samithi', component: SamithientryComponent },
       { path: 'bhajanmandali', component: BmentryComponent },
+      { path: 'guru', component: GuruentryComponent },
+      { path: 'stateofficebearers', component: StateofficebearersentryComponent },
+      { path: 'districtofficebearers', component: DistrictofficebearersentryComponent },
+      { path: 'samithiofficebearers', component: SamithiofficebearersentryComponent},
       { path: '', redirectTo: 'district', pathMatch: 'full' },
     ],
   },

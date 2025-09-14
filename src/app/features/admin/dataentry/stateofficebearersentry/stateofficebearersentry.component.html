@@ -1,0 +1,223 @@
+    <div class="container">
+        <div class="toolbar">
+            <button *ngIf="!showForm" mat-icon-button color="primary" (click)="toggleForm()">
+            <mat-icon matTooltip="Add state office-bearer">add</mat-icon>
+            </button>
+        </div>
+
+        <mat-card *ngIf="showForm" class="form-card">
+            <mat-card-title>Add state office-bearer</mat-card-title>
+            <mat-card-content>
+
+                <form (ngSubmit)="createItem()" #itemForm="ngForm">
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Name</mat-label>
+                        <input matInput [(ngModel)]="newstateofficial.OfficeBearerName" name="OfficeBearerName" required maxlength="100"/>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Address Line 1</mat-label>
+                        <input matInput [(ngModel)]="newstateofficial.AddressLine1" name="AddressLine1" required maxlength="100"/>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Address Line 2</mat-label>
+                        <input matInput [(ngModel)]="newstateofficial.AddressLine2" name="AddressLine2" maxlength="100"/>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Address Line 3</mat-label>
+                        <input matInput [(ngModel)]="newstateofficial.AddressLine3" name="AddressLine3" maxlength="100"/>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Contact No</mat-label>
+                        <input matInput [(ngModel)]="newstateofficial.ContactNo1" name="ContactNo1" required maxlength="15"/>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Alternate contact No</mat-label>
+                        <input matInput [(ngModel)]="newstateofficial.ContactNo2" name="ContactNo2" maxlength="15"/>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Email ID</mat-label>
+                        <input matInput [(ngModel)]="newstateofficial.Email" name="Email" required maxlength="50"/>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="formfield">
+                        <mat-label>Select designation</mat-label>
+                        <mat-select [(value)]="newstateofficial.DesignationID" (selectionChange)="onChangeOfDesignation($event.value)">
+                            <mat-option *ngFor="let designation of designations" [value]="designation.ID">
+                            {{ designation.DesignationName }}
+                            </mat-option>
+                        </mat-select>          
+                    </mat-form-field>
+                    <mat-card>
+                        <mat-card-content>
+                        <mat-label class="radio-label">Gender</mat-label>
+
+                        <mat-radio-group [(ngModel)]="newstateofficial.Gender" name="Gender">
+                            <mat-radio-button value="M">Male</mat-radio-button>
+                            <mat-radio-button value="F">Female</mat-radio-button>
+                        </mat-radio-group>
+                        </mat-card-content>
+                    </mat-card>
+                    
+                    <br>
+                    <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!itemForm.valid || showErrMsg">
+                        Submit
+                    </button>
+                    <button mat-button type="button" (click)="cancelForm()">Cancel</button>
+                    <br>
+                    <span *ngIf="showSuccessMsg" class="success-message">{{successMsg}}</span>
+                    <span *ngIf="showErrMsg" class="error-message">{{errMsg}}</span>
+                </form>
+            </mat-card-content>
+        </mat-card>
+
+        <!-- <mat-divider class="divider"></mat-divider> -->
+        <div [class.hidden]="showForm" class="table-container">
+        <mat-table [dataSource]="stateOfficialsDataSrc" class="mat-elevation-z8">
+
+        <ng-container matColumnDef="DesignationCode" style="min-width: 150px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 150px;"> Designation </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 150px;"> {{ itemrow.DesignationCode }} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="OfficeBearerName" style="min-width: 250px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 250px;"> Name </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 250px;"> 
+                <ng-container *ngIf="!itemrow.isEditing; else editOfficeBearerName">
+                    {{ itemrow.OfficeBearerName }}
+                </ng-container>
+                <ng-template #editOfficeBearerName>
+                    <mat-form-field>
+                    <input matInput [(ngModel)]="itemrow.OfficeBearerName" maxlength="50"/>
+                    </mat-form-field>
+                </ng-template>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="AddressLine1" style="min-width: 250px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 250px;"> Address Line 1 </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 250px;">
+                <ng-container *ngIf="!itemrow.isEditing; else editAddrLine1">
+                    {{ itemrow.AddressLine1 }}
+                </ng-container>
+                <ng-template #editAddrLine1>
+                    <mat-form-field>
+                    <input matInput [(ngModel)]="itemrow.AddressLine1" maxlength="100"/>
+                    </mat-form-field>
+                </ng-template>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="AddressLine2" style="min-width: 250px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 250px;"> Address Line 2 </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 250px;">
+                <ng-container *ngIf="!itemrow.isEditing; else editAddrLine2">
+                    {{ itemrow.AddressLine2 }}
+                </ng-container>
+                <ng-template #editAddrLine2>
+                    <mat-form-field>
+                    <input matInput [(ngModel)]="itemrow.AddressLine2" maxlength="100"/>
+                    </mat-form-field>
+                </ng-template>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="AddressLine3" style="min-width: 250px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 250px;"> Address Line 3 </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 250px;">
+                <ng-container *ngIf="!itemrow.isEditing; else editAddrLine3">
+                    {{ itemrow.AddressLine3 }}
+                </ng-container>
+                <ng-template #editAddrLine3>
+                    <mat-form-field>
+                    <input matInput [(ngModel)]="itemrow.AddressLine3" maxlength="100"/>
+                    </mat-form-field>
+                </ng-template>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="ContactNo1" style="min-width: 150px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 150 px;"> Contact No </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 150px;"> 
+                <ng-container *ngIf="!itemrow.isEditing; else editContact1">
+                    {{ itemrow.ContactNo1 }}
+                </ng-container>
+                <ng-template #editContact1>
+                    <mat-form-field>
+                    <input matInput [(ngModel)]="itemrow.ContactNo1"/>
+                    </mat-form-field>
+                </ng-template>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="ContactNo2" style="min-width: 200px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 200px;"> Alternate Contact No </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 200px;"> 
+                <ng-container *ngIf="!itemrow.isEditing; else editContact2">
+                    {{ itemrow.ContactNo2 }}
+                </ng-container>
+                <ng-template #editContact2>
+                    <mat-form-field>
+                    <input matInput [(ngModel)]="itemrow.ContactNo2" />
+                    </mat-form-field>
+                </ng-template>
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Email" style="min-width: 250px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 250px;"> Email </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 250px;"> 
+                <ng-container *ngIf="!itemrow.isEditing; else editEmail">
+                    {{ itemrow.Email }}
+                </ng-container>
+                <ng-template #editEmail>
+                    <mat-form-field>
+                    <input matInput [(ngModel)]="itemrow.Email" maxlength="100"/>
+                    </mat-form-field>
+                </ng-template> 
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Gender" style="min-width: 150px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 150px;"> Gender </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 150px;"> 
+                <ng-container *ngIf="!itemrow.isEditing; else editGender">
+                    {{ itemrow.Gender }}
+                </ng-container>
+                <ng-template #editGender>
+                    <mat-form-field>
+                        <mat-select [(ngModel)]="itemrow.Gender" name="Gender">
+                            <mat-option *ngFor="let gender of genders" [value]="gender">{{gender}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </ng-template> 
+            </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="Actions" style="min-width: 200px;">
+            <mat-header-cell *matHeaderCellDef style="min-width: 200px;" stickyEnd> Actions </mat-header-cell>
+            <mat-cell *matCellDef="let itemrow" style="min-width: 200px;" stickyEnd>
+            <ng-container *ngIf="!itemrow.isEditing">
+                <button mat-icon-button color="primary" (click)="onEdit(itemrow)">
+                <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" (click)="onDelete(itemrow)">
+                <mat-icon>delete</mat-icon>
+                </button>
+            </ng-container>
+            <ng-container *ngIf="itemrow.isEditing">
+                <button mat-icon-button color="accent" (click)="onSave(itemrow)">
+                <mat-icon>check</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" (click)="onCancel(itemrow)">
+                <mat-icon>cancel</mat-icon>
+                </button>
+            </ng-container>
+            </mat-cell>
+        </ng-container>
+
+        <mat-header-row *matHeaderRowDef="displayedColumns" class="custom-header"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;" class="custom-row"></mat-row>
+
+        </mat-table>
+        <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
+        </div>
+    </div>

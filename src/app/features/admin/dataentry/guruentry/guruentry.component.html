@@ -1,0 +1,179 @@
+<div class="add-item-form">
+    <form (ngSubmit)="createItem()" #itemForm="ngForm">
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select District</mat-label>
+            <mat-select [(value)]="newbvGuru.DistrictID" (selectionChange)="onDistrictChange($event.value)">
+                <mat-option *ngFor="let district of districts" [value]="district.ID">
+                {{ district.DistrictName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select Samithi</mat-label>
+            <mat-select [(value)]="newbvGuru.SamithiID" (selectionChange)="onSamithiChange($event.value)" [disabled]="isSamiithiSelectionDisabled">
+                <mat-option *ngFor="let samithi of filteredSamithis" [value]="samithi.ID">
+                {{ samithi.SamithiName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select Bhajan Mandali</mat-label>
+            <mat-select [(value)]="newbvGuru.BhajanMandaliID" (selectionChange)="onBhajanMandaliChange($event.value)" [disabled]="isBMSelectionDisabled">
+                <mat-option *ngFor="let bm of filteredBhajanMandalis" [value]="bm.ID">
+                {{ bm.BhajanMandaliName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select Centre</mat-label>
+            <mat-select [(value)]="newbvGuru.BalVikasCentreID" (selectionChange)="onBVCentreChange($event.value)" [disabled]="isBVCentreSelectionDisabled">
+                <mat-option *ngFor="let bvCentre of filteredBVCentres" [value]="bvCentre.ID">
+                {{ bvCentre.BalVikasCentreName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.GuruName" name="GuruName" required maxlength="100" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+        <!-- <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Gender</mat-label>
+
+            <mat-radio-group [(ngModel)]="newbvGuru.Gender" name="Gender">
+                <mat-radio-button value="M">Male</mat-radio-button>
+                <mat-radio-button value="F">Female</mat-radio-button>
+            </mat-radio-group>
+        </mat-form-field> -->
+
+
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Date of birth</mat-label>
+
+            <input matInput [matDatepicker]="picker" [(ngModel)]="newbvGuru.DateOfBirth" name="DateOfBirth" [disabled]="isDisabled">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Address Line1</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.AddressLine1" name="AddressLine1" required maxlength="200" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Address Line2</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.AddressLine2" name="AddressLine2" maxlength="200" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Address Line3</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.AddressLine3" name="AddressLine3" maxlength="200" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>PIN</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.PIN" name="PIN" required maxlength="6" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Contact No</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.ContactNo1" name="ContactNo1" required maxlength="10" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Alternate Contact No</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.ContactNo2" name="ContactNo2" maxlength="10" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Email</mat-label>
+            <input matInput [(ngModel)]="newbvGuru.Email" name="Email" required maxlength="100" [disabled]="isDisabled"/>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Highest educational degree</mat-label>
+            <mat-select required [(value)]="newbvGuru.HighestEducationalDegreeID" [disabled]="isDisabled">
+                <mat-option *ngFor="let eduDegree of qualifications" [value]="eduDegree.ID">
+                {{ eduDegree.QualificationName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Graduation Major Subject</mat-label>
+            <mat-select required [(value)]="newbvGuru.GraduationMajorSubjectID" [disabled]="isDisabled">
+                <mat-option *ngFor="let gradMajSub of gradMajorSubs" [value]="gradMajSub.ID">
+                {{ gradMajSub.GraduationMajorSubject }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Occupation</mat-label>
+            <mat-select required [(value)]="newbvGuru.OccupationID" [disabled]="isDisabled">
+                <mat-option *ngFor="let occupation of occupations" [value]="occupation.ID">
+                {{ occupation.OccupationName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <div class="card-container">
+        <mat-card>
+            <mat-card-content>
+            <mat-label class="radio-label">Gender</mat-label>
+
+            <mat-radio-group [(ngModel)]="newbvGuru.Gender" name="Gender">
+                <mat-radio-button value="M">Male</mat-radio-button>
+                <mat-radio-button value="F">Female</mat-radio-button>
+            </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+        <mat-card>
+            <mat-card-content>
+                <mat-label class="radio-label">Alumnus of</mat-label>
+
+                <mat-radio-group [(ngModel)]="newbvGuru.AlumnusOf" name="AlumnusOf">
+                <mat-radio-button value="Bal Vikas">Bal Vikas</mat-radio-button>
+                <mat-radio-button value="Sathya Sai Institutes">Sathya Sai Institutes</mat-radio-button>
+                <mat-radio-button value="None">None</mat-radio-button>
+            </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-content>
+                <mat-label class="checkbox-label">Target group of students</mat-label>
+
+                <div class="checkbox-group">
+                    <mat-checkbox *ngFor = "let groupOfStudents of GroupsOfStudents" name="{{groupOfStudents.name}}"
+                        [(ngModel)]="groupOfStudents.selected" (change)="onSelectionChange()">
+                        {{groupOfStudents.name}}</mat-checkbox>
+                
+                </div>
+            </mat-card-content>
+        </mat-card>
+        </div>
+        <br>
+        <div>
+            <input type="file" #fileInput (change)="onFileSelected($event)" hidden>
+                <!-- Material button to trigger file input -->
+                <button mat-raised-button color="primary" (click)="fileInput.click()">
+                    Upload photo
+                </button>
+
+                <!-- Show selected file -->
+                <p *ngIf="selectedFile">Selected: {{ selectedFile.name }}</p>
+        </div>
+
+        <br>
+        <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!itemForm.valid || showErrMsg">
+            Add
+        </button>
+        <br>
+        <span *ngIf="showSuccessMsg" class="success-message">{{successMsg}}</span>
+        <span *ngIf="showErrMsg" class="error-message">{{errMsg}}</span>
+    </form>
+</div>
