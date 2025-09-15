@@ -160,7 +160,7 @@
         <div>
             <input type="file" #fileInput (change)="onFileSelected($event)" hidden>
                 <!-- Material button to trigger file input -->
-                <button mat-raised-button color="primary" (click)="fileInput.click()">
+                <button mat-raised-button color="primary" type="button" (click)="fileInput.click()">
                     Upload photo
                 </button>
 

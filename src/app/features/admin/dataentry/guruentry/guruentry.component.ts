@@ -254,26 +254,27 @@ export class GuruentryComponent implements OnInit, AfterViewInit  {
               }, 5000);
           }
           else{
-          //   if (!this.selectedFile) return;
-          // this.bvguruService.uploadFile(this.selectedFile).subscribe(event => {
-          //   if (event.type === HttpEventType.UploadProgress && event.total) {
-          //     this.progress = Math.round(100 * event.loaded / event.total);
-          //   } else if (event.type === HttpEventType.Response) {
-          //     console.log('Upload complete:', event.body);
-          //     this.newbvGuru.Photo = event.body.filepath;
+            if (!this.selectedFile) return;
+          this.bvguruService.uploadFile(this.selectedFile).subscribe(event => {
+            if (event.type === HttpEventType.UploadProgress && event.total) {
+              this.progress = Math.round(100 * event.loaded / event.total);
+            } else if (event.type === HttpEventType.Response) {
+              console.log('Upload complete:', event.body);
+              this.newbvGuru.Photo = event.body.filepath;
               
-          //     this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
-          //       this.successMsg = "Bal Vikas Guru added successfully";
-          //       this.showSuccessMsg = true;
-          //     });
-          //   }
-
-          // });
-          this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated;
-          this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
+              this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated; 
+              this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
                 this.successMsg = "Bal Vikas Guru added successfully";
                 this.showSuccessMsg = true;
+              });
+            }
+
           });
+          // this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated;
+          // this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
+          //       this.successMsg = "Bal Vikas Guru added successfully";
+          //       this.showSuccessMsg = true;
+          // });
         }
         }
 }
