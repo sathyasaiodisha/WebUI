@@ -38,17 +38,18 @@ export class EventsComponent {
     { title: 'Convocation of SSSIHL', ddmm: '2211' },
     { title: 'Ladies Day', ddmm: '1211' },
     { title: 'Eswaramma Day', ddmm: '0605' },
-    { title: 'Makara Sankranti', ddmm: '1501' },
     { title: 'Annual Sports & Cultural Meet', ddmm: '1101' },
     { title: 'New Year', ddmm: '0101' },
-    { title: 'Vijaya Dashami', ddmm: '2010' },
+    { title: 'Makara Sankranthi', ddmm: '1401' },
+    { title: 'Earth Day', ddmm: '2204' },
+    { title: '	Sri Sathya Sai Aradhana Day, Human Values Day', ddmm: '2404' },
   ];
-  getEvents(weekNo: number, WeekDay: number) {
-    const k = WeekDay + weekNo;
-    const events = [];
-    events.push(
-      this.events_fixed[Math.floor(Math.random() * this.events_fixed.length)]
-    );
+  getEvents(dd: number, weekNo?: number, WeekDay?: number) {
+    const k = dd + '' + this.mm; //WeekDay + weekNo;
+    var events: any = [];
+    this.events_fixed.forEach((ev) => {
+      if (ev.ddmm == k) events.push(ev);
+    });
     return events;
   }
   genDateArray() {
@@ -93,11 +94,12 @@ export class EventsComponent {
     //this.titleService.setTitle('Events');
     this.genDateArray();
   }
-
+  mm = '00';
   mmPreNxt(mm: number) {
     this.mmUsed += mm;
     if (mm == 0) this.mmUsed = mm;
     this.current = moment().add(this.mmUsed, 'months');
+    this.mm = moment().add(this.mmUsed, 'months').format('MM');
     this.genDateArray();
   }
   showEvent(event: any) {

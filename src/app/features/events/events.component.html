@@ -41,9 +41,10 @@
         {{ ddA[(wI + 1) * 7 - 7 + (wday.id + 1)].d }}
       </div>
       <div class="date_events">
-        @if(wI<2&&wday.id<2){@for (ev of events_fixed; track $index){
+        @for (ev of getEvents(ddA[(wI + 1) * 7 - 7 + (wday.id + 1)].d); track
+        $index){
         <a class="event_text" (click)="showEvent(ev)">{{ ev.title }}</a>
-        }}
+        }
       </div>
     </div>
     }

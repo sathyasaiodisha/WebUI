@@ -649,3 +649,26 @@ body {
     }
   }
 }
+
+.boldIli>li {
+  font-weight: bold;
+}
+
+
+.breadcrumb {
+  font-size: 14px;
+  margin: 8px 0;
+
+  span {
+    padding: 0 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}

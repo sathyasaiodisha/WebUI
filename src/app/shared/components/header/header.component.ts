@@ -30,10 +30,10 @@ export class HeaderComponent {
       name: 'Sri Sathya Sai',
       link: '/Sri_Sathya_Sai',
       subMenu: [
-        { name: 'Introduction', link: '/1' },
-        { name: 'His Life', link: '/2' },
-        { name: 'His Teachings', link: '/3' },
-        { name: 'His Works', link: '/4' },
+        { name: 'Introduction', link: '/introduction' },
+        { name: 'His Life', link: '/life' },
+        { name: 'His Teachings', link: '/teachings' },
+        { name: 'His Works', link: '/works' },
       ],
     },
 

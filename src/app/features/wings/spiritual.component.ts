@@ -26,20 +26,29 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
         </div>
 
         <p>
-          "When there is purity in thought, word and deed human values are
-          practised."<br />
-          More<br />
-          The Spiritual Wing is an integral part of the Sri Sathya Sai Seva
-          Organization. The primary objective of this wing is to facilitate
-          devotees’ spiritual progress based on Swami’s teachings by conducting
-          multiple spiritual activities like Namasmaran, Study Circle, Sadhana
-          Camp, Vedic Prayer, Lakhyarchana, Bratakalpam, Parayan, Nagar
-          Sankirtanam, Seminar & Symposiums, Value based Cultural programmes,
-          Bhajan & Spiritual Discussions at public places / Jail etc. in
-          accordance with the organization’s guidelines. These activities richly
-          complement those of the other Wings of the Organization (Educational
-          and Service) in spreading Swami’s message to the broader community and
-          in helping individuals progress on the Divine journey.
+          The Spiritual Wing is the foundation of the SSSSO, often described as
+          the "roots" that nurture inner growth and awaken inherent divinity. As
+          Sri Sathya Sai Baba stated, "First and the foremost wing of this
+          organisation is love for God, that is spirituality." It focuses on
+          fostering devotion (bhakti), self-transformation, and connection with
+          the divine through group and individual practices. The wing helps
+          members develop the urge to connect with their inner self, clarify
+          spiritual doubts, and progress on the path of sadhana (spiritual
+          discipline).
+        </p>
+        <p>
+          This wing is essential because, as per the organization's philosophy,
+          "Spirituality is the motivational force behind service and service is
+          the fulfilment of spirituality." Without spiritual grounding, service
+          activities lack depth, and spiritual pursuits remain abstract. It
+          caters to the individual's inner needs, while the other wings address
+          societal and educational aspects.
+        </p>
+        <h3>Key Activities of the Spiritual Wing</h3>
+        <p>
+          The Spiritual Wing organizes activities at local centers (Samithis),
+          district levels, and national/international events. These are designed
+          to inspire inward vision and collective devotion
         </p>
 
         <div class="spiritual_wrapper_bottom">
@@ -65,8 +74,8 @@ export class SpiritualComponent implements OnInit {
   // }[] = [];
   links = [
     { name: 'Sai Symphony', url: '/' },
-    { name: 'Veda Prabaham', url: '/wings' },
-    { name: 'Bhajan', url: '/wings/spiritual' },
+    { name: 'Veda Prabaham', url: '/wings/spiritual/vedaPrabaham' },
+    { name: 'Bhajan', url: '/wings/spiritual/bhajan' },
     { name: 'Study circle', url: '/wings/spiritual' },
     { name: 'Parthi Yatra', url: '/wings/spiritual' },
     { name: 'Jyothi Yatra', url: '/wings/spiritual' },
