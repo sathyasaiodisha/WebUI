@@ -3,6 +3,7 @@ import { ApiService } from '../../core/services/api.service';
 //import { AsyncPipe } from '@angular/common';
 //import { Observable } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 
 import Map from 'ol/Map';
 //import View from 'ol/View';
@@ -12,16 +13,32 @@ import Map from 'ol/Map';
 //declare let $: any;
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule],
+  imports: [TranslateModule, RouterLink],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
   wings = [
-    { name: 'Service', img: 'assets/images/ServiceLogo.png' },
-    { name: 'Spiritual', img: 'assets/images/SpiritualLogo.png' },
-    { name: 'Education', img: 'assets/images/EducationLogo.png' },
-    { name: 'Mahilas', img: 'assets/images/LadiesLogo.png' },
-    { name: 'Youth', img: 'assets/images/YouthLogo.png' },
+    {
+      name: 'Service',
+      img: 'assets/images/ServiceLogo.png',
+      link: '/wings/service',
+    },
+    {
+      name: 'Spiritual',
+      img: 'assets/images/SpiritualLogo.png',
+      link: '/wings/spiritual',
+    },
+    {
+      name: 'Education',
+      img: 'assets/images/EducationLogo.png',
+      link: '/wings/education',
+    },
+    {
+      name: 'Mahilas',
+      img: 'assets/images/LadiesLogo.png',
+      link: '/wings/ladies',
+    },
+    { name: 'Youth', img: 'assets/images/YouthLogo.png', link: '/wings/youth' },
   ];
   map: Map = new Map({});
   //posts$!: Observable<any>;

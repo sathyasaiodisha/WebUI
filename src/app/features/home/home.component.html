@@ -4,7 +4,9 @@
       <div class="row">
         @for(item of wings; track item.name){
         <div class="wings col">
-          <img class="wings-img-top" src="{{ item.img }}" alt="Mahilas" />
+          <a [routerLink]="item.link">
+            <img class="wings-img-top" src="{{ item.img }}" alt="Mahilas"
+          /></a>
           <!--div-- class="wings-body">
             <h5 class="wings-title">{{ item.name | translate }}</h5>
           </div-->
