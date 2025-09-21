@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NgClass } from '@angular/common';
 
 @Component({
@@ -47,6 +47,7 @@ import { NgClass } from '@angular/common';
   `,
 })
 export class SlideShowImageComponent implements OnInit {
+  @Input() banner: { image: string; caption?: string }[] = [];
   slideIndex = 1;
   isActive = false;
   defaultDuration = 5000; // 5 seconds
@@ -67,6 +68,8 @@ export class SlideShowImageComponent implements OnInit {
       },
       { image: 'https://www.w3schools.com/howto/img_mountains_wide.jpg' },
     ];
+    if (this.banner && this.banner.length > 0) this.data = this.banner;
+    // Show the first slide
     this.showSlides(this.slideIndex);
   }
 

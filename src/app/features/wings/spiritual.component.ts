@@ -2,10 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { ApiService } from '../../core/services/api.service';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-spiritual',
-  imports: [SharedModule, RouterLink, RouterLinkActive],
+  imports: [
+    SharedModule,
+    RouterLink,
+    RouterLinkActive,
+    SlideShowImageComponent,
+  ],
   template: `
     <div class=" container py-2 px-4 border-secondary">
       <!--content_topgape-->
@@ -16,12 +22,15 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 
         <div class="spiritual_wrapper_top">
           <div class="events">Alerts for events which are drawing near</div>
-          <a class="eventLink" routerLink="/events/spiritual"
-            >Link to recent and upcoming events</a
+          <a
+            title="Link to recent and upcoming events"
+            class="eventLink"
+            routerLink="/events/spiritual"
+            >Events</a
           >
           <div class="carousel">
             <!--Image carousel (Each image is linked to a page)-->
-            <app-slideshowimage></app-slideshowimage>
+            <app-slideshowimage [banner]="banner"></app-slideshowimage>
           </div>
         </div>
 
@@ -65,13 +74,11 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
   `,
 })
 export class SpiritualComponent implements OnInit {
-  // data: {
-  //   designation: string;
-  //   name: string;
-  //   phoneNo: string;
-  //   whatsAppNo: string;
-  //   emailid: string;
-  // }[] = [];
+  banner = [
+    { image: 'assets/images/walking.JPG', caption: 'Service Banner 1' },
+    { image: 'assets/images/group-sitting.JPG', caption: 'Service Banner 2' },
+    { image: 'assets/images/konark.JPG', caption: 'Service Banner 3' },
+  ];
   links = [
     { name: 'Sai Symphony', url: '/' },
     { name: 'Veda Prabaham', url: '/wings/spiritual/vedaPrabaham' },
@@ -86,10 +93,5 @@ export class SpiritualComponent implements OnInit {
     { name: 'Dhyana Vrukshya', url: '/wings/spiritual/dhyanaVrukshya' },
     { name: 'Seminars', url: '/wings/spiritual/seminars' },
   ];
-  constructor(private apiService: ApiService) {}
-  ngOnInit(): void {
-    // this.apiService.getStateCoordinators().subscribe((data) => {
-    //   this.data = data;
-    // });
-  }
+  ngOnInit(): void {}
 }

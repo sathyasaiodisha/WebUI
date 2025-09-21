@@ -367,6 +367,10 @@ body {
     text-decoration: underline;
   }
 
+  .eventLink {
+    text-align: center;
+  }
+
 }
 
 .service_wrapper_bottom,
@@ -445,6 +449,7 @@ body {
   .mySlides {
     padding: 80px;
     text-align: center;
+    min-height: 383px;
   }
 
   /* Next & previous buttons */

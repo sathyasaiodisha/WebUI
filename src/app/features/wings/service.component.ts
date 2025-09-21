@@ -2,10 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { ApiService } from '../../core/services/api.service';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-service',
-  imports: [SharedModule, RouterLink, RouterLinkActive],
+  imports: [
+    SharedModule,
+    RouterLink,
+    RouterLinkActive,
+    SlideShowImageComponent,
+  ],
   template: `
     <div class="container py-2 px-4 border-secondary">
       <!--content_topgape-->
@@ -23,7 +29,7 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
           >
           <div class="carousel">
             <!--Image carousel (Each image is linked to a page)-->
-            <app-slideshowimage></app-slideshowimage>
+            <app-slideshowimage [banner]="banner"></app-slideshowimage>
           </div>
         </div>
 
@@ -60,13 +66,11 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
   `,
 })
 export class ServiceComponent implements OnInit {
-  // data: {
-  //   designation: string;
-  //   name: string;
-  //   phoneNo: string;
-  //   whatsAppNo: string;
-  //   emailid: string;
-  // }[] = [];
+  banner = [
+    { image: 'assets/images/walking.JPG', caption: 'Service Banner 1' },
+    { image: 'assets/images/group-sitting.JPG', caption: 'Service Banner 2' },
+    { image: 'assets/images/konark.JPG', caption: 'Service Banner 3' },
+  ];
   links = [
     { name: 'Agri care', url: '/wings/service/Agricare' },
     { name: 'Animal care', url: '/wings/service/Animalcare' },
@@ -82,10 +86,5 @@ export class ServiceComponent implements OnInit {
     { name: 'Service Activities', url: '/wings/service/ServiceActivities' },
   ];
 
-  constructor(private apiService: ApiService) {}
-  ngOnInit(): void {
-    // this.apiService.getStateCoordinators().subscribe((data) => {
-    //   this.data = data;
-    // });
-  }
+  ngOnInit(): void {}
 }
