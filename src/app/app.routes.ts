@@ -17,7 +17,7 @@ export const routes: Routes = [
   },
   {
     path: 'Sri_Sathya_Sai',
-    data: { breadcrumb: 'Sri Sathya Sai' },
+    data: { breadcrumb: 'Sri Sathya Sai', link: 0 },
     children: [
       {
         path: 'introduction',
@@ -55,7 +55,7 @@ export const routes: Routes = [
   },
   {
     path: 'wings',
-    data: { breadcrumb: 'Wings' },
+    data: { breadcrumb: 'Wings', link: 0 },
     children: [
       {
         path: 'service',
@@ -153,7 +153,7 @@ export const routes: Routes = [
   },
   {
     path: 'organization',
-    data: { breadcrumb: 'Organization' },
+    data: { breadcrumb: 'Organization', link: 0 },
     children: [
       {
         path: 'centralTrust',

@@ -6,6 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 export interface Breadcrumb {
   label: string;
   url: string;
+  link: boolean;
 }
 
 @Injectable({ providedIn: 'root' })
@@ -29,12 +30,14 @@ export class BreadcrumbService {
   private createBreadcrumbs(
     route: ActivatedRouteSnapshot,
     url: string = '',
+    link: boolean = true,
     breadcrumbs: Breadcrumb[] = []
   ): Breadcrumb[] {
     if (route.routeConfig && route.routeConfig.data) {
       const breadcrumb: Breadcrumb = {
-        label: route.routeConfig.data['breadcrumb'],
+        label: route.routeConfig.data['breadcrumb'] ?? '',
         url: `${url}/${route.url.map((segment) => segment.path).join('/')}`,
+        link: (route.routeConfig.data['link'] ?? 1) === 0 ? false : link,
       };
       breadcrumbs.push(breadcrumb);
     }
@@ -43,6 +46,7 @@ export class BreadcrumbService {
       return this.createBreadcrumbs(
         route.firstChild,
         `${url}/${route.url.map((segment) => segment.path).join('/')}`,
+        true,
         breadcrumbs
       );
     }

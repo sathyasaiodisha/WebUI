@@ -5,7 +5,11 @@ import { CommonModule } from '@angular/common';
 import { MatMenuModule } from '@angular/material/menu';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faBell } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBell,
+  faSignIn,
+  faUserPlus,
+} from '@fortawesome/free-solid-svg-icons';
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -94,6 +98,8 @@ export class HeaderComponent {
     { name: 'Admin', link: '/admin' },
   ];
   bellIcon = faBell;
+  signin = faSignIn;
+  signup = faUserPlus;
   constructor(
     public translateService: TranslateService,
     private router: Router

@@ -7,6 +7,10 @@
 
 body {
   font-family: Arial, sans-serif;
+
+  h1 {
+    color: #5b5b5b !important;
+  }
 }
 
 .languageContainer {
@@ -56,13 +60,15 @@ body {
     // line-height: 1.5rem;
     margin-top: 9px;
 
-    .notificationLink {
+    .notificationLink,
+    .signin,
+    .signup {
       font-size: 1.8rem;
       margin-right: .9rem;
     }
 
     button {
-      min-width: 93px;
+      min-width: 78px;
       max-width: 130px;
       width: 96%;
       margin-left: 0.5rem;
@@ -90,7 +96,6 @@ body {
   a {
     color: white !important;
     text-decoration: none;
-    padding: 0 1rem;
   }
 
 
@@ -128,7 +133,7 @@ body {
 }
 
 .content_topgape {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .bottom {
@@ -384,7 +389,7 @@ body {
 .spiritual_wrapper_top,
 .service_wrapper_top {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, auto);
   row-gap: 0.5rem;
   column-gap: 1rem;
 
@@ -407,14 +412,14 @@ body {
 .spiritual_wrapper_bottom,
 .service_wrapper_bottom {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(4, auto);
   row-gap: 0.5rem;
   column-gap: 1rem;
 
 }
 
 .grid1by4 {
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% auto;
   column-gap: 1em;
 }
 
@@ -656,8 +661,9 @@ body {
 
 
 .breadcrumb {
-  font-size: 14px;
-  margin: 8px 0;
+  font-size: 14px !important;
+  border-bottom: solid 1px #d9d9d9;
+  padding: .5rem !important;
 
   span {
     padding: 0 5px;
@@ -671,4 +677,8 @@ body {
   a:hover {
     text-decoration: underline;
   }
+}
+
+.boxSd {
+  box-shadow: 0 .1875rem .4375rem 0 rgba(0, 0, 0, .13), 0 .0625rem .125rem 0 rgba(0, 0, 0, .11);
 }

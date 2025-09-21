@@ -10,13 +10,17 @@ import { SharedModule } from '@shared/shared.module';
   selector: 'app-breadcrumb',
   imports: [SharedModule, RouterLink, RouterLinkActive],
   template: `
+    @if(breadcrumbs.length != 0 && breadcrumbs[0].label != 'Home') {
     <nav class="breadcrumb">
+      <a routerLink="/">Home</a>
+      <span> / </span>
       <ng-container *ngFor="let bc of breadcrumbs; let last = last">
-        <a *ngIf="!last" [routerLink]="bc.url">{{ bc.label }}</a>
-        <span *ngIf="last">{{ bc.label }}</span>
+        <a *ngIf="!last && bc.link" [routerLink]="bc.url">{{ bc.label }}</a>
+        <span *ngIf="last || !bc.link">{{ bc.label }}</span>
         <span *ngIf="!last"> / </span>
       </ng-container>
     </nav>
+    }
   `,
 })
 export class BreadcrumbComponent implements OnInit {

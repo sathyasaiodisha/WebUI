@@ -7,7 +7,7 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
   selector: 'app-service',
   imports: [SharedModule, RouterLink, RouterLinkActive],
   template: `
-    <div class=" container py-2 px-4 border-secondary">
+    <div class="container py-2 px-4 border-secondary">
       <!--content_topgape-->
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
@@ -15,8 +15,11 @@ import { RouterLink, RouterLinkActive, Router } from '@angular/router';
         </h1>
         <div class="service_wrapper_top">
           <div class="events">Alerts for events which are drawing near</div>
-          <a class="eventLink" routerLink="/events/service"
-            >Link to recent and upcoming events</a
+          <a
+            title="Link to recent and upcoming events"
+            class="eventLink"
+            routerLink="/events/service"
+            >Events</a
           >
           <div class="carousel">
             <!--Image carousel (Each image is linked to a page)-->
