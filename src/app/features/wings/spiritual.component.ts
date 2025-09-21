@@ -76,9 +76,15 @@ export class SpiritualComponent implements OnInit {
     { name: 'Sai Symphony', url: '/' },
     { name: 'Veda Prabaham', url: '/wings/spiritual/vedaPrabaham' },
     { name: 'Bhajan', url: '/wings/spiritual/bhajan' },
-    { name: 'Study circle', url: '/wings/spiritual' },
-    { name: 'Parthi Yatra', url: '/wings/spiritual' },
-    { name: 'Jyothi Yatra', url: '/wings/spiritual' },
+    { name: 'Study circle', url: '/wings/spiritual/studyCircle' },
+    { name: 'Parthi Yatra', url: '/wings/spiritual/parthiYatra' },
+    { name: 'Jyothi Yatra', url: '/wings/spiritual/jyothiYatra' },
+    { name: 'Lakshyarchana', url: '/wings/spiritual/Lakshyarchana' },
+    { name: 'Sadhana Shibir', url: '/wings/spiritual/sadhanaShibir' },
+    { name: 'Vahini Parayana', url: '/wings/spiritual/vahiniParayana' },
+    { name: 'Devotees meet', url: '/wings/spiritual/devoteesMeet' },
+    { name: 'Dhyana Vrukshya', url: '/wings/spiritual/dhyanaVrukshya' },
+    { name: 'Seminars', url: '/wings/spiritual/seminars' },
   ];
   constructor(private apiService: ApiService) {}
   ngOnInit(): void {

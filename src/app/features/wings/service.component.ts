@@ -68,12 +68,18 @@ export class ServiceComponent implements OnInit {
   //   emailid: string;
   // }[] = [];
   links = [
-    { name: 'Agri care', url: '/' },
-    { name: 'Animal care', url: '/wings' },
-    { name: 'Aqua care', url: '/wings/service' },
-    { name: 'Digital archive', url: '/wings/service' },
-    { name: 'Holistic health', url: '/wings/service' },
-    { name: 'Blood donation', url: '/wings/service' },
+    { name: 'Agri care', url: '/wings/service/Agricare' },
+    { name: 'Animal care', url: '/wings/service/Animalcare' },
+    { name: 'Aqua care', url: '/wings/service/Aquacare' },
+    { name: 'Digital archive', url: '/wings/service/Digitalarchive' },
+    { name: 'Digital connectivity', url: '/wings/service/digitalConnectivity' },
+    { name: 'Holistic health', url: '/wings/service/Holistichealth' },
+    { name: 'Blood donation', url: '/wings/service/Blooddonation' },
+    { name: 'Prasanthi Seva', url: '/wings/service/prasanthiSeva' },
+    { name: 'SSSVIP', url: '/wings/service/SSSVIP' },
+    { name: 'SSSHP', url: '/wings/service/SSSHP' },
+    { name: 'Telemedicine', url: '/wings/service/Telemedicine' },
+    { name: 'Service Activities', url: '/wings/service/ServiceActivities' },
   ];
 
   constructor(private apiService: ApiService) {}

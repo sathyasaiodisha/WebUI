@@ -86,6 +86,14 @@ export const routes: Routes = [
               ),
           },
           {
+            path: 'sadhanaShibir',
+            data: { breadcrumb: 'Veda Prabaham' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/sadhanaShibir.component').then(
+                (c) => c.SadhanaShibirComponent
+              ),
+          },
+          {
             path: '',
             loadComponent: () =>
               import('./features/wings/spiritual.component').then(
