@@ -71,7 +71,7 @@ export class GuruentryComponent implements OnInit, AfterViewInit  {
     isBMSelectionDisabled : boolean = true;
     isBVCentreSelectionDisabled : boolean = true;
     selectedFile: File | null = null;
-    progress = 0;
+    uploadProgress = 0;
 
     //selectedDistictId: number | null = null;
   
@@ -256,11 +256,13 @@ export class GuruentryComponent implements OnInit, AfterViewInit  {
           else{
             if (!this.selectedFile) return;
           this.bvguruService.uploadFile(this.selectedFile).subscribe(event => {
-            if (event.type === HttpEventType.UploadProgress && event.total) {
-              this.progress = Math.round(100 * event.loaded / event.total);
-            } else if (event.type === HttpEventType.Response) {
+            if (event.type === HttpEventType.UploadProgress)
+            {
+              this.uploadProgress = Math.round(100 * event.loaded/(event.total || 1));
+            }
+            else if (event.type === HttpEventType.Response) {
               console.log('Upload complete:', event.body);
-              this.newbvGuru.Photo = event.body.filepath;
+              this.newbvGuru.Photo = event.body.fileurl;
               
               this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated; 
               this.bvguruService.createItem(this.newbvGuru).subscribe(() => {

@@ -141,7 +141,12 @@ export class BvguruService {
 
       const formData = new FormData();
       formData.append('file', fileToUpload);
-      return this.http.post(`${this.fileUploadApiUrl}`, formData);
+      return this.http.post<any>(`${this.fileUploadApiUrl}`, formData,
+        {
+          observe: 'events',
+          reportProgress: true
+        }
+      );
     }
 
   
