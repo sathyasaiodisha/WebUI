@@ -1,16 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { ApiService } from '../../core/services/api.service';
+import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-ladies',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
-    <div class="content_topgape container py-2 px-4 border-secondary">
+    <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Ladies' | translate }}
         </h1>
+        <div class="service_wrapper_top">
+          <div class="carousel">
+            <!--Image carousel (Each image is linked to a page)-->
+            <app-slideshowimage [banner]="banner"></app-slideshowimage>
+          </div>
+        </div>
+
         <p>
           In this country of Bharat was born Savitri, the woman of chastity, Who
           could fight with Yama, the God of Death and bring back to life her
@@ -43,13 +51,7 @@ import { ApiService } from '../../core/services/api.service';
   `,
 })
 export class LadiesComponent implements OnInit {
-  // data: {
-  //   designation: string;
-  //   name: string;
-  //   phoneNo: string;
-  //   whatsAppNo: string;
-  //   emailid: string;
-  // }[] = [];
+  banner = [{ image: 'assets/images/Mahila-banner.jpg', caption: '' }];
   constructor(private apiService: ApiService) {}
   ngOnInit(): void {
     // this.apiService.getStateCoordinators().subscribe((data) => {

@@ -1,16 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { ApiService } from '../../core/services/api.service';
+import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-education',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
-    <div class="content_topgape container py-2 px-4 border-secondary">
+    <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Education' | translate }}
         </h1>
+        <div class="service_wrapper_top">
+          <div class="carousel">
+            <!--Image carousel (Each image is linked to a page)-->
+            <app-slideshowimage [banner]="banner"></app-slideshowimage>
+          </div>
+        </div>
+
         <p>
           Education Wing is an important wing of the SSSSO worldwide, deeply
           committed to the sacred task of imparting human values to children of
@@ -38,13 +46,7 @@ import { ApiService } from '../../core/services/api.service';
   `,
 })
 export class EducationComponent implements OnInit {
-  // data: {
-  //   designation: string;
-  //   name: string;
-  //   phoneNo: string;
-  //   whatsAppNo: string;
-  //   emailid: string;
-  // }[] = [];
+  banner = [{ image: 'assets/images/Education-banner.jpg', caption: '' }];
   constructor(private apiService: ApiService) {}
   ngOnInit(): void {
     // this.apiService.getStateCoordinators().subscribe((data) => {

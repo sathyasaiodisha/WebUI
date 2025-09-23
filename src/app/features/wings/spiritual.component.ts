@@ -75,9 +75,11 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
 })
 export class SpiritualComponent implements OnInit {
   banner = [
-    { image: 'assets/images/walking.JPG', caption: 'Service Banner 1' },
+    {
+      image: 'assets/images/Spiritual-banner.jpg',
+      caption: 'Service Banner 1',
+    },
     { image: 'assets/images/group-sitting.JPG', caption: 'Service Banner 2' },
-    { image: 'assets/images/konark.JPG', caption: 'Service Banner 3' },
   ];
   links = [
     { name: 'Sai Symphony', url: '/' },

@@ -67,9 +67,8 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
 })
 export class ServiceComponent implements OnInit {
   banner = [
-    { image: 'assets/images/walking.JPG', caption: 'Service Banner 1' },
-    { image: 'assets/images/group-sitting.JPG', caption: 'Service Banner 2' },
-    { image: 'assets/images/konark.JPG', caption: 'Service Banner 3' },
+    { image: 'assets/images/Service-banner.jpg', caption: 'Service' },
+    { image: 'assets/images/walking.JPG', caption: 'Service' },
   ];
   links = [
     { name: 'Agri care', url: '/wings/service/Agricare' },
