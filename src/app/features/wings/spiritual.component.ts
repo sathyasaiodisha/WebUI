@@ -94,6 +94,11 @@ export class SpiritualComponent implements OnInit {
     { name: 'Devotees meet', url: '/wings/spiritual/devoteesMeet' },
     { name: 'Dhyana Vrukshya', url: '/wings/spiritual/dhyanaVrukshya' },
     { name: 'Seminars', url: '/wings/spiritual/seminars' },
+    { name: 'Swadhyaya', url: '/wings/spiritual/swadhyaya' },
+    {
+      name: 'Celebration of Festivals',
+      url: '/wings/spiritual/celebrationOfFestivals',
+    },
   ];
   ngOnInit(): void {}
 }

@@ -87,10 +87,98 @@ export const routes: Routes = [
           },
           {
             path: 'sadhanaShibir',
-            data: { breadcrumb: 'Veda Prabaham' },
+            data: { breadcrumb: 'Seminar' },
             loadComponent: () =>
               import('./features/wings/spiritual/sadhanaShibir.component').then(
                 (c) => c.SadhanaShibirComponent
+              ),
+          },
+          {
+            path: 'seminars',
+            data: { breadcrumb: 'Veda Prabaham' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/seminars.component').then(
+                (c) => c.SeminarsComponent
+              ),
+          },
+          {
+            path: 'dhyanaVrukshya',
+            data: { breadcrumb: 'Dhyana Vrukshya' },
+            loadComponent: () =>
+              import(
+                './features/wings/spiritual/dhyanaVrukshya.component'
+              ).then((c) => c.DhyanaVrukshyaComponent),
+          },
+          {
+            path: 'parthiYatra',
+            data: { breadcrumb: 'Parthi Yatra' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/parthiYatra.component').then(
+                (c) => c.ParthiYatraComponent
+              ),
+          },
+          {
+            path: 'jyothiYatra',
+            data: { breadcrumb: 'Jyothi Yatra' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/jyothiYatra.component').then(
+                (c) => c.JyothiYatraComponent
+              ),
+          },
+          {
+            path: 'jyothiYatra',
+            data: { breadcrumb: 'Jyothi Yatra' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/jyothiYatra.component').then(
+                (c) => c.JyothiYatraComponent
+              ),
+          },
+          {
+            path: 'celebrationOfFestivals',
+            data: { breadcrumb: 'Celebration of Festivals' },
+            loadComponent: () =>
+              import(
+                './features/wings/spiritual/celebrationOfFestivals.component'
+              ).then((c) => c.CelebrationOfFestivalsComponent),
+          },
+          {
+            path: 'Lakshyarchana',
+            data: { breadcrumb: 'Lakshyarchana' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/lakshyarchana.component').then(
+                (c) => c.LakshyarchanaComponent
+              ),
+          },
+          {
+            path: 'studyCircle',
+            data: { breadcrumb: 'Study circle' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/studyCircle.component').then(
+                (c) => c.StudyCircleComponent
+              ),
+          },
+          {
+            path: 'swadhyaya',
+            data: { breadcrumb: 'Swadhyaya' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/swadhyaya.component').then(
+                (c) => c.SwadhyayaComponent
+              ),
+          },
+          {
+            path: 'vahiniParayana',
+            data: { breadcrumb: 'Vahini Parayana' },
+            loadComponent: () =>
+              import(
+                './features/wings/spiritual/vahiniParayana.component'
+              ).then((c) => c.VahiniParayanaComponent),
+          },
+          {
+            path: 'devoteesMeet',
+            data: { breadcrumb: 'Devotees meet' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/devoteesMeet.component').then(
+                (c) => c.DevoteesMeetComponent
               ),
           },
           {
@@ -301,6 +389,7 @@ export const routes: Routes = [
   },
   {
     path: '**',
+    data: { breadcrumb: 'Home' },
     loadComponent: () =>
       import('./features/home/home.component').then((c) => c.HomeComponent),
   },
