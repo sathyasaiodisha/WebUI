@@ -26,6 +26,9 @@ import { SharedModule } from '@shared/shared.module';
           to bring together the communities through shared activities, fostering
           unity and fellowship.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

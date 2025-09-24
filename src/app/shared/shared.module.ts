@@ -10,6 +10,7 @@ import { FixedMenuComponent } from './components/fixed-menu/fixed-menu.component
 import { SlideShowImageComponent } from './components/slideshow_image/slideshowimage.component';
 import { SlideShowTextComponent } from './components/slideshow_text/slideshowtext.component';
 import { BreadcrumbComponent } from './components/breadcrumb.component';
+import { SubSectionComponent } from './components/page_sub_sections';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 
@@ -26,6 +27,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     SlideShowImageComponent,
     SlideShowTextComponent,
     BreadcrumbComponent,
+    SubSectionComponent,
     MatCardModule,
     MatGridListModule,
   ],
@@ -40,6 +42,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     SlideShowImageComponent,
     SlideShowTextComponent,
     BreadcrumbComponent,
+    SubSectionComponent,
     MatCardModule,
     MatGridListModule,
   ],

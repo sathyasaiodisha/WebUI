@@ -48,7 +48,7 @@ export class HeaderComponent {
         { name: 'Service', link: '/service' },
         { name: 'Spiritual', link: '/spiritual' },
         { name: 'Education', link: '/education' },
-        { name: 'Ladies', link: '/ladies' },
+        { name: 'Mahilas', link: '/ladies' },
         { name: 'Youth', link: '/youth' },
         { name: 'Holistic Health Care', link: '/holisticHealthCare' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },

@@ -18,6 +18,9 @@ import { SharedModule } from '@shared/shared.module';
           spiritual subjects and community service activities. This is a regular
           event through out the year at Samithi/District/Zonal/State Levels.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

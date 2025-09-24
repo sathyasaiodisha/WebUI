@@ -32,6 +32,9 @@ import { SharedModule } from '@shared/shared.module';
           and devotees regularly offering their prayers and partaking meditation
           for their spiritual growth.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

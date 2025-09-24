@@ -2,15 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { ApiService } from '../../core/services/api.service';
 import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
+import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ladies',
-  imports: [SharedModule, SlideShowImageComponent],
+  imports: [
+    SharedModule,
+    RouterLink,
+    RouterLinkActive,
+    SlideShowImageComponent,
+  ],
   template: `
     <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Ladies' | translate }}
+          {{ 'Mahilas' | translate }}
         </h1>
         <div class="service_wrapper_top">
           <div class="carousel">
@@ -46,6 +52,9 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
           BalVikas as Guru. As they shape their home, they shape the young kids
           coming to Balvikas through Love, Caring and Sharing.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_ladies'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

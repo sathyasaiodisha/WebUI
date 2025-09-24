@@ -30,6 +30,9 @@ import { SharedModule } from '@shared/shared.module';
           aspirant. In Odisha, these Vahini readings are organized and devotees
           participate in Parayana .
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

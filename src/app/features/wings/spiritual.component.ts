@@ -53,22 +53,10 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
           caters to the individual's inner needs, while the other wings address
           societal and educational aspects.
         </p>
-        <h3>Key Activities of the Spiritual Wing</h3>
-        <p>
-          The Spiritual Wing organizes activities at local centers (Samithis),
-          district levels, and national/international events. These are designed
-          to inspire inward vision and collective devotion
-        </p>
 
-        <div class="spiritual_wrapper_bottom">
-          <a
-            *ngFor="let link of links"
-            class="serviceR1"
-            [routerLink]="link.url"
-            routerLinkActive="active"
-            >{{ link.name }}</a
-          >
-        </div>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,
@@ -80,25 +68,6 @@ export class SpiritualComponent implements OnInit {
       caption: 'Service Banner 1',
     },
     { image: 'assets/images/group-sitting.JPG', caption: 'Service Banner 2' },
-  ];
-  links = [
-    { name: 'Sai Symphony', url: '/' },
-    { name: 'Veda Prabaham', url: '/wings/spiritual/vedaPrabaham' },
-    { name: 'Bhajan', url: '/wings/spiritual/bhajan' },
-    { name: 'Study circle', url: '/wings/spiritual/studyCircle' },
-    { name: 'Parthi Yatra', url: '/wings/spiritual/parthiYatra' },
-    { name: 'Jyothi Yatra', url: '/wings/spiritual/jyothiYatra' },
-    { name: 'Lakshyarchana', url: '/wings/spiritual/Lakshyarchana' },
-    { name: 'Sadhana Shibir', url: '/wings/spiritual/sadhanaShibir' },
-    { name: 'Vahini Parayana', url: '/wings/spiritual/vahiniParayana' },
-    { name: 'Devotees meet', url: '/wings/spiritual/devoteesMeet' },
-    { name: 'Dhyana Vrukshya', url: '/wings/spiritual/dhyanaVrukshya' },
-    { name: 'Seminars', url: '/wings/spiritual/seminars' },
-    { name: 'Swadhyaya', url: '/wings/spiritual/swadhyaya' },
-    {
-      name: 'Celebration of Festivals',
-      url: '/wings/spiritual/celebrationOfFestivals',
-    },
   ];
   ngOnInit(): void {}
 }

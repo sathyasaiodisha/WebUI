@@ -29,6 +29,9 @@ import { SharedModule } from '@shared/shared.module';
           These practices embody Sai Baba's message: "Chant the Name of the Lord
           and the Lord will take care of you."
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

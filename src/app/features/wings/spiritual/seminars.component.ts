@@ -21,6 +21,9 @@ import { SharedModule } from '@shared/shared.module';
           different parts of Odisha for devotees and to educational institutions
           for students and intellectuals.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

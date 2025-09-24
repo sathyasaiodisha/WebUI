@@ -39,6 +39,9 @@ import { SharedModule } from '@shared/shared.module';
           train the interested / talented members to enhance their musical as
           well as singing skills requisite for Sai Bhajan.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

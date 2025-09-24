@@ -30,6 +30,9 @@ import { SharedModule } from '@shared/shared.module';
           comments people have about how they put last weeks teaching/principle
           into practice and what effect it had on them.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

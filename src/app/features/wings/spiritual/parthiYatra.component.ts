@@ -23,6 +23,9 @@ import { SharedModule } from '@shared/shared.module';
           symbolizing their unwavering devotion and connection to Bhagawan. as a
           special pilgrimage.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

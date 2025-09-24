@@ -24,6 +24,9 @@ import { SharedModule } from '@shared/shared.module';
           lamp in their home from the blessed flame. The Jyoti Yatra, as it is
           called, goes on for several weeks every year.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

@@ -182,6 +182,13 @@ export const routes: Routes = [
               ),
           },
           {
+            path: ':page',
+            loadComponent: () =>
+              import('./features/wings/spiritual.component').then(
+                (c) => c.SpiritualComponent
+              ),
+          },
+          {
             path: '',
             loadComponent: () =>
               import('./features/wings/spiritual.component').then(

@@ -28,6 +28,9 @@ import { SharedModule } from '@shared/shared.module';
           Sri Sathya Sai nSeva Organisations is inbuilt and part of their day to
           day activities.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

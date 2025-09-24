@@ -25,6 +25,9 @@ import { SharedModule } from '@shared/shared.module';
           activities such as Vedam Training, Veda Parayanam, Veda Poshanam,
           Rudra Parayanam, Maharudram etc all across Odisha.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_spiritual'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,
