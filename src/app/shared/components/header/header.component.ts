@@ -83,7 +83,7 @@ export class HeaderComponent {
       link: '/resources',
       subMenu: [
         { name: 'Videos', link: '/videos' },
-        { name: 'Audio', link: '/2' },
+        { name: 'Audio', link: '/audio' },
         { name: 'Teaching Aid', link: '/3' },
         { name: 'Presentations', link: '/4' },
         { name: 'Photos', link: '/5' },

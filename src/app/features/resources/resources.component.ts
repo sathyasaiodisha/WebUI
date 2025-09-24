@@ -8,14 +8,23 @@ import { ActivatedRoute } from '@angular/router';
 export class ResourcesComponent implements OnInit {
   private route = inject(ActivatedRoute);
   video = false;
+  audio = false;
   ngOnInit(): void {
     this.route.url.subscribe((url) => {
       // 'url' contains the segments of the URL
       console.log('URL Segments:', url);
       // Perform actions based on the URL segments, e.g., load data for the page
-      url[1]?.path === 'videos'
-        ? (this.video = true) //window.open('https://www.youtube.com/@prasanthiexpress', '_blank')
-        : console.log('Other Page');
+      this.video = false;
+      this.audio = false;
+      if (url[1]?.path === 'videos') {
+        this.video = true;
+      } else if (url[1]?.path === 'audio') {
+        this.audio = true;
+      } else {
+        this.video = false;
+        this.audio = false;
+        console.log('Other Page');
+      }
     });
     this.route.fragment.subscribe((fragment) => {
       if (fragment) {

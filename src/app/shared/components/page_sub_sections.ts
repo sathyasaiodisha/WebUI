@@ -80,6 +80,5 @@ export class SubSectionComponent implements OnInit {
     } else {
       this.links = [];
     }
-    console.log(this.page, this.links);
   }
 }
