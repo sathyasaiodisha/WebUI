@@ -42,7 +42,7 @@ export class HeaderComponent {
     },
 
     {
-      name: 'wings',
+      name: '5 Wings',
       link: '/wings',
       subMenu: [
         { name: 'Service', link: '/service' },
@@ -50,6 +50,12 @@ export class HeaderComponent {
         { name: 'Education', link: '/education' },
         { name: 'Mahilas', link: '/ladies' },
         { name: 'Youth', link: '/youth' },
+      ],
+    },
+    {
+      name: 'Innovative Projects',
+      link: '/innovativeProjects',
+      subMenu: [
         { name: 'Holistic Health Care', link: '/holisticHealthCare' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
         { name: 'Book Trust', link: '/bookTrust' },
@@ -62,20 +68,20 @@ export class HeaderComponent {
       name: 'organization',
       link: '/organization',
       subMenu: [
-        { name: 'Sri Sathya Sai Central Trust', link: '/centralTrust' },
         {
-          name: 'Sri Sathya Sai Seva Organisations, Odisha',
+          name: 'About SSSSO-Odisha',
           link: '/sevaOrgOdisha',
         },
+        { name: 'SSS Trust-Odisha', link: '/centralTrust' },
         { name: 'State Coordinators', link: '/stateCoordinators' },
         { name: 'State In-Charges', link: '/sic' },
         { name: 'District Presidents', link: '/districtPresidents' },
         { name: 'District Coordinator', link: '/districtCoordinator' },
         //{ name: 'District Digital Archive Coordinator', link: '/7' },
-        { name: 'District Office Bearers', link: '/samithis' },
-        { name: 'Bhajan Mandalis', link: '/bhajanMandalis' },
-        { name: 'Samithi Convenors', link: '/samithiConvenors' },
+        { name: 'District Official', link: '/samithis' },
         { name: 'Resource Persons', link: '/9' },
+        { name: 'Samithi Convenors', link: '/samithiConvenors' },
+        { name: 'Bhajan Mandalis', link: '/bhajanMandalis' },
       ],
     },
     {
@@ -95,7 +101,7 @@ export class HeaderComponent {
     },
     { name: 'Report', link: '/report' },
     { name: 'events_announcement', link: '/events' },
-    { name: 'Admin', link: '/admin' },
+    //{ name: 'Admin', link: '/admin' },
   ];
   bellIcon = faBell;
   signin = faSignIn;
@@ -111,4 +117,10 @@ export class HeaderComponent {
   get isHomePage(): boolean {
     return this.router.url == '/';
   }
+  images = [
+    // '/assets/images/baba-min.jpg',
+    'https://wpstatic.ssssoindia.org/wp-content/uploads/2022/04/21110918/1-final-banner.jpg',
+    'https://wpstatic.ssssoindia.org/wp-content/uploads/2022/05/01043928/6th-service-banner-updated.jpg',
+    'https://wpstatic.ssssoindia.org/wp-content/uploads/2022/04/20110515/5-banner-religious-2.jpg',
+  ];
 }

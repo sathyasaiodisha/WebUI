@@ -18,9 +18,14 @@ type AllpageMap = Record<string, pageMap>;
 
     <div class="sub_wing_wrapper_bottom">
       @for(link of links; track $index;){
-      <a class="serviceR1" [routerLink]="link.url" routerLinkActive="active">
+      <button
+        type="button"
+        [routerLink]="link.url"
+        routerLinkActive="active"
+        class="btn btn-light"
+      >
         {{ link.name }}
-      </a>
+      </button>
       }
     </div>
   `,
@@ -28,6 +33,27 @@ type AllpageMap = Record<string, pageMap>;
 export class SubSectionComponent implements OnInit {
   @Input() page: string = '';
   allLinks: AllpageMap = {
+    wings_service: {
+      title: 'Key Activities of the Service Wing',
+      description: '',
+      links: [
+        { name: 'Agri care', url: '/wings/service/Agricare' },
+        { name: 'Animal care', url: '/wings/service/Animalcare' },
+        { name: 'Aqua care', url: '/wings/service/Aquacare' },
+        { name: 'Digital archive', url: '/wings/service/Digitalarchive' },
+        {
+          name: 'Digital connectivity',
+          url: '/wings/service/digitalConnectivity',
+        },
+        { name: 'Holistic health', url: '/wings/service/Holistichealth' },
+        { name: 'Blood donation', url: '/wings/service/Blooddonation' },
+        { name: 'Prasanthi Seva', url: '/wings/service/prasanthiSeva' },
+        { name: 'SSSVIP', url: '/wings/service/SSSVIP' },
+        { name: 'SSSHP', url: '/wings/service/SSSHP' },
+        { name: 'Telemedicine', url: '/wings/service/Telemedicine' },
+        { name: 'Service Activities', url: '/wings/service/ServiceActivities' },
+      ],
+    },
     wings_spiritual: {
       title: 'Key Activities of the Spiritual Wing',
       description:

@@ -52,15 +52,9 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
           during Disasters / Natural calamities, National Narayan Seva etc.
         </p>
 
-        <div class="spiritual_wrapper_bottom">
-          <a
-            *ngFor="let link of links"
-            class="serviceR1"
-            [routerLink]="link.url"
-            routerLinkActive="active"
-            >{{ link.name }}</a
-          >
-        </div>
+        <app-sub-sections-links
+          [page]="'wings_service'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,
@@ -70,20 +64,5 @@ export class ServiceComponent implements OnInit {
     { image: 'assets/images/Service-banner.jpg', caption: 'Service' },
     { image: 'assets/images/walking.JPG', caption: 'Service' },
   ];
-  links = [
-    { name: 'Agri care', url: '/wings/service/Agricare' },
-    { name: 'Animal care', url: '/wings/service/Animalcare' },
-    { name: 'Aqua care', url: '/wings/service/Aquacare' },
-    { name: 'Digital archive', url: '/wings/service/Digitalarchive' },
-    { name: 'Digital connectivity', url: '/wings/service/digitalConnectivity' },
-    { name: 'Holistic health', url: '/wings/service/Holistichealth' },
-    { name: 'Blood donation', url: '/wings/service/Blooddonation' },
-    { name: 'Prasanthi Seva', url: '/wings/service/prasanthiSeva' },
-    { name: 'SSSVIP', url: '/wings/service/SSSVIP' },
-    { name: 'SSSHP', url: '/wings/service/SSSHP' },
-    { name: 'Telemedicine', url: '/wings/service/Telemedicine' },
-    { name: 'Service Activities', url: '/wings/service/ServiceActivities' },
-  ];
-
   ngOnInit(): void {}
 }

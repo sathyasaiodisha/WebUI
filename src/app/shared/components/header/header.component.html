@@ -150,20 +150,22 @@
       <div class="col-sm-2 d-none d-lg-block">
         <div class="right-menu">
           <div class="row">
-            <div class="col-xl-2">
+            <!--div class="col-xl-2">
               <a class="notificationLink">
                 <fa-icon [icon]="bellIcon"></fa-icon>
               </a>
-            </div>
-            <div class="col-xl-5">
-              <button class="btn btn-light d-none d-lg-block">Login</button>
+            </div-->
+            <div class="col-xl-6">
+              <a routerLink="/admin">
+                <button class="btn btn-light d-none d-lg-block">Login</button>
 
-              <fa-icon
-                class="d-block d-lg-none signin"
-                [icon]="signin"
-              ></fa-icon>
+                <fa-icon
+                  class="d-block d-lg-none signin"
+                  [icon]="signin"
+                ></fa-icon>
+              </a>
             </div>
-            <div class="col-xl-5">
+            <div class="col-xl-6">
               <button class="btn btn-primary d-none d-lg-block">
                 Register
               </button>
