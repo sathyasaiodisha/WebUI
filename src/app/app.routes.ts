@@ -222,6 +222,19 @@ export const routes: Routes = [
           ),
       },
       {
+        path: ':page',
+        loadComponent: () =>
+          import('./features/wings/wings.component').then(
+            (c) => c.WingsComponent
+          ),
+      },
+    ],
+  },
+  {
+    path: 'innovativeProjects',
+    data: { breadcrumb: 'Innovative Projects', link: 0 },
+    children: [
+      {
         path: 'holisticHealthCare',
         data: { breadcrumb: 'Holistic Health Care' },
         loadComponent: () =>
@@ -243,13 +256,6 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./features/wings/bookTrust.component').then(
             (c) => c.BookTrustComponent
-          ),
-      },
-      {
-        path: ':page',
-        loadComponent: () =>
-          import('./features/wings/wings.component').then(
-            (c) => c.WingsComponent
           ),
       },
     ],
