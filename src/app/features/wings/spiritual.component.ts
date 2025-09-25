@@ -65,9 +65,9 @@ export class SpiritualComponent implements OnInit {
   banner = [
     {
       image: 'assets/images/Spiritual-banner.jpg',
-      caption: 'Service Banner 1',
+      caption: '',
     },
-    { image: 'assets/images/group-sitting.JPG', caption: 'Service Banner 2' },
+    { image: 'assets/images/group-sitting.JPG', caption: '' },
   ];
   ngOnInit(): void {}
 }

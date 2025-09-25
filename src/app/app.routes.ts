@@ -258,6 +258,22 @@ export const routes: Routes = [
             (c) => c.BookTrustComponent
           ),
       },
+      {
+        path: 'sssGramaSeva',
+        data: { breadcrumb: 'Sri Sathya Sai Grama Seva' },
+        loadComponent: () =>
+          import('./features/sssGramaSeva.component').then(
+            (c) => c.SssGramaSevaComponent
+          ),
+      },
+      {
+        path: 'sssPrematharu',
+        data: { breadcrumb: 'Sri Sathya Sai Prematharu' },
+        loadComponent: () =>
+          import('./features/sssPrematharu.component').then(
+            (c) => c.SssPrematharuComponent
+          ),
+      },
     ],
   },
   {

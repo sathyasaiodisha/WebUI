@@ -48,7 +48,7 @@ export class SubSectionComponent implements OnInit {
         { name: 'Holistic health', url: '/wings/service/Holistichealth' },
         { name: 'Blood donation', url: '/wings/service/Blooddonation' },
         { name: 'Prasanthi Seva', url: '/wings/service/prasanthiSeva' },
-        { name: 'SSSVIP', url: '/wings/service/SSSVIP' },
+        { name: 'Sri Sathya Sai Grama Seva', url: '/wings/service/SSSVIP' },
         { name: 'SSSHP', url: '/wings/service/SSSHP' },
         { name: 'Telemedicine', url: '/wings/service/Telemedicine' },
         { name: 'Service Activities', url: '/wings/service/ServiceActivities' },

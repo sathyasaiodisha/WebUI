@@ -61,8 +61,8 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
 })
 export class ServiceComponent implements OnInit {
   banner = [
-    { image: 'assets/images/Service-banner.jpg', caption: 'Service' },
-    { image: 'assets/images/walking.JPG', caption: 'Service' },
+    { image: 'assets/images/Service-banner.jpg', caption: '' },
+    { image: 'assets/images/walking.JPG', caption: '' },
   ];
   ngOnInit(): void {}
 }
