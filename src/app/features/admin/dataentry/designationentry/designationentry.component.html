@@ -1,0 +1,167 @@
+<div class="add-item-form">
+  <form #itemForm="ngForm" (ngSubmit)="createItem()">
+    <!-- Designation Name -->
+    <mat-form-field appearance="outline" class="formfield">
+      <mat-label>Designation Name</mat-label>
+      <input
+        matInput
+        name="DesignationName"
+        [(ngModel)]="newDesignation.DesignationName"
+        required
+        maxlength="100"
+      />
+    </mat-form-field>
+
+    <!-- Designation Code -->
+    <mat-form-field appearance="outline" class="formfield">
+      <mat-label>Designation Code</mat-label>
+      <input
+        matInput
+        name="DesignationCode"
+        [(ngModel)]="newDesignation.DesignationCode"
+        required
+        [maxlength]="newDesignation.gentsAndLadies ? 4 : 5"
+        #designationCode="ngModel"
+      />
+
+    </mat-form-field>
+
+    <!-- Hierarchy Order -->
+    <mat-form-field appearance="outline" class="formfield">
+      <mat-label>Hierarchy Order</mat-label>
+      <input
+        matInput
+        name="HierarchyOrder"
+        [(ngModel)]="newDesignation.HierarchyOrder"
+        required
+        maxlength="10"
+      />
+    </mat-form-field>
+
+    <!-- Org Level ID Dropdown -->
+    <mat-form-field appearance="outline" class="formfield">
+      <mat-label>Org Level</mat-label>
+      <mat-select
+        name="OrgLevelID"
+        [(ngModel)]="newDesignation.OrgLevelID"
+        required
+      >
+        <mat-option
+          *ngFor="let level of orgLevels"
+          [value]="level.value"
+        >
+          {{ level.label }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-checkbox
+      name="gentsAndLadies"
+      [(ngModel)]="newDesignation.gentsAndLadies"
+    >
+      Gents & Ladies
+    </mat-checkbox>
+
+    <button mat-raised-button style="margin-left: 1rem;" color="primary" type="submit" [disabled]="!itemForm.valid || showErrMsg">
+      Add Designation
+    </button>
+    <span *ngIf="showSuccessMsg" class="success-message">{{successMsg}}</span>
+    <span *ngIf="showErrMsg" class="error-message">{{errMsg}}</span>
+  </form>
+  <div *ngIf="newDesignation.gentsAndLadies" class="hint-text">
+     <p>&ast;Example: To create a Designation - State Spiritual Coordinator for both Gents and Ladies. Designation Name - "State Spiritual Coordinator", Designation Code - "SSP" </p>
+  </div>
+</div>
+
+<mat-divider class="divider"></mat-divider>
+
+<mat-table [dataSource]="designationDataSrc" class="mat-elevation-z8 table-container">
+
+  <!-- Designation Name -->
+  <ng-container matColumnDef="DesignationName">
+    <mat-header-cell *matHeaderCellDef> Designation Name </mat-header-cell>
+    <mat-cell *matCellDef="let itemrow">
+      <ng-container *ngIf="!itemrow.isEditing; else editName">
+        {{ itemrow.DesignationName }}
+      </ng-container>
+      <ng-template #editName>
+        <mat-form-field>
+          <input matInput [(ngModel)]="itemrow.DesignationName" maxlength="100" />
+        </mat-form-field>
+      </ng-template>
+    </mat-cell>
+  </ng-container>
+
+  <!-- Designation Code -->
+  <ng-container matColumnDef="DesignationCode">
+    <mat-header-cell *matHeaderCellDef> Designation Code </mat-header-cell>
+    <mat-cell *matCellDef="let itemrow">
+      <ng-container *ngIf="!itemrow.isEditing; else editCode">
+        {{ itemrow.DesignationCode }}
+      </ng-container>
+      <ng-template #editCode>
+        <mat-form-field>
+          <input matInput [(ngModel)]="itemrow.DesignationCode" maxlength="50" />
+        </mat-form-field>
+      </ng-template>
+    </mat-cell>
+  </ng-container>
+
+  <!-- Organisation Level (read only display) -->
+  <ng-container matColumnDef="OrgLevelID">
+    <mat-header-cell *matHeaderCellDef> Organisation Level </mat-header-cell>
+    <mat-cell *matCellDef="let itemrow">
+      {{
+        itemrow.OrgLevelID === 1 ? 'State' :
+          itemrow.OrgLevelID === 2 ? 'District' :
+            itemrow.OrgLevelID === 3 ? 'Samithi' :
+              itemrow.OrgLevelID === 4 ? 'Bhajan Mandali' : '-'
+      }}
+    </mat-cell>
+  </ng-container>
+
+  <!-- Hierarchy Order -->
+  <ng-container matColumnDef="HierarchyOrder">
+    <mat-header-cell *matHeaderCellDef> Hierarchy Order </mat-header-cell>
+    <mat-cell *matCellDef="let itemrow">
+      <ng-container *ngIf="!itemrow.isEditing; else editOrder">
+        {{ itemrow.HierarchyOrder }}
+      </ng-container>
+      <ng-template #editOrder>
+        <mat-form-field>
+          <input matInput type="number" [(ngModel)]="itemrow.HierarchyOrder" maxlength="10" />
+        </mat-form-field>
+      </ng-template>
+    </mat-cell>
+  </ng-container>
+
+  <!-- Actions -->
+  <ng-container matColumnDef="Actions">
+    <mat-header-cell *matHeaderCellDef> Actions </mat-header-cell>
+    <mat-cell *matCellDef="let itemrow">
+      <ng-container *ngIf="!itemrow.isEditing">
+        <button mat-icon-button color="primary" (click)="onEdit(itemrow)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" (click)="onDelete(itemrow)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </ng-container>
+
+      <ng-container *ngIf="itemrow.isEditing">
+        <button mat-icon-button color="accent" (click)="onSave(itemrow)">
+          <mat-icon>check</mat-icon>
+        </button>
+        <button mat-icon-button color="warn" (click)="onCancel(itemrow)">
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </ng-container>
+    </mat-cell>
+  </ng-container>
+
+  <!-- Table Rows -->
+  <mat-header-row *matHeaderRowDef="displayedColumns" class="custom-header"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;" class="custom-row"></mat-row>
+
+</mat-table>
+<mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"></mat-paginator>

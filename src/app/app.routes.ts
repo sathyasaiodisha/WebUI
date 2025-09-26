@@ -7,6 +7,7 @@ import { GuruentryComponent } from './features/admin/dataentry/guruentry/guruent
 import { StateofficebearersentryComponent } from './features/admin/dataentry/stateofficebearersentry/stateofficebearersentry.component';
 import { DistrictofficebearersentryComponent } from './features/admin/dataentry/districtofficebearersentry/districtofficebearersentry.component';
 import { SamithiofficebearersentryComponent } from './features/admin/dataentry/samithiofficebearersentry/samithiofficebearersentry.component';
+import {DesignationentryComponent} from './features/admin/dataentry/designationentry/designationentry.component';
 
 export const routes: Routes = [
   {
@@ -405,6 +406,7 @@ export const routes: Routes = [
         path: 'stateofficebearers',
         component: StateofficebearersentryComponent,
       },
+      { path: 'designation', component: DesignationentryComponent },
       {
         path: 'districtofficebearers',
         component: DistrictofficebearersentryComponent,
