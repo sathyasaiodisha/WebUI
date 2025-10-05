@@ -86,11 +86,6 @@ export class SssPrematharuComponent implements OnInit {
   ngOnInit(): void {}
   banner = [
     { image: 'assets/images/premaTharu/b1.jpg', caption: '' },
-    { image: 'assets/images/premaTharu/b2.jpg', caption: '' },
-    { image: 'assets/images/premaTharu/b3.jpeg', caption: '' },
-    { image: 'assets/images/premaTharu/b4.jpeg', caption: '' },
-    { image: 'assets/images/premaTharu/b5.jpeg', caption: '' },
-    { image: 'assets/images/premaTharu/b6.jpeg', caption: '' },
-    { image: 'assets/images/premaTharu/b7.jpeg', caption: '' },
+    { image: 'assets/images/premaTharu/b2.jpg', caption: '' }
   ];
 }

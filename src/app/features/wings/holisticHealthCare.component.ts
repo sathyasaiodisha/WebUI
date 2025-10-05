@@ -9,7 +9,7 @@ import { ApiService } from '../../core/services/api.service';
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Sri Sathya Sai Holtisic Help line Seva(Orissa)' | translate }}
+          {{ 'Sri Sathya Sai Holistic Help line Seva(Orissa)' | translate }}
         </h1>
         <p>
           To dispel darkness, a ray of light is enough. The ray of light
@@ -35,6 +35,9 @@ import { ApiService } from '../../core/services/api.service';
           drive has reached the sate of movement , through holistic health Seva
           wing of Satya Sai Organization.
         </p>
+        <div class="content_topgape">
+          <img src="/assets/images/SSS-HOLISTIC-HEALTHCARE-SAI%20JANANI.png">
+        </div>
       </div>
     </div>
   `,

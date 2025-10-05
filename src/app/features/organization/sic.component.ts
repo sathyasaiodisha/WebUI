@@ -19,7 +19,7 @@ interface data {
   imports: [SharedModule],
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
-      <h3 class="text-center">{{ 'OmSriSaiRam' | translate }}</h3>
+      <h3 class="text-center">{{ 'AumSriSaiRam' | translate }}</h3>
       <h4 class="text-center">{{ 'sicTitle' | translate }}</h4>
       <table class="table table-striped table-bordered">
         <thead>
@@ -38,7 +38,7 @@ interface data {
             <tr>
               <th colspan="7">{{ r.wing }}</th>
             </tr>
-            <tr *ngFor="let item of r.row; let ii = index">
+            <tr *ngFor="let item of r.row; let ii = index"  >
               <td>{{ ii + 1 }}</td>
               <td>{{ item.stateInCharge }}</td>
               <td>{{ item.inChargeName }}</td>

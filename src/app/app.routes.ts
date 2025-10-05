@@ -8,6 +8,8 @@ import { StateofficebearersentryComponent } from './features/admin/dataentry/sta
 import { DistrictofficebearersentryComponent } from './features/admin/dataentry/districtofficebearersentry/districtofficebearersentry.component';
 import { SamithiofficebearersentryComponent } from './features/admin/dataentry/samithiofficebearersentry/samithiofficebearersentry.component';
 import {DesignationentryComponent} from './features/admin/dataentry/designationentry/designationentry.component';
+import {SSSDivyaPadukaYatraComponent} from './features/sssDivyaPadukaYatra.component';
+import {SSSMobileHospitalComponent} from './features/sssMobileHospital.component';
 
 export const routes: Routes = [
   {
@@ -273,6 +275,30 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./features/sssPrematharu.component').then(
             (c) => c.SssPrematharuComponent
+          ),
+      },
+      {
+        path: 'sssDivyaPadukaYatra',
+        data: { breadcrumb: 'Sri Sathya Sai Divya Paduka Yatra' },
+        loadComponent: () =>
+          import('./features/sssDivyaPadukaYatra.component').then(
+            (c) => c.SSSDivyaPadukaYatraComponent
+          ),
+      },
+      {
+        path: 'sssNirmalaJhar',
+        data: { breadcrumb: 'Sri Sathya Sai Nirmala Jhar' },
+        loadComponent: () =>
+          import('./features/sssNirmalaJhar.component').then(
+            (c) => c.SSSNirmalaJharComponent
+          ),
+      },
+      {
+        path: 'sssMobileHospital',
+        data: { breadcrumb: 'Sri Sathya Sai Mobile Hospital' },
+        loadComponent: () =>
+          import('./features/sssMobileHospital.component').then(
+            (c) => c.SSSMobileHospitalComponent
           ),
       },
     ],
