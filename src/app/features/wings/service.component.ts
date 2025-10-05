@@ -1,17 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { ApiService } from '../../core/services/api.service';
-import { RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-service',
-  imports: [
-    SharedModule,
-    RouterLink,
-    RouterLinkActive,
-    SlideShowImageComponent,
-  ],
+  imports: [SharedModule, RouterLink, SlideShowImageComponent],
   template: `
     <div class="container py-2 px-4 border-secondary">
       <!--content_topgape-->

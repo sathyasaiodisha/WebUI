@@ -2,16 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { ApiService } from '../../core/services/api.service';
 import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
-import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 
 @Component({
   selector: 'app-ladies',
-  imports: [
-    SharedModule,
-    RouterLink,
-    RouterLinkActive,
-    SlideShowImageComponent,
-  ],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">

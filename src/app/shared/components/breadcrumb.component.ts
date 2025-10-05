@@ -3,12 +3,12 @@ import {
   BreadcrumbService,
   Breadcrumb,
 } from '../../core/services/breadcrumb.service';
-import { RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { SharedModule } from '@shared/shared.module';
 
 @Component({
   selector: 'app-breadcrumb',
-  imports: [SharedModule, RouterLink, RouterLinkActive],
+  imports: [SharedModule, RouterLink],
   template: `
     @if(breadcrumbs.length != 0 && breadcrumbs[0].label != 'Home') {
     <nav class="breadcrumb">

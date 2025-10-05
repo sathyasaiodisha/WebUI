@@ -1,3 +1,7 @@
+/* Importing Bootstrap SCSS file. */
+//@import 'bootstrap/scss/bootstrap';
+@use 'bootstrap/scss/bootstrap' as *;
+
 /* You can add global styles to this file, and also import other style files */
 * {
   margin: 0;
@@ -690,5 +694,8 @@ body {
   box-shadow: 0 .1875rem .4375rem 0 rgba(0, 0, 0, .13), 0 .0625rem .125rem 0 rgba(0, 0, 0, .11);
 }
 
-/* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+.reportCatTitle {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
