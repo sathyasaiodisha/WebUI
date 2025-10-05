@@ -38,6 +38,21 @@ export class ReportComponent {
       link: 'Observation_of_Prematharu_Day_on_10th_July_2025-2.pdf',
       title: 'Observation of Prematharu Day on 10th July 2025-2',
     },
+    {
+      category: 'specialReport',
+      link: 'PAN_INDIA_TREE_PLANTATION_DRIVE_ODISHA.pdf',
+      title: 'PAN INDIA TREE PLANTATION DRIVE ODISHA',
+    },
+    {
+      category: 'specialReport',
+      link: 'Madhu_vadishyami.pdf',
+      title: 'Madhu vadishyami',
+    },
+    {
+      category: 'specialReport',
+      link: 'Report_on_shree_sai_mayi_mahotshav-2025..pdf',
+      title: 'Report on shree sai mayi mahotshav-2025',
+    },
   ];
   Math = Math;
   perRo = 3;
