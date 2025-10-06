@@ -8,7 +8,7 @@ import { SharedModule } from '@shared/shared.module';
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'DHYANA BRIKSHA' | translate }}
+          {{ 'Dhyana Briksha' | translate }}
         </h1>
         <p>
           Bhagawan Sri Sathya Sai Baba took a small step in the year 1959 on

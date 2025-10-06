@@ -86,7 +86,7 @@ export class SubSectionComponent implements OnInit {
         { name: 'Sadhana Shibir', url: '/wings/spiritual/sadhanaShibir' },
         { name: 'Vahini Parayana', url: '/wings/spiritual/vahiniParayana' },
         { name: 'Devotees meet', url: '/wings/spiritual/devoteesMeet' },
-        { name: 'Dhyana Vrukshya', url: '/wings/spiritual/dhyanaVrukshya' },
+        { name: 'Dhyana Briksha ', url: '/wings/spiritual/dhyanaVrukshya' },
         { name: 'Seminars', url: '/wings/spiritual/seminars' },
         { name: 'Swadhyaya', url: '/wings/spiritual/swadhyaya' },
         {
