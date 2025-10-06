@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+
 type linkMap = { name: string; url: string }[];
 type pageMap = {
   title: string;
@@ -32,6 +34,8 @@ type AllpageMap = Record<string, pageMap>;
 })
 export class SubSectionComponent implements OnInit {
   @Input() page: string = '';
+  translate = inject(TranslateService);
+
   allLinks: AllpageMap = {
     wings_service: {
       title: 'Key Activities of the Service Wing',
@@ -79,19 +83,46 @@ export class SubSectionComponent implements OnInit {
       ],
     },
     wings_ladies: {
-      title: 'Spiritual Wing Activities',
+      title: 'Mahilas Wing Activities',
       description:
-        'Explore the various activities and programs conducted by the Spiritual Wing to foster devotion and self-transformation.',
+        'Explore the various activities and programs conducted by the Mahilas Wing to foster devotion and self-transformation.',
       links: [
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
-        { name: '', url: '/wings/ladies/' },
+        {
+          name: this.translate.instant('SaktiSwaroopiniDiwas'),
+          url: '/wings/ladies/SaktiSwaroopiniDiwas',
+        },
+        {
+          name: this.translate.instant('SaiBratakalpa'),
+          url: '/wings/ladies/SaiBratakalpa',
+        },
+        {
+          name: this.translate.instant('LalitaSahasraNama'),
+          url: '/wings/ladies/LalitaSahasraNama',
+        },
+        {
+          name: this.translate.instant('KumkumaPujaArchana'),
+          url: '/wings/ladies/KumkumaPujaArchana',
+        },
+        {
+          name: this.translate.instant('BaralaxmiBrata'),
+          url: '/wings/ladies/BaralaxmiBrata',
+        },
+        {
+          name: this.translate.instant('SaiSanatani'),
+          url: '/wings/ladies/SaiSanatani',
+        },
+        {
+          name: this.translate.instant('SaiPremadhara'),
+          url: '/wings/ladies/SaiPremadhara',
+        },
+        {
+          name: this.translate.instant('MahilaConvention'),
+          url: '/wings/ladies/MahilaConvention',
+        },
+        {
+          name: this.translate.instant('MahilaBhajanSatsangStudyCircle'),
+          url: '/wings/ladies/MahilaBhajanSatsangStudyCircle',
+        },
       ],
     },
   };

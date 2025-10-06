@@ -53,6 +53,7 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
           they taste the flavour and sweetness of selfless service and derive
           divine bliss.
         </p>
+        <app-sub-sections-links [page]="'wings_youth'"></app-sub-sections-links>
       </div>
     </div>
   `,

@@ -7,9 +7,9 @@ import { GuruentryComponent } from './features/admin/dataentry/guruentry/guruent
 import { StateofficebearersentryComponent } from './features/admin/dataentry/stateofficebearersentry/stateofficebearersentry.component';
 import { DistrictofficebearersentryComponent } from './features/admin/dataentry/districtofficebearersentry/districtofficebearersentry.component';
 import { SamithiofficebearersentryComponent } from './features/admin/dataentry/samithiofficebearersentry/samithiofficebearersentry.component';
-import {DesignationentryComponent} from './features/admin/dataentry/designationentry/designationentry.component';
-import {SSSDivyaPadukaYatraComponent} from './features/sssDivyaPadukaYatra.component';
-import {SSSMobileHospitalComponent} from './features/sssMobileHospital.component';
+import { DesignationentryComponent } from './features/admin/dataentry/designationentry/designationentry.component';
+import { SSSDivyaPadukaYatraComponent } from './features/sssDivyaPadukaYatra.component';
+import { SSSMobileHospitalComponent } from './features/sssMobileHospital.component';
 
 export const routes: Routes = [
   {
@@ -211,10 +211,87 @@ export const routes: Routes = [
       {
         path: 'ladies',
         data: { breadcrumb: 'Ladies' },
-        loadComponent: () =>
-          import('./features/wings/ladies.component').then(
-            (c) => c.LadiesComponent
-          ),
+        children: [
+          {
+            path: 'SaktiSwaroopiniDiwas',
+            data: { breadcrumb: 'SaktiSwaroopiniDiwas' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/SaktiSwaroopiniDiwas.component'
+              ).then((c) => c.SaktiSwaroopiniDiwasComponent),
+          },
+          {
+            path: 'SaiBratakalpa',
+            data: { breadcrumb: 'SaiBratakalpa' },
+            loadComponent: () =>
+              import('./features/wings/mahila/SaiBratakalpa.component').then(
+                (c) => c.SaiBratakalpaComponent
+              ),
+          },
+          {
+            path: 'LalitaSahasraNama',
+            data: { breadcrumb: 'LalitaSahasraNama' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/LalitaSahasraNama.component'
+              ).then((c) => c.LalitaSahasraNamaComponent),
+          },
+          {
+            path: 'KumkumaPujaArchana',
+            data: { breadcrumb: 'KumkumaPujaArchana' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/KumkumaPujaArchana.component'
+              ).then((c) => c.KumkumaPujaArchanaComponent),
+          },
+          {
+            path: 'BaralaxmiBrata',
+            data: { breadcrumb: 'BaralaxmiBrata' },
+            loadComponent: () =>
+              import('./features/wings/mahila/BaralaxmiBrata.component').then(
+                (c) => c.BaralaxmiBrataComponent
+              ),
+          },
+          {
+            path: 'SaiSanatani',
+            data: { breadcrumb: 'SaiSanatani' },
+            loadComponent: () =>
+              import('./features/wings/mahila/SaiSanatani.component').then(
+                (c) => c.SaiSanataniComponent
+              ),
+          },
+          {
+            path: 'SaiPremadhara',
+            data: { breadcrumb: 'SaiPremadhara' },
+            loadComponent: () =>
+              import('./features/wings/mahila/SaiPremadhara.component').then(
+                (c) => c.SaiPremadharaComponent
+              ),
+          },
+          {
+            path: 'MahilaConvention',
+            data: { breadcrumb: 'MahilaConvention' },
+            loadComponent: () =>
+              import('./features/wings/mahila/MahilaConvention.component').then(
+                (c) => c.MahilaConventionComponent
+              ),
+          },
+          {
+            path: 'MahilaBhajanSatsangStudyCircle',
+            data: { breadcrumb: 'MahilaBhajanSatsangStudyCircle' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/MahilaBhajanSatsangStudyCircle.component'
+              ).then((c) => c.MahilaBhajanSatsangStudyCircleComponent),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/ladies.component').then(
+                (c) => c.LadiesComponent
+              ),
+          },
+        ],
       },
       {
         path: 'youth',
