@@ -82,6 +82,45 @@ export class SubSectionComponent implements OnInit {
         },
       ],
     },
+    wings_youth: {
+      title: 'Youth Wing Activities',
+      description:
+        'Explore the various activities and programs conducted by the Youth Wing to foster devotion and self-transformation.',
+      links: [
+        {
+          name: this.translate.instant('NationalInitiatives'),
+          url: '/wings/youth/NationalInitiatives',
+        },
+        {
+          name: this.translate.instant('PracticingCod'),
+          url: '/wings/youth/PracticingCod',
+        },
+        {
+          name: this.translate.instant('MaintainingOfSpiritualDairy'),
+          url: '/wings/youth/MaintainingOfSpiritualDairy',
+        },
+        {
+          name: this.translate.instant('YouthMeetYouthDayCelebration'),
+          url: '/wings/youth/YouthMeetYouthDayCelebration',
+        },
+        {
+          name: this.translate.instant('YouthStudyCircle'),
+          url: '/wings/youth/YouthStudyCircle',
+        },
+        {
+          name: this.translate.instant('SaiSradha'),
+          url: '/wings/youth/SaiSradha',
+        },
+        {
+          name: this.translate.instant('SriSathyaSaiJagruti'),
+          url: '/wings/youth/SriSathyaSaiJagruti',
+        },
+        {
+          name: this.translate.instant('SummerCourse'),
+          url: '/wings/youth/SummerCourse',
+        },
+      ],
+    },
     wings_ladies: {
       title: 'Mahilas Wing Activities',
       description:

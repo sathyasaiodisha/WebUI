@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
-import { ApiService } from '../../core/services/api.service';
 import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
@@ -63,10 +62,5 @@ export class YouthComponent implements OnInit {
     { image: 'assets/images/Youth-banner.jpg', caption: 'Youth' },
     { image: 'assets/images/konark.JPG', caption: '' },
   ];
-  constructor(private apiService: ApiService) {}
-  ngOnInit(): void {
-    // this.apiService.getStateCoordinators().subscribe((data) => {
-    //   this.data = data;
-    // });
-  }
+  ngOnInit(): void {}
 }

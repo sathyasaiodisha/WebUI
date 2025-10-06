@@ -422,7 +422,7 @@ body {
 .service_wrapper_bottom,
 .sub_wing_wrapper_bottom {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   row-gap: 0.5rem;
   column-gap: 1rem;
 

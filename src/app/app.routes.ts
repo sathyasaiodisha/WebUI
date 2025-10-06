@@ -296,10 +296,79 @@ export const routes: Routes = [
       {
         path: 'youth',
         data: { breadcrumb: 'Youth' },
-        loadComponent: () =>
-          import('./features/wings/youth.component').then(
-            (c) => c.YouthComponent
-          ),
+        children: [
+          {
+            path: 'NationalInitiatives',
+            data: { breadcrumb: 'NationalInitiatives' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/NationalInitiatives.component'
+              ).then((c) => c.NationalInitiativesComponent),
+          },
+          {
+            path: 'PracticingCod',
+            data: { breadcrumb: 'PracticingCod' },
+            loadComponent: () =>
+              import('./features/wings/youth/PracticingCod.component').then(
+                (c) => c.PracticingCodComponent
+              ),
+          },
+          {
+            path: 'MaintainingOfSpiritualDairy',
+            data: { breadcrumb: 'MaintainingOfSpiritualDairy' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/MaintainingOfSpiritualDairy.component'
+              ).then((c) => c.MaintainingOfSpiritualDairyComponent),
+          },
+          {
+            path: 'YouthMeetYouthDayCelebration',
+            data: { breadcrumb: 'YouthMeetYouthDayCelebration' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/YouthMeetYouthDayCelebration.component'
+              ).then((c) => c.YouthMeetYouthDayCelebrationComponent),
+          },
+          {
+            path: 'YouthStudyCircle',
+            data: { breadcrumb: 'YouthStudyCircle' },
+            loadComponent: () =>
+              import('./features/wings/youth/YouthStudyCircle.component').then(
+                (c) => c.YouthStudyCircleComponent
+              ),
+          },
+          {
+            path: 'SaiSradha',
+            data: { breadcrumb: 'SaiSradha' },
+            loadComponent: () =>
+              import('./features/wings/youth/SaiSradha.component').then(
+                (c) => c.SaiSradhaComponent
+              ),
+          },
+          {
+            path: 'SriSathyaSaiJagruti',
+            data: { breadcrumb: 'SriSathyaSaiJagruti' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/SriSathyaSaiJagruti.component'
+              ).then((c) => c.SriSathyaSaiJagrutiComponent),
+          },
+          {
+            path: 'SummerCourse',
+            data: { breadcrumb: 'SummerCourse' },
+            loadComponent: () =>
+              import('./features/wings/youth/SummerCourse.component').then(
+                (c) => c.SummerCourseComponent
+              ),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/youth.component').then(
+                (c) => c.YouthComponent
+              ),
+          },
+        ],
       },
       {
         path: ':page',
