@@ -63,10 +63,46 @@ export const routes: Routes = [
       {
         path: 'service',
         data: { breadcrumb: 'Service' },
-        loadComponent: () =>
-          import('./features/wings/service.component').then(
-            (c) => c.ServiceComponent
-          ),
+        children: [
+          {
+            path: 'NarayanaSeva',
+            data: { breadcrumb: 'NarayanaSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/NarayanaSeva.component').then(
+                (c) => c.NarayanaSevaComponent
+              ),
+          },
+          {
+            path: 'TribalVillageProgramme',
+            data: { breadcrumb: 'TribalVillageProgramme' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/TribalVillageProgramme.component'
+              ).then((c) => c.TribalVillageProgrammeComponent),
+          },
+          {
+            path: 'JalaChhatraSeva',
+            data: { breadcrumb: 'JalaChhatraSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/JalaChhatraSeva.component').then(
+                (c) => c.JalaChhatraSevaComponent
+              ),
+          },
+          {
+            path: ':page',
+            loadComponent: () =>
+              import('./features/wings/service.component').then(
+                (c) => c.ServiceComponent
+              ),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/service.component').then(
+                (c) => c.ServiceComponent
+              ),
+          },
+        ],
       },
       {
         path: 'spiritual',

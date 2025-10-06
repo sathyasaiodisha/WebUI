@@ -9,7 +9,7 @@ import { ApiService } from '../../core/services/api.service';
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Sri Sathya Sai Central Trust' | translate }}
+          {{ 'Sri Sathya Sai Trust, Odisha' | translate }}
         </h1>
         <p>
           About Sri Sathya Sai Trust, Odisha The Sri Sathya Sai Trust, Odisha
@@ -29,6 +29,17 @@ import { ApiService } from '../../core/services/api.service';
           of the Trust is enabled by the tireless efforts of volunteers from the
           Sri Sathya Sai Seva Organisations, Odisha, who are inspired by His
           teachings of Love All, Serve All.
+        </p>
+        <p>
+          The Sri Sathya Sai Trust, Odisha, is a public charitable trust founded
+          by Bhagawan Sri Sathya Sai Baba in 1976 to fund and facilitate
+          selfless service and humanistic projects in the state, including free
+          education, healthcare, and disaster relief, funded by devotees and
+          executed by the Sri Sathya Sai Seva Organization. Key initiatives
+          include a housing project for flood victims in 2008, establishment of
+          schools and colleges, free dispensaries, and vocational training
+          centers, Sathya Sai Nirmal Jhar -Drinking water projects, all aimed at
+          providing quality services and fostering value-based education.
         </p>
       </div>
     </div>

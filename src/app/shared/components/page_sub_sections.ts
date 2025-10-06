@@ -41,6 +41,19 @@ export class SubSectionComponent implements OnInit {
       title: 'Key Activities of the Service Wing',
       description: '',
       links: [
+        {
+          name: this.translate.instant('NarayanaSeva'),
+          url: '/wings/service/NarayanaSeva',
+        },
+        {
+          name: this.translate.instant('TribalVillageProgramme'),
+          url: '/wings/service/TribalVillageProgramme',
+        },
+        {
+          name: this.translate.instant('JalaChhatraSeva'),
+          url: '/wings/service/JalaChhatraSeva',
+        },
+
         { name: 'Agri care', url: '/wings/service/Agricare' },
         { name: 'Animal care', url: '/wings/service/Animalcare' },
         { name: 'Aqua care', url: '/wings/service/Aquacare' },
