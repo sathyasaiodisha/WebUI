@@ -59,7 +59,7 @@
       name="gentsAndLadies"
       [(ngModel)]="newDesignation.gentsAndLadies"
     >
-      Gents & Ladies
+      Gents & Mahila
     </mat-checkbox>
 
     <button mat-raised-button style="margin-left: 1rem;" color="primary" type="submit" [disabled]="!itemForm.valid || showErrMsg">
@@ -69,7 +69,7 @@
     <span *ngIf="showErrMsg" class="error-message">{{errMsg}}</span>
   </form>
   <div *ngIf="newDesignation.gentsAndLadies" class="hint-text">
-     <p>&ast;Example: To create a Designation - State Spiritual Coordinator for both Gents and Ladies. Designation Name - "State Spiritual Coordinator", Designation Code - "SSP" </p>
+     <p>&ast;Example: To create a Designation - State Spiritual Coordinator for both Gents and Mahila. Designation Name - "State Spiritual Coordinator", Designation Code - "SSP" </p>
   </div>
 </div>
 
