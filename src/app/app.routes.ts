@@ -729,6 +729,14 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'ContactUs',
+    data: { breadcrumb: 'ContactUs' },
+    loadComponent: () =>
+      import('./features/ContactUs.component').then(
+        (c) => c.ContactUsComponent
+      ),
+  },
+  {
     path: 'admin',
     data: { breadcrumb: 'Admin' },
     loadComponent: () =>
