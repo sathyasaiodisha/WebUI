@@ -7,12 +7,12 @@ import {
   faLinkedin,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-import { RouterLink, RouterLinkActive, Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-footer',
-  imports: [FontAwesomeModule, RouterLink, RouterLinkActive],
+  imports: [FontAwesomeModule, RouterLink],
   templateUrl: './footer.component.html',
 })
 export class FooterComponent {

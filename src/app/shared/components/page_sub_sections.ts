@@ -229,6 +229,33 @@ export class SubSectionComponent implements OnInit {
         },
       ],
     },
+    wings_education: {
+      title: 'Education Wing Activities',
+      description:
+        'Explore the various activities and programs conducted by the Education Wing to foster devotion and self-transformation.',
+      links: [
+        {
+          name: this.translate.instant('SriSathyaSaiBalVikas'),
+          url: '/wings/education/SriSathyaSaiBalVikas',
+        },
+        {
+          name: this.translate.instant('SriSathyaSaiVidyaJyothi'),
+          url: '/wings/education/SriSathyaSaiVidyaJyothi',
+        },
+        {
+          name: this.translate.instant('NityaSikshyaDana'),
+          url: '/wings/education/NityaSikshyaDana',
+        },
+        {
+          name: this.translate.instant('VidyaVahini'),
+          url: '/wings/education/VidyaVahini',
+        },
+        {
+          name: this.translate.instant('FestivalsOfJoy'),
+          url: '/wings/education/FestivalsOfJoy',
+        },
+      ],
+    },
   };
   links: linkMap = [];
   title: string = '';

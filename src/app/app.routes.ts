@@ -351,10 +351,62 @@ export const routes: Routes = [
       {
         path: 'education',
         data: { breadcrumb: 'Education' },
-        loadComponent: () =>
-          import('./features/wings/education.component').then(
-            (c) => c.EducationComponent
-          ),
+        children: [
+          {
+            path: 'SriSathyaSaiBalVikas',
+            data: { breadcrumb: 'SriSathyaSaiBalVikas' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/SriSathyaSaiBalVikas.component'
+              ).then((c) => c.SriSathyaSaiBalVikasComponent),
+          },
+          {
+            path: 'SriSathyaSaiVidyaJyothi',
+            data: { breadcrumb: 'SriSathyaSaiVidyaJyothi' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/SriSathyaSaiVidyaJyothi.component'
+              ).then((c) => c.SriSathyaSaiVidyaJyothiComponent),
+          },
+          {
+            path: 'NityaSikshyaDana',
+            data: { breadcrumb: 'NityaSikshyaDana' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/NityaSikshyaDana.component'
+              ).then((c) => c.NityaSikshyaDanaComponent),
+          },
+          {
+            path: 'VidyaVahini',
+            data: { breadcrumb: 'VidyaVahini' },
+            loadComponent: () =>
+              import('./features/wings/education/VidyaVahini.component').then(
+                (c) => c.VidyaVahiniComponent
+              ),
+          },
+          {
+            path: 'FestivalsOfJoy',
+            data: { breadcrumb: 'FestivalsOfJoy' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/FestivalsOfJoy.component'
+              ).then((c) => c.FestivalsOfJoyComponent),
+          },
+          {
+            path: ':page',
+            loadComponent: () =>
+              import('./features/wings/education.component').then(
+                (c) => c.EducationComponent
+              ),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/education.component').then(
+                (c) => c.EducationComponent
+              ),
+          },
+        ],
       },
       {
         path: 'ladies',
@@ -734,6 +786,22 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/ContactUs.component').then(
         (c) => c.ContactUsComponent
+      ),
+  },
+  {
+    path: 'PrivacyPolicy',
+    data: { breadcrumb: 'PrivacyPolicy' },
+    loadComponent: () =>
+      import('./features/PrivacyPolicy.component').then(
+        (c) => c.PrivacyPolicyComponent
+      ),
+  },
+  {
+    path: 'Trademarks',
+    data: { breadcrumb: 'Trademarks' },
+    loadComponent: () =>
+      import('./features/Trademarks.component').then(
+        (c) => c.TrademarksComponent
       ),
   },
   {

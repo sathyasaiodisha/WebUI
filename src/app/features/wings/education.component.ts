@@ -18,7 +18,9 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
             <app-slideshowimage [banner]="banner"></app-slideshowimage>
           </div>
         </div>
-
+        <p class="text-center my-4">
+          “Education is for Life not for a living.”- Sri Sathya Sai
+        </p>
         <p>
           Education Wing is an important wing of the SSSSO worldwide, deeply
           committed to the sacred task of imparting human values to children of
@@ -41,6 +43,9 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
           Bal Vikas guru remains in touch with the parents, through regular
           meetings.
         </p>
+        <app-sub-sections-links
+          [page]="'wings_education'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,
