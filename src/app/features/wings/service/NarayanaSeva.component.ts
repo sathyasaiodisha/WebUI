@@ -18,7 +18,9 @@ import { SharedModule } from '@shared/shared.module';
           summer course over the years has come up as an unique platform to
           reenergize youths of the state.
         </p>
-        <app-sub-sections-links [page]="'wings_youth'"></app-sub-sections-links>
+        <app-sub-sections-links
+          [page]="'wings_service'"
+        ></app-sub-sections-links>
       </div>
     </div>
   `,

@@ -89,6 +89,118 @@ export const routes: Routes = [
               ),
           },
           {
+            path: 'AmrutaKalasam',
+            data: { breadcrumb: 'AmrutaKalasam' },
+            loadComponent: () =>
+              import('./features/wings/service/AmrutaKalasam.component').then(
+                (c) => c.AmrutaKalasamComponent
+              ),
+          },
+          {
+            path: 'NityaNarayanaSeva',
+            data: { breadcrumb: 'NityaNarayanaSeva' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/NityaNarayanaSeva.component'
+              ).then((c) => c.NityaNarayanaSevaComponent),
+          },
+          {
+            path: 'HolisticHealthCare',
+            data: { breadcrumb: 'HolisticHealthCare' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/HolisticHealthCare.component'
+              ).then((c) => c.HolisticHealthCareComponent),
+          },
+          {
+            path: 'SaiSwabalambi',
+            data: { breadcrumb: 'SaiSwabalambi' },
+            loadComponent: () =>
+              import('./features/wings/service/SaiSwabalambi.component').then(
+                (c) => c.SaiSwabalambiComponent
+              ),
+          },
+          {
+            path: 'BloodDonation',
+            data: { breadcrumb: 'BloodDonation' },
+            loadComponent: () =>
+              import('./features/wings/service/BloodDonation.component').then(
+                (c) => c.BloodDonationComponent
+              ),
+          },
+          {
+            path: 'rvtc',
+            data: { breadcrumb: 'rvtc' },
+            loadComponent: () =>
+              import('./features/wings/service/rvtc.component').then(
+                (c) => c.rvtcComponent
+              ),
+          },
+          {
+            path: 'SwachhatwaRuDivyatwa',
+            data: { breadcrumb: 'SwachhatwaRuDivyatwa' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SwachhatwaRuDivyatwa.component'
+              ).then((c) => c.SwachhatwaRuDivyatwaComponent),
+          },
+          {
+            path: 'SanitationSeva',
+            data: { breadcrumb: 'SanitationSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/SanitationSeva.component').then(
+                (c) => c.SanitationSevaComponent
+              ),
+          },
+          {
+            path: 'AgriCare',
+            data: { breadcrumb: 'AgriCare' },
+            loadComponent: () =>
+              import('./features/wings/service/AgriCare.component').then(
+                (c) => c.AgriCareComponent
+              ),
+          },
+          {
+            path: 'SriSathyaSaiHousingProject',
+            data: { breadcrumb: 'SriSathyaSaiHousingProject' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SriSathyaSaiHousingProject.component'
+              ).then((c) => c.SriSathyaSaiHousingProjectComponent),
+          },
+          {
+            path: 'SriSathyaSaiWaterProject',
+            data: { breadcrumb: 'SriSathyaSaiWaterProject' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SriSathyaSaiWaterProject.component'
+              ).then((c) => c.SriSathyaSaiWaterProjectComponent),
+          },
+          {
+            path: 'DisasterManagement',
+            data: { breadcrumb: 'DisasterManagement' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/DisasterManagement.component'
+              ).then((c) => c.DisasterManagementComponent),
+          },
+          {
+            path: 'SriSathyaSaiSudarshan',
+            data: { breadcrumb: 'SriSathyaSaiSudarshan' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SriSathyaSaiSudarshan.component'
+              ).then((c) => c.SriSathyaSaiSudarshanComponent),
+          },
+          {
+            path: 'PrasanthiSeva',
+            data: { breadcrumb: 'PrasanthiSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/PrasanthiSeva.component').then(
+                (c) => c.PrasanthiSevaComponent
+              ),
+          },
+          {
             path: ':page',
             loadComponent: () =>
               import('./features/wings/service.component').then(

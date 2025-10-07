@@ -53,22 +53,74 @@ export class SubSectionComponent implements OnInit {
           name: this.translate.instant('JalaChhatraSeva'),
           url: '/wings/service/JalaChhatraSeva',
         },
-
-        { name: 'Agri care', url: '/wings/service/Agricare' },
-        { name: 'Animal care', url: '/wings/service/Animalcare' },
-        { name: 'Aqua care', url: '/wings/service/Aquacare' },
-        { name: 'Digital archive', url: '/wings/service/Digitalarchive' },
         {
-          name: 'Digital connectivity',
-          url: '/wings/service/digitalConnectivity',
+          name: this.translate.instant('AmrutaKalasam'),
+          url: '/wings/service/AmrutaKalasam',
         },
-        { name: 'Holistic health', url: '/wings/service/Holistichealth' },
-        { name: 'Blood donation', url: '/wings/service/Blooddonation' },
-        { name: 'Prasanthi Seva', url: '/wings/service/prasanthiSeva' },
-        { name: 'Sri Sathya Sai Grama Seva', url: '/wings/service/SSSVIP' },
-        { name: 'SSSHP', url: '/wings/service/SSSHP' },
-        { name: 'Telemedicine', url: '/wings/service/Telemedicine' },
-        { name: 'Service Activities', url: '/wings/service/ServiceActivities' },
+        {
+          name: this.translate.instant('NityaNarayanaSeva'),
+          url: '/wings/service/NityaNarayanaSeva',
+        },
+        {
+          name: this.translate.instant('HolisticHealthCare'),
+          url: '/wings/service/HolisticHealthCare',
+        },
+        {
+          name: this.translate.instant('SaiSwabalambi'),
+          url: '/wings/service/SaiSwabalambi',
+        },
+        {
+          name: this.translate.instant('BloodDonation'),
+          url: '/wings/service/BloodDonation',
+        },
+        {
+          name: this.translate.instant('rvtc'),
+          url: '/wings/service/rvtc',
+        },
+        {
+          name: this.translate.instant('SwachhatwaRuDivyatwa'),
+          url: '/wings/service/SwachhatwaRuDivyatwa',
+        },
+        {
+          name: this.translate.instant('SanitationSeva'),
+          url: '/wings/service/SanitationSeva',
+        },
+        {
+          name: this.translate.instant('AgriCare'),
+          url: '/wings/service/AgriCare',
+        },
+        {
+          name: this.translate.instant('SriSathyaSaiHousingProject'),
+          url: '/wings/service/SriSathyaSaiHousingProject',
+        },
+        {
+          name: this.translate.instant('SriSathyaSaiWaterProject'),
+          url: '/wings/service/SriSathyaSaiWaterProject',
+        },
+        {
+          name: this.translate.instant('DisasterManagement'),
+          url: '/wings/service/DisasterManagement',
+        },
+        {
+          name: this.translate.instant('SriSathyaSaiSudarshan'),
+          url: '/wings/service/SriSathyaSaiSudarshan',
+        },
+        {
+          name: this.translate.instant('PrasanthiSeva'),
+          url: '/wings/service/PrasanthiSeva',
+        },
+
+        // { name: 'Animal care', url: '/wings/service/Animalcare' },
+        // { name: 'Digital archive', url: '/wings/service/Digitalarchive' },
+        // {
+        //   name: 'Digital connectivity',
+        //   url: '/wings/service/digitalConnectivity',
+        // },
+        // { name: 'Holistic health', url: '/wings/service/Holistichealth' },
+        // { name: 'Sri Sathya Sai Grama Seva', url: '/wings/service/SSSVIP' },
+        // { name: 'SSSHP', url: '/wings/service/SSSHP' },
+        // { name: 'Telemedicine', url: '/wings/service/Telemedicine' },
+        // { name: 'Service Activities', url: '/wings/service/ServiceActivities' },
       ],
     },
     wings_spiritual: {
