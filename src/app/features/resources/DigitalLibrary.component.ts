@@ -480,6 +480,442 @@ import { SharedModule } from '@shared/shared.module';
             </tr>
           </tbody>
         </table>
+        <br />
+        <br />
+        <table
+          style="width:100%; line-height:25px;font-family:Verdana;font-size:12px; height: 175px; border-right: gray thin solid; border-top: gray thin solid; border-left: gray thin solid; border-bottom: gray thin solid;"
+          align="center"
+        >
+          <tbody>
+            <tr>
+              <td
+                style="font-family:Verdana;font-size:14px;text-align:center"
+                colspan="2"
+              >
+                <span style="text-align:center;font-size:14pt;color:#ff3300">
+                  <br />
+                  Videos <br /></span
+                ><br />
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/Rjbvzv8YbSo"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>YA KUNDENDU part 1</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/RF-4A2v3eZI"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>YA KUNDENDU PART-2</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/FbMstCCaJL4"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Vande Deba Umapatim Part 2</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/ZBDQm3BqdB8"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>Vande Deba Umapatim Part 1</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/GHpXlx2EmNI"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Twameva Mata part 2</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/ytmxI1HJhaM"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>Twameva Mata part 1</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/TN3Xhe2PWlQ"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Namastestu Mahamaye Part 1</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/bgzokM8DRtQ"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>Namastestu Mahamaye Part 2</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/_Kmt8nlWOAU"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>Matrudebo Bhaba Part2</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/qoZ96v-MmrY"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Gita Sloka Part1</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/IbLDh1pVqLM"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Matrudebo Bhaba Part1</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/w3gZZbWFeQU"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>Man mana Bhava Mad bhakto Part 2</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/20Mu_tmCyCc"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Man mana Bhava Mad bhakto Part 1</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/4QgiROS4OJU"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>Gita Sloka Part2</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/eZQdKd6tem0"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Story Group-I</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/lOeT75I0YaE"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                >
+                </iframe>
+                <p>Karagre Basate Lakshmi</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/-63mN65If8U"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Pala Kichhi Anabashyaka Nuhe</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="315"
+                  src="//www.youtube.com/embed/QuczzTu_k5Q"
+                  frameborder="0"
+                  allowfullscreen=""
+                  style="height: 298px"
+                ></iframe>
+                <p>SLOKA AHAMATMA FINAL</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/xv_feAM1Wio"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Gurucharanambuja Part-1</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/PzBIa83BmSo"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Gurucharanambuja Part-2</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/pa-iAJKFEuU"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Badrinath</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/iVtdZSjgUNQ"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>kedarnath</p>
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/nWNgv3dBONY"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Asato ma sadgamay</p>
+              </td>
+              <td align="center">
+                <iframe
+                  width="472"
+                  height="300"
+                  src="//www.youtube.com/embed/XG_1gKpQ2jg"
+                  frameborder="0"
+                  allowfullscreen=""
+                >
+                </iframe>
+                <p>Shadow puppet show</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                colspan="3"
+                valign="top"
+                height="21"
+                style="border-bottom-style: solid; border-bottom-width: 1px"
+              >
+                <table
+                  cellpadding="0"
+                  cellspacing="0"
+                  width="100%"
+                  style="font-size:11px; font-family:Verdana, Geneva, sans-serif; color:#F00"
+                >
+                  <tbody>
+                    <tr class="side">
+                      <td>
+                        <a
+                          id="LinkButton1"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton1", "", false, "", "odishasaips.aspx", false, true))'
+                          >PRASHANTHI SEVA</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton2"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton2", "", false, "", "odishasaiservice.aspx", false, true))'
+                          >SERVICE</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton3"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton3", "", false, "", "odishasaispiritual.aspx", false, true))'
+                          >SPIRITUAL</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton4"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton4", "", false, "", "odishasaieducation.aspx", false, true))'
+                          >EDUCATION</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton5"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton5", "", false, "", "odishasaisssvip.aspx", false, true))'
+                          >SSSVIP</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton6"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton6", "", false, "", "odishasaiholistic.aspx", false, true))'
+                          >HOLISTIC</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton7"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton7", "", false, "", "odishasaiyouth.aspx", false, true))'
+                          >YOUTH</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton8"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton8", "", false, "", "odishasailadies.aspx", false, true))'
+                          >LADIES</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton9"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton9", "", false, "", "odishasaibooktrust.aspx", false, true))'
+                          >BOOK TRUST</a
+                        >
+                      </td>
+                      <td>
+                        <a
+                          id="LinkButton10"
+                          href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$LinkButton10", "", false, "", "odishasaisaiinstitution.aspx", false, true))'
+                          >SAI SCHOOLS</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td
+                valign="top"
+                colspan="3"
+                style="border-top-style: solid; border-top-width: 1px"
+                height="75px"
+              >
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                  <tbody>
+                    <tr>
+                      <td height="5" align="center" valign="top">
+                        <img id="Image2" src="./image/MsSpacer.gif" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        valign="middle"
+                        align="center"
+                        height="50px"
+                        width="100%"
+                        style="background:#0C4579; font-family:Verdana, Geneva, sans-serif; font-size:12px; color:#FFF "
+                      >
+                        Copyright | Sri Sathya Sai Seva Organisation,Odisha
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   `,
