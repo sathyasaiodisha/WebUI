@@ -49,7 +49,18 @@ export class HomeComponent implements OnInit {
   //posts$!: Observable<any>;
   posts$: any = null;
   constructor(private apiService: ApiService) {}
-  banner = [{ image: 'assets/images/baba-min.jpg', caption: '' }];
+  banner = [
+    { image: 'assets/images/baba-min.jpg', caption: '' },
+    { image: 'assets/images/home/b1.jpg', caption: '' },
+    { image: 'assets/images/home/b2.jpg', caption: '' },
+    { image: 'assets/images/home/b3.jpg', caption: '' },
+    { image: 'assets/images/home/b4.jpg', caption: '' },
+    { image: 'assets/images/home/b5.jpg', caption: '' },
+    { image: 'assets/images/home/b6.jpg', caption: '' },
+    { image: 'assets/images/home/b7.jpg', caption: '' },
+    { image: 'assets/images/home/b8.jpg', caption: '' },
+    { image: 'assets/images/home/b9.jpg', caption: '' },
+  ];
   ngOnInit(): void {
     //this.posts$ = this.apiService.getPosts();
     this.apiService.getPosts().subscribe((data) => {

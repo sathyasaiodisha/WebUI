@@ -21,16 +21,17 @@ import { Component, OnInit, Input } from '@angular/core';
           <div class="text">{{ item.caption }}</div>
           }
         </div>
-        }}
+        }} @if(isPreNxt){
 
         <a class="prev" (click)="plusSlides(-1)">❮</a>
         <a class="next" (click)="plusSlides(1)">❯</a>
-        @if(isActive){
+        } @if(isActive){
         <div class="pause">||</div>
         } @else {
         <div class="countDown">{{ countDown }}</div>
         }
       </div>
+      @if(isDot){
       <br />
 
       <div style="text-align:center">
@@ -42,13 +43,17 @@ import { Component, OnInit, Input } from '@angular/core';
         ></span>
         }
       </div>
+      }
     </div>
   `,
 })
 export class SlideShowImageComponent implements OnInit {
   @Input() banner: { image: string; caption?: string }[] = [];
+  @Input() settings?: { isDot?: boolean; isPreNxt?: boolean } = {};
   slideIndex = 1;
   isActive = false;
+  isDot: boolean = true;
+  isPreNxt: boolean = true;
   defaultDuration = 5000; // 5 seconds
   timeOutVar: any;
   countDown = 1;
@@ -68,6 +73,8 @@ export class SlideShowImageComponent implements OnInit {
       { image: 'https://www.w3schools.com/howto/img_mountains_wide.jpg' },
     ];
     if (this.banner && this.banner.length > 0) this.data = this.banner;
+    if (this.settings) this.isDot = this.settings?.isDot ?? this.isDot;
+    if (this.settings) this.isPreNxt = this.settings?.isPreNxt ?? this.isPreNxt;
     // Show the first slide
     this.showSlides(this.slideIndex);
   }

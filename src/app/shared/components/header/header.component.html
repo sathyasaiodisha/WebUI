@@ -5,7 +5,7 @@
       type="button"
       class="btn btn-sm btn-outline-secondary"
       (click)="changeLanguage('ory')"
-      [class.active]="translateService.currentLang === 'ory'"
+      [class.active]="translate.currentLang === 'ory'"
     >
       ଓଡ଼ିଆ
     </button>
@@ -13,9 +13,7 @@
       type="button"
       class="btn btn-sm btn-outline-secondary"
       (click)="changeLanguage('en')"
-      [class.active]="
-        !translateService.currentLang || translateService.currentLang === 'en'
-      "
+      [class.active]="!translate.currentLang || translate.currentLang === 'en'"
     >
       En
     </button>
@@ -225,7 +223,7 @@
           type="button"
           class="btn btn-sm btn-outline-secondary"
           (click)="changeLanguage('ory')"
-          [class.active]="translateService.currentLang === 'ory'"
+          [class.active]="translate.currentLang === 'ory'"
         >
           ଓଡ଼ିଆ
         </button>
@@ -234,8 +232,8 @@
           class="btn btn-sm btn-outline-secondary"
           (click)="changeLanguage('en')"
           [class.active]="
-            !translateService.currentLang ||
-            translateService.currentLang === 'en'
+            !translate.currentLang ||
+            translate.currentLang === 'en'
           "
         >
           English

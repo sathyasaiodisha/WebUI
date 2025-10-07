@@ -17,6 +17,12 @@ body {
   }
 }
 
+.homeCarousel {
+  position: relative;
+  margin-top: -158px;
+  z-index: -1;
+}
+
 .languageContainer {
   position: absolute;
   top: 0;

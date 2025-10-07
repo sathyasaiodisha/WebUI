@@ -684,12 +684,33 @@ export const routes: Routes = [
   },
 
   {
-    path: 'resources/:page',
+    path: 'resources',
     data: { breadcrumb: 'Resources' },
-    loadComponent: () =>
-      import('./features/resources/resources.component').then(
-        (c) => c.ResourcesComponent
-      ),
+    children: [
+      {
+        path: 'DigitalLibrary',
+        data: { breadcrumb: 'DigitalLibrary' },
+        loadComponent: () =>
+          import('./features/resources/DigitalLibrary.component').then(
+            (c) => c.DigitalLibraryComponent
+          ),
+      },
+      {
+        path: 'SummerCourse',
+        data: { breadcrumb: 'SummerCourse' },
+        loadComponent: () =>
+          import('./features/resources/resources.component').then(
+            (c) => c.ResourcesComponent
+          ),
+      },
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/resources/resources.component').then(
+            (c) => c.ResourcesComponent
+          ),
+      },
+    ],
   },
   {
     path: 'events',

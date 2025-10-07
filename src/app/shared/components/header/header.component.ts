@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -29,6 +29,8 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
+  translate = inject(TranslateService);
+
   menus = [
     {
       name: 'Sri Sathya Sai',
@@ -97,6 +99,10 @@ export class HeaderComponent {
       subMenu: [
         { name: 'Videos', link: '/videos' },
         { name: 'Audio', link: '/audio' },
+        {
+          name: this.translate.instant('DigitalLibrary'),
+          link: '/DigitalLibrary',
+        },
         { name: 'Teaching Aid', link: '/3' },
         { name: 'Presentations', link: '/4' },
         { name: 'Photos', link: '/5' },
@@ -113,12 +119,9 @@ export class HeaderComponent {
   bellIcon = faBell;
   signin = faSignIn;
   signup = faUserPlus;
-  constructor(
-    public translateService: TranslateService,
-    private router: Router
-  ) {}
+  constructor(private router: Router) {}
   public changeLanguage(language: string): void {
-    this.translateService.use(language);
+    this.translate.use(language);
   }
 
   get isHomePage(): boolean {
