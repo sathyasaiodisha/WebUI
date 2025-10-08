@@ -23,7 +23,7 @@ body {
   z-index: -1;
 
   .text {
-    font-size: 2rem !important;
+    font-size: 2vw !important;
     background-color: #00000059;
   }
 }
@@ -223,7 +223,6 @@ body {
     width: 18rem;
     background-color: #fff;
     display: inline-block;
-    margin: .6rem;
     border-radius: 1rem;
     padding: 1.2rem;
 
@@ -343,7 +342,14 @@ body {
 
 }
 
+@media (max-width: 992px) {}
+
 @media (max-width: 768px) {
+  .homeCarousel {
+    margin-top: -200px;
+
+  }
+
   .noShow {
     display: none;
   }
