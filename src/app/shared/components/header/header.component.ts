@@ -44,7 +44,7 @@ export class HeaderComponent {
     },
 
     {
-      name: '5 Wings',
+      name: 'Five Wings',
       link: '/wings',
       subMenu: [
         { name: 'Service', link: '/service' },
