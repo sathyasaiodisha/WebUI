@@ -740,6 +740,22 @@ export const routes: Routes = [
     data: { breadcrumb: 'Resources' },
     children: [
       {
+        path: 'videos',
+        data: { breadcrumb: 'Videos' },
+        loadComponent: () =>
+          import('./features/resources/Videos.component').then(
+            (c) => c.VideosComponent
+          ),
+      },
+      {
+        path: 'audio',
+        data: { breadcrumb: 'Audio' },
+        loadComponent: () =>
+          import('./features/resources/Audio.component').then(
+            (c) => c.AudioComponent
+          ),
+      },
+      {
         path: 'DigitalLibrary',
         data: { breadcrumb: 'DigitalLibrary' },
         loadComponent: () =>
