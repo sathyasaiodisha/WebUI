@@ -21,6 +21,11 @@ body {
   position: relative;
   margin-top: -158px;
   z-index: -1;
+
+  .text {
+    font-size: 2rem !important;
+    background-color: #00000059;
+  }
 }
 
 .languageContainer {
@@ -330,6 +335,13 @@ body {
   }
 }
 
+
+@media (max-width: 1280px) {
+  .wings_outer {
+    padding: 2rem 1rem;
+  }
+
+}
 
 @media (max-width: 768px) {
   .noShow {

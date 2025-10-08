@@ -50,16 +50,51 @@ export class HomeComponent implements OnInit {
   posts$: any = null;
   constructor(private apiService: ApiService) {}
   banner = [
-    { image: 'assets/images/baba-min.jpg', caption: '' },
-    { image: 'assets/images/home/b1.jpg', caption: '' },
-    { image: 'assets/images/home/b2.jpg', caption: '' },
-    { image: 'assets/images/home/b3.jpg', caption: '' },
-    { image: 'assets/images/home/b4.jpg', caption: '' },
-    { image: 'assets/images/home/b5.jpg', caption: '' },
-    { image: 'assets/images/home/b6.jpg', caption: '' },
-    { image: 'assets/images/home/b7.jpg', caption: '' },
-    { image: 'assets/images/home/b8.jpg', caption: '' },
-    { image: 'assets/images/home/b9.jpg', caption: '' },
+    {
+      image: 'assets/images/baba-min.jpg',
+      caption:
+        '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
+    },
+    {
+      image: 'assets/images/home/b1.jpg',
+      caption:
+        '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
+    },
+    {
+      image: 'assets/images/home/b2.jpg',
+      caption:
+        '"Love lives by giving and forgiving. Ego lives by getting and forgetting."',
+    },
+    {
+      image: 'assets/images/home/b3.jpg',
+      caption:
+        '"See no evil, See what is good. Hear no evil, Hear what is good. Talk no evil, Talk what is good. Think no evil, Think what is good. Do no evil, Do what is good."',
+    },
+    {
+      image: 'assets/images/home/b4.jpg',
+      caption: '"Education should be for life, not for a living."',
+    },
+    {
+      image: 'assets/images/home/b5.jpg',
+      caption: '"Money comes and goes. Morality comes and grows."',
+    },
+    {
+      image: 'assets/images/home/b6.jpg',
+      caption: '"Work is worship. Duty is God."',
+    },
+    {
+      image: 'assets/images/home/b7.jpg',
+      caption: '"The best way to love God is to love all and serve all."',
+    },
+    {
+      image: 'assets/images/home/b8.jpg',
+      caption:
+        '"Some say that knowledge is power, but it is not true. Character is power."',
+    },
+    {
+      image: 'assets/images/home/b9.jpg',
+      caption: '"Gratitude is our life-breath."',
+    },
   ];
   ngOnInit(): void {
     //this.posts$ = this.apiService.getPosts();

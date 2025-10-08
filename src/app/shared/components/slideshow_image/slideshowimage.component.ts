@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'app-slideshowimage',
   imports: [],
   template: `
-    <div class="slideshowImage" [style]="{ minHeight: minH + 'px' }">
+    <div class="slideshowImage">
       <div class="slideshow-container">
         @for (item of data; track $index;let idx = $index, e = $even) { @if(idx
         == slideIndex-1){
@@ -16,7 +16,11 @@ import { Component, OnInit, Input } from '@angular/core';
           <!--fade-->
           <div class="numbertext">{{ slideIndex }} / {{ data.length }}</div>
 
-          <img src="{{ item.image }}" style="width:100%" />
+          <img
+            src="{{ item.image }}"
+            style="width:100%"
+            [style]="{ minHeight: minH + 'px', maxHeight: maxH + 'px' }"
+          />
           @if(item.caption){
           <div class="text">{{ item.caption }}</div>
           }
@@ -49,8 +53,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SlideShowImageComponent implements OnInit {
   @Input() banner: { image: string; caption?: string }[] = [];
-  @Input() settings?: { isDot?: boolean; isPreNxt?: boolean; minH?: number } =
-    {};
+  @Input() settings?: {
+    isDot?: boolean;
+    isPreNxt?: boolean;
+    minH?: number;
+    maxH?: number;
+  } = {};
   slideIndex = 1;
   isActive = false;
   isDot: boolean = true;
@@ -58,7 +66,8 @@ export class SlideShowImageComponent implements OnInit {
   defaultDuration = 5000; // 5 seconds
   timeOutVar: any;
   countDown = 1;
-  minH = 320;
+  minH = 0;
+  maxH = 861;
   slideDuration = this.defaultDuration + 0;
   data: { image: string; caption?: string }[] = [];
   constructor() {}
@@ -78,6 +87,7 @@ export class SlideShowImageComponent implements OnInit {
     if (this.settings) this.isDot = this.settings?.isDot ?? this.isDot;
     if (this.settings) this.isPreNxt = this.settings?.isPreNxt ?? this.isPreNxt;
     if (this.settings) this.minH = this.settings?.minH ?? this.minH;
+    if (this.settings) this.maxH = this.settings?.maxH ?? this.maxH;
     // Show the first slide
     this.showSlides(this.slideIndex);
   }
