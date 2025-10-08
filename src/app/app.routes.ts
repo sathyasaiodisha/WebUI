@@ -821,6 +821,14 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'Disclaimer',
+    data: { breadcrumb: 'Disclaimer' },
+    loadComponent: () =>
+      import('./features/Disclaimer.component').then(
+        (c) => c.DisclaimerComponent
+      ),
+  },
+  {
     path: 'admin',
     data: { breadcrumb: 'Admin' },
     loadComponent: () =>
