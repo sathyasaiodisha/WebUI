@@ -11,6 +11,7 @@ import { SlideShowImageComponent } from './components/slideshow_image/slideshowi
 import { SlideShowTextComponent } from './components/slideshow_text/slideshowtext.component';
 import { BreadcrumbComponent } from './components/breadcrumb.component';
 import { SubSectionComponent } from './components/page_sub_sections';
+import { CarouselComponent } from './components/carousel.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 
@@ -30,6 +31,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     SubSectionComponent,
     MatCardModule,
     MatGridListModule,
+    CarouselComponent,
   ],
   declarations: [],
   exports: [
@@ -45,6 +47,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     SubSectionComponent,
     MatCardModule,
     MatGridListModule,
+    CarouselComponent,
   ],
 })
 export class SharedModule {}

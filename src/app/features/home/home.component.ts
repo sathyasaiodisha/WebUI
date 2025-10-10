@@ -4,7 +4,7 @@ import { ApiService } from '../../core/services/api.service';
 //import { Observable } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
-import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
+import { SharedModule } from '../../shared/shared.module';
 
 import Map from 'ol/Map';
 //import View from 'ol/View';
@@ -14,7 +14,7 @@ import Map from 'ol/Map';
 //declare let $: any;
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule, RouterLink, SlideShowImageComponent],
+  imports: [TranslateModule, RouterLink, SharedModule],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
