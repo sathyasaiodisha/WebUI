@@ -60,7 +60,7 @@ import { Carousel } from 'bootstrap';
   styles: [
     `
       .carousel-item img {
-        height: 780px; /* adjust as needed */
+        height: 850px; /* adjust as needed */
         object-fit: cover;
         transition: transform 8s ease-in-out;
       }
