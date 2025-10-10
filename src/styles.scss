@@ -28,6 +28,16 @@ body {
   }
 }
 
+.carousel-caption {
+  h5 {
+    font-size: 2vw;
+  }
+
+  p {
+    text-align: right;
+  }
+}
+
 .languageContainer {
   position: absolute;
   top: 0;
@@ -224,7 +234,7 @@ body {
   text-align: center;
 
   .wings {
-    width: 18rem;
+    // width: 18rem;
     background-color: #fff;
     display: inline-block;
     border-radius: 1rem;

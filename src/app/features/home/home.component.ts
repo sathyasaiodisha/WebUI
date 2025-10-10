@@ -91,10 +91,6 @@ export class HomeComponent implements OnInit {
       caption:
         '"Some say that knowledge is power, but it is not true. Character is power."',
     },
-    {
-      image: 'assets/images/home/b9.jpg',
-      caption: '"Gratitude is our life-breath."',
-    },
   ];
   ngOnInit(): void {
     //this.posts$ = this.apiService.getPosts();
