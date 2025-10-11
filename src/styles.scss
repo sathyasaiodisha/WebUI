@@ -210,6 +210,19 @@ body {
     }
   }
 
+  .footer-link {
+    a {
+      color: rgba(0, 0, 0, 0.743);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+
   .copyright,
   .footer-social {
 
@@ -229,20 +242,22 @@ body {
 
 .wings_outer {
   // background-color: #F5F5F5;
-  padding: 15rem 9rem;
+  padding: 12em 1rem;
   color: rgb(0, 0, 0);
   text-align: center;
+  background-color: #ededed4f;
 
   .wings {
     // width: 18rem;
-    background-color: #fff;
+    // background-color: #fff;
     display: inline-block;
     border-radius: 1rem;
     padding: 1.2rem;
 
     img {
-      width: 100%;
+      width: 81%;
       border-radius: 10px;
+      max-width: 180px;
     }
 
   }
@@ -348,10 +363,20 @@ body {
   }
 }
 
+.nav-item {
+  padding: 0 .3vw;
+  white-space: nowrap;
+}
+
 
 @media (max-width: 1280px) {
   .wings_outer {
     padding: 2rem 1rem;
+  }
+
+  .nav-item {
+    padding: 0;
+    white-space: unset;
   }
 
 }
