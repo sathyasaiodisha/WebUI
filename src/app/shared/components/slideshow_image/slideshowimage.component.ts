@@ -19,7 +19,10 @@ import { Component, OnInit, Input } from '@angular/core';
           <img
             src="{{ item.image }}"
             style="width:100%"
-            [style]="{ minHeight: minH + 'px', maxHeight: maxH + 'px' }"
+            [style]="{
+              minHeight: minH + 'px',
+              maxHeight: maxH ? maxH + 'px' : 'auto'
+            }"
           />
           @if(item.caption){
           <div class="text">{{ item.caption }}</div>
@@ -67,7 +70,7 @@ export class SlideShowImageComponent implements OnInit {
   timeOutVar: any;
   countDown = 1;
   minH = 0;
-  maxH = 861;
+  maxH = 0; //861;
   slideDuration = this.defaultDuration + 0;
   data: { image: string; caption?: string }[] = [];
   constructor() {}

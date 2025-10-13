@@ -764,6 +764,14 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'Wallpapers',
+        data: { breadcrumb: 'Wallpapers' },
+        loadComponent: () =>
+          import('./features/resources/Wallpapers.component').then(
+            (c) => c.WallpapersComponent
+          ),
+      },
+      {
         path: 'SummerCourse',
         data: { breadcrumb: 'SummerCourse' },
         loadComponent: () =>

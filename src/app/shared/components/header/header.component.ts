@@ -106,7 +106,7 @@ export class HeaderComponent {
         { name: 'Teaching Aid', link: '/3' },
         { name: 'Presentations', link: '/4' },
         { name: 'Photos', link: '/5' },
-        { name: 'Wallpapers', link: '/6' },
+        { name: 'Wallpapers', link: '/Wallpapers' },
         { name: 'Miracles', link: '/7' },
         { name: 'Experiences', link: '/8' },
         { name: 'Sathya Sai Speak', link: '/9' },
