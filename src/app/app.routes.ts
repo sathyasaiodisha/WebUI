@@ -772,6 +772,14 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'Presentations',
+        data: { breadcrumb: 'Presentations' },
+        loadComponent: () =>
+          import('./features/resources/Presentations.component').then(
+            (c) => c.PresentationsComponent
+          ),
+      },
+      {
         path: 'SummerCourse',
         data: { breadcrumb: 'SummerCourse' },
         loadComponent: () =>
