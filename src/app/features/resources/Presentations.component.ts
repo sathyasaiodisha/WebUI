@@ -5,33 +5,32 @@ import { SharedModule } from '@shared/shared.module';
   selector: 'app-Presentations',
   imports: [SharedModule],
   template: `
-    <br />
-
-    <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <td colspan="6" class="reportCatTitle">
-            <span> {{ 'Presentations' | translate }}</span>
-          </td>
-        </tr>
-        @for(ro of range(Math.ceil(pdfs.length/perRo)); track $index){
-        <tr title="Report Row {{ ro + 1 }}">
-          @for(link of pdfs; track $index;let on=$index){ @if(on>=ro*perRo &&
-          on<(ro*perRo)+perRo){
-          <td>{{ link?.title ?? link.link }}</td>
-          <td>
-            <a
-              id="ContentPlaceHolder1_HyperLink1"
-              target="_blank"
-              href="/files/pdf/{{ link.link }}"
-              >View</a
-            >
-          </td>
-          }}
-        </tr>
-        }
-      </tbody>
-    </table>
+    <div class="content_topgape container py-2 px-4 border-secondary">
+      <div class="col text-grey-blue">
+        <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
+          {{ 'Presentations' | translate }}
+        </h1>
+        <table class="table table-bordered">
+          <tbody>
+            @for(ro of pdfs; track $index){
+            <tr>
+              <td>
+                {{ ro?.title ?? ro.link }}
+              </td>
+              <td>
+                <a
+                  id="ContentPlaceHolder1_HyperLink1"
+                  target="_blank"
+                  href="/files/pdf/{{ ro.link }}"
+                  >View</a
+                >
+              </td>
+            </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
   `,
 })
 export class PresentationsComponent implements OnInit {
