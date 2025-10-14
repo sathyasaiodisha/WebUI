@@ -21,7 +21,7 @@ import { SharedModule } from '@shared/shared.module';
                 <a
                   id="ContentPlaceHolder1_HyperLink1"
                   target="_blank"
-                  href="/files/pdf/{{ ro.link }}"
+                  href="files/pdf/presentations/{{ ro.link }}"
                   >View</a
                 >
               </td>
@@ -42,68 +42,68 @@ export class PresentationsComponent implements OnInit {
   }
   pdfs = [
     {
-      link: 'files/pdf/presentations/ACTIVITIES-SSSSO Odisha.pdf ',
+      link: 'ACTIVITIES-SSSSO Odisha.pdf ',
       title: 'ACTIVITIES-SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Bhajan_SSSSO Odisha.pdf ',
+      link: 'Bhajan_SSSSO Odisha.pdf ',
       title: 'Bhajan_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/CENTENARY CELEBRATION INITITAVES_SSSSO Odisha.pdf ',
+      link: 'CENTENARY CELEBRATION INITITAVES_SSSSO Odisha.pdf ',
       title: 'CENTENARY CELEBRATION INITITAVES_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Final Charter Rules 45th State Conference.pdf ',
+      link: 'Final Charter Rules 45th State Conference.pdf ',
       title: 'Final Charter Rules 45th State Conference',
     },
     {
-      link: 'files/pdf/presentations/Madhu Vadishyaami_SSSSO Odisha.pdf ',
+      link: 'Madhu Vadishyaami_SSSSO Odisha.pdf ',
       title: 'Madhu Vadishyaami_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Meditation Tree_SSSSO Odisha.pdf ',
+      link: 'Meditation Tree_SSSSO Odisha.pdf ',
       title: 'Meditation Tree_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/OUR VILLAGE - OUR IDENTITY_SSSSO Odisha.pdf ',
+      link: 'OUR VILLAGE - OUR IDENTITY_SSSSO Odisha.pdf ',
       title: 'OUR VILLAGE - OUR IDENTITY_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/PN Seva_Duty Points_Amended_SSSSO.pdf ',
+      link: 'PN Seva_Duty Points_Amended_SSSSO.pdf ',
       title: 'N Seva_Duty Points_Amended_SSSSO',
     },
     {
-      link: 'files/pdf/presentations/Sai Connect_SSSSO Odisha.pdf ',
+      link: 'Sai Connect_SSSSO Odisha.pdf ',
       title: 'Sai Connect_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/SAI PREMDHARA_SSSSO Odisha.pdf ',
+      link: 'SAI PREMDHARA_SSSSO Odisha.pdf ',
       title: 'SAI PREMDHARA_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Sai Sanatani_SSSSO Odisha.pdf ',
+      link: 'Sai Sanatani_SSSSO Odisha.pdf ',
       title: 'Sai Sanatani_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Social Media_SSSSO Odisha.pdf ',
+      link: 'Social Media_SSSSO Odisha.pdf ',
       title: 'Social Media_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Study Circle Seminar Symposium_SSSSO Odisha.pdf ',
+      link: 'Study Circle Seminar Symposium_SSSSO Odisha.pdf ',
       title: 'Study Circle Seminar Symposium_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Unity of Faiths_SSSSO Odisha.pdf ',
+      link: 'Unity of Faiths_SSSSO Odisha.pdf ',
       title: 'Unity of Faiths_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Vahini Swadhyaya, Sadhana Sivir,Likhita Japa,Jyoti Meditation_SSSSO Odisha.pdf ',
+      link: 'Vahini Swadhyaya, Sadhana Sivir,Likhita Japa,Jyoti Meditation_SSSSO Odisha.pdf ',
       title:
         'Vahini Swadhyaya, Sadhana Sivir,Likhita Japa,Jyoti Meditation_SSSSO Odisha',
     },
     {
-      link: 'files/pdf/presentations/Veda Prabaham_SSSSO Odisha.pdf',
+      link: 'Veda Prabaham_SSSSO Odisha.pdf',
 
       title: 'Veda Prabaham_SSSSO Odisha',
     },
