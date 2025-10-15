@@ -33,13 +33,21 @@
       <img src="assets/images/odisha-sai-map-Jul2025.png" style="width: 100%" />
       <div class="row sum_counter">
         <div class="col-auto sum-counter_title">
-          <div class="sum-counter_value" [countUp]="35" [duration]="2000">
+          <div
+            class="sum-counter_value"
+            [countUp]="count.dist"
+            [duration]="duration"
+          >
             +35
           </div>
           Sai Districts
         </div>
         <div class="col-auto sum-counter_title">
-          <div class="sum-counter_value" [countUp]="774" [duration]="2000">
+          <div
+            class="sum-counter_value"
+            [countUp]="count.bhajan"
+            [duration]="duration"
+          >
             +774
           </div>
           Bhajan Mandalis
@@ -47,8 +55,8 @@
         <div class="col-auto sum-counter_title">
           <div
             class="sum-counter_value"
-            [countUp]="242"
-            [duration]="2000"
+            [countUp]="count.samithis"
+            [duration]="duration"
           ></div>
           Seva Samithis
         </div>

@@ -18,6 +18,8 @@ import Map from 'ol/Map';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
+  duration = 2000;
+  count = { dist: 35, bhajan: 774, samithis: 242 };
   wings = [
     {
       name: 'Service',
