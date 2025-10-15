@@ -17,6 +17,27 @@ body {
   }
 }
 
+.sum-counter_title {
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sum-counter_value {
+  color: #FFAC00;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.sum_counter {
+  position: absolute;
+  right: 15%;
+  bottom: 15%;
+}
+
 .homeCarousel {
   position: relative;
   margin-top: -158px;
