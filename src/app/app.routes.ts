@@ -580,8 +580,8 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'innovativeProjects',
-    data: { breadcrumb: 'Innovative Projects', link: 0 },
+    path: 'SevaInitiatives',
+    data: { breadcrumb: 'SevaInitiatives', link: 0 },
     children: [
       {
         path: 'holisticHealthCare',
@@ -671,7 +671,7 @@ export const routes: Routes = [
       },
       {
         path: 'stateCoordinators',
-        data: { breadcrumb: 'State Coordinators' },
+        data: { breadcrumb: 'State Youth Coordinators' },
         loadComponent: () =>
           import('./features/organization/stateCoordinators.component').then(
             (c) => c.StateCoordinatorsComponent
@@ -777,6 +777,14 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./features/resources/Presentations.component').then(
             (c) => c.PresentationsComponent
+          ),
+      },
+      {
+        path: 'BannerDesign',
+        data: { breadcrumb: 'BannerDesign' },
+        loadComponent: () =>
+          import('./features/resources/BannerDesign.component').then(
+            (c) => c.BannerDesignComponent
           ),
       },
       {

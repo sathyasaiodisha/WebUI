@@ -44,7 +44,7 @@ export class HeaderComponent {
     },
 
     {
-      name: 'Five Wings',
+      name: 'Wings',
       link: '/wings',
       subMenu: [
         { name: 'Service', link: '/service' },
@@ -55,8 +55,8 @@ export class HeaderComponent {
       ],
     },
     {
-      name: 'Innovative Projects',
-      link: '/innovativeProjects',
+      name: 'Seva Initiatives',
+      link: '/SevaInitiatives',
       subMenu: [
         { name: 'Holistic Health Care', link: '/holisticHealthCare' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
@@ -82,7 +82,7 @@ export class HeaderComponent {
           link: '/sevaOrgOdisha',
         },
         { name: 'SSS Trust-Odisha', link: '/centralTrust' },
-        { name: 'State Coordinators', link: '/stateCoordinators' },
+        { name: 'State Youth Coordinators', link: '/stateCoordinators' },
         { name: 'State In-Charges', link: '/sic' },
         { name: 'District Presidents', link: '/districtPresidents' },
         { name: 'District Coordinator', link: '/districtCoordinator' },
@@ -105,6 +105,7 @@ export class HeaderComponent {
         },
         { name: 'Teaching Aid', link: '/todo' },
         { name: 'Presentations', link: '/Presentations' },
+        { name: 'Banner Design', link: '/BannerDesign' },
         { name: 'Photos', link: '/todo' },
         { name: 'Wallpapers', link: '/Wallpapers' },
         { name: 'Miracles', link: '/todo' },
