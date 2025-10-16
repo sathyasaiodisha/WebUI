@@ -6,7 +6,7 @@ import {
 } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
 
-export const LoggingInterceptor: HttpInterceptorFn = (
+export const loggingInterceptor: HttpInterceptorFn = (
   req: HttpRequest<unknown>,
   next: HttpHandlerFn
 ) => {

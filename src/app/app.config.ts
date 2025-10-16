@@ -12,7 +12,7 @@ import {
 } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
 
-import { LoggingInterceptor } from './core/interceptors/logging.interceptor';
+import { loggingInterceptor } from './core/interceptors/logging.interceptor';
 import { authInterceptor } from './core/interceptors/auth.interceptor';
 import { routes } from './app.routes';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
@@ -28,7 +28,7 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes, withHashLocation()),
-    provideHttpClient(withInterceptors([LoggingInterceptor, authInterceptor])),
+    provideHttpClient(withInterceptors([loggingInterceptor, authInterceptor])),
     importProvidersFrom([
       TranslateModule.forRoot({
         loader: {

@@ -4,10 +4,11 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterOutlet, RouterModule } from '@angular/router';
+import { AdminheaderComponent } from '../../../../shared/components/adminheader/adminheader.component';
 
 @Component({
   selector: 'app-dataentry-layout',
-  imports: [MatSidenavModule, MatListModule, MatToolbarModule, RouterOutlet, RouterModule, CommonModule],
+  imports: [MatSidenavModule, MatListModule, MatToolbarModule, RouterOutlet, RouterModule, CommonModule, AdminheaderComponent],
   templateUrl: './dataentry-layout.component.html',
   styleUrl: './dataentry-layout.component.scss'
 })

@@ -1,28 +1,12 @@
-import { inject } from '@angular/core';
-import {
-  HttpRequest,
-  HttpEvent,
-  HttpInterceptorFn,
-  HttpHandlerFn,
-} from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { CookieService } from 'ngx-cookie-service';
+import { HttpInterceptorFn } from '@angular/common/http';
 
-export const authInterceptor: HttpInterceptorFn = (
-  req: HttpRequest<any>,
-  next: HttpHandlerFn
-): Observable<HttpEvent<any>> => {
-  const cookieService = inject(CookieService);
-  const token = cookieService.get('auth-token') || 'na';
+export const authInterceptor: HttpInterceptorFn = (req, next) => {
+  const token = localStorage.getItem('authToken');
   if (token) {
     const cloned = req.clone({
-      setHeaders: {
-        authorization: token,
-        //Authorization: `Bearer ${token}`
-      },
+      setHeaders: { Authorization: 'Bearer ${token}' }
     });
     return next(cloned);
-  } else {
-    return next(req);
   }
+  return next(req);
 };

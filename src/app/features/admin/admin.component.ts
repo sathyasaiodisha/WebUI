@@ -15,9 +15,10 @@ import { RouterModule } from '@angular/router';
 export class AdminComponent {
     tiles = [
       { title: 'Data Entry', link: '/dataentry' },
+      { title: 'Login', link: '/login' },
       { title: 'Digital Archive', text: '' },
       { title: 'Annual Planner', text: '' },
-      { title: 'User Control', text: '' },
+      { title: 'User Control', link: '/usercontrol' },
       { title: 'Upcoming & Recent Events', text: '' },
       { title: 'Manage resources', text: '' },
       { title: 'Manage quotes', text: '' },

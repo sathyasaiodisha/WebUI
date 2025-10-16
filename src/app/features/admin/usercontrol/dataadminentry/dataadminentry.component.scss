@@ -1,3 +1,14 @@
+css
+.register-card {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
 import { Routes } from '@angular/router';
 import { DistrictentryComponent } from './features/admin/dataentry/districtentry/districtentry.component';
 import { SamithientryComponent } from './features/admin/dataentry/samithientry/samithientry.component';
