@@ -19,7 +19,7 @@ import Map from 'ol/Map';
 })
 export class HomeComponent implements OnInit {
   duration = 2000;
-  count = { dist: 35, bhajan: 774, samithis: 242 };
+  count = { dist: 35, bhajan: 774, samithis: 242, bv: 3269 };
   wings = [
     {
       name: 'Service',
