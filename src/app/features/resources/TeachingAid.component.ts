@@ -22,7 +22,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
                 <a
                   id="ContentPlaceHolder1_HyperLink1"
                   target="_blank"
-                  href="files/pdf/presentations/{{ ro.link }}"
+                  href="{{ ro.link }}"
                   >View</a
                 >
               </td>
