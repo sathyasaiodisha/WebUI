@@ -10,13 +10,13 @@ import { SharedModule } from '@shared/shared.module';
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Wallpapers' | translate }}
         </h1>
-        <div class="service_wrapper_top">
+        <!-- <div class="service_wrapper_top">
           <div class="homeCarousel">
             <div class="carousel">
               <app-slideshowimage [banner]="banner"></app-slideshowimage>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="row ">
           @for( item of banner ;track $index;){
           <div class="card col-3">
