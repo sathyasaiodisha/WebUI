@@ -592,14 +592,6 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'teleMedicineCenter',
-        data: { breadcrumb: 'Tele Medicine Center' },
-        loadComponent: () =>
-          import('./features/wings/teleMedicineCenter.component').then(
-            (c) => c.TeleMedicineCenterComponent
-          ),
-      },
-      {
         path: 'bookTrust',
         data: { breadcrumb: 'Book Trust' },
         loadComponent: () =>
@@ -616,19 +608,33 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'sssPrematharu',
-        data: { breadcrumb: 'Sri Sathya Sai Prematharu' },
-        loadComponent: () =>
-          import('./features/sssPrematharu.component').then(
-            (c) => c.SssPrematharuComponent
-          ),
-      },
-      {
         path: 'sssDivyaPadukaYatra',
         data: { breadcrumb: 'Sri Sathya Sai Divya Paduka Yatra' },
         loadComponent: () =>
           import('./features/sssDivyaPadukaYatra.component').then(
             (c) => c.SSSDivyaPadukaYatraComponent
+          ),
+      },
+    ],
+  },
+  {
+    path: 'sssTrustOdisha',
+    data: { breadcrumb: 'sssTrustOdisha', link: 0 },
+    children: [
+      {
+        path: 'teleMedicineCenter',
+        data: { breadcrumb: 'Tele Medicine Center' },
+        loadComponent: () =>
+          import('./features/wings/teleMedicineCenter.component').then(
+            (c) => c.TeleMedicineCenterComponent
+          ),
+      },
+      {
+        path: 'sssPrematharu',
+        data: { breadcrumb: 'Sri Sathya Sai Prematharu' },
+        loadComponent: () =>
+          import('./features/sssPrematharu.component').then(
+            (c) => c.SssPrematharuComponent
           ),
       },
       {
@@ -671,7 +677,7 @@ export const routes: Routes = [
       },
       {
         path: 'stateCoordinators',
-        data: { breadcrumb: 'State Youth Coordinators' },
+        data: { breadcrumb: 'State Coordinators' },
         loadComponent: () =>
           import('./features/organization/stateCoordinators.component').then(
             (c) => c.StateCoordinatorsComponent
@@ -785,6 +791,14 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./features/resources/BannerDesign.component').then(
             (c) => c.BannerDesignComponent
+          ),
+      },
+      {
+        path: 'SathyaSaiSpeak',
+        data: { breadcrumb: 'SathyaSaiSpeak' },
+        loadComponent: () =>
+          import('./features/resources/SathyaSaiSpeak.component').then(
+            (c) => c.SathyaSaiSpeakComponent
           ),
       },
       {

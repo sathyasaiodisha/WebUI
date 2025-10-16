@@ -59,17 +59,13 @@ export class HeaderComponent {
       link: '/SevaInitiatives',
       subMenu: [
         { name: 'Holistic Health Care', link: '/holisticHealthCare' },
-        { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
         { name: 'Book Trust', link: '/bookTrust' },
         { name: 'Institutions', link: '/todo' },
         { name: 'Sri Sathya Sai Grama Seva', link: '/sssGramaSeva' },
-        { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
         {
           name: 'Sri Sathya Sai Divya Paduka Yatra',
           link: '/sssDivyaPadukaYatra',
         },
-        { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
-        { name: 'Sri Sathya Sai Mobile Hospital', link: '/sssMobileHospital' },
         { name: 'Prasanthi Seva', link: '/todo' },
       ],
     },
@@ -81,14 +77,13 @@ export class HeaderComponent {
           name: 'About SSSSO-Odisha',
           link: '/sevaOrgOdisha',
         },
-        { name: 'SSS Trust-Odisha', link: '/centralTrust' },
-        { name: 'State Youth Coordinators', link: '/stateCoordinators' },
+        { name: 'State Coordinators', link: '/stateCoordinators' },
         { name: 'State In-Charges', link: '/sic' },
         { name: 'District Presidents', link: '/districtPresidents' },
         { name: 'District Coordinator', link: '/districtCoordinator' },
         //{ name: 'District Digital Archive Coordinator', link: '/7' },
         { name: 'Samithi List', link: '/samithis' },
-        { name: 'Resource Persons', link: '/todo' },
+        //{ name: 'Resource Persons', link: '/todo' },
         { name: 'Samithi Convenors', link: '/samithiConvenors' },
         { name: 'Bhajan Mandalis', link: '/bhajanMandalis' },
       ],
@@ -110,7 +105,27 @@ export class HeaderComponent {
         { name: 'Wallpapers', link: '/Wallpapers' },
         { name: 'Miracles', link: '/todo' },
         { name: 'Experiences', link: '/todo' },
-        { name: 'Sathya Sai Speak', link: '/todo' },
+        { name: 'Sathya Sai Speak', link: '/SathyaSaiSpeak' },
+      ],
+    },
+    {
+      name: 'SSS Schools, Odisha',
+      link: '/sssSchoolOdisha',
+      // subMenu: [
+      //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
+
+      // ],
+    },
+    {
+      name: 'SSS Trust, Odisha',
+      link: '/sssTrustOdisha',
+      subMenu: [
+        { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
+        { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
+        { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
+        { name: 'Sri Sathya Sai Mobile Hospital', link: '/sssMobileHospital' },
+
+        // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],
     },
     { name: 'Report', link: '/report' },
