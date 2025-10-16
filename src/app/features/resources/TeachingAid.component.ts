@@ -11,6 +11,26 @@ import { MatExpansionModule } from '@angular/material/expansion';
           {{ 'TeachingAid' | translate }}
         </h1>
 
+        <table class="table table-bordered">
+          <tbody>
+            @for(ro of data; track $index){
+            <tr>
+              <td>
+                {{ ro?.title ?? ro.link }}
+              </td>
+              <td>
+                <a
+                  id="ContentPlaceHolder1_HyperLink1"
+                  target="_blank"
+                  href="files/pdf/presentations/{{ ro.link }}"
+                  >View</a
+                >
+              </td>
+            </tr>
+            }
+          </tbody>
+        </table>
+        <!--
         <mat-accordion multi>
           @for(cat of data;track $index; let i = $index){
 
@@ -32,8 +52,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
               </p>
             </mat-expansion-panel>
           }
-        </mat-accordion>
-
+        </mat-accordion> -->
       </div>
     </div>
   `,
@@ -44,6 +63,7 @@ export class TeachingAidComponent implements OnInit {
   data = [
     {
       title: 'Satya Sai School Prayer',
+      link: 'https://drive.google.com/drive/folders/1mGnYcHDKFOi_-T5VqVzzYUltWJutJi8v?usp=drive_link',
       content: [
         {
           name: 'Tere vandan se.mp4',
@@ -53,6 +73,7 @@ export class TeachingAidComponent implements OnInit {
     },
     {
       title: 'Balvikash Jyoti Dhyana',
+      link: 'https://drive.google.com/drive/folders/1ww5GsgSZ-4aAuDs1EhOZFT1rw0-Gv4nQ?usp=drive_link',
       content: [
         {
           name: 'Jyotidhyana.mp4',
@@ -62,6 +83,7 @@ export class TeachingAidComponent implements OnInit {
     },
     {
       title: 'BalVikas- STOTRA MALA- flex design',
+      link: 'https://drive.google.com/drive/folders/14AAG5_sPbPS5mqRFHKIqQw-JZNd1hDjz?usp=drive_link',
       content: [
         {
           name: 'Santakaram.jpg',
@@ -71,38 +93,47 @@ export class TeachingAidComponent implements OnInit {
     },
     {
       title: 'Balvikas Veda',
+      link: 'https://drive.google.com/drive/folders/1TfdmO_ZlwZueVasN_fzqk8hQqBVUcFTg?usp=drive_link',
       content: [],
     },
     {
       title: 'BalVikas Bhajans for Practice',
+      link: 'https://drive.google.com/drive/folders/1PVslaUFaAw0adAgUSH7byC4BZyW9u22n?usp=drive_link',
       content: [],
     },
     {
       title: 'Balvikas Prayer',
+      link: 'https://drive.google.com/drive/folders/1ix1HAJdsJECNL_MU81FMFRvMllLDNpfi?usp=drive_link',
       content: [],
     },
     {
       title: 'Balvikas Sloka',
+      link: 'https://drive.google.com/drive/folders/12xlu-U9cl0gIAcLR8X7z2_haxCn6lflc?usp=drive_link',
       content: [],
     },
     {
       title: 'BalVikas Value Songs',
+      link: 'https://drive.google.com/drive/folders/1i86s0dDiaLrZdOr_YjT29Opiz5Zn-wMX?usp=drive_link',
       content: [],
     },
     {
       title: 'Balvikas Value Song',
+      link: 'https://drive.google.com/drive/folders/12Nm0fSJcAhpYe8-pciTw7KowHn72iZ78?usp=drive_link',
       content: [],
     },
     {
       title: 'Balvikas Bhajan-Listen',
+      link: 'https://drive.google.com/drive/folders/1P9uchPW4fGBEceI2yeZycUuNYNXMmuQa?usp=drive_link',
       content: [],
     },
     {
       title: 'Balvikas Bhajagobinda',
+      link: 'https://drive.google.com/drive/folders/1K7Jxw_jk-221cxOqAVWBYk7NyopOfMgl?usp=drive_link',
       content: [],
     },
     {
       title: 'Balvikas Gita sloka',
+      link: 'https://drive.google.com/drive/folders/1x11Vkc2Qe2LJnlaWhNAIOEkCcCHHI1ky?usp=drive_link',
       content: [],
     },
   ];

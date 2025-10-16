@@ -254,6 +254,10 @@ export class SubSectionComponent implements OnInit {
           name: this.translate.instant('FestivalsOfJoy'),
           url: '/wings/education/FestivalsOfJoy',
         },
+        {
+          name: this.translate.instant('TeachingAid'),
+          url: '/resources/TeachingAid',
+        },
       ],
     },
   };
