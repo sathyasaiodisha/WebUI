@@ -4,7 +4,7 @@ import { ApiService } from '../../core/services/api.service';
 //import { Observable } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
-import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
+import { SharedModule } from '../../shared/shared.module';
 
 import Map from 'ol/Map';
 //import View from 'ol/View';
@@ -14,10 +14,12 @@ import Map from 'ol/Map';
 //declare let $: any;
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule, RouterLink, SlideShowImageComponent],
+  imports: [TranslateModule, RouterLink, SharedModule],
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
+  duration = 2000;
+  count = { dist: 35, bhajan: 774, samithis: 242, bv: 3269 };
   wings = [
     {
       name: 'Service',
@@ -49,7 +51,49 @@ export class HomeComponent implements OnInit {
   //posts$!: Observable<any>;
   posts$: any = null;
   constructor(private apiService: ApiService) {}
-  banner = [{ image: 'assets/images/baba-min.jpg', caption: '' }];
+  banner = [
+    {
+      image: 'assets/images/baba-min.jpg',
+      caption:
+        '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
+    },
+    {
+      image: 'assets/images/home/b1.jpg',
+      caption:
+        '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
+    },
+    {
+      image: 'assets/images/home/b2.jpg',
+      caption:
+        '"Love lives by giving and forgiving. Ego lives by getting and forgetting."',
+    },
+    {
+      image: 'assets/images/home/b3.jpg',
+      caption:
+        '"See no evil, See what is good. Hear no evil, Hear what is good. Talk no evil, Talk what is good. Think no evil, Think what is good. Do no evil, Do what is good."',
+    },
+    {
+      image: 'assets/images/home/b4.jpg',
+      caption: '"Education should be for life, not for a living."',
+    },
+    {
+      image: 'assets/images/home/b5.jpg',
+      caption: '"Money comes and goes. Morality comes and grows."',
+    },
+    {
+      image: 'assets/images/home/b6.jpg',
+      caption: '"Work is worship. Duty is God."',
+    },
+    {
+      image: 'assets/images/home/b7.jpg',
+      caption: '"The best way to love God is to love all and serve all."',
+    },
+    {
+      image: 'assets/images/home/b8.jpg',
+      caption:
+        '"Some say that knowledge is power, but it is not true. Character is power."',
+    },
+  ];
   ngOnInit(): void {
     //this.posts$ = this.apiService.getPosts();
     this.apiService.getPosts().subscribe((data) => {

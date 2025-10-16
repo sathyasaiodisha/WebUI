@@ -1,16 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
-import { ApiService } from '../../core/services/api.service';
+import { SlideShowImageComponent } from '../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-sss-introduction',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Introduction to Sri Sathya Sai' | translate }}
         </h1>
+        <div class="service_wrapper_top">
+          <div class="carousel">
+            <!--Image carousel (Each image is linked to a page)-->
+            <app-slideshowimage [banner]="banner"></app-slideshowimage>
+          </div>
+        </div>
+
         <p>
           Sri Sathya Sai Baba, a loving God to His devotees and followers, an
           universal Teacher with a humanitarian outlook has inspired millions of
@@ -37,17 +44,8 @@ import { ApiService } from '../../core/services/api.service';
   `,
 })
 export class IntroductionComponent implements OnInit {
-  // data: {
-  //   designation: string;
-  //   name: string;
-  //   phoneNo: string;
-  //   whatsAppNo: string;
-  //   emailid: string;
-  // }[] = [];
-  constructor(private apiService: ApiService) {}
-  ngOnInit(): void {
-    // this.apiService.getStateCoordinators().subscribe((data) => {
-    //   this.data = data;
-    // });
-  }
+  banner = [
+    { image: 'assets/images/Sri_Sathya_Sai_Seva_org.jpg', caption: '' },
+  ];
+  ngOnInit(): void {}
 }

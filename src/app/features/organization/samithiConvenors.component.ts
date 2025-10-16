@@ -20,8 +20,8 @@ import { ApiService } from '../../core/services/api.service';
             <th scope="col">{{ 'Age' | translate }}</th>
             <th scope="col">{{ 'PhoneNo' | translate }}</th>
             <th scope="col">{{ 'Year' | translate }}</th>
-            <th scope="col">{{ 'ContinuingNew' | translate }}</th>
-            <th scope="col">{{ 'SaiConnectID' | translate }}</th>
+            <!-- <th scope="col">{{ 'ContinuingNew' | translate }}</th>
+            <th scope="col">{{ 'SaiConnectID' | translate }}</th> -->
           </tr>
         </thead>
         <tbody>
@@ -34,8 +34,8 @@ import { ApiService } from '../../core/services/api.service';
             <td>{{ item.age }}</td>
             <td>{{ item.mob }}</td>
             <td>{{ item.year }}</td>
-            <td>{{ item.contiNew }}</td>
-            <td>{{ item.SaiConnectID }}</td>
+            <!-- <td>{{ item.contiNew }}</td>
+            <td>{{ item.SaiConnectID }}</td> -->
           </tr>
         </tbody>
       </table>

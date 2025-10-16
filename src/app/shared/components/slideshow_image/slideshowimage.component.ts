@@ -16,21 +16,29 @@ import { Component, OnInit, Input } from '@angular/core';
           <!--fade-->
           <div class="numbertext">{{ slideIndex }} / {{ data.length }}</div>
 
-          <img src="{{ item.image }}" style="width:100%" />
+          <img
+            src="{{ item.image }}"
+            style="width:100%"
+            [style]="{
+              minHeight: minH + 'px',
+              maxHeight: maxH ? maxH + 'px' : 'auto'
+            }"
+          />
           @if(item.caption){
           <div class="text">{{ item.caption }}</div>
           }
         </div>
-        }}
+        }} @if(isPreNxt){
 
         <a class="prev" (click)="plusSlides(-1)">❮</a>
         <a class="next" (click)="plusSlides(1)">❯</a>
-        @if(isActive){
+        } @if(isActive){
         <div class="pause">||</div>
         } @else {
         <div class="countDown">{{ countDown }}</div>
         }
       </div>
+      @if(isDot){
       <br />
 
       <div style="text-align:center">
@@ -42,16 +50,27 @@ import { Component, OnInit, Input } from '@angular/core';
         ></span>
         }
       </div>
+      }
     </div>
   `,
 })
 export class SlideShowImageComponent implements OnInit {
   @Input() banner: { image: string; caption?: string }[] = [];
+  @Input() settings?: {
+    isDot?: boolean;
+    isPreNxt?: boolean;
+    minH?: number;
+    maxH?: number;
+  } = {};
   slideIndex = 1;
   isActive = false;
+  isDot: boolean = true;
+  isPreNxt: boolean = true;
   defaultDuration = 5000; // 5 seconds
   timeOutVar: any;
   countDown = 1;
+  minH = 0;
+  maxH = 0; //861;
   slideDuration = this.defaultDuration + 0;
   data: { image: string; caption?: string }[] = [];
   constructor() {}
@@ -68,6 +87,10 @@ export class SlideShowImageComponent implements OnInit {
       { image: 'https://www.w3schools.com/howto/img_mountains_wide.jpg' },
     ];
     if (this.banner && this.banner.length > 0) this.data = this.banner;
+    if (this.settings) this.isDot = this.settings?.isDot ?? this.isDot;
+    if (this.settings) this.isPreNxt = this.settings?.isPreNxt ?? this.isPreNxt;
+    if (this.settings) this.minH = this.settings?.minH ?? this.minH;
+    if (this.settings) this.maxH = this.settings?.maxH ?? this.maxH;
     // Show the first slide
     this.showSlides(this.slideIndex);
   }

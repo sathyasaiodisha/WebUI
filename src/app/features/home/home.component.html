@@ -1,15 +1,19 @@
-<div class="service_wrapper_top">
+<app-carousel [banner]="banner"></app-carousel>
+
+<!-- <div class="homeCarousel">
   <div class="carousel">
-    <!--Image carousel (Each image is linked to a page)-->
-    <app-slideshowimage [banner]="banner"></app-slideshowimage>
+    <app-slideshowimage
+      [banner]="banner"
+      [settings]="{ isDot: false, isPreNxt: false, maxH: 861 }"
+    ></app-slideshowimage>
   </div>
-</div>
+</div> -->
 <div class="row">
   <div class="col-12">
     <div class="wings_outer">
       <div class="row">
         @for(item of wings; track item.name){
-        <div class="wings col">
+        <div class="wings col-4 col-md">
           <a [routerLink]="item.link">
             <img class="wings-img-top" src="{{ item.img }}" alt="Mahilas"
           /></a>
@@ -23,10 +27,48 @@
   </div>
 
   <div class="col-12 svg_outer">
-<!--    <h5>{{ "organization_map_title" | translate }}</h5>-->
+    <!--    <h5>{{ "organization_map_title" | translate }}</h5>-->
     <!-- <div id="ol-map" class="map-container"></div> -->
     <div class="svg_containner">
       <img src="assets/images/odisha-sai-map-Jul2025.png" style="width: 100%" />
+      <div class="row sum_counter">
+        <div class="col-auto sum-counter_title">
+          <div
+            class="sum-counter_value"
+            [countUp]="count.dist"
+            [duration]="duration"
+          >
+            +35
+          </div>
+          Sai Districts
+        </div>
+        <div class="col-auto sum-counter_title">
+          <div
+            class="sum-counter_value"
+            [countUp]="count.bhajan"
+            [duration]="duration"
+          >
+            +774
+          </div>
+          Bhajan Mandalis
+        </div>
+        <div class="col-auto sum-counter_title">
+          <div
+            class="sum-counter_value"
+            [countUp]="count.samithis"
+            [duration]="duration"
+          ></div>
+          Seva Samithis
+        </div>
+        <div class="col-auto sum-counter_title">
+          <div
+            class="sum-counter_value"
+            [countUp]="count.bv"
+            [duration]="duration"
+          ></div>
+          Bala Vikas Centres
+        </div>
+      </div>
     </div>
     <div class="svg_containner" style="display: none">
       <svg

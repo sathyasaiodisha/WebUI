@@ -10,9 +10,9 @@ import { GuruentryComponent } from './features/admin/dataentry/guruentry/guruent
 import { StateofficebearersentryComponent } from './features/admin/dataentry/stateofficebearersentry/stateofficebearersentry.component';
 import { DistrictofficebearersentryComponent } from './features/admin/dataentry/districtofficebearersentry/districtofficebearersentry.component';
 import { SamithiofficebearersentryComponent } from './features/admin/dataentry/samithiofficebearersentry/samithiofficebearersentry.component';
-import {DesignationentryComponent} from './features/admin/dataentry/designationentry/designationentry.component';
-import {SSSDivyaPadukaYatraComponent} from './features/sssDivyaPadukaYatra.component';
-import {SSSMobileHospitalComponent} from './features/sssMobileHospital.component';
+import { DesignationentryComponent } from './features/admin/dataentry/designationentry/designationentry.component';
+import { SSSDivyaPadukaYatraComponent } from './features/sssDivyaPadukaYatra.component';
+import { SSSMobileHospitalComponent } from './features/sssMobileHospital.component';
 
 export const routes: Routes = [
   {
@@ -66,10 +66,158 @@ export const routes: Routes = [
       {
         path: 'service',
         data: { breadcrumb: 'Service' },
-        loadComponent: () =>
-          import('./features/wings/service.component').then(
-            (c) => c.ServiceComponent
-          ),
+        children: [
+          {
+            path: 'NarayanaSeva',
+            data: { breadcrumb: 'NarayanaSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/NarayanaSeva.component').then(
+                (c) => c.NarayanaSevaComponent
+              ),
+          },
+          {
+            path: 'TribalVillageProgramme',
+            data: { breadcrumb: 'TribalVillageProgramme' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/TribalVillageProgramme.component'
+              ).then((c) => c.TribalVillageProgrammeComponent),
+          },
+          {
+            path: 'JalaChhatraSeva',
+            data: { breadcrumb: 'JalaChhatraSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/JalaChhatraSeva.component').then(
+                (c) => c.JalaChhatraSevaComponent
+              ),
+          },
+          {
+            path: 'AmrutaKalasam',
+            data: { breadcrumb: 'AmrutaKalasam' },
+            loadComponent: () =>
+              import('./features/wings/service/AmrutaKalasam.component').then(
+                (c) => c.AmrutaKalasamComponent
+              ),
+          },
+          {
+            path: 'NityaNarayanaSeva',
+            data: { breadcrumb: 'NityaNarayanaSeva' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/NityaNarayanaSeva.component'
+              ).then((c) => c.NityaNarayanaSevaComponent),
+          },
+          {
+            path: 'HolisticHealthCare',
+            data: { breadcrumb: 'HolisticHealthCare' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/HolisticHealthCare.component'
+              ).then((c) => c.HolisticHealthCareComponent),
+          },
+          {
+            path: 'SaiSwabalambi',
+            data: { breadcrumb: 'SaiSwabalambi' },
+            loadComponent: () =>
+              import('./features/wings/service/SaiSwabalambi.component').then(
+                (c) => c.SaiSwabalambiComponent
+              ),
+          },
+          {
+            path: 'BloodDonation',
+            data: { breadcrumb: 'BloodDonation' },
+            loadComponent: () =>
+              import('./features/wings/service/BloodDonation.component').then(
+                (c) => c.BloodDonationComponent
+              ),
+          },
+          {
+            path: 'rvtc',
+            data: { breadcrumb: 'rvtc' },
+            loadComponent: () =>
+              import('./features/wings/service/rvtc.component').then(
+                (c) => c.rvtcComponent
+              ),
+          },
+          {
+            path: 'SwachhatwaRuDivyatwa',
+            data: { breadcrumb: 'SwachhatwaRuDivyatwa' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SwachhatwaRuDivyatwa.component'
+              ).then((c) => c.SwachhatwaRuDivyatwaComponent),
+          },
+          {
+            path: 'SanitationSeva',
+            data: { breadcrumb: 'SanitationSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/SanitationSeva.component').then(
+                (c) => c.SanitationSevaComponent
+              ),
+          },
+          {
+            path: 'AgriCare',
+            data: { breadcrumb: 'AgriCare' },
+            loadComponent: () =>
+              import('./features/wings/service/AgriCare.component').then(
+                (c) => c.AgriCareComponent
+              ),
+          },
+          {
+            path: 'SriSathyaSaiHousingProject',
+            data: { breadcrumb: 'SriSathyaSaiHousingProject' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SriSathyaSaiHousingProject.component'
+              ).then((c) => c.SriSathyaSaiHousingProjectComponent),
+          },
+          {
+            path: 'SriSathyaSaiWaterProject',
+            data: { breadcrumb: 'SriSathyaSaiWaterProject' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SriSathyaSaiWaterProject.component'
+              ).then((c) => c.SriSathyaSaiWaterProjectComponent),
+          },
+          {
+            path: 'DisasterManagement',
+            data: { breadcrumb: 'DisasterManagement' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/DisasterManagement.component'
+              ).then((c) => c.DisasterManagementComponent),
+          },
+          {
+            path: 'SriSathyaSaiSudarshan',
+            data: { breadcrumb: 'SriSathyaSaiSudarshan' },
+            loadComponent: () =>
+              import(
+                './features/wings/service/SriSathyaSaiSudarshan.component'
+              ).then((c) => c.SriSathyaSaiSudarshanComponent),
+          },
+          {
+            path: 'PrasanthiSeva',
+            data: { breadcrumb: 'PrasanthiSeva' },
+            loadComponent: () =>
+              import('./features/wings/service/PrasanthiSeva.component').then(
+                (c) => c.PrasanthiSevaComponent
+              ),
+          },
+          {
+            path: ':page',
+            loadComponent: () =>
+              import('./features/wings/service.component').then(
+                (c) => c.ServiceComponent
+              ),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/service.component').then(
+                (c) => c.ServiceComponent
+              ),
+          },
+        ],
       },
       {
         path: 'spiritual',
@@ -206,26 +354,224 @@ export const routes: Routes = [
       {
         path: 'education',
         data: { breadcrumb: 'Education' },
-        loadComponent: () =>
-          import('./features/wings/education.component').then(
-            (c) => c.EducationComponent
-          ),
+        children: [
+          {
+            path: 'SriSathyaSaiBalVikas',
+            data: { breadcrumb: 'SriSathyaSaiBalVikas' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/SriSathyaSaiBalVikas.component'
+              ).then((c) => c.SriSathyaSaiBalVikasComponent),
+          },
+          {
+            path: 'SriSathyaSaiVidyaJyothi',
+            data: { breadcrumb: 'SriSathyaSaiVidyaJyothi' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/SriSathyaSaiVidyaJyothi.component'
+              ).then((c) => c.SriSathyaSaiVidyaJyothiComponent),
+          },
+          {
+            path: 'NityaSikshyaDana',
+            data: { breadcrumb: 'NityaSikshyaDana' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/NityaSikshyaDana.component'
+              ).then((c) => c.NityaSikshyaDanaComponent),
+          },
+          {
+            path: 'VidyaVahini',
+            data: { breadcrumb: 'VidyaVahini' },
+            loadComponent: () =>
+              import('./features/wings/education/VidyaVahini.component').then(
+                (c) => c.VidyaVahiniComponent
+              ),
+          },
+          {
+            path: 'FestivalsOfJoy',
+            data: { breadcrumb: 'FestivalsOfJoy' },
+            loadComponent: () =>
+              import(
+                './features/wings/education/FestivalsOfJoy.component'
+              ).then((c) => c.FestivalsOfJoyComponent),
+          },
+          {
+            path: ':page',
+            loadComponent: () =>
+              import('./features/wings/education.component').then(
+                (c) => c.EducationComponent
+              ),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/education.component').then(
+                (c) => c.EducationComponent
+              ),
+          },
+        ],
       },
       {
         path: 'ladies',
         data: { breadcrumb: 'Ladies' },
-        loadComponent: () =>
-          import('./features/wings/ladies.component').then(
-            (c) => c.LadiesComponent
-          ),
+        children: [
+          {
+            path: 'SaktiSwaroopiniDiwas',
+            data: { breadcrumb: 'SaktiSwaroopiniDiwas' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/SaktiSwaroopiniDiwas.component'
+              ).then((c) => c.SaktiSwaroopiniDiwasComponent),
+          },
+          {
+            path: 'SaiBratakalpa',
+            data: { breadcrumb: 'SaiBratakalpa' },
+            loadComponent: () =>
+              import('./features/wings/mahila/SaiBratakalpa.component').then(
+                (c) => c.SaiBratakalpaComponent
+              ),
+          },
+          {
+            path: 'LalitaSahasraNama',
+            data: { breadcrumb: 'LalitaSahasraNama' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/LalitaSahasraNama.component'
+              ).then((c) => c.LalitaSahasraNamaComponent),
+          },
+          {
+            path: 'KumkumaPujaArchana',
+            data: { breadcrumb: 'KumkumaPujaArchana' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/KumkumaPujaArchana.component'
+              ).then((c) => c.KumkumaPujaArchanaComponent),
+          },
+          {
+            path: 'BaralaxmiBrata',
+            data: { breadcrumb: 'BaralaxmiBrata' },
+            loadComponent: () =>
+              import('./features/wings/mahila/BaralaxmiBrata.component').then(
+                (c) => c.BaralaxmiBrataComponent
+              ),
+          },
+          {
+            path: 'SaiSanatani',
+            data: { breadcrumb: 'SaiSanatani' },
+            loadComponent: () =>
+              import('./features/wings/mahila/SaiSanatani.component').then(
+                (c) => c.SaiSanataniComponent
+              ),
+          },
+          {
+            path: 'SaiPremadhara',
+            data: { breadcrumb: 'SaiPremadhara' },
+            loadComponent: () =>
+              import('./features/wings/mahila/SaiPremadhara.component').then(
+                (c) => c.SaiPremadharaComponent
+              ),
+          },
+          {
+            path: 'MahilaConvention',
+            data: { breadcrumb: 'MahilaConvention' },
+            loadComponent: () =>
+              import('./features/wings/mahila/MahilaConvention.component').then(
+                (c) => c.MahilaConventionComponent
+              ),
+          },
+          {
+            path: 'MahilaBhajanSatsangStudyCircle',
+            data: { breadcrumb: 'MahilaBhajanSatsangStudyCircle' },
+            loadComponent: () =>
+              import(
+                './features/wings/mahila/MahilaBhajanSatsangStudyCircle.component'
+              ).then((c) => c.MahilaBhajanSatsangStudyCircleComponent),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/ladies.component').then(
+                (c) => c.LadiesComponent
+              ),
+          },
+        ],
       },
       {
         path: 'youth',
         data: { breadcrumb: 'Youth' },
-        loadComponent: () =>
-          import('./features/wings/youth.component').then(
-            (c) => c.YouthComponent
-          ),
+        children: [
+          {
+            path: 'NationalInitiatives',
+            data: { breadcrumb: 'NationalInitiatives' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/NationalInitiatives.component'
+              ).then((c) => c.NationalInitiativesComponent),
+          },
+          {
+            path: 'PracticingCod',
+            data: { breadcrumb: 'PracticingCod' },
+            loadComponent: () =>
+              import('./features/wings/youth/PracticingCod.component').then(
+                (c) => c.PracticingCodComponent
+              ),
+          },
+          {
+            path: 'MaintainingOfSpiritualDairy',
+            data: { breadcrumb: 'MaintainingOfSpiritualDairy' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/MaintainingOfSpiritualDairy.component'
+              ).then((c) => c.MaintainingOfSpiritualDairyComponent),
+          },
+          {
+            path: 'YouthMeetYouthDayCelebration',
+            data: { breadcrumb: 'YouthMeetYouthDayCelebration' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/YouthMeetYouthDayCelebration.component'
+              ).then((c) => c.YouthMeetYouthDayCelebrationComponent),
+          },
+          {
+            path: 'YouthStudyCircle',
+            data: { breadcrumb: 'YouthStudyCircle' },
+            loadComponent: () =>
+              import('./features/wings/youth/YouthStudyCircle.component').then(
+                (c) => c.YouthStudyCircleComponent
+              ),
+          },
+          {
+            path: 'SaiSradha',
+            data: { breadcrumb: 'SaiSradha' },
+            loadComponent: () =>
+              import('./features/wings/youth/SaiSradha.component').then(
+                (c) => c.SaiSradhaComponent
+              ),
+          },
+          {
+            path: 'SriSathyaSaiJagruti',
+            data: { breadcrumb: 'SriSathyaSaiJagruti' },
+            loadComponent: () =>
+              import(
+                './features/wings/youth/SriSathyaSaiJagruti.component'
+              ).then((c) => c.SriSathyaSaiJagrutiComponent),
+          },
+          {
+            path: 'SummerCourse',
+            data: { breadcrumb: 'SummerCourse' },
+            loadComponent: () =>
+              import('./features/wings/youth/SummerCourse.component').then(
+                (c) => c.SummerCourseComponent
+              ),
+          },
+          {
+            path: '',
+            loadComponent: () =>
+              import('./features/wings/youth.component').then(
+                (c) => c.YouthComponent
+              ),
+          },
+        ],
       },
       {
         path: ':page',
@@ -237,8 +583,8 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'innovativeProjects',
-    data: { breadcrumb: 'Innovative Projects', link: 0 },
+    path: 'SevaInitiatives',
+    data: { breadcrumb: 'SevaInitiatives', link: 0 },
     children: [
       {
         path: 'holisticHealthCare',
@@ -246,14 +592,6 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./features/wings/holisticHealthCare.component').then(
             (c) => c.HolisticHealthCareComponent
-          ),
-      },
-      {
-        path: 'teleMedicineCenter',
-        data: { breadcrumb: 'Tele Medicine Center' },
-        loadComponent: () =>
-          import('./features/wings/teleMedicineCenter.component').then(
-            (c) => c.TeleMedicineCenterComponent
           ),
       },
       {
@@ -273,19 +611,33 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'sssPrematharu',
-        data: { breadcrumb: 'Sri Sathya Sai Prematharu' },
-        loadComponent: () =>
-          import('./features/sssPrematharu.component').then(
-            (c) => c.SssPrematharuComponent
-          ),
-      },
-      {
         path: 'sssDivyaPadukaYatra',
         data: { breadcrumb: 'Sri Sathya Sai Divya Paduka Yatra' },
         loadComponent: () =>
           import('./features/sssDivyaPadukaYatra.component').then(
             (c) => c.SSSDivyaPadukaYatraComponent
+          ),
+      },
+    ],
+  },
+  {
+    path: 'sssTrustOdisha',
+    data: { breadcrumb: 'sssTrustOdisha', link: 0 },
+    children: [
+      {
+        path: 'teleMedicineCenter',
+        data: { breadcrumb: 'Tele Medicine Center' },
+        loadComponent: () =>
+          import('./features/wings/teleMedicineCenter.component').then(
+            (c) => c.TeleMedicineCenterComponent
+          ),
+      },
+      {
+        path: 'sssPrematharu',
+        data: { breadcrumb: 'Sri Sathya Sai Prematharu' },
+        loadComponent: () =>
+          import('./features/sssPrematharu.component').then(
+            (c) => c.SssPrematharuComponent
           ),
       },
       {
@@ -393,12 +745,89 @@ export const routes: Routes = [
   },
 
   {
-    path: 'resources/:page',
+    path: 'resources',
     data: { breadcrumb: 'Resources' },
-    loadComponent: () =>
-      import('./features/resources/resources.component').then(
-        (c) => c.ResourcesComponent
-      ),
+    children: [
+      {
+        path: 'videos',
+        data: { breadcrumb: 'Videos' },
+        loadComponent: () =>
+          import('./features/resources/Videos.component').then(
+            (c) => c.VideosComponent
+          ),
+      },
+      {
+        path: 'audio',
+        data: { breadcrumb: 'Audio' },
+        loadComponent: () =>
+          import('./features/resources/Audio.component').then(
+            (c) => c.AudioComponent
+          ),
+      },
+      {
+        path: 'DigitalLibrary',
+        data: { breadcrumb: 'DigitalLibrary' },
+        loadComponent: () =>
+          import('./features/resources/DigitalLibrary.component').then(
+            (c) => c.DigitalLibraryComponent
+          ),
+      },
+      {
+        path: 'Wallpapers',
+        data: { breadcrumb: 'Wallpapers' },
+        loadComponent: () =>
+          import('./features/resources/Wallpapers.component').then(
+            (c) => c.WallpapersComponent
+          ),
+      },
+      {
+        path: 'Presentations',
+        data: { breadcrumb: 'Presentations' },
+        loadComponent: () =>
+          import('./features/resources/Presentations.component').then(
+            (c) => c.PresentationsComponent
+          ),
+      },
+      {
+        path: 'TeachingAid',
+        data: { breadcrumb: 'TeachingAid' },
+        loadComponent: () =>
+          import('./features/resources/TeachingAid.component').then(
+            (c) => c.TeachingAidComponent
+          ),
+      },
+      {
+        path: 'BannerDesign',
+        data: { breadcrumb: 'BannerDesign' },
+        loadComponent: () =>
+          import('./features/resources/BannerDesign.component').then(
+            (c) => c.BannerDesignComponent
+          ),
+      },
+      {
+        path: 'SathyaSaiSpeak',
+        data: { breadcrumb: 'SathyaSaiSpeak' },
+        loadComponent: () =>
+          import('./features/resources/SathyaSaiSpeak.component').then(
+            (c) => c.SathyaSaiSpeakComponent
+          ),
+      },
+      {
+        path: 'SummerCourse',
+        data: { breadcrumb: 'SummerCourse' },
+        loadComponent: () =>
+          import('./features/resources/resources.component').then(
+            (c) => c.ResourcesComponent
+          ),
+      },
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/resources/resources.component').then(
+            (c) => c.ResourcesComponent
+          ),
+      },
+    ],
   },
   {
     path: 'events',
@@ -414,6 +843,38 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./features/report/report.component').then(
         (c) => c.ReportComponent
+      ),
+  },
+  {
+    path: 'ContactUs',
+    data: { breadcrumb: 'ContactUs' },
+    loadComponent: () =>
+      import('./features/ContactUs.component').then(
+        (c) => c.ContactUsComponent
+      ),
+  },
+  {
+    path: 'PrivacyPolicy',
+    data: { breadcrumb: 'PrivacyPolicy' },
+    loadComponent: () =>
+      import('./features/PrivacyPolicy.component').then(
+        (c) => c.PrivacyPolicyComponent
+      ),
+  },
+  {
+    path: 'Trademarks',
+    data: { breadcrumb: 'Trademarks' },
+    loadComponent: () =>
+      import('./features/Trademarks.component').then(
+        (c) => c.TrademarksComponent
+      ),
+  },
+  {
+    path: 'Disclaimer',
+    data: { breadcrumb: 'Disclaimer' },
+    loadComponent: () =>
+      import('./features/Disclaimer.component').then(
+        (c) => c.DisclaimerComponent
       ),
   },
   {

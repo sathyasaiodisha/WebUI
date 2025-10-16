@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -29,6 +29,8 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent {
+  translate = inject(TranslateService);
+
   menus = [
     {
       name: 'Sri Sathya Sai',
@@ -42,7 +44,7 @@ export class HeaderComponent {
     },
 
     {
-      name: '5 Wings',
+      name: 'Wings',
       link: '/wings',
       subMenu: [
         { name: 'Service', link: '/service' },
@@ -53,18 +55,17 @@ export class HeaderComponent {
       ],
     },
     {
-      name: 'Innovative Projects',
-      link: '/innovativeProjects',
+      name: 'Seva Initiatives',
+      link: '/SevaInitiatives',
       subMenu: [
         { name: 'Holistic Health Care', link: '/holisticHealthCare' },
-        { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
         { name: 'Book Trust', link: '/bookTrust' },
         { name: 'Institutions', link: '/todo' },
         { name: 'Sri Sathya Sai Grama Seva', link: '/sssGramaSeva' },
-        { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
-        { name: 'Sri Sathya Sai Divya Paduka Yatra', link: '/sssDivyaPadukaYatra' },
-        { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
-        { name: 'Sri Sathya Sai Mobile Hospital', link: '/sssMobileHospital' },
+        {
+          name: 'Sri Sathya Sai Divya Paduka Yatra',
+          link: '/sssDivyaPadukaYatra',
+        },
         { name: 'Prasanthi Seva', link: '/todo' },
       ],
     },
@@ -76,14 +77,13 @@ export class HeaderComponent {
           name: 'About SSSSO-Odisha',
           link: '/sevaOrgOdisha',
         },
-        { name: 'SSS Trust-Odisha', link: '/centralTrust' },
         { name: 'State Coordinators', link: '/stateCoordinators' },
         { name: 'State In-Charges', link: '/sic' },
         { name: 'District Presidents', link: '/districtPresidents' },
         { name: 'District Coordinator', link: '/districtCoordinator' },
         //{ name: 'District Digital Archive Coordinator', link: '/7' },
-        { name: 'District Official', link: '/samithis' },
-        { name: 'Resource Persons', link: '/9' },
+        { name: 'Samithi List', link: '/samithis' },
+        //{ name: 'Resource Persons', link: '/todo' },
         { name: 'Samithi Convenors', link: '/samithiConvenors' },
         { name: 'Bhajan Mandalis', link: '/bhajanMandalis' },
       ],
@@ -94,13 +94,38 @@ export class HeaderComponent {
       subMenu: [
         { name: 'Videos', link: '/videos' },
         { name: 'Audio', link: '/audio' },
-        { name: 'Teaching Aid', link: '/3' },
-        { name: 'Presentations', link: '/4' },
-        { name: 'Photos', link: '/5' },
-        { name: 'Wallpapers', link: '/6' },
-        { name: 'Miracles', link: '/7' },
-        { name: 'Experiences', link: '/8' },
-        { name: 'Sathya Sai Speak', link: '/9' },
+        {
+          name: this.translate.instant('DigitalLibrary'),
+          link: '/DigitalLibrary',
+        },
+        { name: 'Teaching Aid', link: '/TeachingAid' },
+        { name: 'Presentations', link: '/Presentations' },
+        { name: 'Banner Design', link: '/BannerDesign' },
+        { name: 'Photos', link: '/todo' },
+        { name: 'Wallpapers', link: '/Wallpapers' },
+        { name: 'Miracles', link: '/todo' },
+        { name: 'Experiences', link: '/todo' },
+        { name: 'Sathya Sai Speak', link: '/SathyaSaiSpeak' },
+      ],
+    },
+    {
+      name: 'SSS Schools, Odisha',
+      link: '/sssSchoolOdisha',
+      // subMenu: [
+      //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
+
+      // ],
+    },
+    {
+      name: 'SSS Trust, Odisha',
+      link: '/sssTrustOdisha',
+      subMenu: [
+        { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
+        { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
+        { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
+        { name: 'Sri Sathya Sai Mobile Hospital', link: '/sssMobileHospital' },
+
+        // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],
     },
     { name: 'Report', link: '/report' },
@@ -110,12 +135,9 @@ export class HeaderComponent {
   bellIcon = faBell;
   signin = faSignIn;
   signup = faUserPlus;
-  constructor(
-    public translateService: TranslateService,
-    private router: Router
-  ) {}
+  constructor(private router: Router) {}
   public changeLanguage(language: string): void {
-    this.translateService.use(language);
+    this.translate.use(language);
   }
 
   get isHomePage(): boolean {

@@ -5,7 +5,7 @@
       type="button"
       class="btn btn-sm btn-outline-secondary"
       (click)="changeLanguage('ory')"
-      [class.active]="translateService.currentLang === 'ory'"
+      [class.active]="translate.currentLang === 'ory'"
     >
       ଓଡ଼ିଆ
     </button>
@@ -13,9 +13,7 @@
       type="button"
       class="btn btn-sm btn-outline-secondary"
       (click)="changeLanguage('en')"
-      [class.active]="
-        !translateService.currentLang || translateService.currentLang === 'en'
-      "
+      [class.active]="!translate.currentLang || translate.currentLang === 'en'"
     >
       En
     </button>
@@ -24,12 +22,12 @@
 <div [ngClass]="{ header: 1, banner: isHomePage, bannerInner: !isHomePage }">
   <header>
     <div class="row">
-      <div class="col-sm-2 logo">
+      <div class="col-1 logo">
         <a routerLink="/">
           <img src="assets/images/logo.png" alt="logo" />
         </a>
       </div>
-      <div class="col-sm-8">
+      <div class="col-10">
         <div class="top-menu">
           <!--nav-- class="navbar navbar-expand-lg">
             <a
@@ -147,9 +145,9 @@
           </nav>
         </div>
       </div>
-      <div class="col-sm-2 d-none d-lg-block">
+      <div class="col-1 d-none d-lg-block">
         <div class="right-menu">
-          <div class="row">
+          <div class="row d-none">
             <!--div class="col-xl-2">
               <a class="notificationLink">
                 <fa-icon [icon]="bellIcon"></fa-icon>
@@ -225,7 +223,7 @@
           type="button"
           class="btn btn-sm btn-outline-secondary"
           (click)="changeLanguage('ory')"
-          [class.active]="translateService.currentLang === 'ory'"
+          [class.active]="translate.currentLang === 'ory'"
         >
           ଓଡ଼ିଆ
         </button>
@@ -234,8 +232,8 @@
           class="btn btn-sm btn-outline-secondary"
           (click)="changeLanguage('en')"
           [class.active]="
-            !translateService.currentLang ||
-            translateService.currentLang === 'en'
+            !translate.currentLang ||
+            translate.currentLang === 'en'
           "
         >
           English
