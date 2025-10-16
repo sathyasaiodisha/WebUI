@@ -17,6 +17,20 @@ import { SharedModule } from '@shared/shared.module';
             </div>
           </div>
         </div>
+        <div class="row ">
+          @for( item of banner ;track $index;){
+          <div class="card col-3">
+            <img [src]="item.image" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                <a target="_blank" [href]="item.image" class="card-link"
+                  >View</a
+                >
+              </p>
+            </div>
+          </div>
+          }
+        </div>
       </div>
     </div>
   `,
