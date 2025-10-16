@@ -786,6 +786,14 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'TeachingAid',
+        data: { breadcrumb: 'TeachingAid' },
+        loadComponent: () =>
+          import('./features/resources/TeachingAid.component').then(
+            (c) => c.TeachingAidComponent
+          ),
+      },
+      {
         path: 'BannerDesign',
         data: { breadcrumb: 'BannerDesign' },
         loadComponent: () =>

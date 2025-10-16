@@ -98,7 +98,7 @@ export class HeaderComponent {
           name: this.translate.instant('DigitalLibrary'),
           link: '/DigitalLibrary',
         },
-        { name: 'Teaching Aid', link: '/todo' },
+        { name: 'Teaching Aid', link: '/TeachingAid' },
         { name: 'Presentations', link: '/Presentations' },
         { name: 'Banner Design', link: '/BannerDesign' },
         { name: 'Photos', link: '/todo' },
