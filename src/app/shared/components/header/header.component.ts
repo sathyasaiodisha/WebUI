@@ -120,6 +120,8 @@ export class HeaderComponent {
       name: 'SSS Trust, Odisha',
       link: '/sssTrustOdisha',
       subMenu: [
+        { name: 'About SSS Trust', link: '/centralTrust' },
+        { name: 'Book Trust', link: '/bookTrust' },
         { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
         { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },

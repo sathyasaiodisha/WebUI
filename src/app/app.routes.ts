@@ -592,14 +592,6 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'bookTrust',
-        data: { breadcrumb: 'Book Trust' },
-        loadComponent: () =>
-          import('./features/wings/bookTrust.component').then(
-            (c) => c.BookTrustComponent
-          ),
-      },
-      {
         path: 'sssGramaSeva',
         data: { breadcrumb: 'Sri Sathya Sai Grama Seva' },
         loadComponent: () =>
@@ -621,6 +613,22 @@ export const routes: Routes = [
     path: 'sssTrustOdisha',
     data: { breadcrumb: 'sssTrustOdisha', link: 0 },
     children: [
+      {
+        path: 'centralTrust',
+        data: { breadcrumb: 'Central Trust' },
+        loadComponent: () =>
+          import('./features/organization/centralTrust.component').then(
+            (c) => c.CentralTrustComponent
+          ),
+      },
+      {
+        path: 'bookTrust',
+        data: { breadcrumb: 'Book Trust' },
+        loadComponent: () =>
+          import('./features/wings/bookTrust.component').then(
+            (c) => c.BookTrustComponent
+          ),
+      },
       {
         path: 'teleMedicineCenter',
         data: { breadcrumb: 'Tele Medicine Center' },
@@ -659,14 +667,6 @@ export const routes: Routes = [
     path: 'organization',
     data: { breadcrumb: 'Organization', link: 0 },
     children: [
-      {
-        path: 'centralTrust',
-        data: { breadcrumb: 'Central Trust' },
-        loadComponent: () =>
-          import('./features/organization/centralTrust.component').then(
-            (c) => c.CentralTrustComponent
-          ),
-      },
       {
         path: 'sevaOrgOdisha',
         data: { breadcrumb: 'Seva Organisations' },
