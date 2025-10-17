@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, sans-serif !important;
 
   h1 {
     color: #5b5b5b !important;
@@ -438,7 +438,7 @@ body {
 
 }
 
-img.responsive{
+img.responsive {
   height: auto;
   width: 100%;
 }
