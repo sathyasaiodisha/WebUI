@@ -138,6 +138,14 @@ export class HeaderComponent {
           name: this.translate.instant('CardioPulmonaryResuscitation'),
           link: '/CardioPulmonaryResuscitation',
         },
+        {
+          name: this.translate.instant('SaiRehabilitationProgramClinics'),
+          link: '/SaiRehabilitationProgramClinics',
+        },
+        {
+          name: this.translate.instant('SSSNityaNarayanaSeva'),
+          link: '/SSSNityaNarayanaSeva',
+        },
 
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],

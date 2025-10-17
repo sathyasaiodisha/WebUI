@@ -685,6 +685,22 @@ export const routes: Routes = [
             (c) => c.CardioPulmonaryResuscitationComponent
           ),
       },
+      {
+        path: 'SaiRehabilitationProgramClinics',
+        data: { breadcrumb: 'SaiRehabilitationProgramClinics' },
+        loadComponent: () =>
+          import('./features/SaiRehabilitationProgramClinics.component').then(
+            (c) => c.SaiRehabilitationProgramClinicsComponent
+          ),
+      },
+      {
+        path: 'SSSNityaNarayanaSeva',
+        data: { breadcrumb: 'SSSNityaNarayanaSeva' },
+        loadComponent: () =>
+          import('./features/SSSNityaNarayanaSeva.component').then(
+            (c) => c.SSSNityaNarayanaSevaComponent
+          ),
+      },
     ],
   },
   {
