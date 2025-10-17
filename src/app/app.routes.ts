@@ -661,6 +661,30 @@ export const routes: Routes = [
             (c) => c.SSSMobileHospitalComponent
           ),
       },
+      {
+        path: 'sssSkillDevelopmentProgram',
+        data: { breadcrumb: 'sssSkillDevelopmentProgram' },
+        loadComponent: () =>
+          import('./features/sssSkillDevelopmentProgram.component').then(
+            (c) => c.SSSSkillDevelopmentProgramComponent
+          ),
+      },
+      {
+        path: 'TelemedicineCentreThalassemiaclinics',
+        data: { breadcrumb: 'TelemedicineCentreThalassemiaclinics' },
+        loadComponent: () =>
+          import(
+            './features/TelemedicineCentreThalassemiaclinics.component'
+          ).then((c) => c.TelemedicineCentreThalassemiaclinicsComponent),
+      },
+      {
+        path: 'CardioPulmonaryResuscitation',
+        data: { breadcrumb: 'CardioPulmonaryResuscitation' },
+        loadComponent: () =>
+          import('./features/CardioPulmonaryResuscitation.component').then(
+            (c) => c.CardioPulmonaryResuscitationComponent
+          ),
+      },
     ],
   },
   {

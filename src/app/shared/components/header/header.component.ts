@@ -126,6 +126,18 @@ export class HeaderComponent {
         { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
         { name: 'Sri Sathya Sai Mobile Hospital', link: '/sssMobileHospital' },
+        {
+          name: 'SSS Skill Development Program',
+          link: '/sssSkillDevelopmentProgram',
+        },
+        {
+          name: 'Telemedicine Centre & Thalassemia clinics',
+          link: '/TelemedicineCentreThalassemiaclinics',
+        },
+        {
+          name: this.translate.instant('CardioPulmonaryResuscitation'),
+          link: '/CardioPulmonaryResuscitation',
+        },
 
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],
