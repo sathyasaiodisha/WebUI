@@ -597,14 +597,6 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'bookTrust',
-        data: { breadcrumb: 'Book Trust' },
-        loadComponent: () =>
-          import('./features/wings/bookTrust.component').then(
-            (c) => c.BookTrustComponent
-          ),
-      },
-      {
         path: 'sssGramaSeva',
         data: { breadcrumb: 'Sri Sathya Sai Grama Seva' },
         loadComponent: () =>
@@ -626,6 +618,22 @@ export const routes: Routes = [
     path: 'sssTrustOdisha',
     data: { breadcrumb: 'sssTrustOdisha', link: 0 },
     children: [
+      {
+        path: 'centralTrust',
+        data: { breadcrumb: 'Central Trust' },
+        loadComponent: () =>
+          import('./features/organization/centralTrust.component').then(
+            (c) => c.CentralTrustComponent
+          ),
+      },
+      {
+        path: 'bookTrust',
+        data: { breadcrumb: 'Book Trust' },
+        loadComponent: () =>
+          import('./features/wings/bookTrust.component').then(
+            (c) => c.BookTrustComponent
+          ),
+      },
       {
         path: 'teleMedicineCenter',
         data: { breadcrumb: 'Tele Medicine Center' },
@@ -658,20 +666,52 @@ export const routes: Routes = [
             (c) => c.SSSMobileHospitalComponent
           ),
       },
+      {
+        path: 'sssSkillDevelopmentProgram',
+        data: { breadcrumb: 'sssSkillDevelopmentProgram' },
+        loadComponent: () =>
+          import('./features/sssSkillDevelopmentProgram.component').then(
+            (c) => c.SSSSkillDevelopmentProgramComponent
+          ),
+      },
+      {
+        path: 'TelemedicineCentreThalassemiaclinics',
+        data: { breadcrumb: 'TelemedicineCentreThalassemiaclinics' },
+        loadComponent: () =>
+          import(
+            './features/TelemedicineCentreThalassemiaclinics.component'
+          ).then((c) => c.TelemedicineCentreThalassemiaclinicsComponent),
+      },
+      {
+        path: 'CardioPulmonaryResuscitation',
+        data: { breadcrumb: 'CardioPulmonaryResuscitation' },
+        loadComponent: () =>
+          import('./features/CardioPulmonaryResuscitation.component').then(
+            (c) => c.CardioPulmonaryResuscitationComponent
+          ),
+      },
+      {
+        path: 'SaiRehabilitationProgramClinics',
+        data: { breadcrumb: 'SaiRehabilitationProgramClinics' },
+        loadComponent: () =>
+          import('./features/SaiRehabilitationProgramClinics.component').then(
+            (c) => c.SaiRehabilitationProgramClinicsComponent
+          ),
+      },
+      {
+        path: 'SSSNityaNarayanaSeva',
+        data: { breadcrumb: 'SSSNityaNarayanaSeva' },
+        loadComponent: () =>
+          import('./features/SSSNityaNarayanaSeva.component').then(
+            (c) => c.SSSNityaNarayanaSevaComponent
+          ),
+      },
     ],
   },
   {
     path: 'organization',
     data: { breadcrumb: 'Organization', link: 0 },
     children: [
-      {
-        path: 'centralTrust',
-        data: { breadcrumb: 'Central Trust' },
-        loadComponent: () =>
-          import('./features/organization/centralTrust.component').then(
-            (c) => c.CentralTrustComponent
-          ),
-      },
       {
         path: 'sevaOrgOdisha',
         data: { breadcrumb: 'Seva Organisations' },

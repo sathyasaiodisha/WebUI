@@ -36,7 +36,7 @@ import { ApiService } from '../../core/services/api.service';
           wing of Satya Sai Organization.
         </p>
         <div class="content_topgape">
-          <img src="/assets/images/SSS-HOLISTIC-HEALTHCARE-SAI%20JANANI.png">
+          <img class="responsive" src="/assets/images/SSS-HOLISTIC-HEALTHCARE-SAI%20JANANI.png">
         </div>
       </div>
     </div>

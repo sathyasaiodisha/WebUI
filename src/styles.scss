@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Verdana, sans-serif !important;
 
   h1 {
     color: #5b5b5b !important;
@@ -263,7 +263,7 @@ body {
 
 .wings_outer {
   // background-color: #F5F5F5;
-  padding: 12em 1rem;
+  padding: 2em 1rem;
   color: rgb(0, 0, 0);
   text-align: center;
   background-color: #ededed4f;
@@ -436,6 +436,11 @@ body {
     padding: 0;
   }
 
+}
+
+img.responsive {
+  height: auto;
+  width: 100%;
 }
 
 .service_wrapper_top,

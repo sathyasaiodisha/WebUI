@@ -120,10 +120,32 @@ export class HeaderComponent {
       name: 'SSS Trust, Odisha',
       link: '/sssTrustOdisha',
       subMenu: [
+        { name: 'About SSS Trust', link: '/centralTrust' },
+        { name: 'Book Trust', link: '/bookTrust' },
         { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
         { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
         { name: 'Sri Sathya Sai Mobile Hospital', link: '/sssMobileHospital' },
+        {
+          name: 'SSS Skill Development Program',
+          link: '/sssSkillDevelopmentProgram',
+        },
+        {
+          name: 'Telemedicine Centre & Thalassemia clinics',
+          link: '/TelemedicineCentreThalassemiaclinics',
+        },
+        {
+          name: this.translate.instant('CardioPulmonaryResuscitation'),
+          link: '/CardioPulmonaryResuscitation',
+        },
+        {
+          name: this.translate.instant('SaiRehabilitationProgramClinics'),
+          link: '/SaiRehabilitationProgramClinics',
+        },
+        {
+          name: this.translate.instant('SSSNityaNarayanaSeva'),
+          link: '/SSSNityaNarayanaSeva',
+        },
 
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],
