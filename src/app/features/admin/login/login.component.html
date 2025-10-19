@@ -1,5 +1,67 @@
-<form (ngSubmit)="login()">
-      <input [(ngModel)]="username" name="username" placeholder="Username" required />
-      <input [(ngModel)]="password" name="password" type="password" placeholder="Password" required />
-      <button type="submit">Login</button>
-    </form>
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>🔐 Admin Login</mat-card-title>
+      <mat-card-subtitle>Sign in to your account</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form (ngSubmit)="onLogin()" #loginForm="ngForm" class="login-form">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>User ID</mat-label>
+          <input
+            matInput
+            type="text"
+            name="username"
+            required
+            [(ngModel)]="loginData.username"
+            #username="ngModel"
+          />
+          <mat-error *ngIf="username.invalid && username.touched">
+            User ID is required
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            [type]="hidePassword ? 'password' : 'text'"
+            name="password"
+            required
+            [(ngModel)]="loginData.password"
+            #password="ngModel"
+          />
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hidePassword = !hidePassword"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hidePassword"
+            type="button"
+          >
+            <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+          </button>
+          <mat-error *ngIf="password.invalid && password.touched">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+
+        <div class="login-actions">
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit"
+            [disabled]="loginForm.invalid"
+          >
+            Login
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+
+    <mat-card-footer *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+    </mat-card-footer>
+  </mat-card>
+</div>

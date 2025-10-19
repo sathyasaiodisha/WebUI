@@ -8,7 +8,7 @@ export class AuthGuard implements CanActivate {
 
   canActivate(): boolean {
     if (!this.auth.isLoggedIn()) {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/login'], { queryParams: { redierectTo: '/admin' }});
       return false;
     }
     return true;
@@ -20,7 +20,7 @@ export class AdminGuard implements CanActivate {
   constructor(private auth: AuthService, private router: Router) {}
 
   canActivate(): boolean {
-    if (this.auth.getRole() !== 'admin') {
+    if (this.auth.getJurisdiction() !== 'admin') {
       this.router.navigate(['/not-authorized']);
       return false;
     }

@@ -11,8 +11,10 @@ import { StateofficebearersentryComponent } from './features/admin/dataentry/sta
 import { DistrictofficebearersentryComponent } from './features/admin/dataentry/districtofficebearersentry/districtofficebearersentry.component';
 import { SamithiofficebearersentryComponent } from './features/admin/dataentry/samithiofficebearersentry/samithiofficebearersentry.component';
 import { DesignationentryComponent } from './features/admin/dataentry/designationentry/designationentry.component';
+import { LoginComponent } from './features/admin/login/login.component';
 import { SSSDivyaPadukaYatraComponent } from './features/sssDivyaPadukaYatra.component';
 import { SSSMobileHospitalComponent } from './features/sssMobileHospital.component';
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
   {
@@ -878,8 +880,14 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'login',
+    loadComponent: () =>
+      import('./features/admin/login/login.component').then((c) => c.LoginComponent),
+  },
+  {
     path: 'admin',
     data: { breadcrumb: 'Admin' },
+    canActivate: [AuthGuard],
     loadComponent: () =>
       import('./features/admin/admin.component').then((c) => c.AdminComponent),
   },

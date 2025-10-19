@@ -1,4 +1,4 @@
-import { FormsModule, FormBuilder, FormGroup, Validators , AbstractControl, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, FormGroup, Validators , AbstractControl, ReactiveFormsModule, ValidationErrors } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Component, ViewChild, AfterViewInit, OnInit } from '@angular/core';
@@ -11,65 +11,149 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
 import { MatOptionModule } from '@angular/material/core';
+import { MatRadioModule } from '@angular/material/radio';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule, MatError } from '@angular/material/input';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from '../../../../shared/components/confirm-dialog/confirm-dialog.component';
 
+import { DataAdminItem, JurisdictionItem, DistrctItem, DataAdminService } from '../../../../core/services/dataadmin.service';
+
 @Component({
   standalone: true,
-  imports: [MatPaginatorModule, MatTableModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatInputModule, FormsModule, CommonModule, MatDividerModule, MatError, MatSelectModule, MatOptionModule, Validators, ReactiveFormsModule],
+  imports: [MatPaginatorModule, MatTableModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatInputModule, FormsModule, CommonModule, MatDividerModule, MatError, MatSelectModule, MatOptionModule, MatCardModule, ReactiveFormsModule, MatRadioModule],
   templateUrl: './dataadminentry.component.html',
   styleUrl: './dataadminentry.component.scss'
 })
-export class DataadminentryComponent {
-  userForm: FormGroup;
+export class DataadminentryComponent implements OnInit {
+  
   hidePassword = true;
   hideConfirmPassword = true;
+  isDisabled = true;
+  isDistrictDisabled = true;
+  showDistrictDropdown = false;
 
-  constructor(private fb: FormBuilder) {
-    this.userForm = this.fb.group({
-      username: ['', [Validators.required, Validators.minLength(3)]],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [
-        Validators.required,
-        Validators.minLength(6),
-        this.passwordStrengthValidator
-      ]],
-      confirmPassword: ['', Validators.required]
-    }, { validators: this.passwordMatchValidator });
+  successMsg: string = "";
+  showSuccessMsg: boolean = false;
+  errMsg: string = "";
+  showErrMsg: boolean = false;
+  dataAdmins: DataAdminItem[] = [];
+  adminJurisdictions: JurisdictionItem[] = [];
+  districts: DistrctItem[] = [];
+
+  newDataAdmin: DataAdminItem = {
+            ID: -1,
+            UserName: '',
+            UserEmail: '',
+            UserPwd: '',
+            JurisdictionID: -1,
+            DistrictID: -1
+        };
+
+  confirmPassword = '';
+  passwordMismatch = false;
+
+  constructor(private itemService: DataAdminService, private dialog: MatDialog) {}
+
+  ngOnInit(): void {
+            this.itemService.getItems().subscribe(data => {
+              this.dataAdmins = data;
+            });
+            this.itemService.getJurisdictions().subscribe(data => {
+              this.adminJurisdictions = data;
+            });
+            this.itemService.getDistricts().subscribe(data => {
+              this.districts = data;
+            })
+          }
+
+  validateConfirmPassword() {
+    this.passwordMismatch = this.newDataAdmin.UserPwd !== this.confirmPassword;
   }
 
-  // ✅ Password must be at least 6 chars, 1 uppercase, 1 number
-  passwordStrengthValidator(control: AbstractControl) {
-    const value = control.value;
-    if (!value) return null;
-    const hasUpper = /[A-Z]/.test(value);
-    const hasNumber = /[0-9]/.test(value);
-    const valid = hasUpper && hasNumber && value.length >= 6;
-    return valid ? null : { weakPassword: true };
-  }
-
-  // ✅ Passwords must match
-  passwordMatchValidator(group: AbstractControl) {
-    const password = group.get('password')?.value;
-    const confirm = group.get('confirmPassword')?.value;
-    return password === confirm ? null : { passwordsMismatch: true };
-  }
-
-  onSubmit() {
-    if (this.userForm.valid) {
-      console.log('New User Data:', this.userForm.value);
-      alert('User successfully created!');
-      // Here you can call your backend API (FastAPI endpoint)
-    } else {
-      this.userForm.markAllAsTouched();
+  onJurisdictionChange(jurisdictionID: number)
+  {
+    if (parseInt(jurisdictionID.toString()) === 2)
+    {
+      this.showDistrictDropdown = true;
+      this.isDisabled=true;
+    }
+    else
+    {
+      this.showDistrictDropdown = false;
+      this.isDisabled=false;
     }
   }
 
-  get username() { return this.userForm.get('username'); }
-  get email() { return this.userForm.get('email'); }
-  get password() { return this.userForm.get('password'); }
-  get confirmPassword() { return this.userForm.get('confirmPassword'); }
+  onDistrictChange(districtID: number)
+  {
+    if (parseInt(districtID.toString()) > 0)
+    {
+      this.isDisabled=false;
+    }
+    else
+    {
+       this.isDisabled=true;
+    }
+  }
+
+  addDataAdmin() 
+  {
+      const alreadyExistingDataAdmin = this.dataAdmins.find(dataAdmin => dataAdmin.UserName === this.newDataAdmin.UserName)
+            
+      if (alreadyExistingDataAdmin){
+        this.errMsg = "The Data Admin with this User Name already exists";
+        this.showErrMsg = true;
+        setTimeout(()=>
+            {
+              this.showErrMsg = false;
+              this.newDataAdmin = {
+                ID: -1,
+                UserName: '',
+                UserEmail: '',
+                UserPwd: '',
+                JurisdictionID: -1,
+                DistrictID: -1
+              };
+            }, 5000);
+      }
+      else
+      {
+        this.itemService.createItem(this.newDataAdmin).subscribe({
+          next: (response) => {
+            this.itemService.getItems().subscribe(data => {
+            this.dataAdmins = data;  
+              
+            this.successMsg = this.newDataAdmin.UserName + " added successfully";
+            this.showSuccessMsg = true;
+
+            this.newDataAdmin = {
+                ID: -1,
+                JurisdictionID: -1,
+                DistrictID: -1,
+                UserName: '',
+                UserEmail: '',
+                UserPwd: ''
+            };
+            
+            console.log(response);
+    
+            setTimeout(()=>
+            {
+              this.showSuccessMsg = false;
+            }, 5000);
+            });
+          },
+          error: (err) => {
+            console.error('Addition failed', err);
+          }
+        });
+      }
+
+      //alert('User registered successfully!');
+  }
+
 }

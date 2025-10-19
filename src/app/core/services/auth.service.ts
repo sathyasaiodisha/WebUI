@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
- private apiUrl = 'http://yourdomain.com'; // FastAPI base URL
+ private apiUrl = 'http://127.0.0.1:8000'; // FastAPI base URL
   private tokenKey = 'jwt_token';
 
   constructor(private http: HttpClient, private router: Router) {}
@@ -20,25 +20,25 @@ export class AuthService {
 
     return this.http.post<any>(`${this.apiUrl}/login`, formData)
       .subscribe(response => {
-        localStorage.setItem(this.tokenKey, response.access_token);
-        this.router.navigate(['/Admin']);
+        sessionStorage.setItem(this.tokenKey, response.access_token);
+        this.router.navigate(['/admin']);
       });
   }
 
   logout() {
-    localStorage.removeItem(this.tokenKey);
+    sessionStorage.removeItem(this.tokenKey);
     this.router.navigate(['/login']);
   }
 
   getToken() {
-    return localStorage.getItem(this.tokenKey);
+    return sessionStorage.getItem(this.tokenKey);
   }
 
-  getRole(): string | null {
+  getJurisdiction(): string | null {
     const token = this.getToken();
     if (!token) return null;
     const payload = JSON.parse(atob(token.split('.')[1]));
-    return payload.role;
+    return payload.juris;
   }
 
   isLoggedIn(): boolean {

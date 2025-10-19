@@ -41,6 +41,16 @@
     color:#555;
   }
 
+  .buttonAlign {
+    text-align: center;
+  }
+
+  .buttonStyle {
+    border-radius: 50%;
+    border: none;
+    background-color:lightcyan;
+  }
+
   /* Responsive adjustments */
 @media (max-width: 900px) {
     .tile-card {

@@ -15,6 +15,11 @@
     </mat-sidenav>
   
     <mat-sidenav-content class="content">
+      <div class="buttonAlign">
+          <button *ngIf="showLogout" mat-icon-button matTooltip="Logout" (click)="logout()" class="buttonStyle">
+              <mat-icon>logout</mat-icon>
+          </button>
+      </div>
       <!-- <mat-toolbar color="primary"></mat-toolbar> -->
       <div class="content-body">
         <router-outlet></router-outlet>

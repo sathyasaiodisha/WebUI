@@ -130,7 +130,7 @@ export class HeaderComponent {
     },
     { name: 'Report', link: '/report' },
     { name: 'events_announcement', link: '/events' },
-    //{ name: 'Admin', link: '/admin' },
+    { name: 'Admin', link: '/admin' },
   ];
   bellIcon = faBell;
   signin = faSignIn;

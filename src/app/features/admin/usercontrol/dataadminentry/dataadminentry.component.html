@@ -1,61 +1,95 @@
-<mat-card class="register-card">
+<!-- <mat-card class="register-card">
+  <h2>Add Data Admin</h2> -->
+<form #registerForm="ngForm" (ngSubmit)="addDataAdmin()" class="user-form">
   <h2>Add Data Admin</h2>
-<form [formGroup]="userForm" (ngSubmit)="onSubmit()" class="user-form">
+  <mat-card>
+      <mat-card-content>
+        <mat-label class="radio-label">Select Jurisdiction</mat-label>
 
-  
-
-  <!-- Username -->
-  <mat-form-field appearance="outline" class="full-width">
-    <mat-label>Username</mat-label>
-    <input matInput formControlName="username" placeholder="Enter username" required>
-    <mat-error *ngIf="username?.hasError('required')">Username is required</mat-error>
-    <mat-error *ngIf="username?.hasError('minlength')">At least 3 characters required</mat-error>
+        <mat-radio-group [(ngModel)]="newDataAdmin.JurisdictionID" name="Jurisdiction" (change)="onJurisdictionChange($event.value)">
+            <!-- <mat-radio-button *ngFor="let adminJurisdiction in adminJurisdictions" [value]="adminJurisdiction.ID">{{adminJurisdiction.Jurisdiction}}</mat-radio-button> -->
+            <mat-radio-button value=1>State</mat-radio-button>
+            <mat-radio-button value=2>District</mat-radio-button>
+            <mat-radio-button value=3>Hospital</mat-radio-button>
+            <mat-radio-button value=4>Report</mat-radio-button>
+        </mat-radio-group>
+      </mat-card-content>
+  </mat-card>
+  <mat-form-field appearance="outline" class="formfield" *ngIf="showDistrictDropdown">
+            <mat-label>Select District</mat-label>
+            <mat-select [(value)]="newDataAdmin.DistrictID" (selectionChange)="onDistrictChange($event.value)">
+                <mat-option *ngFor="let district of districts" [value]="district.ID">
+                {{ district.DistrictName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>User Name</mat-label>
+    <input matInput name="username" [(ngModel)]="newDataAdmin.UserName" required [disabled]="isDisabled"/>
   </mat-form-field>
 
-  <!-- Email -->
-  <mat-form-field appearance="outline" class="full-width">
+  <mat-form-field appearance="outline">
     <mat-label>Email</mat-label>
-    <input matInput type="email" formControlName="email" placeholder="Enter email" required>
-    <mat-error *ngIf="email?.hasError('required')">Email is required</mat-error>
-    <mat-error *ngIf="email?.hasError('email')">Enter a valid email address</mat-error>
+    <input
+      matInput
+      type="email"
+      name="email"
+      [(ngModel)]="newDataAdmin.UserEmail"
+      required
+      email
+      #emailCtrl="ngModel"
+      [disabled]="isDisabled"
+    />
+    <mat-error *ngIf="emailCtrl.hasError('required')">
+      Email is required
+    </mat-error>
+    <mat-error *ngIf="emailCtrl.hasError('email')">
+      Enter a valid email address
+    </mat-error>
   </mat-form-field>
 
-  <!-- Password -->
-  <mat-form-field appearance="outline" class="full-width">
+  <mat-form-field appearance="outline">
     <mat-label>Password</mat-label>
-    <input matInput 
-           [type]="hidePassword ? 'password' : 'text'" 
-           formControlName="password"
-           required>
-    <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" type="button">
-      <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
-    </button>
-    <mat-error *ngIf="password?.hasError('required')">Password is required</mat-error>
-    <mat-error *ngIf="password?.hasError('minlength')">Minimum 6 characters required</mat-error>
-    <mat-error *ngIf="password?.hasError('weakPassword')">
-      Must contain at least 1 uppercase letter and 1 number
+    <input
+      matInput
+      type="password"
+      name="password"
+      [(ngModel)]="newDataAdmin.UserPwd"
+      required
+      minlength="6"
+      pattern= "^(?=.*[A-Za-z])(?=.*[-!@#$%^&*()_+={}\\[\\]|\\\\:;'<>,.?/~`]).{6,}$"
+      #passwordCtrl="ngModel"
+      [disabled]="isDisabled"
+    />
+    <mat-hint align="end">Min 6 chars, 1 letter, 1 special char</mat-hint>
+    <mat-error *ngIf="passwordCtrl.errors?.['required']">
+      Password is required
+    </mat-error>
+    <mat-error *ngIf="passwordCtrl.errors?.['pattern']">
+      Must have at least 1 letter and 1 special character
+    </mat-error>
+    <mat-error *ngIf="passwordCtrl.errors?.['minlength']">
+      Must be at least 6 characters long
     </mat-error>
   </mat-form-field>
 
-  <!-- Confirm Password -->
-  <mat-form-field appearance="outline" class="full-width">
+  <mat-form-field appearance="outline">
     <mat-label>Confirm Password</mat-label>
-    <input matInput 
-           [type]="hideConfirmPassword ? 'password' : 'text'" 
-           formControlName="confirmPassword"
-           (blur)="userForm.updateValueAndValidity()" 
-           required>
-    <button mat-icon-button matSuffix (click)="hideConfirmPassword = !hideConfirmPassword" type="button">
-      <mat-icon>{{ hideConfirmPassword ? 'visibility_off' : 'visibility' }}</mat-icon>
-    </button>
-    <mat-error *ngIf="confirmPassword?.hasError('required')">Confirm Password is required</mat-error>
-    <mat-error *ngIf="userForm.hasError('passwordsMismatch')">
-      Passwords do not match
-    </mat-error>
+    <input
+      matInput
+      type="password"
+      name="confirmPassword"
+      [(ngModel)]="confirmPassword"
+      (blur)="validateConfirmPassword()"
+      required
+      #confirmCtrl="ngModel"
+      [disabled]="isDisabled"
+    />
+    <mat-error *ngIf="passwordMismatch">Passwords do not match</mat-error>
   </mat-form-field>
 
-  <div class="form-actions">
-    <button mat-raised-button color="primary" type="submit">Create User</button>
-  </div>
+  <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid || passwordMismatch || isDisabled">
+    Add Admin
+  </button>
 </form>
-</mat-card>
+<!-- </mat-card> -->
