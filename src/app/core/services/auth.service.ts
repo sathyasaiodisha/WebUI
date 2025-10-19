@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
- private apiUrl = 'http://127.0.0.1:8000'; // FastAPI base URL
+ private apiUrl = 'http://172.93.223.88:8080'; // FastAPI base URL
   private tokenKey = 'jwt_token';
 
   constructor(private http: HttpClient, private router: Router) {}
