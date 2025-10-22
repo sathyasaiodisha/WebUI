@@ -2,19 +2,24 @@
     <form (ngSubmit)="createItem()" #itemForm="ngForm">
         <mat-form-field appearance="outline" class="formfield">
             <mat-label>Select District</mat-label>
-            <mat-select [(value)]="newsamithi.DistrictID" (selectionChange)="onDistrictChange($event.value)">
+            <mat-select *ngIf="showDistrictOfLoggedInUser" [(value)]="newsamithi.DistrictID" [disabled]="showDistrictOfLoggedInUser">
+              <mat-option [value]="districtIdOfLoggedInUser">
+                {{ districtNameOfLoggedInUser }}
+              </mat-option>
+            </mat-select>  
+            <mat-select *ngIf="!showDistrictOfLoggedInUser" [(value)]="newsamithi.DistrictID" (selectionChange)="onDistrictChange($event.value)" [disabled]="showDistrictOfLoggedInUser">
               <mat-option *ngFor="let district of districts" [value]="district.ID">
                 {{ district.DistrictName }}
               </mat-option>
-            </mat-select>          
+            </mat-select>         
         </mat-form-field>
       <mat-form-field appearance="outline" class="formfield">
         <mat-label>Samithi Registration No</mat-label>
-        <input matInput [(ngModel)]="newsamithi.SamithiRegNo" name="SamithiRegNo" required maxlength="5" [disabled]="isDisabled"/>
+        <input matInput [(ngModel)]="newsamithi.SamithiRegNo" name="SamithiRegNo" required maxlength="5" [disabled]="isDisabled && !showDistrictOfLoggedInUser"/>
       </mat-form-field>
       <mat-form-field appearance="outline" class="formfield">
         <mat-label>Samithi Name</mat-label>
-        <input matInput [(ngModel)]="newsamithi.SamithiName" name="SamithiName" required maxlength="50" [disabled]="isDisabled"/>
+        <input matInput [(ngModel)]="newsamithi.SamithiName" name="SamithiName" required maxlength="50" [disabled]="isDisabled && !showDistrictOfLoggedInUser"/>
       </mat-form-field>
       <button mat-raised-button color="primary" type="submit" [disabled]="!itemForm.valid || showErrMsg">
         Add Samithi

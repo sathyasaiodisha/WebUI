@@ -16,7 +16,11 @@ import { ConfirmDialogComponent } from '../../../../shared/components/confirm-di
 import { FormsModule } from '@angular/forms';
 
 import { SamithiItem, DistItem, SamithiService } from '../../../../core/services/samithi.service';
+import { AuthService, UserItem } from '../../../../core/services/auth.service';
+import { DataAdminItem, DataAdminService } from '../../../../core/services/dataadmin.service';
 import { faL } from '@fortawesome/free-solid-svg-icons';
+import { data } from 'jquery';
+import { none } from 'ol/centerconstraint';
 
 @Component({
   standalone: true,
@@ -29,6 +33,13 @@ export class SamithientryComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['SamithiRegNo', 'SamithiName', 'Actions'];
   districts: DistItem[]= [];
   distAll: DistItem[] = [{ID: 0, DistrictName: "All"}];
+  loggedInUser: UserItem = {"username": "", "juris": ""};
+  districtIdOfLoggedInUser: number = 0;
+  districtNameOfLoggedInUser: string = "";
+  showDistrictOfLoggedInUser = false;
+  
+  currentUserName: string = "";
+  currentUserRole: number  = 0;
   
   samithiAllDataSrc = new MatTableDataSource<SamithiItem>([]);
   samithiDataForDistSrc = new MatTableDataSource<SamithiItem>([]);
@@ -50,7 +61,7 @@ export class SamithientryComponent implements OnInit, AfterViewInit {
     DistrictID: -1
   };
 
-  constructor(private itemService: SamithiService, private dialog: MatDialog) {}
+  constructor(private itemService: SamithiService, private authService: AuthService, private dataAdminSvc: DataAdminService, private dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.itemService.getDists().subscribe(data => {
@@ -60,6 +71,27 @@ export class SamithientryComponent implements OnInit, AfterViewInit {
     this.itemService.getItems().subscribe(data => {
       this.samithiAllDataSrc.data = data;
       this.samithiDataForDistSrc.data = data;
+    });
+
+    this.authService.getMe().subscribe(data => {
+      this.loggedInUser.username = data.username;
+      this.loggedInUser.juris = data.juris;
+
+      if (this.loggedInUser.username != "" && this.loggedInUser.juris != "" && this.loggedInUser.juris =="2")
+      {
+        this.dataAdminSvc.getUserByUserName(this.loggedInUser.username).subscribe(dataAdmin => {
+          this.districtIdOfLoggedInUser = dataAdmin.DistrictID ? dataAdmin.DistrictID : 0;
+          if (this.districtIdOfLoggedInUser !=0)
+          {
+            this.districtNameOfLoggedInUser = this.districts.filter(dist => dist.ID == this.districtIdOfLoggedInUser)[0].DistrictName;
+            this.showDistrictOfLoggedInUser = true;
+            this.newsamithi.DistrictID = this.districtIdOfLoggedInUser;
+
+            this.samithiDataForDistSrc.data = this.samithiAllDataSrc.data.filter(item => item.DistrictID == this.newsamithi.DistrictID);
+            this.isDisabled = false;
+          }
+        });
+      }
     });
   }
 

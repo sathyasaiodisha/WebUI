@@ -1,7 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
+export interface UserItem {
+  username: string;
+  juris: string;
+}
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +14,7 @@ import { Router } from '@angular/router';
 export class AuthService {
 
  private apiUrl = 'http://172.93.223.88:8080'; // FastAPI base URL
-  private tokenKey = 'jwt_token';
+  private tokenKey = 'authToken';
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -18,7 +23,7 @@ export class AuthService {
     formData.append('username', username);
     formData.append('password', password);
 
-    return this.http.post<any>(`${this.apiUrl}/login`, formData)
+    return this.http.post<any>(`${this.apiUrl}/api/login`, formData)
       .subscribe(response => {
         sessionStorage.setItem(this.tokenKey, response.access_token);
         this.router.navigate(['/admin']);
@@ -45,4 +50,7 @@ export class AuthService {
     return !!this.getToken();
   }
 
+  getMe(): Observable<UserItem> {
+    return this.http.get<UserItem>(`${this.apiUrl}/users/me`);
+  }
 }

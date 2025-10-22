@@ -31,10 +31,18 @@ export class DataAdminService {
   private adminJurisdictionUrl = 'http://172.93.223.88:8080/dataadminjurisdictions';
   private districtUrl = 'http://172.93.223.88:8080/saidistricts';
 
+  // private apiUrl = 'http://127.0.0.1:8000/dataadmins';
+  // private adminJurisdictionUrl = 'http://127.0.0.1:8000/dataadminjurisdictions';
+  // private districtUrl = 'http://127.0.0.1:8000/saidistricts';
+
   constructor(private http: HttpClient) { }
   
   getItems(): Observable<DataAdminItem[]> {
       return this.http.get<DataAdminItem[]>(`${this.apiUrl}/all`);
+    }
+
+  getUserByUserName(userName: string): Observable<DataAdminItem> {
+      return this.http.get<DataAdminItem>(`${this.apiUrl}/${userName}`);
     }
 
   getJurisdictions(): Observable<JurisdictionItem[]> {
