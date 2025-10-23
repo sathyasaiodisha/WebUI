@@ -33,11 +33,17 @@ export class HeaderComponent {
 
   menus = [
     {
-      name: 'Sri Sathya Sai',
+      name: this.translate.instant('Sri_Sathya_Sai'),
       link: '/Sri_Sathya_Sai',
       subMenu: [
-        { name: 'Introduction', link: '/introduction' },
-        { name: 'His Life', link: '/life' },
+        {
+          name: this.translate.instant('Sri_Sathya_Sai_menu_introduction'),
+          link: '/introduction',
+        },
+        {
+          name: this.translate.instant('Sri_Sathya_Sai_menu_life'),
+          link: '/life',
+        },
         { name: 'His Teachings', link: '/teachings' },
         { name: 'His Works', link: '/works' },
       ],

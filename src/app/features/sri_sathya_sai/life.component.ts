@@ -9,78 +9,14 @@ import { ApiService } from '../../core/services/api.service';
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Life of Sri Sathya Sai' | translate }}
+          {{ 'Sri_Sathya_Sai_life_title' | translate }}
         </h1>
-        <p>
-          Sri Sathya Sai Baba was born in Puttaparthi on Nov 23, 1926 - an
-          auspicious Monday in the lunar month of Kartika, when Lord Shiva is
-          especially adored. He was given the name Sathyanarayana Raju. What
-          intrigued His mother Easwaramma, most was the unbounded compassion her
-          little Sathya had particularly for the poor and downtrodden. Even as a
-          toddler, He insisted that the beggar at the door be served well in
-          spite of their own limited means and would often give His own share to
-          the needy. When He began school, His playmates were inspired by His
-          ability to lead them to be socially responsible, spiritually aware,
-          endowed with individual and national character. His friends were often
-          fascinated by His extraordinary powers of creating things out of thin
-          air, knowing the future, deep understanding of scriptural wisdom and
-          so on.
-        </p>
-        <p>
-          The inexplicability of His actions greatly disturbed His father Sri
-          Ratnakaram Pedda Venkama Raju, and on May 23, 1940, he angrily
-          accosted Sathya to reveal His true identity. Sathya just took a few
-          flowers and flung them down which arranged themselves to read “I am
-          Sai Baba.” Later that year, on the morning of Oct 20, halfway through
-          the school day, Baba suddenly returned home, cast aside His books and
-          dramatically declared, “I am no longer your Sathya... I am Sai. I have
-          my work, I cannot wait any longer.” Thus, that day forward
-          Sathyanarayana Raju became Sathya Sai Baba.
-        </p>
-        <p>
-          From that epochal moment on, kings to commoners started thronging to
-          His presence seeking solace and succour as Baba cancelled an incurable
-          disease of one, sorted out familial problems of another, and likewise.
-          His growing fame, accompanied by rising ridicule from envious
-          quarters, rattled His elder brother Seshama Raju, who wrote a letter
-          cautioning Him of His activities. In His reply, dated May 25, 1947,
-          Baba emphatically stated that He has a 'Task' to 'foster all mankind
-          with bliss', a 'Vow' to 'lead all onto the path of righteousness', and
-          a 'Work' of 'removing the suffering of the distressed', also assuring
-          that He would never give up on those who attach themselves to Him.
-        </p>
-        <p>
-          Towards this end, in the 1960s Baba germinated the Sri Sathya Sai Seva
-          Organisations in India, through which people across religions, class
-          and caste, could collectively engage in selfless service and foster
-          the eternal values of Truth, Righteousness, Peace, Love and
-          Non-violence, for their own spiritual uplift. In no time the movement
-          grew global to more than 126 countries with Prasanthi Nilayam being
-          its epicentre.
-        </p>
-        <p>
-          While millions of inspired individuals took to practising selfless
-          love, to create working models for them to emulate, Baba founded the
-          Sri Sathya Sai Central Trust in 1972. Since then this umbrella
-          institution is engaged in the implementation of trailblazing projects
-          like free primary to tertiary-care hospitals, free education from
-          primary schooling to doctoral research, free drinking water to remote
-          villages, free housing rehabilitation initiatives, etc., demonstrating
-          to the world new paradigms to raise society's quality of life inspired
-          by love, service and universal brotherhood. Baba, Himself exemplified
-          this higher life incessantly for 86 years where the power of pure love
-          was in glorious action.
-        </p>
-        <p>
-          On His 83rd and 85th Birthdays in Nov 2008 and 2010, on His devotees'
-          request, Baba rode on a golden chariot. Only later did everyone
-          realise, those were indeed symbolic of the golden culminating moments
-          of Baba's earthly sojourn. Baba discarded His bodily vesture on April
-          24, 2011. The devotees miss His physical form, nevertheless, they
-          continue to experience His guidance and grace, as enigmatically as
-          ever. The Universal Consciousness that is Sri Sathya Sai eternally
-          lives on.
-        </p>
+        <p>{{ 'Sri_Sathya_Sai_life_p1' | translate }}</p>
+        <p>{{ 'Sri_Sathya_Sai_life_p2' | translate }}</p>
+        <p>{{ 'Sri_Sathya_Sai_life_p3' | translate }}</p>
+        <p>{{ 'Sri_Sathya_Sai_life_p4' | translate }}</p>
+        <p>{{ 'Sri_Sathya_Sai_life_p5' | translate }}</p>
+        <p>{{ 'Sri_Sathya_Sai_life_p6' | translate }}</p>
         <p>
           Source: www.srisathyasai.org SRI SATHYA SAI TIME LINE:<a
             href="https://www.srisathyasai.org/sai-timeline"
