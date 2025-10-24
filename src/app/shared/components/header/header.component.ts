@@ -156,7 +156,7 @@ export class HeaderComponent {
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],
     },
-    { name: 'Report', link: '/report' },
+    { name: 'Reports', link: '/report' },
     { name: 'events_announcement', link: '/events' },
     { name: 'Admin', link: '/admin' },
   ];

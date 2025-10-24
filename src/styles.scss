@@ -13,7 +13,9 @@ body {
   font-family: Verdana, sans-serif !important;
 
   h1 {
-    color: #5b5b5b !important;
+    color: #990000 !important;
+    border-bottom: solid 2px gray;
+
   }
 }
 
@@ -34,8 +36,8 @@ body {
 
 .sum_counter {
   position: absolute;
-  right: 12%;
-  bottom: 15%;
+  right: 0%;
+  bottom: 9%;
 }
 
 .homeCarousel {
@@ -51,7 +53,7 @@ body {
 
 .carousel-caption {
   h5 {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 
   p {
@@ -63,6 +65,35 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.fixed-menu__msg {
+  background: url(/assets/images/msg.png) no-repeat center / cover;
+  width: 265px;
+  height: 333px;
+  border-radius: 12px;
+  border: 6px solid white;
+
+  .dateDiv {
+    position: relative;
+    top: 224px;
+    text-align: center;
+    font-size: 14px;
+    color: darkred;
+  }
+
+  .mseDiv {
+    position: relative;
+    top: 222px;
+    /* font-size: 18px; */
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 1rem;
+    color: darkred;
+  }
+
 }
 
 .header {
@@ -123,7 +154,8 @@ body {
 
   nav {
     font-size: 1.1rem;
-    background-color: #00000059;
+    // background-color: #00000059;
+    background-image: linear-gradient(to bottom, #bf623f, #edc685);
     padding: 9px 21px;
     border-radius: 30px;
     display: inline-block;
@@ -135,7 +167,7 @@ body {
 
     .active {
       text-decoration: underline;
-      background-color: #5b5b5b;
+      background-color: #ab4a42;
     }
   }
 
@@ -156,7 +188,8 @@ body {
 
   .mat-mdc-menu-item:hover {
     color: black;
-    background-color: #D9D9D9 !important;
+    // background-color: #D9D9D9 !important;
+    background-image: linear-gradient(to bottom, #edc685, #bf623f);
   }
 }
 
@@ -261,12 +294,22 @@ body {
   }
 }
 
+.twitter_feed {
+  min-height: 250px;
+}
+
 .wings_outer {
   // background-color: #F5F5F5;
-  padding: 2em 1rem;
+  border-top: 10px solid #bfbfbf;
+  border-bottom: 10px solid #bfbfbf;
+  padding: 1em 1rem;
   color: rgb(0, 0, 0);
   text-align: center;
   background-color: #ededed4f;
+
+  .wings:hover {
+    background-color: #efefef;
+  }
 
   .wings {
     // width: 18rem;
@@ -275,6 +318,11 @@ body {
     border-radius: 1rem;
     padding: 1.2rem;
 
+    border-radius: 1rem;
+    border-radius: 21px;
+    margin: 1rem;
+    background-color: white;
+
     img {
       width: 81%;
       border-radius: 10px;
@@ -282,6 +330,15 @@ body {
     }
 
   }
+}
+
+
+.content_topgape {
+  font-size: 1.2rem;
+}
+
+.mat-mdc-button .mdc-button__label {
+  font-size: 1.0rem;
 }
 
 .svg_outer {
@@ -298,6 +355,7 @@ body {
   .svg_containner {
     max-width: 1187px;
     margin: 0 auto;
+    position: relative;
 
     #ol-map {
       height: 908px;

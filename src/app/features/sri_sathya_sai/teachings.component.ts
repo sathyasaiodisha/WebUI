@@ -11,43 +11,55 @@ import { ApiService } from '../../core/services/api.service';
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Teachings of Sri Sathya Sai' | translate }}
         </h1>
-        <p>
-          Teachings of Sri Sathya Sai Baba emphasize on Universal Spirituality,
-          Love, Service, and self-realization. His philosophy centers on the
-          unity of all religions and the cultivation of human values to lead a
-          meaningful life. Every human being is spark of the Divine and the
-          purpose of life is the realization of this Divinity. This will occur,
-          He says, by leading a moral life, by rendering selfless service to
-          those in need, by engaging in devotional practices, and by developing
-          love, respect, and compassion for all life. Swami emphasized five
-          universal human values as the foundation for a righteous life.
-        </p>
-        <ol class="boldIli">
-          <li>Human Values</li>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/images/sai_standing_6.png" style="width:100%;" />
+          </div>
+          <div class="col-md-8">
+            <br />
+            <br />
+            <p>
+              Teachings of Sri Sathya Sai Baba emphasize on Universal
+              Spirituality, Love, Service, and self-realization. His philosophy
+              centers on the unity of all religions and the cultivation of human
+              values to lead a meaningful life. Every human being is spark of
+              the Divine and the purpose of life is the realization of this
+              Divinity. This will occur, He says, by leading a moral life, by
+              rendering selfless service to those in need, by engaging in
+              devotional practices, and by developing love, respect, and
+              compassion for all life. Swami emphasized five universal human
+              values as the foundation for a righteous life.
+            </p>
 
-          <ul>
-            <li>
-              Sathya (Truth): Speak and act with honesty, aligning with the
-              inner truth of one's conscience.
-            </li>
-            <li>
-              Dharma (Righteousness): Live ethically, following moral principles
-              and doing what is right.
-            </li>
-            <li>
-              Shanti (Peace): Cultivate inner calm and equanimity, regardless of
-              external circumstances.
-            </li>
-            <li>
-              Prema (Love): Practice selfless, unconditional love for all
-              beings, as love is the essence of divinity.
-            </li>
-            <li>
-              Ahimsa (Non-violence): Avoid harming others in thought, word, or
-              deed, promoting compassion and harmony.
-            </li>
-          </ul>
+            <ol class="boldIli">
+              <li>Human Values</li>
 
+              <ul>
+                <li>
+                  Sathya (Truth): Speak and act with honesty, aligning with the
+                  inner truth of one's conscience.
+                </li>
+                <li>
+                  Dharma (Righteousness): Live ethically, following moral
+                  principles and doing what is right.
+                </li>
+                <li>
+                  Shanti (Peace): Cultivate inner calm and equanimity,
+                  regardless of external circumstances.
+                </li>
+                <li>
+                  Prema (Love): Practice selfless, unconditional love for all
+                  beings, as love is the essence of divinity.
+                </li>
+                <li>
+                  Ahimsa (Non-violence): Avoid harming others in thought, word,
+                  or deed, promoting compassion and harmony.
+                </li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+        <ol class="boldIli" start="2">
           <li>Unity of All Religions</li>
           <p>
             Alll religions lead to the same divine truth. He encouraged respect

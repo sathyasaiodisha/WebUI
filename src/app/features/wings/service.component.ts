@@ -56,7 +56,6 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
 })
 export class ServiceComponent implements OnInit {
   banner = [
-    { image: 'assets/images/Sri_Sathya_Sai_Seva_org.jpg', caption: '' },
     { image: 'assets/images/Service-banner.jpg', caption: '' },
     { image: 'assets/images/walking.JPG', caption: '' },
   ];

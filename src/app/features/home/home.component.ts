@@ -18,6 +18,8 @@ import Map from 'ol/Map';
   templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
+  dateText = new Date().toDateString();
+
   duration = 2000;
   count = { dist: 35, bhajan: 774, samithis: 242, bv: 3269 };
   wings = [

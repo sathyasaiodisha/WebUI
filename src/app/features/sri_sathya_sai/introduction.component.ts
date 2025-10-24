@@ -11,16 +11,24 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Sri_Sathya_Sai_introduction_title' | translate }}
         </h1>
-        <div class="service_wrapper_top">
+        <!-- <div class="service_wrapper_top">
           <div class="carousel">
-            <!--Image carousel (Each image is linked to a page)-->
             <app-slideshowimage [banner]="banner"></app-slideshowimage>
           </div>
-        </div>
+        </div> -->
 
-        <p>
-          {{ 'Sri_Sathya_Sai_introduction_p1' | translate }}
-        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/images/sai_standing.png" style="width:100%;" />
+          </div>
+          <div class="col-md-8">
+            <br />
+            <br />
+            <p>
+              {{ 'Sri_Sathya_Sai_introduction_p1' | translate }}
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   `,

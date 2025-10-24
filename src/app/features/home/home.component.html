@@ -26,48 +26,92 @@
     </div>
   </div>
 
+  <div class="col-12">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="fixed-menu__msg">
+          <div class="mseDiv">{{ "saiSandesh" | translate }}</div>
+          <div class="dateDiv">{{ dateText }}</div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="twitter_feed">
+          <b>Recent activities</b>
+          <!-- <div>Twiter Feed Coming Soon...</div> -->
+          <div>
+            <a
+              class="twitter-timeline"
+              data-width="1000"
+              data-height="250"
+              href="https://twitter.com/sathyasaiodisha?ref_src=twsrc%5Etfw"
+              >Tweets by sathyasaiodisha</a
+            >
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+  </div>
+
   <div class="col-12 svg_outer">
     <!--    <h5>{{ "organization_map_title" | translate }}</h5>-->
     <!-- <div id="ol-map" class="map-container"></div> -->
-    <div class="svg_containner">
-      <img src="assets/images/odisha-sai-map-Jul2025.png" style="width: 100%" />
-      <div class="row sum_counter">
-        <div class="col-auto sum-counter_title">
-          <div
-            class="sum-counter_value"
-            [countUp]="count.dist"
-            [duration]="duration"
-          >
-            +35
+    <div class="row">
+      <div class="col-md-8">
+        <div class="svg_containner">
+          <img
+            src="assets/images/odisha-sai-map-Jul2025.png"
+            style="width: 100%"
+          />
+          <div class="row sum_counter">
+            <div class="col-auto sum-counter_title">
+              <div
+                class="sum-counter_value"
+                [countUp]="count.dist"
+                [duration]="duration"
+              >
+                +35
+              </div>
+              Sai Districts
+            </div>
+            <div class="col-auto sum-counter_title">
+              <div
+                class="sum-counter_value"
+                [countUp]="count.bhajan"
+                [duration]="duration"
+              >
+                +774
+              </div>
+              Bhajan Mandalis
+            </div>
+            <div class="col-auto sum-counter_title">
+              <div
+                class="sum-counter_value"
+                [countUp]="count.samithis"
+                [duration]="duration"
+              ></div>
+              Seva Samithis
+            </div>
+            <div class="col-auto sum-counter_title">
+              <div
+                class="sum-counter_value"
+                [countUp]="count.bv"
+                [duration]="duration"
+              ></div>
+              Bala Vikas Centres
+            </div>
           </div>
-          Sai Districts
         </div>
-        <div class="col-auto sum-counter_title">
-          <div
-            class="sum-counter_value"
-            [countUp]="count.bhajan"
-            [duration]="duration"
-          >
-            +774
-          </div>
-          Bhajan Mandalis
-        </div>
-        <div class="col-auto sum-counter_title">
-          <div
-            class="sum-counter_value"
-            [countUp]="count.samithis"
-            [duration]="duration"
-          ></div>
-          Seva Samithis
-        </div>
-        <div class="col-auto sum-counter_title">
-          <div
-            class="sum-counter_value"
-            [countUp]="count.bv"
-            [duration]="duration"
-          ></div>
-          Bala Vikas Centres
-        </div>
+      </div>
+      <div class="col-md-4 stats_section">
+        <h4>Statistics</h4>
+        ....
       </div>
     </div>
     <div class="svg_containner" style="display: none">

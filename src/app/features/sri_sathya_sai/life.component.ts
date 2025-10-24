@@ -11,8 +11,15 @@ import { ApiService } from '../../core/services/api.service';
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Sri_Sathya_Sai_life_title' | translate }}
         </h1>
-        <p>{{ 'Sri_Sathya_Sai_life_p1' | translate }}</p>
-        <p>{{ 'Sri_Sathya_Sai_life_p2' | translate }}</p>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/images/sai_standing_3.png" style="width:100%;" />
+          </div>
+          <div class="col-md-8">
+            <p>{{ 'Sri_Sathya_Sai_life_p1' | translate }}</p>
+            <p>{{ 'Sri_Sathya_Sai_life_p2' | translate }}</p>
+          </div>
+        </div>
         <p>{{ 'Sri_Sathya_Sai_life_p3' | translate }}</p>
         <p>{{ 'Sri_Sathya_Sai_life_p4' | translate }}</p>
         <p>{{ 'Sri_Sathya_Sai_life_p5' | translate }}</p>

@@ -11,49 +11,61 @@ import { ApiService } from '../../core/services/api.service';
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Works of Sri Sathya Sai' | translate }}
         </h1>
-        <p>
-          Bhagwan Sri Sathya Sai Baba apart from His Spiritual Teachings &
-          Messages to the humanity has taken up various beevolent works aimed at
-          uplifting humanity through service, education, and healthcare.
-          Humankind will be eternally grateful to Mother Easwaramma for it was
-          her three wishes from her son “Sathya” that led to mammoth projects in
-          Educare, Healthcare and Sociocare.
-        </p>
-        <ol class="boldIli">
-          <li>Healthcare Initiatives</li>
-          <ul>
-            <li>
-              <b>Free Medical Services:</b> Sai Baba established super-specialty
-              hospitals offering free treatment to all, regardless of
-              socioeconomic status. Notable institutions include:
-            </li>
-            <ul>
-              <li>
-                <b
-                  >Sri Sathya Sai Institute of Higher Medical Sciences
-                  (SSSIHMS)</b
-                >
-                in Puttaparthi, Andhra Pradesh (1991), and Whitefield, Bangalore
-                (2001). These hospitals provide advanced care in cardiology,
-                neurology, and other specialties, serving millions with no cost
-                to patients.
-              </li>
-              <li>
-                <b>General Hospitals:</b> Free general hospitals in Puttaparthi
-                and other locations offer comprehensive medical care.
-              </li>
-            </ul>
-            <li>
-              <b>Mobile Hospitals:</b> Mobile medical units deliver healthcare
-              to remote villages, providing free consultations, medicines, and
-              diagnostics.
-            </li>
-            <li>
-              <b>Medical Camps:</b> Regular camps address immediate healthcare
-              needs in underserved areas, including eye surgeries and dental
-              care.
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/images/sai_satnding_5.png " style="width:100%;" />
+          </div>
+          <div class="col-md-8">
+            <br />
+            <p>
+              Bhagwan Sri Sathya Sai Baba apart from His Spiritual Teachings &
+              Messages to the humanity has taken up various beevolent works
+              aimed at uplifting humanity through service, education, and
+              healthcare. Humankind will be eternally grateful to Mother
+              Easwaramma for it was her three wishes from her son “Sathya” that
+              led to mammoth projects in Educare, Healthcare and Sociocare.
+            </p>
+            <ol class="boldIli">
+              <li>Healthcare Initiatives</li>
+              <ul>
+                <li>
+                  <b>Free Medical Services:</b> Sai Baba established
+                  super-specialty hospitals offering free treatment to all,
+                  regardless of socioeconomic status. Notable institutions
+                  include:
+                </li>
+                <ul>
+                  <li>
+                    <b
+                      >Sri Sathya Sai Institute of Higher Medical Sciences
+                      (SSSIHMS)</b
+                    >
+                    in Puttaparthi, Andhra Pradesh (1991), and Whitefield,
+                    Bangalore (2001). These hospitals provide advanced care in
+                    cardiology, neurology, and other specialties, serving
+                    millions with no cost to patients.
+                  </li>
+                  <li>
+                    <b>General Hospitals:</b> Free general hospitals in
+                    Puttaparthi and other locations offer comprehensive medical
+                    care.
+                  </li>
+                </ul>
+                <li>
+                  <b>Mobile Hospitals:</b> Mobile medical units deliver
+                  healthcare to remote villages, providing free consultations,
+                  medicines, and diagnostics.
+                </li>
+                <li>
+                  <b>Medical Camps:</b> Regular camps address immediate
+                  healthcare needs in underserved areas, including eye surgeries
+                  and dental care.
+                </li>
+              </ul>
+            </ol>
+          </div>
+        </div>
+        <ol class="boldIli" start="2">
           <li>Educational Initiatives</li>
           <ul>
             <li>
