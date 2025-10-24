@@ -398,6 +398,14 @@ export const routes: Routes = [
               ).then((c) => c.FestivalsOfJoyComponent),
           },
           {
+            path: 'BVdoc',
+            data: { breadcrumb: 'BVdoc' },
+            loadComponent: () =>
+              import('./features/wings/education/BVdoc.component').then(
+                (c) => c.BVdocComponent
+              ),
+          },
+          {
             path: ':page',
             loadComponent: () =>
               import('./features/wings/education.component').then(
@@ -922,7 +930,9 @@ export const routes: Routes = [
   {
     path: 'login',
     loadComponent: () =>
-      import('./features/admin/login/login.component').then((c) => c.LoginComponent),
+      import('./features/admin/login/login.component').then(
+        (c) => c.LoginComponent
+      ),
   },
   {
     path: 'admin',
@@ -962,7 +972,7 @@ export const routes: Routes = [
     component: UsercontrolLayoutComponent,
     children: [
       { path: 'dataadmin', component: DataadminentryComponent },
-      { path: 'pwdmanagement', component: PasswordmanagementComponent }
+      { path: 'pwdmanagement', component: PasswordmanagementComponent },
     ],
   },
   {

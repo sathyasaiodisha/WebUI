@@ -258,6 +258,10 @@ export class SubSectionComponent implements OnInit {
           name: this.translate.instant('TeachingAid'),
           url: '/resources/TeachingAid',
         },
+        {
+          name: this.translate.instant('BVdoc'),
+          url: '/wings/education/BVdoc',
+        },
       ],
     },
   };
