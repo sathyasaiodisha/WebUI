@@ -7,7 +7,7 @@ export const AuthGuard: CanActivateFn = () => {
   const router = inject(Router);
   const authSvc = inject(AuthService);
   const jwtHelper = new JwtHelperService();
-  const token = localStorage.getItem('authToken');
+  const token = sessionStorage.getItem('authToken');
 
   if (token && !jwtHelper.isTokenExpired(token)) {
     return true; // Token valid → allow navigation

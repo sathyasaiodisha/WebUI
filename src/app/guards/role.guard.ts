@@ -5,7 +5,7 @@ import { JwtHelperService } from '@auth0/angular-jwt';
 export const RoleGuard: CanActivateFn = (route: ActivatedRouteSnapshot) => {
   const router = inject(Router);
   const jwtHelper = new JwtHelperService();
-  const token = localStorage.getItem('authToken');
+  const token = sessionStorage.getItem('authToken');
 
   if (!token || jwtHelper.isTokenExpired(token)) {
     router.navigate(['/login']);
