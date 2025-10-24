@@ -11,27 +11,37 @@ import { ApiService } from '../../core/services/api.service';
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'Sri Sathya Sai Seva Organisations, Odisha' | translate }}
         </h1>
-        <p>
-          The Sri Sathya Sai Seva Organisations, founded by Bhagawan Sri Sathya
-          Sai Baba in the year 1965, is a service organisation with a spiritual
-          core and base to benefit all mankind irrespective of religion, caste,
-          creed or sect. The Organisation serves as a platform for its members
-          to undertake service and other activities motivated by an urge for
-          one's own transformation with the aim of realising one's inherent
-          divinity.
-        </p>
-        <p>
-          Without any distinction of religion, nationality, race, socio-economic
-          status, either for those who work in the Organisation or for those who
-          are served by it, the Organisation transcends all barriers leading
-          humanity towards the ideal of 'Fatherhood of God and Brotherhood of
-          Man'.
-        </p>
-        <p>
-          The concept of fees or membership subscription is alien to the Sri
-          Sathya Sai Seva Organisations, for there cannot be any fee or
-          subscription for one's journey towards his own self.
-        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="assets/images/odisha-sai-map-Jul2025.png"
+              style="width:100%;"
+            />
+          </div>
+          <div class="col-md-6">
+            <p>
+              The Sri Sathya Sai Seva Organisations, founded by Bhagawan Sri
+              Sathya Sai Baba in the year 1965, is a service organisation with a
+              spiritual core and base to benefit all mankind irrespective of
+              religion, caste, creed or sect. The Organisation serves as a
+              platform for its members to undertake service and other activities
+              motivated by an urge for one's own transformation with the aim of
+              realising one's inherent divinity.
+            </p>
+            <p>
+              Without any distinction of religion, nationality, race,
+              socio-economic status, either for those who work in the
+              Organisation or for those who are served by it, the Organisation
+              transcends all barriers leading humanity towards the ideal of
+              'Fatherhood of God and Brotherhood of Man'.
+            </p>
+            <p>
+              The concept of fees or membership subscription is alien to the Sri
+              Sathya Sai Seva Organisations, for there cannot be any fee or
+              subscription for one's journey towards his own self.
+            </p>
+          </div>
+        </div>
         <p>
           The organisation functions through its primary units called as
           Samithis and Bhajan Mandalis of which individuals - from different
