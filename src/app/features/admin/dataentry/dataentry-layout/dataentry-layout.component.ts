@@ -22,9 +22,9 @@ export class DataentryLayoutComponent {
 
   userJurisdiction: string | null = "";
   navLinks =[
-              { path: 'district', label: 'District'},
-              { path: 'samithi', label: 'Samithi'},
               { path: 'bhajanmandali', label: 'Bhajan Mandali'},
+              { path: 'samithi', label: 'Samithi'},
+              { path: 'district', label: 'District'},
               { path: 'guru', label: 'Guru'},
               { path: 'stateofficebearers', label: 'State office-bearers'},
               { path: 'districtofficebearers', label: 'District office-bearers'},
@@ -47,9 +47,9 @@ export class DataentryLayoutComponent {
         {
           case "1":
             this.navLinks =[
-                            { path: 'district', label: 'District'},
-                            { path: 'samithi', label: 'Samithi'},
                             { path: 'bhajanmandali', label: 'Bhajan Mandali'},
+                            { path: 'samithi', label: 'Samithi'},
+                            { path: 'district', label: 'District'},
                             { path: 'guru', label: 'Guru'},
                             { path: 'stateofficebearers', label: 'State office-bearers'},
                             { path: 'districtofficebearers', label: 'District office-bearers'},
@@ -65,8 +65,8 @@ export class DataentryLayoutComponent {
 
           case "2":
             this.navLinks =[
-                        { path: 'samithi', label: 'Samithi'},
                         { path: 'bhajanmandali', label: 'Bhajan Mandali'},
+                        { path: 'samithi', label: 'Samithi'},
                         { path: 'guru', label: 'Guru'},
                         { path: 'districtofficebearers', label: 'District office-bearers'},
                         { path: 'samithiofficebearers', label: 'Samithi office-bearers'},
