@@ -14,7 +14,9 @@ import { DesignationentryComponent } from './features/admin/dataentry/designatio
 import { LoginComponent } from './features/admin/login/login.component';
 import { SSSDivyaPadukaYatraComponent } from './features/sssDivyaPadukaYatra.component';
 import { SSSMobileHospitalComponent } from './features/sssMobileHospital.component';
-import { AuthGuard } from './auth.guard';
+import { UnauthorizedComponent } from './features/admin/unauthorized/unauthorized.component';
+import { AuthGuard } from './guards/auth.guard';
+import { RoleGuard } from './guards/role.guard';
 
 export const routes: Routes = [
   {
@@ -935,6 +937,13 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'unauthorized',
+    loadComponent: () =>
+      import('./features/admin/unauthorized/unauthorized.component').then(
+        (c) => c.UnauthorizedComponent
+      ),
+  },
+  {
     path: 'admin',
     data: { breadcrumb: 'Admin' },
     canActivate: [AuthGuard],
@@ -946,24 +955,15 @@ export const routes: Routes = [
     data: { breadcrumb: 'Data Entry' },
     component: DataentryLayoutComponent,
     children: [
-      { path: 'district', component: DistrictentryComponent },
-      { path: 'samithi', component: SamithientryComponent },
-      { path: 'bhajanmandali', component: BmentryComponent },
-      { path: 'guru', component: GuruentryComponent },
-      {
-        path: 'stateofficebearers',
-        component: StateofficebearersentryComponent,
-      },
-      { path: 'designation', component: DesignationentryComponent },
-      {
-        path: 'districtofficebearers',
-        component: DistrictofficebearersentryComponent,
-      },
-      {
-        path: 'samithiofficebearers',
-        component: SamithiofficebearersentryComponent,
-      },
-      { path: '', redirectTo: 'district', pathMatch: 'full' },
+      { path: 'bhajanmandali', component: BmentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
+      { path: 'samithi', component: SamithientryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] }  },
+      { path: 'district', component: DistrictentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1'] } },
+      { path: 'guru', component: GuruentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
+      { path: 'stateofficebearers', component: StateofficebearersentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1'] }},
+      { path: 'designation', component: DesignationentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1']  }},
+      { path: 'districtofficebearers', component: DistrictofficebearersentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1']  }},
+      { path: 'samithiofficebearers', component: SamithiofficebearersentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
+      { path: '', redirectTo: 'bhajanmandali', pathMatch: 'full' },
     ],
   },
   {
