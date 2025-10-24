@@ -51,6 +51,31 @@ body {
   }
 }
 
+.leftMenu {
+  .nav-item a.active {
+    text-decoration: underline;
+    background-color: #d6d6d6;
+  }
+
+  .nav-item a {
+    cursor: pointer;
+    text-wrap: auto;
+    text-decoration: none;
+    color: #000000db;
+    display: block;
+    padding: 0.5rem 0.9rem;
+    background-color: #F5F5F5;
+    margin-bottom: 6px;
+    border-radius: 9px 0 0 9px;
+
+    &:hover {
+      text-decoration: underline;
+      background-color: #e6e6e6;
+
+    }
+  }
+}
+
 .carousel-caption {
   h5 {
     font-size: 1.8vw;

@@ -1,167 +1,120 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
-
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-Videos',
   imports: [SharedModule],
   template: `
-    <div class="container container py-2 px-4 border-secondary">
+    <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
-        <div class="align-middle py-2 px-4 text-center">
-          <h2>Journey of Odisha with Sri Sathya Sai</h2>
-          <div class="video-container">
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/videoseries?si=ASH7XEkMiGZseUfN&amp;list=PL4F97Peh1Vy60Xewo8rRfZi_5Nj67LQpF"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+        <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
+          {{ 'Videos' | translate }}
+        </h1>
 
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/jyl5mPaauYM?si=9cSaYVhC84OelpkX"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/IccgcivS3sw?si=F01H8UqbwR12BWkJ"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/-0kOeyAJVls?si=tgh_3kPaBITb-F3b"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/hJ1eDYn47pw?si=H3ydKiXM9cRmCM-_"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/hOGaCDuZC5c?si=inuEASyyjnIvuJpy"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/5S-Lsl1omkM?si=b-jU85Do_LvOsPud"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/AgGwyoUdKn0?si=YXQkxDLpIZwAM-HC"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/ZAup33R486A?si=kzdYH6zafIuihCq6"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/9ROxmrffCiQ?si=oK9xgMUd1BB7CRmv"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/lELPmj6MKW0?si=3_R-0Ksij0mnL0Wp"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-            <iframe
-              width="1200"
-              height="675"
-              src="https://www.youtube-nocookie.com/embed/Dast7hK7Lj8?si=5NS3OyV3fQoYqxzM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="nav flex-column leftMenu">
+              @for(v of videos;track v; let i = $index) {
+              <li class="nav-item">
+                <a
+                  [class]="{ active: selected === i, 'nav-link': true }"
+                  (click)="selected = i"
+                >
+                  {{ v.title }}
+                </a>
+              </li>
+              }
+            </ul>
           </div>
-          <div class="video-container">
-            <br />
-            <a href="https://www.youtube.com/@sathyasaiodisha" target="_blank"
-              ><h3>Sri Sathya Sai Seva Organisations, Odisha</h3></a
-            >
+          <div class="col-md-9" style="text-align: center;">
+            <iframe
+              width="100%"
+              height="500"
+              [src]="getURL()"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
+        <a href="https://www.youtube.com/@sathyasaiodisha" target="_blank"
+          ><h3>Sri Sathya Sai Seva Organisations, Odisha</h3></a
+        >
       </div>
     </div>
   `,
 })
 export class VideosComponent implements OnInit {
+  constructor(private sanitizer: DomSanitizer) {}
+  selected: number = 0;
+  videos = [
+    {
+      title: 'Journey of Odisha with Sri Sathya Sai',
+      url: 'https://www.youtube-nocookie.com/embed/videoseries?si=ASH7XEkMiGZseUfN&amp;list=PL4F97Peh1Vy60Xewo8rRfZi_5Nj67LQpF',
+    },
+    {
+      title: 'Odisha Bhajan Sandhya 2023',
+      url: 'https://www.youtube-nocookie.com/embed/jyl5mPaauYM?si=9cSaYVhC84OelpkX',
+    },
+    {
+      title: 'Parthi Yatra Odisha A Glimpse | Sssso, Odisha',
+      url: 'https://www.youtube-nocookie.com/embed/jyl5mPaauYM?si=9cSaYVhC84OelpkX',
+    },
+    {
+      title: 'Liquid Love Donor Registration/Blood',
+      url: 'https://www.youtube-nocookie.com/embed/IccgcivS3sw?si=F01H8UqbwR12BWkJ',
+    },
+    {
+      title:
+        'Nuakhai Bhet Ghat by Sai Sanatani, Sri Sathya Sai Seva Organisations, Odisha on 14.09.2025',
+      url: 'https://www.youtube-nocookie.com/embed/-0kOeyAJVls?si=tgh_3kPaBITb-F3b',
+    },
+    {
+      title: 'Awareness on Video Liquid Love and Blood Donation',
+      url: 'https://www.youtube-nocookie.com/embed/hJ1eDYn47pw?si=H3ydKiXM9cRmCM-_',
+    },
+    {
+      title:
+        'Sharing some glimpses Sri Sathya Sai Prema Tharu planted by various units of the Org. across Odisha',
+      url: 'https://www.youtube-nocookie.com/embed/hOGaCDuZC5c?si=inuEASyyjnIvuJpy',
+    },
+    {
+      title:
+        'Some glimpses of Raja festival celebration by the sisters of SSSSO, Odisha across the state',
+      url: 'https://www.youtube-nocookie.com/embed/5S-Lsl1omkM?si=b-jU85Do_LvOsPud',
+    },
+    {
+      title: 'Sri Sathya Sai Divya Paduka Yatra, Odisha',
+      url: 'https://www.youtube-nocookie.com/embed/AgGwyoUdKn0?si=YXQkxDLpIZwAM-HC',
+    },
+    {
+      title:
+        'Address by Sri Amiya Ranjan Kanungo, State Education Coordinator at Sai Kulwant Hall',
+      url: 'https://www.youtube-nocookie.com/embed/ZAup33R486A?si=kzdYH6zafIuihCq6',
+    },
+    {
+      title: 'District Presidents Spiritual Retreat',
+      url: 'https://www.youtube-nocookie.com/embed/9ROxmrffCiQ?si=oK9xgMUd1BB7CRmv  ',
+    },
+    {
+      title:
+        'On March 30th 2025, Sri Sathya Sai Seva Organisations Odisha observed Grama Seva Sankalpa Divas',
+      url: 'https://www.youtube-nocookie.com/embed/lELPmj6MKW0?si=3_R-0Ksij0mnL0Wp',
+    },
+    {
+      title:
+        '2025 03 27 Partisudha- Special Episode on Sri Sathya Sai Bhajan Mahotsavam',
+      url: 'https://www.youtube-nocookie.com/embed/Dast7hK7Lj8?si=5NS3OyV3fQoYqxzM',
+    },
+  ];
   ngOnInit(): void {}
+  getURL() {
+    let safeUrl: SafeResourceUrl =
+      this.sanitizer.bypassSecurityTrustResourceUrl(
+        this.videos[this.selected].url
+      );
+    return safeUrl;
+  }
 }
