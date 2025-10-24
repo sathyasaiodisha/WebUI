@@ -24,8 +24,13 @@ export const AuthGuard: CanActivateFn = () => {
 export const AdminGuard: CanActivateFn = () => {
   const router = inject(Router);
   const authSvc = inject(AuthService);
+  const jurisdictionOfLoggedInUser = authSvc.getJurisdiction();
 
-  if (authSvc.getJurisdiction() !== 'admin') {
+  if (jurisdictionOfLoggedInUser !== '1' &&
+      jurisdictionOfLoggedInUser !== '2' &&
+      jurisdictionOfLoggedInUser !== '3' &&
+      jurisdictionOfLoggedInUser !== '4')
+  {
     router.navigate(['/unauthorized']);
     return false;
   }
