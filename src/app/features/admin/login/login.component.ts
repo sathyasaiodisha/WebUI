@@ -35,7 +35,8 @@ export class LoginComponent {
     //this.redirectTo = this.route.snapshot.queryParamMap.get('redirectTo') || '/admin';
   }
 
-  onLogin(): void {
+  onLogin(event: Event): void {
+    event.preventDefault();
     this.authSvc.login(this.loginData.username, this.loginData.password);
   }
 

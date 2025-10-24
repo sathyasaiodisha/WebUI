@@ -28,8 +28,8 @@ export interface DesignationItem {
 })
 export class StateofficialsService {
 
-  private apiUrl = 'http://172.93.223.88:8080/stateofficebearers';
-  private stateDesignationsUrl = 'http://172.93.223.88:8080/statedesignations';
+  private apiUrl = 'https://www.sathyasaiodisha.org/api/stateofficebearers';
+  private stateDesignationsUrl = 'https://www.sathyasaiodisha.org/api/statedesignations';
 
   constructor(private http: HttpClient) { }
 

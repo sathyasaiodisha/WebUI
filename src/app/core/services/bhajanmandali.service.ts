@@ -31,11 +31,15 @@ export interface DistItem {
 })
 export class BhajanmandaliService {
 
-  private apiUrl = 'http://172.93.223.88:8080/bhajanmandalis';
-  private byDistApiUrl = 'http://172.93.223.88:8080/district';
-  private samithiApiUrl = 'http://172.93.223.88:8080/samithis'; 
-  private distApiUrl = 'http://172.93.223.88:8080/saidistricts';
-
+  // private apiUrl = 'http://172.93.223.88:8080/bhajanmandalis';
+  // private byDistApiUrl = 'http://172.93.223.88:8080/district';
+  // private samithiApiUrl = 'http://172.93.223.88:8080/samithis'; 
+  // private distApiUrl = 'http://172.93.223.88:8080/saidistricts';
+  private apiUrl = 'https://www.sathyasaiodisha.org/api/bhajanmandalis';
+  private byDistApiUrl = 'https://www.sathyasaiodisha.org/api/district';
+  private samithiApiUrl = 'https://www.sathyasaiodisha.org/api/samithis'; 
+  private distApiUrl = 'https://www.sathyasaiodisha.org/api/saidistricts';
+//https://www.sathyasaiodisha.org/api
   constructor(private http: HttpClient) { }
 
   getItems(): Observable<BhajanmandaliItem[]> {

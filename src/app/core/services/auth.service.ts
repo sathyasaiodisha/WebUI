@@ -13,7 +13,7 @@ export interface UserItem {
 })
 export class AuthService {
 
- private apiUrl = 'http://172.93.223.88:8080'; // FastAPI base URL
+ private apiUrl = 'https://www.sathyasaiodisha.org/api'; // FastAPI base URL
   private tokenKey = 'authToken';
 
   constructor(private http: HttpClient, private router: Router) {}
@@ -23,7 +23,7 @@ export class AuthService {
     formData.append('username', username);
     formData.append('password', password);
 
-    return this.http.post<any>(`${this.apiUrl}/api/login`, formData)
+    return this.http.post<any>(`${this.apiUrl}/login`, formData)
       .subscribe(response => {
         sessionStorage.setItem(this.tokenKey, response.access_token);
         this.router.navigate(['/admin']);

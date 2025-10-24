@@ -16,7 +16,7 @@ export interface DesignationItem{
   providedIn: 'root'
 })
 export class DesignationService {
-  private apiUrl = 'http://172.93.223.88:8080/designations';
+  private apiUrl = 'https://www.sathyasaiodisha.org/api/designations';
   constructor(private http: HttpClient) { }
 
   getItems(): Observable<DesignationItem[]> {

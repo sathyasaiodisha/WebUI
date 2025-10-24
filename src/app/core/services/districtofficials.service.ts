@@ -35,9 +35,9 @@ export interface DesignationItem {
 })
 export class DistrictofficialsService {
 
-  private apiUrl = 'http://172.93.223.88:8080/districtofficebearers';
-  private saidistrictUrl = 'http://172.93.223.88:8080/saidistricts';
-  private districtDesignationsUrl = 'http://172.93.223.88:8080/districtdesignations';
+  private apiUrl = 'https://www.sathyasaiodisha.org/api/districtofficebearers';
+  private saidistrictUrl = 'https://www.sathyasaiodisha.org/api/saidistricts';
+  private districtDesignationsUrl = 'https://www.sathyasaiodisha.org/api/districtdesignations';
 
   constructor(private http: HttpClient) { }
   

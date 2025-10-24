@@ -82,14 +82,14 @@ export interface OccupationItem {
 })
 export class BvguruService {
 
-  private apiBaseUrl = 'http://172.93.223.88:8080';
-  private byDistApiUrl = 'http://172.93.223.88:8080/district';
-  private samithiApiUrl = 'http://172.93.223.88:8080/samithis'; 
-  private distApiUrl = 'http://172.93.223.88:8080/saidistricts';
-  private bySamithiApiUrl = 'http://172.93.223.88:8080/samithi';
-  private byBMApiUrl = 'http://172.93.223.88:8080/bhajanmandali';
-  private bvguruApiUrl = 'http://172.93.223.88:8080/bvgurus';
-  private fileUploadApiUrl = 'http://172.93.223.88:8080/uploadguruphoto';
+  private apiBaseUrl = 'https://www.sathyasaiodisha.org/api';
+  private byDistApiUrl = 'https://www.sathyasaiodisha.org/api/district';
+  private samithiApiUrl = 'https://www.sathyasaiodisha.org/api/samithis'; 
+  private distApiUrl = 'https://www.sathyasaiodisha.org/api/saidistricts';
+  private bySamithiApiUrl = 'https://www.sathyasaiodisha.org/api/samithi';
+  private byBMApiUrl = 'https://www.sathyasaiodisha.org/api/bhajanmandali';
+  private bvguruApiUrl = 'https://www.sathyasaiodisha.org/api/bvgurus';
+  private fileUploadApiUrl = 'https://www.sathyasaiodisha.org/api/uploadguruphoto';
 
   constructor(private http: HttpClient) { }
 
