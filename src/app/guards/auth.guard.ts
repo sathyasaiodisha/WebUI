@@ -26,7 +26,7 @@ export const AdminGuard: CanActivateFn = () => {
   const authSvc = inject(AuthService);
 
   if (authSvc.getJurisdiction() !== 'admin') {
-    router.navigate(['/not-authorized']);
+    router.navigate(['/unauthorized']);
     return false;
   }
 

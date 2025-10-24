@@ -14,7 +14,7 @@ export const RoleGuard: CanActivateFn = (route: ActivatedRouteSnapshot) => {
 
   // Extract user role from JWT
   const decodedToken: any = jwtHelper.decodeToken(token);
-  const userRole = decodedToken?.role;
+  const userRole = decodedToken?.juris;
   const allowedRoles = route.data['jurisdictions'] as string[];
 
   if (userRole && allowedRoles.includes(userRole)) {
