@@ -19,7 +19,7 @@ export const RoleGuard: CanActivateFn = (route: ActivatedRouteSnapshot) => {
   console.log("User Role" + userRole);
   console.log("Allowed Roles" + allowedRoles);
 
-  if (userRole && allowedRoles.includes(userRole)) {
+  if (userRole != '' && allowedRoles.includes(userRole)) {
     console.log("here");
     return true;
   }
