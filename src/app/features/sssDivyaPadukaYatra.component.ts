@@ -49,22 +49,12 @@ import {SlideShowImageComponent} from '../shared/components/slideshow_image/slid
 export class SSSDivyaPadukaYatraComponent implements OnInit {
   ngOnInit(): void {}
   banner = [
-    { image: 'assets/images/padukaYatra/20.jpg', caption: '' },
     { image: 'assets/images/padukaYatra/1.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/2.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/3.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/4.jpg', caption: '' },
     { image: 'assets/images/padukaYatra/7.jpg', caption: '' },
     { image: 'assets/images/padukaYatra/8.jpg', caption: '' },
     { image: 'assets/images/padukaYatra/9.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/10.jpg', caption: '' },
     { image: 'assets/images/padukaYatra/11.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/12.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/13.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/14.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/15.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/16.jpg', caption: '' },
-    { image: 'assets/images/padukaYatra/17.jpg', caption: '' }
-
+    { image: 'assets/images/padukaYatra/17.jpg', caption: '' },
+    { image: 'assets/images/padukaYatra/19.jpg', caption: '' }
   ];
 }
