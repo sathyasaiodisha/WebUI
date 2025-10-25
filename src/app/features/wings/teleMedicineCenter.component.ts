@@ -20,14 +20,7 @@ import { ApiService } from '../../core/services/api.service';
           SAI JANANI <br />
           Opposite Nalinidevi Women's College of Teachers Education <br />
           Bhubaneswar, Khurda-751001 <br />
-          Tel-0674-2391090, Mob-9438663807 <br />
-          Submit <br />
-          SSSIHMS-Bangalore <br />
-          Tuesday: Neuro Surgery <br />
-          Friday : Cardio Surgery <br />
-          <br />
-          SSSIHMS-Puttaparthy <br />
-          Wednessday: Cardio Surgery <br />
+
           <br />
           The Tele-medicine centre at Sai Janani, Bhubaneswar is another
           instance of Swami’s limitless Grace for the people of Odisha. Deeply
@@ -58,34 +51,16 @@ import { ApiService } from '../../core/services/api.service';
           TELE-Medicine Center, Bhubaneswar is another instance of Swami’s
           limitless Grace for the people of Odisha. Deeply moved by the fact
           that large number of poor patients from Odisha, having undergone
-          surgery either at Prasanthi or at Bangaluru Super-specialities have to
+          surgery either at Prasanthi or at Bengaluru Super-specialities have to
           come all the way for a second check-up which they can hardly afford.
           There are four doctors who are interfacing the patients at Bhubaneswar
           with Superspecialists at Bangalore & Prashanthi through High bandwith
           transmission of video conferencing provided by ISRO. During the year
-          929 patients in Cardiac & Neuro have been attended. <br />
-          <br />
-          STATISTICS AT A GLANCE <br />
-          Conferencing with SSSIHMS, Bangalore <br />
-          2014-15 <br />
-          2009-2015 <br />
-          <br />
-          Cardiac patients <br />
-          569 Nos. <br />
-          2415 Nos. <br />
-          <br />
-          Neuro Patients <br />
-          500 Nos. <br />
-          2182 Nos. <br />
-          <br />
-          Conferencing with SSSIHMS,Prashanthigram <br />
-          2014-15 <br />
-          2013-2015 <br />
-          <br />
-          Cardiac patients <br />
-          235 Nos. <br />
-          419 Nos. <br />
+          929 patients in Cardiac & Neuro have been attended. Conferencing with SSSIHMS,Prashanthigram<br />
         </p>
+        <div class="content_topgape">
+          <img class="responsive" src="/assets/images/SSS-HOLISTIC-HEALTHCARE-SAI%20JANANI.png">
+        </div>
       </div>
     </div>
   `,
