@@ -9,7 +9,7 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
     <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Youth' | translate }}
+          {{ 'wings_youth' | translate }}
         </h1>
         <div class="service_wrapper_top">
           <div class="carousel">
@@ -19,38 +19,16 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
         </div>
 
         <p>
-          The youth of today are the leaders of the future. If the future is to
-          be prosperous, the modern youth should perform their duties with firm
-          faith in God."- Baba"
+          {{ 'wings_youth_p1' | translate }}
         </p>
         <p>
-          Sai youths are not just a bundle of young and energetic persons, but
-          they can be viewed as a source of energy and inspiration. They are
-          silent,disciplined and calm yet they are ever ready to rise to the
-          occasion when the society needs them. They use their massive
-          potentials only to bring smile on the face of the distressed and
-          dejected. As they walk on the path of Bhagwan,society looks upon them
-          as the saviours, the messengers of God.
+          {{ 'wings_youth_p2' | translate }}
         </p>
         <p>
-          The movement of Sai youth in Sri Sathya sai Seva organisation (India),
-          Odisha has gained momentum over the years to such a level that. Sai
-          Youths have become integral and unparallel to each success story of
-          the Organisation. Over 7000 youths across the state engage themselves
-          in Seva sadhana in one form or the other. Especially projects like
-          Nitya Anna Prasadam, National Narayan Seva, Holistic Healthcare Seva
-          their contribution is immense and praise worthy. For natural
-          calamities and accidents a core group is formed to rush to the spot
-          and provide immediate rescue/relief.
+          {{ 'wings_youth_p3' | translate }}
         </p>
         <p>
-          They derive constant motivation and inspiration from our Beloved
-          Bhagwan whose restless service to the mankind had been and will ever
-          be remembered by the world. In the process of their Sadhana they
-          refine themselves as a better human being and this transformation in
-          them has drawn many youths of the society to the Organisation where
-          they taste the flavour and sweetness of selfless service and derive
-          divine bliss.
+          {{ 'wings_youth_p4' | translate }}
         </p>
         <app-sub-sections-links [page]="'wings_youth'"></app-sub-sections-links>
       </div>

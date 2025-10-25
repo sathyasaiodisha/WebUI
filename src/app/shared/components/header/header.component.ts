@@ -50,14 +50,14 @@ export class HeaderComponent {
     },
 
     {
-      name: 'Wings',
+      name: this.translate.instant('wings'),
       link: '/wings',
       subMenu: [
-        { name: 'Service', link: '/service' },
-        { name: 'Spiritual', link: '/spiritual' },
-        { name: 'Education', link: '/education' },
-        { name: 'Mahilas', link: '/ladies' },
-        { name: 'Youth', link: '/youth' },
+        { name: this.translate.instant('wings_service'), link: '/service' },
+        { name: this.translate.instant('wings_spiritual'), link: '/spiritual' },
+        { name: this.translate.instant('wings_education'), link: '/education' },
+        { name: this.translate.instant('wings_mahilas'), link: '/ladies' },
+        { name: this.translate.instant('wings_youth'), link: '/youth' },
       ],
     },
     {
@@ -65,7 +65,6 @@ export class HeaderComponent {
       link: '/SevaInitiatives',
       subMenu: [
         { name: 'Holistic Health Care', link: '/holisticHealthCare' },
-        { name: 'Book Trust', link: '/bookTrust' },
         { name: 'Institutions', link: '/todo' },
         { name: 'Sri Sathya Sai Grama Seva', link: '/sssGramaSeva' },
         {
@@ -127,7 +126,6 @@ export class HeaderComponent {
       link: '/sssTrustOdisha',
       subMenu: [
         { name: 'About SSS Trust', link: '/centralTrust' },
-        { name: 'Book Trust', link: '/bookTrust' },
         { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
         { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
@@ -152,6 +150,7 @@ export class HeaderComponent {
           name: this.translate.instant('SSSNityaNarayanaSeva'),
           link: '/SSSNityaNarayanaSeva',
         },
+        { name: 'Book Trust', link: '/bookTrust' },
 
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],

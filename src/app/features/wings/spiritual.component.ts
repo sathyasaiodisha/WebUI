@@ -11,7 +11,7 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
       <!--content_topgape-->
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Spiritual' | translate }}
+          {{ 'wings_spiritual' | translate }}
         </h1>
 
         <div class="spiritual_wrapper_top">
@@ -29,23 +29,10 @@ import { SlideShowImageComponent } from '../../shared/components/slideshow_image
         </div>
 
         <p>
-          The Spiritual Wing is the foundation of the SSSSO, often described as
-          the "roots" that nurture inner growth and awaken inherent divinity. As
-          Sri Sathya Sai Baba stated, "First and the foremost wing of this
-          organisation is love for God, that is spirituality." It focuses on
-          fostering devotion (bhakti), self-transformation, and connection with
-          the divine through group and individual practices. The wing helps
-          members develop the urge to connect with their inner self, clarify
-          spiritual doubts, and progress on the path of sadhana (spiritual
-          discipline).
+          {{ 'wings_spiritual_p1' | translate }}
         </p>
         <p>
-          This wing is essential because, as per the organization's philosophy,
-          "Spirituality is the motivational force behind service and service is
-          the fulfilment of spirituality." Without spiritual grounding, service
-          activities lack depth, and spiritual pursuits remain abstract. It
-          caters to the individual's inner needs, while the other wings address
-          societal and educational aspects.
+          {{ 'wings_spiritual_p2' | translate }}
         </p>
 
         <app-sub-sections-links
