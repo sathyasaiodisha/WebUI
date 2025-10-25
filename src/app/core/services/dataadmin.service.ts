@@ -27,9 +27,9 @@ export interface DistrctItem {
 })
 export class DataAdminService {
 
-  private apiUrl = 'http://172.93.223.88:8080/dataadmins';
-  private adminJurisdictionUrl = 'http://172.93.223.88:8080/dataadminjurisdictions';
-  private districtUrl = 'http://172.93.223.88:8080/saidistricts';
+  private apiUrl = 'https://www.sathyasaiodisha.org/api/dataadmins';
+  private adminJurisdictionUrl = 'https://www.sathyasaiodisha.org/api/dataadminjurisdictions';
+  private districtUrl = 'https://www.sathyasaiodisha.org/api/saidistricts';
 
   // private apiUrl = 'http://127.0.0.1:8000/dataadmins';
   // private adminJurisdictionUrl = 'http://127.0.0.1:8000/dataadminjurisdictions';

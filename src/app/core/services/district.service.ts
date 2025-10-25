@@ -15,7 +15,7 @@ export interface DistictItem {
 
 export class DistrictService {
 
-  private apiUrl = 'http://172.93.223.88:8080/saidistricts'; 
+  private apiUrl = 'https://www.sathyasaiodisha.org/api/saidistricts'; 
 
   constructor(private http: HttpClient) {}
 

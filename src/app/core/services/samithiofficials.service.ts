@@ -47,10 +47,10 @@ export interface DesignationItem {
 
 export class SamithiOfficialsService {
 
-private apiUrl = 'http://172.93.223.88:8080/samithiofficebearers';
-    private saidistrictUrl = 'http://172.93.223.88:8080/saidistricts';
-    private samithisBySaidistrictUrl = 'http://172.93.223.88:8080/district';
-    private samithiDesignationsUrl = 'http://172.93.223.88:8080/samithidesignations';
+private apiUrl = 'https://www.sathyasaiodisha.org/api/samithiofficebearers';
+    private saidistrictUrl = 'https://www.sathyasaiodisha.org/api/saidistricts';
+    private samithisBySaidistrictUrl = 'https://www.sathyasaiodisha.org/api/district';
+    private samithiDesignationsUrl = 'https://www.sathyasaiodisha.org/api/samithidesignations';
   
     constructor(private http: HttpClient) { }
     
