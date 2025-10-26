@@ -125,7 +125,10 @@ export class HeaderComponent {
       name: this.translate.instant('trust_menu'),
       link: '/sssTrustOdisha',
       subMenu: [
-        { name: 'About SSS Trust', link: '/centralTrust' },
+        {
+          name: this.translate.instant('sssTrustOdisha_about'),
+          link: '/centralTrust',
+        },
         { name: 'Sri Sathya Sai Prematharu', link: '/sssPrematharu' },
         { name: 'Sri Sathya Sai Nirmala Jhar', link: '/sssNirmalaJhar' },
         { name: 'Tele Medicine Center', link: '/teleMedicineCenter' },
