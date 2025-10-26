@@ -101,7 +101,7 @@
                       routerLink="/"
                       routerLinkActive="active"
                       [routerLinkActiveOptions]="{ exact: true }"
-                      >Home</a
+                      >{{ "home" | translate }}</a
                     >
                   </li>
                   @for( topMenu of menus;track $index;let iI=$index) {

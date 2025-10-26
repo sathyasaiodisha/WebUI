@@ -61,7 +61,7 @@ export class HeaderComponent {
       ],
     },
     {
-      name: 'Seva Initiatives',
+      name: this.translate.instant('seva_initiatives'),
       link: '/SevaInitiatives',
       subMenu: [
         { name: 'Holistic Health Care', link: '/holisticHealthCare' },
@@ -79,7 +79,7 @@ export class HeaderComponent {
       link: '/organization',
       subMenu: [
         {
-          name: 'About SSSSO-Odisha',
+          name: this.translate.instant('organization_sevaOrgOdisha_menu'),
           link: '/sevaOrgOdisha',
         },
         { name: 'State Coordinators', link: '/stateCoordinators' },
@@ -114,7 +114,7 @@ export class HeaderComponent {
       ],
     },
     {
-      name: 'SSS Schools, Odisha',
+      name: this.translate.instant('vidya_vihar'),
       link: '/sssSchoolOdisha',
       // subMenu: [
       //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
@@ -122,7 +122,7 @@ export class HeaderComponent {
       // ],
     },
     {
-      name: 'SSS Trust, Odisha',
+      name: this.translate.instant('trust_menu'),
       link: '/sssTrustOdisha',
       subMenu: [
         { name: 'About SSS Trust', link: '/centralTrust' },
@@ -155,7 +155,7 @@ export class HeaderComponent {
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],
     },
-    { name: 'Reports', link: '/report' },
+    { name: this.translate.instant('reports'), link: '/report' },
     { name: 'events_announcement', link: '/events' },
     { name: 'Admin', link: '/admin' },
   ];
