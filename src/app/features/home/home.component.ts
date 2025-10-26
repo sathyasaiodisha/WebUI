@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
 //import { AsyncPipe } from '@angular/common';
 //import { Observable } from 'rxjs';
@@ -17,7 +17,7 @@ import Map from 'ol/Map';
   imports: [TranslateModule, RouterLink, SharedModule],
   templateUrl: './home.component.html',
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit  {
   dateText = new Date().toDateString();
 
   duration = 2000;
@@ -115,5 +115,12 @@ export class HomeComponent implements OnInit {
       target: 'ol-map',
     });
     */
+  }
+
+    ngAfterViewInit() {
+    const script = document.createElement('script');
+    script.src = 'https://platform.twitter.com/widgets.js';
+    script.async = true;
+    document.body.appendChild(script);
   }
 }
