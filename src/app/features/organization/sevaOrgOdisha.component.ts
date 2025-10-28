@@ -14,7 +14,7 @@ import { ApiService } from '../../core/services/api.service';
         <div class="row">
           <div class="col-md-6">
             <img
-              src="assets/images/odisha-sai-map-Jul2025.png"
+              src="assets/images/odisha-sai-map-Oct2025.png"
               style="width:100%;"
             />
           </div>

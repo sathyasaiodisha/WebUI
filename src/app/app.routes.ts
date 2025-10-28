@@ -400,11 +400,51 @@ export const routes: Routes = [
               ).then((c) => c.FestivalsOfJoyComponent),
           },
           {
-            path: 'BVdoc',
-            data: { breadcrumb: 'BVdoc' },
+            path: 'SSSCHumanExcellence',
+            data: { breadcrumb: 'SSSCHumanExcellence' },
             loadComponent: () =>
-              import('./features/wings/education/BVdoc.component').then(
-                (c) => c.BVdocComponent
+              import('./features/wings/education/SSSCHumanExcellence.component').then(
+                (c) => c.SSSCHumanExcellenceComponent
+              ),
+          },
+          {
+            path: 'AnandaUdyan',
+            data: { breadcrumb: 'AnandaUdyan' },
+            loadComponent: () =>
+              import('./features/wings/education/AnandaUdyan.component').then(
+                (c) => c.AnandaUdyanComponent
+              ),
+          },
+          {
+            path: 'MadhuVadishyami',
+            data: { breadcrumb: 'MadhuVadishyami' },
+            loadComponent: () =>
+              import('./features/wings/education/MadhuVadishyami.component').then(
+                (c) => c.MadhuVadishyamiComponent
+              ),
+          },
+          {
+            path: 'SaiVaatika',
+            data: { breadcrumb: 'SaiVaatika' },
+            loadComponent: () =>
+              import('./features/wings/education/SaiVaatika.component').then(
+                (c) => c.SaiVaatikaComponent
+              ),
+          },
+          {
+            path: 'ManmanaaBhava',
+            data: { breadcrumb: 'ManmanaaBhava' },
+            loadComponent: () =>
+              import('./features/wings/education/ManmanaaBhava.component').then(
+                (c) => c.ManmanaaBhavaComponent
+              ),
+          },
+          {
+            path: 'FestivalsFlavours',
+            data: { breadcrumb: 'FestivalsFlavours' },
+            loadComponent: () =>
+              import('./features/wings/education/FestivalsFlavours.component').then(
+                (c) => c.FestivalsFlavoursComponent
               ),
           },
           {

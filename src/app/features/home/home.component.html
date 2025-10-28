@@ -59,7 +59,7 @@
       <div class="col-md-8">
         <div class="svg_containner">
           <img
-            src="assets/images/odisha-sai-map-Jul2025.png"
+            src="assets/images/odisha-sai-map-Oct2025.png"
             style="width: 100%"
           />
           <div class="row sum_counter">
@@ -99,13 +99,21 @@
               ></div>
               Bala Vikas Centres
             </div>
+            <div class="col-auto sum-counter_title">
+              <div
+                class="sum-counter_value"
+                [countUp]="count.bvStudents"
+                [duration]="duration"
+              ></div>
+              Bala Vikas Students
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 stats_section">
+      <!--<div class="col-md-4 stats_section">
         <h4>Statistics</h4>
         ....
-      </div>
+      </div>-->
     </div>
     <div class="svg_containner" style="display: none">
       <svg
@@ -158,7 +166,7 @@
             fill: #fff;
             font-size: 9px;
             cursor: pointer;
-          } 
+          }
         </style>
         <path
           class="st0 dist-block"

@@ -255,12 +255,36 @@ export class SubSectionComponent implements OnInit {
           url: '/wings/education/FestivalsOfJoy',
         },
         {
+          name: this.translate.instant('AnandaUdyan'),
+          url: '/wings/education/AnandaUdyan',
+        },
+        {
+          name: this.translate.instant('MadhuVadishyami'),
+          url: '/wings/education/MadhuVadishyami',
+        },
+        {
+          name: this.translate.instant('SaiVaatika'),
+          url: '/wings/education/SaiVaatika',
+        },
+        {
+          name: this.translate.instant('ManmanaaBhava'),
+          url: '/wings/education/ManmanaaBhava',
+        },
+        {
+          name: this.translate.instant('FestivalsFlavours'),
+          url: '/wings/education/FestivalsFlavours',
+        },
+        {
+          name: this.translate.instant('SSSCHumanExcellence'),
+          url: '/wings/education/SSSCHumanExcellence',
+        },
+        {
           name: this.translate.instant('TeachingAid'),
           url: '/resources/TeachingAid',
         },
         {
-          name: this.translate.instant('BVdoc'),
-          url: '/wings/education/BVdoc',
+          name: this.translate.instant('DigitalLibrary'),
+          url: '/resources/DigitalLibrary',
         },
       ],
     },
