@@ -21,7 +21,9 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   dateText = new Date().toDateString();
 
   duration = 2000;
-  count = { dist: 35, bhajan: 774, samithis: 242, bv: 3269, bvStudents: 25166 };
+  count = { dist: 35, bhajan: 774, samithis: 242, bv: 3269, active_workers: 43954, bv_students: 25166,
+    prematharu: 438649, permanent_medical_clinics: 56, liquid_love_registered: 13622, liquid_love_units: 6420, medical_camps: 586, patients_treated_phc: 5668,
+  patients_treated_medical_camps: 17981, drinking_water_projects_ftc: 62};
   wings = [
     {
       name: 'Service',

@@ -39,8 +39,14 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
             ></iframe>
           </div>
         </div>
+        <a href="https://www.youtube.com/@PrasanthiExpress" target="_blank"
+        ><h3>Prasanthi Express</h3></a
+        >
         <a href="https://www.youtube.com/@sathyasaiodisha" target="_blank"
-          ><h3>Sri Sathya Sai Seva Organisations, Odisha</h3></a
+        ><h3>Sri Sathya Sai Seva Organisations, Odisha</h3></a
+        >
+        <a href="https://youtube.com/@srisathyasaivandanam" target="_blank"
+        ><h3>Sri Sathya Sai Vandanam, SSSSO Odisha</h3></a
         >
       </div>
     </div>
@@ -107,6 +113,41 @@ export class VideosComponent implements OnInit {
       title:
         '2025 03 27 Partisudha- Special Episode on Sri Sathya Sai Bhajan Mahotsavam',
       url: 'https://www.youtube-nocookie.com/embed/Dast7hK7Lj8?si=5NS3OyV3fQoYqxzM',
+    },
+    {
+      title:
+        'Chitravati Arati',
+      url: 'https://youtu.be/FBzk-1f9eWg?si=trUoxkgPaxZELsys',
+    },
+    {
+      title:
+        'Lambodara Hey Gowri Nandana',
+      url: 'https://youtu.be/qE0f1v1Rrts?si=Ftkq0woYHGiqtCPq',
+    },
+    {
+      title:
+        'Tum Sang Baandhi Prem Ki Dori',
+      url: 'https://youtu.be/Ty9TckHztNg?si=WedbXwsWHYlnHahQ',
+    },
+    {
+      title:
+        'Sri Guru Paduka Stotram',
+      url: 'https://youtu.be/61YqlmAJJr0?si=ymp0UIq1TWy8oJ5l',
+    },
+    {
+      title:
+        'Tuma Binu Anya Gati Nahin',
+      url: 'https://youtu.be/GanMOAuHzrY?si=eiC3Zhcgst99nwq6',
+    },
+    {
+      title:
+        'Rama Shri Ramachandra Jaya Jaya Rama',
+      url: 'https://youtu.be/u-YeGZkch8E?si=616gU8jj2n-DhVtg',
+    },
+    {
+      title:
+        'Shirdi Nivasa Sai Shankara',
+      url: 'https://youtu.be/fc7FDlSXnsM?si=HyYojU-ItaHE4MXi',
     },
   ];
   ngOnInit(): void {}

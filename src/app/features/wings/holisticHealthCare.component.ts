@@ -9,7 +9,7 @@ import { ApiService } from '../../core/services/api.service';
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Sri Sathya Sai Holistic Help line Seva(Orissa)' | translate }}
+          {{ 'Sri Sathya Sai Holistic Help line Seva(Odisha)' | translate }}
         </h1>
         <p>
           To dispel darkness, a ray of light is enough. The ray of light
@@ -18,7 +18,7 @@ import { ApiService } from '../../core/services/api.service';
           graciously a sustainable and time tested answer to the serious
           problems of our society-the health care for all who need it in the
           form of a gift since 2006-Sri Sathya Sai holistic health helpline seva
-          , Orissa We are ever grateful to our loving lord and this gratitude is
+          , Odisha We are ever grateful to our loving lord and this gratitude is
           best expressed as service rendered. We are continuously sustained by
           society, we receive sustenance in many ways, sustenance from mother
           Nature and society we live in. Sri Sathya Sai Holistic Health Helpline

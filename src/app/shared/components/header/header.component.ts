@@ -27,11 +27,13 @@ import { MatButtonModule } from '@angular/material/button';
     FontAwesomeModule,
   ],
   templateUrl: './header.component.html',
+  styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   translate = inject(TranslateService);
-
+  activeMenu: any = null;
   menus = [
+    { name: this.translate.instant('home'), link: '/' },
     {
       name: this.translate.instant('Sri_Sathya_Sai'),
       link: '/Sri_Sathya_Sai',
@@ -114,8 +116,9 @@ export class HeaderComponent {
       ],
     },
     {
-      name: this.translate.instant('vidya_vihar'),
-      link: '/sssSchoolOdisha',
+      name: this.translate.instant('institutions'),
+      // link: '/sssSchoolOdisha',
+      link: '/todo',
       // subMenu: [
       //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
 

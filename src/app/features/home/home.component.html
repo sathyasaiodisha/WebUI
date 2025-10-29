@@ -99,21 +99,72 @@
               ></div>
               Bala Vikas Centres
             </div>
-            <div class="col-auto sum-counter_title">
-              <div
-                class="sum-counter_value"
-                [countUp]="count.bvStudents"
-                [duration]="duration"
-              ></div>
-              Bala Vikas Students
-            </div>
           </div>
         </div>
       </div>
-      <!--<div class="col-md-4 stats_section">
-        <h4>Statistics</h4>
-        ....
-      </div>-->
+      <div class="col-md-4 stats_section">
+<!--        <h4>Statistics</h4>-->
+<!--        ....-->
+        <table class="table table-sm table-borderless w-auto mx-auto text-center align-middle">
+          <tbody>
+          <tr>
+            <td><strong>Active Workers</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.active_workers"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Bala Vikas Students</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.bv_students"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Bala Vikas Centres</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.bv"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Prematharu</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.prematharu"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Permanent Medical Clinics</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.permanent_medical_clinics"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Blood Donors registered in Liquid Love</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.liquid_love_registered"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Units of Blood offered under Liquid Love</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.liquid_love_units"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Medical Camps conducted</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.medical_camps"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Patients treated in Permanent Hospitals &Clinics</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.patients_treated_phc"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Patients treated in Medical Camps</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.patients_treated_medical_camps"
+                [duration]="duration"></td>
+          </tr>
+          <tr>
+            <td><strong>Drinking Water Projects</strong></td>
+            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.drinking_water_projects_ftc"
+                [duration]="duration"></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
     <div class="svg_containner" style="display: none">
       <svg
@@ -166,6 +217,25 @@
             fill: #fff;
             font-size: 9px;
             cursor: pointer;
+          }
+          .table{
+            margin-top: 30%;
+          }
+          .table td, .table th {
+            vertical-align: middle;
+
+          }
+
+          .table td:first-child {
+            text-align: left;
+            font-weight: 700;
+            font-size: 1.25rem;
+          }
+
+          .table td:last-child {
+            color: #FFAC00;
+            font-weight: 700;
+            font-size: 1.25rem;
           }
         </style>
         <path

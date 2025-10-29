@@ -1,0 +1,205 @@
+/* Top strip */
+.top-strip {
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Main navigation bar */
+.main-nav {
+  background-color: #3d3d3d;
+  border-bottom: 3px solid #a44b42;
+  padding: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  padding: 12px 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: #a44b42;
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+.subnav li {
+  margin: 0 10px;
+}
+
+.submenu-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.submenu-link:hover {
+  background: linear-gradient(to bottom, #edc685, #bf623f);
+  //color: #fff;
+  border-radius: 5px;
+}
+
+/* Optional indicator arrow styling */
+.sf-sub-indicator {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  //color: #ccc;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: red;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+/* Submenu container */
+.subnav-content {
+  display: none;
+  position: absolute;
+  top: 100%;               /* Position just below parent */
+  left: 0;
+  background-color: #f2f2f2;
+  min-width: 220px;        /* Limit submenu width */
+  border-top: 2px solid #a44b42;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+  padding: 8px 0;
+}
+
+/* Submenu links arranged vertically */
+.subnav-content li {
+  display: block;
+  margin: 0;
+}
+
+.subnav-content a {
+  display: block;
+  padding: 8px 16px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s;
+  float: left
+}
+
+/* Hover style */
+.subnav-content a:hover {
+  background: #a44b42;
+  color: #fff;
+}
+
+/* Show submenu when hovering */
+.subnavbtn:hover .subnav-content,
+.subnavbtn:focus-within .subnav-content {
+  display: block;
+}
+
+/* middle layer css */
+
+.main-header {
+  background-color: #fff;
+  border-bottom: 2px solid #a00;
+  padding: 10px 0;
+}
+
+.header-logo {
+  width: 100px;
+  max-width: 120px;
+}
+
+.org-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
+.org-location {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 0;
+  color: #000;
+}
+
+.centenary-logo {
+  width: 80px;
+  display: inline-block;
+}
+
+.celebration-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.4;
+}
+
+.celebration-sub {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.middle-header{
+  display: flex;
+}
+
+.logo-org-text{
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper {
+  display: flex; /* Or use other layout methods like grid */
+  align-items: stretch; /* Ensures children stretch to full height */
+}
+
+.vertical-line {
+  width: 1px; /* Sets the width of the line */
+  background-color: #ccc; /* Sets the color of the line */
+  margin: 0 10px; /* Adds horizontal spacing around the line */
+}
+
+.org-name-div{
+  margin-left: 5rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+.centenary-name-div{
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+  margin-right: 3rem;
+}
+
+.welcome-text{
+  display: flex;
+}

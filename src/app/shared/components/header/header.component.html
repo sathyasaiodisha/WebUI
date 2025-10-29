@@ -1,251 +1,113 @@
-<div class="languageContainer">
-  <div class="btn-group btn-group-sm">
-    <span class="sep"></span>
-    <button
-      type="button"
-      class="btn btn-sm btn-outline-secondary"
-      (click)="changeLanguage('ory')"
-      [class.active]="translate.currentLang === 'ory'"
-    >
-      ଓଡ଼ିଆ
-    </button>
-    <button
-      type="button"
-      class="btn btn-sm btn-outline-secondary"
-      (click)="changeLanguage('en')"
-      [class.active]="!translate.currentLang || translate.currentLang === 'en'"
-    >
-      En
-    </button>
+<!-- Top strip -->
+<div class="top-strip d-flex justify-content-between align-items-center px-3 py-1">
+  <div class="welcome-text">
+    <div>Welcome to Sri Sathya Sai Seva Organisations, Odisha</div>
+    <div class="vertical-line"></div>
+    <div>ଶ୍ରୀ ସତ୍ୟସାଇ ସେବା ସଂଗଠନ ଆପଣଙ୍କୁ ସ୍ଵାଗତ କରୁଛି</div>
+  </div>
+  <div class="languageContainer">
+    <div class="btn-group btn-group-sm">
+      <button
+        type="button"
+        class="btn btn-sm btn-outline-secondary"
+        (click)="changeLanguage('ory')"
+        [class.active]="translate.currentLang === 'ory'"
+      >
+        ଓଡ଼ିଆ
+      </button>
+      <button
+        type="button"
+        class="btn btn-sm btn-outline-secondary"
+        (click)="changeLanguage('en')"
+        [class.active]="!translate.currentLang || translate.currentLang === 'en'"
+      >
+        English
+      </button>
+    </div>
   </div>
 </div>
-<div [ngClass]="{ header: 1, banner: isHomePage, bannerInner: !isHomePage }">
-  <header>
-    <div class="row">
-      <div class="col-1 logo">
-        <a routerLink="/">
-          <img src="assets/images/logo.png" alt="logo" />
-        </a>
+
+<!-- Middle header with logo and text -->
+<!--<div class="main-header py-2">
+  <div class="container-fluid">
+    <div class="row align-items-center text-center">
+      <div class="col-md-3 text-md-start">
+        <img src="assets/images/logo.png" alt="logo" class="header-logo" />
       </div>
-      <div class="col-10">
-        <div class="top-menu">
-          <!--nav-- class="navbar navbar-expand-lg">
-            <a
-              routerLink="/"
-              routerLinkActive="active"
-              [routerLinkActiveOptions]="{ exact: true }"
-              >{{ "home" | translate }}</a
-            >
-            @for( topMenu of menus;track $index;let iI=$index) {
-            <ng-template #nosubmenuItem>
-              <a
-                [routerLink]="topMenu.link"
-                routerLinkActive="active"
-                mat-button
-              >
-                {{ topMenu.name | translate }}
-              </a>
-            </ng-template>
-            <a
-              *ngIf="topMenu.subMenu; else nosubmenuItem"
-              routerLinkActive="active"
-              mat-button
-              [matMenuTriggerFor]="submenu"
-            >
-              {{ topMenu.name | translate }}
-
-              <mat-menu #submenu="matMenu" class="top_submenu">
-                @for( subMenu of topMenu.subMenu;track $index;let iI=$index) {
-                <button
-                  mat-menu-item
-                  [routerLink]="topMenu.link + subMenu.link"
-                  routerLinkActive="active"
-                >
-                  {{ subMenu.name | translate }}
-                </button>
-                }
-              </mat-menu>
-            </a>
-            }
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo01"
-              aria-controls="navbarTogglerDemo01"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </nav-->
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      mat-button
-                      routerLink="/"
-                      routerLinkActive="active"
-                      [routerLinkActiveOptions]="{ exact: true }"
-                      >{{ "home" | translate }}</a
-                    >
-                  </li>
-                  @for( topMenu of menus;track $index;let iI=$index) {
-                  <ng-template #nosubmenuItem>
-                    <a
-                      [routerLink]="topMenu.link"
-                      routerLinkActive="active"
-                      mat-button
-                    >
-                      {{ topMenu.name | translate }}
-                    </a>
-                  </ng-template>
-                  <li class="nav-item">
-                    <a
-                      *ngIf="topMenu.subMenu; else nosubmenuItem"
-                      routerLinkActive="active"
-                      mat-button
-                      [matMenuTriggerFor]="submenu"
-                      class="nav-link"
-                    >
-                      {{ topMenu.name | translate }}
-
-                      <mat-menu #submenu="matMenu" class="top_submenu">
-                        @for( subMenu of topMenu.subMenu;track $index;let
-                        iI=$index) {
-                        <button
-                          mat-menu-item
-                          [routerLink]="topMenu.link + subMenu.link"
-                          routerLinkActive="active"
-                        >
-                          {{ subMenu.name | translate }}
-                        </button>
-                        }
-                      </mat-menu>
-                    </a>
-                  </li>
-                  }
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
+      <div class="col-md-6">
+        <h3 class="org-name">SRI SATHYA SAI SEVA ORGANISATIONS</h3>
+        <h4 class="org-location">ODISHA</h4>
       </div>
-      <div class="col-1 d-none d-lg-block">
-        <div class="right-menu">
-          <div class="row d-none">
-            <!--div class="col-xl-2">
-              <a class="notificationLink">
-                <fa-icon [icon]="bellIcon"></fa-icon>
-              </a>
-            </div-->
-            <div class="col-xl-6">
-              <a routerLink="/admin">
-                <button class="btn btn-light d-none d-lg-block">Login</button>
-
-                <fa-icon
-                  class="d-block d-lg-none signin"
-                  [icon]="signin"
-                ></fa-icon>
-              </a>
-            </div>
-            <div class="col-xl-6">
-              <button class="btn btn-primary d-none d-lg-block">
-                Register
-              </button>
-              <fa-icon
-                class="d-block d-lg-none signup"
-                [icon]="signup"
-              ></fa-icon>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-3 text-md-end">
+        <h5 class="celebration-title mb-0">Centenary Celebrations of<br />Bhagawan Sri Sathya Sai Baba</h5>
+        <p class="celebration-sub">(Commemorating 100 years of His divine advent)</p>
       </div>
     </div>
+  </div>
+</div>-->
 
-    <!-- <div class="logo">
-      <a routerLink="/">
-        <img src="assets/images/logo.png" alt="logo" />
-      </a>
+<div class="middle-header">
+  <div class="logo-org-text">
+    <div><img src="assets/images/logo.png" alt="logo" class="header-logo" style = "width:110px; height:110px; margin-left: 5rem; margin-top: 1rem;"/></div>
+    <div class="org-name-div">
+      <h2 class="org-name">SRI SATHYA SAI SEVA ORGANISATIONS</h2>
+      <h2 class="org-name" style="text-align:center">ODISHA</h2>
     </div>
-    <nav>
-      <a
-        routerLink="/"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >{{ "home" | translate }}</a
-      >
-      @for( topMenu of menus;track $index;let iI=$index) {
-      <ng-template #nosubmenuItem>
-        <a [routerLink]="topMenu.link" routerLinkActive="active" mat-button>
-          {{ topMenu.name | translate }}
-        </a>
-      </ng-template>
-      <a
-        *ngIf="topMenu.subMenu; else nosubmenuItem"
-        routerLinkActive="active"
-        mat-button
-        [matMenuTriggerFor]="submenu"
-      >
-        {{ topMenu.name | translate }}
-
-        <mat-menu #submenu="matMenu" class="top_submenu">
-          @for( subMenu of topMenu.subMenu;track $index;let iI=$index) {
-          <button
-            mat-menu-item
-            [routerLink]="topMenu.link + subMenu.link"
-            routerLinkActive="active"
-          >
-            {{ subMenu.name | translate }}
-          </button>
-          }
-        </mat-menu>
-      </a>
-      }
-
-      <div class="btn-group btn-group-sm">
-        <span class="sep"></span>
-        <button
-          type="button"
-          class="btn btn-sm btn-outline-secondary"
-          (click)="changeLanguage('ory')"
-          [class.active]="translate.currentLang === 'ory'"
-        >
-          ଓଡ଼ିଆ
-        </button>
-        <button
-          type="button"
-          class="btn btn-sm btn-outline-secondary"
-          (click)="changeLanguage('en')"
-          [class.active]="
-            !translate.currentLang ||
-            translate.currentLang === 'en'
-          "
-        >
-          English
-        </button>
-      </div>
-    </nav>
-    <div class="right-menu">
-      <a class="notificationLink">
-        <fa-icon [icon]="bellIcon"></fa-icon>
-      </a>
-      <button class="btn btn-light">Login</button>
-      <button class="btn btn-primary">Register</button>
-    </div> -->
-  </header>
+  </div>
+  <div class="vertical-line"></div>
+  <div class="logo-org-text">
+    <div><img src="assets/images/100th_Birthday_Logo.png" alt="centenary emblem" style = "width:130px; height:140px;margin-left: 5rem;"></div>
+    <div class="centenary-name-div">
+      <h2 class="org-name" style="text-align:center">
+        Centenary Celebrations of<br />Bhagawan Sri Sathya Sai Baba
+      </h2>
+      <h3 style="text-align:center; font-style: italic;">
+        (Commemorating 100 years of His divine advent)
+      </h3>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg main-nav">
+  <div class="">
+    <ul class="subnav navbar-nav" id="main-menu">
+      <li
+        class="subnavbtn"
+        *ngFor="let topMenu of menus"
+        (mouseenter)="activeMenu = topMenu"
+        (mouseleave)="activeMenu = null"
+      >
+        <a
+          class="nav-link"
+          [routerLink]="topMenu.link"
+          routerLinkActive="active"
+          [attr.aria-expanded]="activeMenu === topMenu"
+        >
+          {{ topMenu.name | translate }}
+          <span *ngIf="topMenu.subMenu" class="sf-sub-indicator">»</span>
+        </a>
+
+        <!-- Submenu -->
+        <ul
+          class="subnav-content"
+          *ngIf="activeMenu === topMenu && topMenu.subMenu?.length"
+        >
+          <li *ngFor="let subMenu of topMenu.subMenu">
+            <a
+              [routerLink]="topMenu.link + subMenu.link"
+              routerLinkActive="active"
+              class="submenu-link"
+            >
+              {{ subMenu.name | translate }}
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>

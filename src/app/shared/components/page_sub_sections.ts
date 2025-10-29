@@ -13,7 +13,7 @@ type AllpageMap = Record<string, pageMap>;
   selector: 'app-sub-sections-links',
   imports: [RouterLink, RouterLinkActive],
   template: `
-    <h3>{{ title }}</h3>
+    <h5>{{ title }}</h5>
     <p>
       {{ description }}
     </p>
