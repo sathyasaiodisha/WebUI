@@ -9,7 +9,7 @@
 /* Main navigation bar */
 .main-nav {
   background-color: #3d3d3d;
-  border-bottom: 3px solid #a44b42;
+  //border-bottom: 3px solid #a44b42;
   padding: 0;
 }
 
@@ -34,8 +34,8 @@
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  background-color: #a44b42;
-  color: #fff !important;
+  background-color: #fff;
+  color: #000 !important;
   border-radius: 4px;
 }
 
@@ -71,7 +71,7 @@
   display: none;
   position: absolute;
   left: 0;
-  background-color: red;
+  //background-color: red;
   width: 100%;
   z-index: 1;
 }
@@ -88,7 +88,7 @@
   left: 0;
   background-color: #f2f2f2;
   min-width: 220px;        /* Limit submenu width */
-  border-top: 2px solid #a44b42;
+  //border-top: 2px solid #a44b42;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 999;
   padding: 8px 0;
@@ -127,7 +127,7 @@
 
 .main-header {
   background-color: #fff;
-  border-bottom: 2px solid #a00;
+  //border-bottom: 2px solid #a00;
   padding: 10px 0;
 }
 
@@ -175,6 +175,8 @@
 .logo-org-text{
   display: flex;
   flex-direction: row;
+  width: 50%;
+  float: left;
 }
 
 .wrapper {
@@ -194,12 +196,36 @@
   margin-right: 3rem;
 }
 
+.centenary-name
+{
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #4d4d4d;
+  text-align:center;
+}
+
 .centenary-name-div{
-  margin-left: 5rem;
+  margin-left: 2rem;
   margin-top: 1.5rem;
   margin-right: 3rem;
 }
 
 .welcome-text{
   display: flex;
+}
+
+@media (max-width: 768px) {
+    .logo-org-text{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    float: left;
+  }
+
+  .logo-org-text contentDiv
+  {
+    clear: left;
+  }
+
 }
