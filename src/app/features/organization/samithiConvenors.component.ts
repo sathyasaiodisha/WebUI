@@ -7,8 +7,8 @@ import { ApiService } from '../../core/services/api.service';
   imports: [SharedModule],
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
-      <h3 class="text-center">{{ 'AumSriSaiRam' | translate }}</h3>
-      <h4 class="text-center">{{ 'samithiConvenorsTitle' | translate }}</h4>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'AumSriSaiRam' | translate }}</h3>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'samithiConvenorsTitle' | translate }}</h3>
       <table class="table table-striped table-bordered">
         <thead>
           <tr>
@@ -18,7 +18,7 @@ import { ApiService } from '../../core/services/api.service';
             <th scope="col">{{ 'StateRecognitionNumber' | translate }}</th>
             <th scope="col">{{ 'NameConvener' | translate }}</th>
             <th scope="col">{{ 'Age' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+<!--            <th scope="col">{{ 'PhoneNo' | translate }}</th>-->
             <th scope="col">{{ 'Year' | translate }}</th>
             <!-- <th scope="col">{{ 'ContinuingNew' | translate }}</th>
             <th scope="col">{{ 'SaiConnectID' | translate }}</th> -->
@@ -32,7 +32,7 @@ import { ApiService } from '../../core/services/api.service';
             <td>{{ item.stRecNo }}</td>
             <td>{{ item.nm }}</td>
             <td>{{ item.age }}</td>
-            <td>{{ item.mob }}</td>
+<!--            <td>{{ item.mob }}</td>-->
             <td>{{ item.year }}</td>
             <!-- <td>{{ item.contiNew }}</td>
             <td>{{ item.SaiConnectID }}</td> -->

@@ -17,6 +17,7 @@ import { SSSMobileHospitalComponent } from './features/sssMobileHospital.compone
 import { UnauthorizedComponent } from './features/admin/unauthorized/unauthorized.component';
 import { AuthGuard } from './guards/auth.guard';
 import { RoleGuard } from './guards/role.guard';
+import {StatePresidentMessageComponent} from './features/statePresidentMessage';
 
 export const routes: Routes = [
   {
@@ -677,8 +678,8 @@ export const routes: Routes = [
           ),
       },
       {
-        path: 'bookTrust',
-        data: { breadcrumb: 'Book Trust' },
+        path: 'SSSBPT',
+        data: { breadcrumb: 'SSSBPT' },
         loadComponent: () =>
           import('./features/wings/bookTrust.component').then(
             (c) => c.BookTrustComponent
@@ -769,6 +770,13 @@ export const routes: Routes = [
           import('./features/organization/sevaOrgOdisha.component').then(
             (c) => c.SevaOrgOdishaComponent
           ),
+      },
+      {
+        path: 'messageFromStatePresident',
+        data: { breadcrumb: 'messageFromStatePresident' },
+        loadComponent: () =>
+          import('./features/statePresidentMessage')
+            .then((c) => c.StatePresidentMessageComponent),
       },
       {
         path: 'stateCoordinators',

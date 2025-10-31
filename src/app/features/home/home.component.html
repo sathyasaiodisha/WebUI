@@ -62,10 +62,34 @@
             src="assets/images/odisha-sai-map-Oct2025.png"
             style="width: 100%"
           />
+          <!-- ✅ Bhajan Mandali & Samithi Section -->
+          <div class="photo-labels d-flex justify-content-center align-items-center gap-4">
+            <!-- Bhajan Mandali -->
+            <div class="text-center">
+              <img
+                src="assets/images/bhajanmandali-legend.png"
+                alt="Bhajan Mandali"
+                class="img-fluid rounded-circle mb-1"
+                style="width: 40px; height: 40px; object-fit: cover;"
+              />
+              <div class="fw-semibold text-dark small">BHAJAN MANDALI</div>
+            </div>
+
+            <!-- Samithi -->
+            <div class="text-center">
+              <img
+                src="assets/images/samithi-legend.png"
+                alt="Samithi"
+                class="img-fluid rounded-circle mb-1"
+                style="width: 40px; height: 40px; object-fit: cover;"
+              />
+              <div class="fw-semibold text-dark small">SAMITHI</div>
+            </div>
+          </div>
           <div class="row sum_counter">
             <div class="col-auto sum-counter_title">
               <div
-                class="sum-counter_value"
+                class="sum-counter_value text-center"
                 [countUp]="count.dist"
                 [duration]="duration"
               >
@@ -75,7 +99,7 @@
             </div>
             <div class="col-auto sum-counter_title">
               <div
-                class="sum-counter_value"
+                class="sum-counter_value text-center"
                 [countUp]="count.bhajan"
                 [duration]="duration"
               >
@@ -85,7 +109,7 @@
             </div>
             <div class="col-auto sum-counter_title">
               <div
-                class="sum-counter_value"
+                class="sum-counter_value text-center"
                 [countUp]="count.samithis"
                 [duration]="duration"
               ></div>
@@ -93,7 +117,7 @@
             </div>
             <div class="col-auto sum-counter_title">
               <div
-                class="sum-counter_value"
+                class="sum-counter_value text-center"
                 [countUp]="count.bv"
                 [duration]="duration"
               ></div>
@@ -107,59 +131,59 @@
 <!--        ....-->
         <table class="table table-sm table-borderless w-auto mx-auto text-center align-middle">
           <tbody>
-          <tr>
+          <tr class="table-success">
             <td><strong>Active Workers</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.active_workers"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.active_workers"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-danger">
             <td><strong>Bala Vikas Students</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.bv_students"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.bv_students"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-warning">
             <td><strong>Bala Vikas Centres</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.bv"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.bv"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-success">
             <td><strong>Prematharu</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.prematharu"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.prematharu"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-danger">
             <td><strong>Permanent Medical Clinics</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.permanent_medical_clinics"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.permanent_medical_clinics"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-warning">
             <td><strong>Blood Donors registered in Liquid Love</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.liquid_love_registered"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.liquid_love_registered"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-success">
             <td><strong>Units of Blood offered under Liquid Love</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.liquid_love_units"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.liquid_love_units"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-danger">
             <td><strong>Medical Camps conducted</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.medical_camps"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.medical_camps"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-warning">
             <td><strong>Patients treated in Permanent Hospitals &Clinics</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.patients_treated_phc"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.patients_treated_phc"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-success">
             <td><strong>Patients treated in Medical Camps</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.patients_treated_medical_camps"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.patients_treated_medical_camps"
                 [duration]="duration"></td>
           </tr>
-          <tr>
+          <tr class="table-danger">
             <td><strong>Drinking Water Projects</strong></td>
-            <td class="text-warning fw-bold sum-counter_value" [countUp]="count.drinking_water_projects_ftc"
+            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.drinking_water_projects_ftc"
                 [duration]="duration"></td>
           </tr>
           </tbody>
@@ -233,9 +257,18 @@
           }
 
           .table td:last-child {
-            color: #FFAC00;
+            color: #16172d;
             font-weight: 700;
             font-size: 1.25rem;
+          }
+          .photo-labels {
+            position: absolute;
+            right: 15%;
+            bottom: 20%; /* slightly above sum_counter */
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.8); /* optional subtle background */
+            padding: 6px 10px;
+            border-radius: 8px;
           }
         </style>
         <path

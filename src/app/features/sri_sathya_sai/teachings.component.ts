@@ -62,7 +62,7 @@ import { ApiService } from '../../core/services/api.service';
         <ol class="boldIli" start="2">
           <li>Unity of All Religions</li>
           <p>
-            Alll religions lead to the same divine truth. He encouraged respect
+            All religions lead to the same divine truth. He encouraged respect
             for all faiths, emphasizing their common essence—love, compassion,
             and service. His ashram in Puttaparthi welcomed people from all
             religious backgrounds, and he often said, “There is only one

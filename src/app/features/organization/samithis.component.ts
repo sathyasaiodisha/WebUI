@@ -7,8 +7,8 @@ import { ApiService } from '../../core/services/api.service';
   imports: [SharedModule],
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
-      <h3 class="text-center">{{ 'AumSriSaiRam' | translate }}</h3>
-      <h4 class="text-center">{{ 'samithisTitle' | translate }}</h4>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'AumSriSaiRam' | translate }}</h3>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'samithisTitle' | translate }}</h3>
       <table class="table table-striped table-bordered">
         <thead>
           <tr>

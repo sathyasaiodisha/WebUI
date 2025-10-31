@@ -19,8 +19,10 @@ interface data {
   imports: [SharedModule],
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
-      <h3 class="text-center">{{ 'AumSriSaiRam' | translate }}</h3>
-      <h4 class="text-center">{{ 'sicTitle' | translate }}</h4>
+
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'AumSriSaiRam' | translate }}</h3>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'sicTitle' | translate }}</h3>
+
       <div class="table-responsive">
         <table class="table table-striped table-bordered">
           <thead>
@@ -28,8 +30,8 @@ interface data {
               <th scope="col">{{ 'slno' | translate }}</th>
               <th scope="col">{{ 'StateInCharge' | translate }}</th>
               <th scope="col">{{ 'InChargeName' | translate }}</th>
-              <th scope="col">{{ 'Contactno' | translate }}</th>
-              <th scope="col">{{ 'WhatsAppNo' | translate }}</th>
+              <!--<th scope="col">{{ 'Contactno' | translate }}</th>
+              <th scope="col">{{ 'WhatsAppNo' | translate }}</th>-->
               <th scope="col">{{ 'emailid' | translate }}</th>
               <!-- <th scope="col">{{ 'ContinuingNew' | translate }}</th> -->
             </tr>
@@ -43,8 +45,8 @@ interface data {
                 <td>{{ ii + 1 }}</td>
                 <td>{{ item.stateInCharge }}</td>
                 <td>{{ item.inChargeName }}</td>
-                <td>{{ item.contactno }}</td>
-                <td>{{ item.whatsAppNo }}</td>
+                <!--<td>{{ item.contactno }}</td>
+                <td>{{ item.whatsAppNo }}</td>-->
                 <td>{{ item.emailid }}</td>
                 <!-- <td>{{ item.continuingNew }}</td> -->
               </tr>

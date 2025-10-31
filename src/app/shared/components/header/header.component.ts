@@ -96,35 +96,6 @@ export class HeaderComponent {
       ],
     },
     {
-      name: 'resources',
-      link: '/resources',
-      subMenu: [
-        { name: 'Videos', link: '/videos' },
-        { name: 'Audio', link: '/audio' },
-        {
-          name: this.translate.instant('DigitalLibrary'),
-          link: '/DigitalLibrary',
-        },
-        { name: 'Teaching Aid', link: '/TeachingAid' },
-        { name: 'Presentations', link: '/Presentations' },
-        { name: 'Banner Design', link: '/BannerDesign' },
-        { name: 'Photos', link: '/todo' },
-        { name: 'Wallpapers', link: '/Wallpapers' },
-        { name: 'Miracles', link: '/todo' },
-        { name: 'Experiences', link: '/todo' },
-        { name: 'Sathya Sai Speak', link: '/SathyaSaiSpeak' },
-      ],
-    },
-    {
-      name: this.translate.instant('institutions'),
-      // link: '/sssSchoolOdisha',
-      link: '/todo',
-      // subMenu: [
-      //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
-
-      // ],
-    },
-    {
       name: this.translate.instant('trust_menu'),
       link: '/sssTrustOdisha',
       subMenu: [
@@ -156,9 +127,38 @@ export class HeaderComponent {
           name: this.translate.instant('SSSNityaNarayanaSeva'),
           link: '/SSSNityaNarayanaSeva',
         },
-        { name: 'Book Trust', link: '/bookTrust' },
+        { name: 'Sri Sathya Sai Books and Publications Trust ', link: '/SSSBPT' },
 
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
+      ],
+    },
+    {
+      name: this.translate.instant('institutions'),
+      // link: '/sssSchoolOdisha',
+      link: '/todo',
+      // subMenu: [
+      //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
+
+      // ],
+    },
+    {
+      name: 'resources',
+      link: '/resources',
+      subMenu: [
+        { name: 'Videos', link: '/videos' },
+        { name: 'Audio', link: '/audio' },
+        {
+          name: this.translate.instant('DigitalLibrary'),
+          link: '/DigitalLibrary',
+        },
+        { name: 'Teaching Aid', link: '/TeachingAid' },
+        { name: 'Presentations', link: '/Presentations' },
+        { name: 'Banner Design', link: '/BannerDesign' },
+        { name: 'Photos', link: '/todo' },
+        { name: 'Wallpapers', link: '/Wallpapers' },
+        { name: 'Miracles', link: '/todo' },
+        { name: 'Experiences', link: '/todo' },
+        { name: 'Sathya Sai Speak', link: '/SathyaSaiSpeak' },
       ],
     },
     { name: this.translate.instant('reports'), link: '/report' },

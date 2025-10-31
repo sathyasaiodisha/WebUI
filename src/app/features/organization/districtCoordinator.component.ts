@@ -7,34 +7,34 @@ import { ApiService } from '../../core/services/api.service';
   imports: [SharedModule],
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
-      <h3 class="text-center">{{ 'AumSriSaiRam' | translate }}</h3>
-      <h4 class="text-center">{{ 'districtCoordinatorTitle' | translate }}</h4>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'AumSriSaiRam' | translate }}</h3>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'districtCoordinatorTitle' | translate }}</h3>
       <table class="table table-striped table-bordered">
         <thead>
           <tr>
-            <th rowspan="2">{{ 'slno' | translate }}</th>
-            <th rowspan="2">{{ 'District' | translate }}</th>
-            <th rowspan="2">{{ 'Gender' | translate }}</th>
-            <th colspan="2">{{ 'distSpiritualCOORDINATOR' | translate }}</th>
-            <th colspan="2">{{ 'distEduCOORDINATOR' | translate }}</th>
-            <th colspan="2">{{ 'distSerCOORDINATOR' | translate }}</th>
-            <th colspan="2">{{ 'distYouthCOORDINATOR' | translate }}</th>
-            <th colspan="2">{{ 'distJtYouthCOORDINATOR' | translate }}</th>
-            <th colspan="2">{{ 'distItCOORDINATOR' | translate }}</th>
+            <th rowspan="1">{{ 'slno' | translate }}</th>
+            <th rowspan="1">{{ 'District' | translate }}</th>
+            <th rowspan="1">{{ 'Gender' | translate }}</th>
+            <th colspan="1">{{ 'distSpiritualCOORDINATOR' | translate }}</th>
+            <th colspan="1">{{ 'distEduCOORDINATOR' | translate }}</th>
+            <th colspan="1">{{ 'distSerCOORDINATOR' | translate }}</th>
+            <th colspan="1">{{ 'distYouthCOORDINATOR' | translate }}</th>
+            <th colspan="1">{{ 'distJtYouthCOORDINATOR' | translate }}</th>
+            <th colspan="1">{{ 'distItCOORDINATOR' | translate }}</th>
           </tr>
           <tr>
             <th scope="col">{{ 'Name' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+<!--            <th scope="col">{{ 'PhoneNo' | translate }}</th>-->
             <th scope="col">{{ 'Name' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+<!--            <th scope="col">{{ 'PhoneNo' | translate }}</th>-->
             <th scope="col">{{ 'Name' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+<!--            <th scope="col">{{ 'PhoneNo' | translate }}</th>-->
             <th scope="col">{{ 'Name' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+<!--            <th scope="col">{{ 'PhoneNo' | translate }}</th>-->
             <th scope="col">{{ 'Name' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+<!--            <th scope="col">{{ 'PhoneNo' | translate }}</th>-->
             <th scope="col">{{ 'Name' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo' | translate }}</th>
+<!--            <th scope="col">{{ 'PhoneNo' | translate }}</th>-->
           </tr>
         </thead>
         <tbody>
@@ -51,17 +51,17 @@ import { ApiService } from '../../core/services/api.service';
                 </td>
                 <td>{{ contact.gender }}</td>
                 <td>{{ contact.spCoord.name }}</td>
-                <td>{{ contact.spCoord.PhoneNo }}</td>
+<!--                <td>{{ contact.spCoord.PhoneNo }}</td>-->
                 <td>{{ contact.eduCoord.name }}</td>
-                <td>{{ contact.eduCoord.PhoneNo }}</td>
+<!--                <td>{{ contact.eduCoord.PhoneNo }}</td>-->
                 <td>{{ contact.serCoord.name }}</td>
-                <td>{{ contact.serCoord.PhoneNo }}</td>
+<!--                <td>{{ contact.serCoord.PhoneNo }}</td>-->
                 <td>{{ contact.youthCoord.name }}</td>
-                <td>{{ contact.youthCoord.PhoneNo }}</td>
+<!--                <td>{{ contact.youthCoord.PhoneNo }}</td>-->
                 <td>{{ contact.jrYouthCoord.name }}</td>
-                <td>{{ contact.jrYouthCoord.PhoneNo }}</td>
+<!--                <td>{{ contact.jrYouthCoord.PhoneNo }}</td>-->
                 <td>{{ contact.itCoord.name }}</td>
-                <td>{{ contact.itCoord.PhoneNo }}</td>
+<!--                <td>{{ contact.itCoord.PhoneNo }}</td>-->
               </tr>
             </ng-container>
           </ng-container>

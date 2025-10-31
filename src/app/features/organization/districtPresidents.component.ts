@@ -7,17 +7,19 @@ import { ApiService } from '../../core/services/api.service';
   imports: [SharedModule],
   template: `
     <div class="align-middle py-2 px-4  border border-secondary ">
-      <h3 class="text-center">{{ 'AumSriSaiRam' | translate }}</h3>
-      <h4 class="text-center">{{ 'dpTitle' | translate }}</h4>
+
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'AumSriSaiRam' | translate }}</h3>
+      <h3 class="heading-colors text-center text-darkblue ff-source-serif-semi-bold border-heading">{{ 'dpTitle' | translate }}</h3>
+
       <table class="table table-striped table-bordered">
         <thead>
           <tr>
             <th scope="col">{{ 'slno' | translate }}</th>
             <th scope="col">{{ 'District' | translate }}</th>
             <th scope="col">{{ 'DistrictPresident' | translate }}</th>
-            <th scope="col">{{ 'PhoneNo1' | translate }}</th>
+            <!--<th scope="col">{{ 'PhoneNo1' | translate }}</th>
             <th scope="col">{{ 'PhoneNo2' | translate }}</th>
-            <th scope="col">{{ 'WhatsAppNo' | translate }}</th>
+            <th scope="col">{{ 'WhatsAppNo' | translate }}</th>-->
             <th scope="col">{{ 'emailid' | translate }}</th>
           </tr>
         </thead>
@@ -26,9 +28,9 @@ import { ApiService } from '../../core/services/api.service';
             <td>{{ i + 1 }}</td>
             <td>{{ item.district }}</td>
             <td>{{ item.dp }}</td>
-            <td>{{ item.phoneNo1 }}</td>
+            <!--<td>{{ item.phoneNo1 }}</td>
             <td>{{ item.phoneNo2 }}</td>
-            <td>{{ item.whatsAppNo }}</td>
+            <td>{{ item.whatsAppNo }}</td>-->
             <td>{{ item.emailid }}</td>
           </tr>
         </tbody>
