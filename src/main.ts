@@ -30,16 +30,20 @@ import { Router } from '@angular/router';
 
 if (!sessionStorage.getItem('introVideoPlayed'))
 {
-  const introVideo = document.createElement('video');
-  introVideo.src = 'assets/videos/WhatsApp Video 2025-10-31 at 23.30.40_09c43090.mp4';
-  introVideo.autoplay = true;
-  introVideo.muted = true;
-  introVideo.playsInline = true;
-  introVideo.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:9999;background:black;';
-  document.body.appendChild(introVideo);
+  const prelaunchVideo = document.createElement('video');
+  prelaunchVideo.src = 'assets/videos/WhatsApp Video 2025-10-31 at 23.30.40_09c43090.mp4';
+  prelaunchVideo.autoplay = false;
+  prelaunchVideo.muted = true;
+  prelaunchVideo.playsInline = true;
+  prelaunchVideo.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:9999;background:black;';
+  document.body.appendChild(prelaunchVideo);
 
-  introVideo.onended = () => {
-    document.body.removeChild(introVideo);
+  setTimeout(() => {
+    prelaunchVideo.play();
+  }, 2000);
+
+  prelaunchVideo.onended = () => {
+    document.body.removeChild(prelaunchVideo);
     sessionStorage.setItem('introVideoPlayed', 'true');
     bootstrapApplication(AppComponent, appConfig)
       .catch(err => console.error(err));
