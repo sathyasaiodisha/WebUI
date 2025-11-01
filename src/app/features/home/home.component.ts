@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
 
 //import { AsyncPipe } from '@angular/common';
@@ -34,7 +34,9 @@ import Map from 'ol/Map';
   schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomeComponent implements OnInit, AfterViewInit  {
-  swiper!: Swiper;
+  @ViewChild('tweetSwiper') tweetSwiper!: ElementRef;
+  private swiper: any;
+
   dateText = new Date().toDateString();
   sssooTweets: SSSOOTweet[] = [];
   loading = true;
@@ -154,10 +156,24 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     script.src = 'https://platform.twitter.com/widgets.js';
     script.async = true;
     // Swiper is initialized automatically for <swiper-container> in Swiper 11+
-    const swiperEl = document.querySelector('swiper-container') as any;
-    this.swiper = swiperEl?.swiper;
-
     document.body.appendChild(script);
+
+    const swiperEl = this.tweetSwiper.nativeElement as any;
+
+    const startAutoplay = () => {
+      this.swiper = swiperEl.swiper;
+      if (this.swiper && this.swiper.autoplay) this.swiper.autoplay.start();
+    };
+
+    // Delay start until visible
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        startAutoplay();
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(swiperEl);
   }
 
     slidePrev() {
@@ -167,14 +183,5 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   slideNext() {
     this.swiper?.slideNext();
   }
-
-
-  // swiperConfig: SwiperOptions = {
-  //   slidesPerView: 1,
-  //   spaceBetween: 16,
-  //   loop: true,
-  //   pagination: { clickable: true },
-  //   autoplay: { delay: 4000, disableOnInteraction: false },
-  // };
 
 }

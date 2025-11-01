@@ -135,7 +135,7 @@ export class HeaderComponent {
     {
       name: this.translate.instant('institutions'),
       // link: '/sssSchoolOdisha',
-      link: '/todo',
+      link: '/institutions',
       // subMenu: [
       //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
 

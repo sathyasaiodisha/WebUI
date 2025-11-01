@@ -103,8 +103,10 @@ p{
 
 .fixed-menu__msg {
   background: url(/assets/images/msg.png) no-repeat center / cover;
-  width: 265px;
-  height: 333px;
+  // width: 100vw;
+  // height: 100vh;
+  // width: 265px;
+  // height: 333px;
   border-radius: 12px;
   border: 6px solid white;
 
@@ -128,6 +130,20 @@ p{
     color: darkred;
   }
 
+}
+
+@media (max-width: 768px) {
+  .fixed-menu__msg {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .fixed-menu__msg {
+    width: 30vw;
+    height: 100vh;
+  }
 }
 
 .header {

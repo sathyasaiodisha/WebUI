@@ -843,7 +843,14 @@ export const routes: Routes = [
       },
     ],
   },
-
+  {
+    path: 'institutions',
+    data: { breadcrumb: 'Institutions' },
+    loadComponent: () =>
+      import('./features/institutions.component').then(
+        (c) => c.InstitutionsComponent
+      ),
+  },
   {
     path: 'resources',
     data: { breadcrumb: 'Resources' },
