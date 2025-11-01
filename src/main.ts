@@ -1,6 +1,7 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
+import { register } from 'swiper/element/bundle';
 
 import { Router } from '@angular/router';
 
@@ -27,7 +28,7 @@ import { Router } from '@angular/router';
 
 // })
 // .catch(err => console.error(err));
-
+register();
 if (!sessionStorage.getItem('introVideoPlayed'))
 {
   const prelaunchVideo = document.createElement('video');

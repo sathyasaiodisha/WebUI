@@ -1,10 +1,24 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
+
 //import { AsyncPipe } from '@angular/common';
 //import { Observable } from 'rxjs';
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { SharedModule } from '../../shared/shared.module';
+
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { SSSOOtweetsService, SSSOOTweet } from '../../core/services/sssootweets.service';
+import Swiper from 'swiper';
+
+// import { SwiperOptions, SwiperModule } from 'swiper/types';
+// import { Autoplay, Pagination } from 'swiper/modules';
+
+
 
 import Map from 'ol/Map';
 //import View from 'ol/View';
@@ -14,11 +28,16 @@ import Map from 'ol/Map';
 //declare let $: any;
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule, RouterLink, SharedModule],
+  imports: [TranslateModule, RouterLink, SharedModule, MatButtonModule, MatCardModule, MatProgressSpinnerModule, MatIconModule, MatToolbarModule],
   templateUrl: './home.component.html',
+  styleUrl: './home.component.scss',
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HomeComponent implements OnInit, AfterViewInit  {
+  swiper!: Swiper;
   dateText = new Date().toDateString();
+  sssooTweets: SSSOOTweet[] = [];
+  loading = true;
 
   duration = 2000;
   count = { dist: 35, bhajan: 774, samithis: 242, bv: 3269, active_workers: 43954, bv_students: 25166,
@@ -54,7 +73,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   map: Map = new Map({});
   //posts$!: Observable<any>;
   posts$: any = null;
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private sssooTweetsSvc: SSSOOtweetsService) {}
   banner = [
     {
       image: 'assets/images/baba-min.jpg',
@@ -103,6 +122,17 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     this.apiService.getPosts().subscribe((data) => {
       this.posts$ = data;
     });
+
+     this.sssooTweetsSvc.getItems().subscribe({
+      next: (data) => {
+        this.sssooTweets = data;
+        this.loading = false;
+      },
+      error: (err) => {
+        console.error('Error loading tweets', err);
+        this.loading = false;
+      },
+    });
     /*
     this.map = new Map({
       view: new View({
@@ -123,6 +153,28 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     const script = document.createElement('script');
     script.src = 'https://platform.twitter.com/widgets.js';
     script.async = true;
+    // Swiper is initialized automatically for <swiper-container> in Swiper 11+
+    const swiperEl = document.querySelector('swiper-container') as any;
+    this.swiper = swiperEl?.swiper;
+
     document.body.appendChild(script);
   }
+
+    slidePrev() {
+    this.swiper?.slidePrev();
+  }
+
+  slideNext() {
+    this.swiper?.slideNext();
+  }
+
+
+  // swiperConfig: SwiperOptions = {
+  //   slidesPerView: 1,
+  //   spaceBetween: 16,
+  //   loop: true,
+  //   pagination: { clickable: true },
+  //   autoplay: { delay: 4000, disableOnInteraction: false },
+  // };
+
 }
