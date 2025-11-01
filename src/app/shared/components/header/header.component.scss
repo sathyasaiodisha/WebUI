@@ -11,11 +11,12 @@
   background-image:linear-gradient(to bottom,#bf623f,#edc685);
   border-bottom: 3px solid #a44b42;
   padding: 0;
+  margin: 0.5rem;
 }
 
 .navbar-nav {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   width: 100%;
 }
 
@@ -25,7 +26,7 @@
 
 .navbar-nav .nav-link {
   color: #fff !important;
-  padding: 12px 22px;
+  //padding: 12px 22px;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 15px;
@@ -60,12 +61,12 @@
 }
 
 /* Optional indicator arrow styling */
-.sf-sub-indicator {
+/*.sf-sub-indicator {
   margin-left: 5px;
   font-weight: bold;
   font-size: 14px;
   //color: #ccc;
-}
+}*/
 
 .subnav-content {
   display: none;
@@ -91,7 +92,9 @@
   //border-top: 2px solid #a44b42;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   z-index: 999;
-  padding: 8px 0;
+  //margin-left: 0.2rem;
+  margin-right: 1rem;
+  //padding: 8px 0;
 }
 
 /* Submenu links arranged vertically */
@@ -228,4 +231,147 @@
     clear: left;
   }
 
+}
+
+//new code
+
+/* Navbar basic styles */
+/*.main-nav-mob {
+  background-image: linear-gradient(to bottom, #bf623f, #edc685);
+  border-bottom: 3px solid #a44b42;
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.navbar-nav {
+  display: flex;
+  //justify-content: center;
+  width: 100%;
+}
+
+.navbar-nav .nav-item {
+  position: relative;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: #fff;
+  color: #000 !important;
+  border-radius: 4px;
+}
+
+.subnav li {
+  margin: 0 10px;
+}
+
+.submenu-link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.submenu-link:hover {
+  background: linear-gradient(to bottom, #edc685, #bf623f);
+  border-radius: 5px;
+}
+
+!* Submenu for large screens *!
+.subnav-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f2f2f2;
+  min-width: 220px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  margin-right: 1rem;
+}
+
+.subnav:hover .subnav-content,
+.subnavbtn:focus-within .subnav-content {
+  display: block;
+}*/
+
+/* Submenu for mobile (Accordion-style) */
+.subnav-content-mobile {
+  display: none;
+  padding-left: 15px;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+}
+
+.subnav-content-mobile li {
+  display: block;
+  margin: 10px 0;
+}
+
+.subnav-content-mobile a {
+  padding: 8px 15px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.subnav-content-mobile a:hover {
+  background: #a44b42;
+  color: #fff;
+}
+
+/* Media Queries for Mobile */
+/* Remove hover effect on mobile */
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Accordion style for mobile submenu */
+  .subnav-content-mobile {
+    display: none; /* Initially hidden */
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  /* Show the submenu when it's toggled */
+  .subnav-content-mobile li {
+    margin: 0;
+  }
+
+  .subnav-content-mobile a {
+    display: block;
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .subnav-content-mobile a:hover {
+    background: #a44b42;
+    color: #fff;
+  }
+
+  /* This ensures submenus only show when toggled */
+  .subnav-content-mobile {
+    display: block;
+  }
+}
+
+
+@media (min-width: 769px) {
+  /* Display the submenus normally for larger screens */
+  .subnav-content {
+    display: none;
+  }
 }

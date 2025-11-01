@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import {AfterViewInit, Component, ElementRef, inject, ViewChild} from '@angular/core';
 import { RouterLink, RouterLinkActive, Router } from '@angular/router';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
@@ -29,11 +29,14 @@ import { MatButtonModule } from '@angular/material/button';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit{
   translate = inject(TranslateService);
   activeMenu: any = null;
+  // @ViewChild('navbarNav') navbarNav!: ElementRef;
+  @ViewChild('navbarToggler') navbarToggler!: ElementRef<HTMLButtonElement>;
+  collapseInstance: any;
   menus = [
-    { name: this.translate.instant('home'), link: '/' },
+    { name: this.translate.instant('home'), link: '/',showSubMenu: false, },
     {
       name: this.translate.instant('Sri_Sathya_Sai'),
       link: '/Sri_Sathya_Sai',
@@ -49,6 +52,7 @@ export class HeaderComponent {
         { name: 'His Teachings', link: '/teachings' },
         { name: 'His Works', link: '/works' },
       ],
+      showSubMenu: false
     },
 
     {
@@ -61,6 +65,7 @@ export class HeaderComponent {
         { name: this.translate.instant('wings_mahilas'), link: '/ladies' },
         { name: this.translate.instant('wings_youth'), link: '/youth' },
       ],
+      showSubMenu: false
     },
     {
       name: this.translate.instant('seva_initiatives'),
@@ -75,6 +80,7 @@ export class HeaderComponent {
         },
         { name: 'Prasanthi Seva', link: '/todo' },
       ],
+      showSubMenu: false
     },
     {
       name: 'organization',
@@ -94,6 +100,7 @@ export class HeaderComponent {
         { name: 'Samithi Convenors', link: '/samithiConvenors' },
         { name: 'Bhajan Mandalis', link: '/bhajanMandalis' },
       ],
+      showSubMenu: false,
     },
     {
       name: this.translate.instant('trust_menu'),
@@ -131,11 +138,13 @@ export class HeaderComponent {
 
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],
+      showSubMenu: false
     },
     {
       name: this.translate.instant('institutions'),
       // link: '/sssSchoolOdisha',
       link: '/todo',
+      showSubMenu: false,
       // subMenu: [
       //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
 
@@ -160,17 +169,63 @@ export class HeaderComponent {
         { name: 'Experiences', link: '/todo' },
         { name: 'Sathya Sai Speak', link: '/SathyaSaiSpeak' },
       ],
+      showSubMenu: false,
     },
-    { name: this.translate.instant('reports'), link: '/report' },
-    { name: 'events_announcement', link: '/events' },
-    { name: 'Admin', link: '/admin' },
+    { name: this.translate.instant('reports'), link: '/report', showSubMenu: false, },
+    { name: 'events_announcement', link: '/events', showSubMenu: false, },
+    { name: 'Admin', link: '/admin', showSubMenu: false, },
   ];
   bellIcon = faBell;
   signin = faSignIn;
   signup = faUserPlus;
   constructor(private router: Router) {}
+
   public changeLanguage(language: string): void {
     this.translate.use(language);
+  }
+
+  ngAfterViewInit() {
+    // Initialize Bootstrap collapse instance programmatically
+    this.collapseInstance = new (window as any).bootstrap.Collapse(
+      document.getElementById('navbarNav'),
+      { toggle: false }
+    );
+  }
+
+  toggleSubMenu(topMenu: any): void {
+    // Close other submenus except the one clicked
+    this.menus.forEach(menu => {
+      if (menu.subMenu && menu !== topMenu) {
+        menu.showSubMenu = false;
+      }
+    });
+
+    // Toggle clicked submenu
+    if (topMenu.subMenu) {
+      topMenu.showSubMenu = !topMenu.showSubMenu;
+    }
+    // Do NOT close the navbar collapse here
+  }
+
+  onMenuClickWithoutSubMenu(): void {
+    // Close any open submenu
+    this.menus.forEach(menu => {
+      if (menu.subMenu) {
+        menu.showSubMenu = false;
+      }
+    });
+
+    // Close the mobile navbar collapse menu
+    if (this.collapseInstance) {
+      this.collapseInstance.hide();
+    }
+  }
+
+  onSubMenuClick(): void {
+    // Close the mobile navbar collapse menu on submenu click
+    if (this.collapseInstance) {
+      this.collapseInstance.hide();
+    }
   }
 
   get isHomePage(): boolean {
