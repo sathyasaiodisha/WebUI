@@ -19,12 +19,12 @@ body {
   }
 }
 
-.heading-colors{
+.heading-colors {
   font-family: Verdana, sans-serif !important;
   color: #990000 !important;
 }
 
-p{
+p {
   text-align: justify;
 }
 
@@ -109,10 +109,12 @@ p{
   // height: 333px;
   border-radius: 12px;
   border: 6px solid white;
+  background-size: 360px 738px;
+  background-position: top;
 
   .dateDiv {
     position: relative;
-    top: 224px;
+    top: 562px;
     text-align: center;
     font-size: 14px;
     color: darkred;
@@ -120,7 +122,7 @@ p{
 
   .mseDiv {
     position: relative;
-    top: 222px;
+    top: 516px;
     /* font-size: 18px; */
     padding: 0 10px;
     text-align: justify;
@@ -135,14 +137,14 @@ p{
 @media (max-width: 768px) {
   .fixed-menu__msg {
     width: 100vw;
-    height: 100vh;
+    height: 750px;
   }
 }
 
 @media (min-width: 992px) {
   .fixed-menu__msg {
     width: 30vw;
-    height: 100vh;
+    height: 100%;
   }
 }
 
