@@ -173,7 +173,7 @@ export class HeaderComponent implements AfterViewInit{
     },
     { name: this.translate.instant('reports'), link: '/report', showSubMenu: false, },
     { name: 'events_announcement', link: '/events', showSubMenu: false, },
-    { name: 'Admin', link: '/admin', showSubMenu: false, },
+    { name: this.translate.instant('admin'), link: '/admin', showSubMenu: false, },
   ];
   bellIcon = faBell;
   signin = faSignIn;

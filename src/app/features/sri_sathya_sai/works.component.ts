@@ -9,7 +9,7 @@ import { ApiService } from '../../core/services/api.service';
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'Works of Sri Sathya Sai' | translate }}
+          {{ 'Sri_Sathya_Sai_works_title' | translate }}
         </h1>
         <div class="row">
           <div class="col-md-4">
@@ -18,142 +18,132 @@ import { ApiService } from '../../core/services/api.service';
           <div class="col-md-8">
             <br />
             <p>
-              Bhagwan Sri Sathya Sai Baba apart from His Spiritual Teachings &
-              Messages to the humanity has taken up various beevolent works
-              aimed at uplifting humanity through service, education, and
-              healthcare. Humankind will be eternally grateful to Mother
-              Easwaramma for it was her three wishes from her son “Sathya” that
-              led to mammoth projects in Educare, Healthcare and Sociocare.
+              {{
+                'Sri_Sathya_Sai_works_p1' | translate
+              }}
             </p>
             <ol class="boldIli">
-              <li>Healthcare Initiatives</li>
+              <li>{{ 'Sri_Sathya_Sai_works_p2_heading' | translate}}</li>
               <ul>
                 <li>
-                  <b>Free Medical Services:</b> Sai Baba established
-                  super-specialty hospitals offering free treatment to all,
-                  regardless of socioeconomic status. Notable institutions
+                  <b>{{ 'Sri_Sathya_Sai_works_p2_heading_1' | translate}}</b> {{
+                    'Sri_Sathya_Sai_works_p2_heading_1_body' | translate
+                  }}
                   include:
                 </li>
                 <ul>
                   <li>
                     <b
-                      >Sri Sathya Sai Institute of Higher Medical Sciences
-                      (SSSIHMS)</b
+                      >{{
+                        'Sri_Sathya_Sai_works_p2_heading_2' | translate
+                      }}</b
                     >
-                    in Puttaparthi, Andhra Pradesh (1991), and Whitefield,
-                    Bangalore (2001). These hospitals provide advanced care in
-                    cardiology, neurology, and other specialties, serving
-                    millions with no cost to patients.
+                    {{
+                      'Sri_Sathya_Sai_works_p2_heading_2_body' | translate
+                    }}
                   </li>
                   <li>
-                    <b>General Hospitals:</b> Free general hospitals in
-                    Puttaparthi and other locations offer comprehensive medical
-                    care.
+                    <b>{{ 'Sri_Sathya_Sai_works_p2_heading_3' | translate}}</b> {{
+                      'Sri_Sathya_Sai_works_p2_heading_3_body' | translate
+                    }}
                   </li>
                 </ul>
                 <li>
-                  <b>Mobile Hospitals:</b> Mobile medical units deliver
-                  healthcare to remote villages, providing free consultations,
-                  medicines, and diagnostics.
+                  <b>{{ 'Sri_Sathya_Sai_works_p2_heading_4' | translate}}</b> {{'Sri_Sathya_Sai_works_p2_heading_4_body' | translate}}
                 </li>
                 <li>
-                  <b>Medical Camps:</b> Regular camps address immediate
-                  healthcare needs in underserved areas, including eye surgeries
-                  and dental care.
+                  <b>{{ 'Sri_Sathya_Sai_works_p2_heading_5' | translate}}</b> {{
+                    'Sri_Sathya_Sai_works_p2_heading_5_body' | translate
+                  }}
                 </li>
               </ul>
             </ol>
           </div>
         </div>
         <ol class="boldIli" start="2">
-          <li>Educational Initiatives</li>
+          <li>{{ 'Sri_Sathya_Sai_works_p3_heading' | translate}}</li>
           <ul>
             <li>
-              <b>Free Education:</b> Sai Baba founded the Sri Sathya Sai
-              Institute of Higher Learning (deemed university) in 1981, offering
-              free education from primary to postgraduate levels, emphasizing
-              values-based learning. Campuses are located in Puttaparthi,
-              Anantapur, Whitefield, and Muddenahalli.
+              <b>{{ 'Sri_Sathya_Sai_works_p3_heading_1' | translate}}</b> {{
+                'Sri_Sathya_Sai_works_p3_heading_1_body' | translate
+              }}
             </li>
             <li>
-              <b>Schools and Colleges:</b> Numerous schools across India provide
-              free or subsidized education, integrating moral and spiritual
-              values with academics.
+              <b>{{ 'Sri_Sathya_Sai_works_p3_heading_2' | translate}}</b> {{
+                'Sri_Sathya_Sai_works_p3_heading_2_body' | translate
+              }}
             </li>
             <li>
-              <b>Focus on Character Development:</b> His educational
-              institutions emphasize "Educare," combining academic excellence
-              with ethical and spiritual growth.
+              <b>{{ 'Sri_Sathya_Sai_works_p3_heading_3' | translate}}</b> {{
+                'Sri_Sathya_Sai_works_p3_heading_3_body' | translate
+              }}
             </li>
           </ul>
-          <li>Water Supply Projects</li>
+          <li>{{ 'Sri_Sathya_Sai_works_p4_heading' | translate}}</li>
           <ul>
             <li>
-              <b>Drinking Water Initiatives:</b> Sai Baba spearheaded massive
-              water supply projects to address water scarcity in drought-prone
-              regions:
+              <b>{{ 'Sri_Sathya_Sai_works_p4_heading_1' | translate}}</b> {{
+                'Sri_Sathya_Sai_works_p4_heading_1_body' | translate
+              }}
             </li>
             <ul>
               <li>
-                <b>Anantapur Water Project:</b> Provided clean drinking water to
-                over 700 villages in Andhra Pradesh, benefiting millions.
+                <b>{{ 'Sri_Sathya_Sai_works_p4_heading_2' | translate}}</b> {{
+                  'Sri_Sathya_Sai_works_p4_heading_2_body' | translate
+                }}
               </li>
               <li>
-                <b>Medak and Mahbubnagar Projects:</b> Extended water access to
-                additional districts in Telangana.
+                <b>{{ 'Sri_Sathya_Sai_works_p4_heading_3' | translate}}</b> {{
+                  'Sri_Sathya_Sai_works_p4_heading_3_body' | translate
+                }}
               </li>
               <li>
-                <b>Chennai Water Project:</b> Supported water supply
-                infrastructure for Chennai, Tamil Nadu.
+                <b>{{ 'Sri_Sathya_Sai_works_p4_heading_4' | translate}}</b> {{'Sri_Sathya_Sai_works_p4_heading_4_body' | translate}}
               </li>
             </ul>
             <li>
-              These projects were executed through the Sri Sathya Sai Central
-              Trust, often in collaboration with government bodies, at no cost
-              to beneficiaries.
+              {{
+                'Sri_Sathya_Sai_works_p4_heading_5_body' | translate
+              }}
             </li>
           </ul>
-          <li>Humanitarian and Social Service</li>
+          <li>{{ 'Sri_Sathya_Sai_works_p5_heading' | translate }}</li>
           <ul>
             <li>
-              <b>Sri Sathya Sai Seva Organization:</b> This global network of
-              volunteers undertakes service activities, including disaster
-              relief, feeding the poor, and community development.
+              <b>{{ 'Sri_Sathya_Sai_works_p5_heading_1' | translate}}</b> {{ 'Sri_Sathya_Sai_works_p5_heading_1_body' | translate}}
             </li>
             <li>
-              <b>Free Food Distribution:</b> Sai Baba’s ashrams, like Prasanthi
-              Nilayam, provide free meals daily to thousands of visitors and
-              devotees.
+              <b>{{ 'Sri_Sathya_Sai_works_p5_heading_2' | translate}}</b> {{
+                'Sri_Sathya_Sai_works_p5_heading_2_body' | translate
+              }}
             </li>
             <li>
-              <b>Disaster Relief:</b> The Sai Organization has been instrumental
-              in providing aid during natural calamities, such as earthquakes,
-              floods, and tsunamis, offering food, shelter, and medical
-              assistance.
+              <b>{{ 'Sri_Sathya_Sai_works_p5_heading_3' | translate}}</b> {{
+                'Sri_Sathya_Sai_works_p5_heading_3_body' | translate
+              }}
             </li>
             <li>
-              <b>Rural Development:</b> Initiatives like village adoption
-              programs focus on improving infrastructure, sanitation, and
-              livelihoods in rural areas.
+              <b>{{'Sri_Sathya_Sai_works_p5_heading_4' | translate }}</b> {{
+                'Sri_Sathya_Sai_works_p5_heading_4_body' | translate
+              }}
             </li>
           </ul>
-          <li>Spiritual and Cultural Contributions</li>
+          <li>{{ 'Sri_Sathya_Sai_works_p6_heading' | translate }}</li>
           <ul>
             <li>
-              <b>Promotion of Universal Values:</b> Sai Baba emphasized unity of
-              religions, love, and selfless service, inspiring millions to live
-              by the principles of truth (Sathya), righteousness (Dharma), peace
-              (Shanti), love (Prema), and non-violence (Ahimsa).
+              <b>{{ 'Sri_Sathya_Sai_works_p6_heading_1' | translate}}</b> {{
+                'Sri_Sathya_Sai_works_p6_heading_1_body' | translate
+              }}
             </li>
             <li>
-              <b>Community Programs:</b> Organized interfaith gatherings,
-              cultural events, and festivals to foster harmony and spiritual
-              growth.
+              <b>{{ 'Sri_Sathya_Sai_works_p6_heading_2' | translate }}</b> {{
+                'Sri_Sathya_Sai_works_p6_heading_2_body' | translate
+              }}
             </li>
             <li>
-              <b>Global Reach:</b> Through his teachings and the Sai
-              Organization, his humanitarian efforts extended beyond India to
-              countries worldwide, with centers in over 120 nations.
+              <b>{{ 'Sri_Sathya_Sai_works_p6_heading_3' | translate }}</b> {{
+                'Sri_Sathya_Sai_works_p6_heading_3_body' | translate
+              }}
             </li>
           </ul>
         </ol>
