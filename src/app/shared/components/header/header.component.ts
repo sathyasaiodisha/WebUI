@@ -49,8 +49,8 @@ export class HeaderComponent implements AfterViewInit{
           name: this.translate.instant('Sri_Sathya_Sai_menu_life'),
           link: '/life',
         },
-        { name: 'His Teachings', link: '/teachings' },
-        { name: 'His Works', link: '/works' },
+        { name: this.translate.instant('Sri_Sathya_Sai_menu_teachings'), link: '/teachings' },
+        { name: this.translate.instant('Sri_Sathya_Sai_menu_works'), link: '/works' },
       ],
       showSubMenu: false
     },
