@@ -65,7 +65,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         position: fixed;
         background: url(/assets/images/msg.png) no-repeat center / cover;
         width: 455px;
-        height: 730px;
+        height: 100vh;
         border-radius: 12px;
         left: 36px;
         top: calc(50vh - 359px);

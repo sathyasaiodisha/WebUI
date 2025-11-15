@@ -21,6 +21,7 @@ import Swiper from 'swiper';
 
 
 import Map from 'ol/Map';
+declare var FB: any;
 //import View from 'ol/View';
 //import TileLayer from 'ol/layer/Tile';
 //import OSM from 'ol/source/OSM';
@@ -152,6 +153,11 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   }
 
     ngAfterViewInit() {
+    // If SDK is loaded, parse FB tags inside the component
+    if (typeof FB !== 'undefined' && FB !== null) {
+      FB.XFBML.parse();
+    }
+
     const script = document.createElement('script');
     script.src = 'https://platform.twitter.com/widgets.js';
     script.async = true;

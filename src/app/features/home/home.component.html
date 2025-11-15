@@ -25,101 +25,48 @@
       </div>
     </div>
   </div>
-
   <div class="col-12">
+    <div class="msgrow_outer">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <div class="fixed-menu__msg">
           <div class="mseDiv">{{ "saiSandesh" | translate }}</div>
           <div class="dateDiv">{{ dateText }}</div>
         </div>
       </div>
-      <div class="col-md-9">
-        <!--<div class="twitter_feed">
-          <b>Recent activities</b>
-          
-          <div>
-            <a
-              class="twitter-timeline"
-              data-width="1000"
-              data-height="250"
-              href="https://twitter.com/sathyasaiodisha?ref_src=twsrc%5Etfw">Tweets by sathyasaiodisha</a>
-          </div>
-        </div>-->
-        <div class="tweet-container mat-app-background">
-          <h1 class="mat-headline-4 text-center my-4">🕊 Latest Tweets</h1>
-
-          <div class="text-center" *ngIf="loading">
-            <mat-spinner diameter="40"></mat-spinner>
-            <p class="mat-body-1 text-gray-600">Loading tweets...</p>
-          </div>
-
-          <div *ngIf="!loading && sssooTweets.length === 0" class="text-center mat-body-1 text-gray-600">
-            No tweets available.
-          </div>
-            <swiper-container
-              slides-per-view="1"
-              space-between="30"
-              loop="true"
-              init="true"
-              watch-slides-progress="true"
-              visibility-watch="false"
-              autoplay-delay="3000"
-              autoplay-disable-on-interaction="false"
-              autoplay-pause-on-mouse-enter="true"
-              pagination="true"
-              pagination-clickable="true"
-              navigation="false"
-              class="tweet-swiper">
-              <swiper-slide *ngFor="let sssooTweet of sssooTweets">
-                      <mat-card class="tweet-card mb-4 shadow-sm">
-                        <mat-card-header>
-                          <div mat-card-avatar class="tweet-avatar">
-                            <mat-icon>person</mat-icon>
-                          </div>
-                          <mat-card-title>{{ sssooTweet.TweeterUserName }}</mat-card-title>
-                          <mat-card-subtitle>
-                            {{ sssooTweet.CreatedDate | date: 'medium' }}
-                          </mat-card-subtitle>
-                        </mat-card-header>
-
-                        <mat-card-content>
-                          <p class="tweet-text">{{ sssooTweet.TweetText }}</p>
-
-                          <div *ngIf="sssooTweet.MediaUrl" class="media-container mt-3">
-                            <img
-                              *ngIf="sssooTweet.MediaType === 'photo'"
-                              [src]="sssooTweet.MediaUrl"
-                              class="tweet-media"
-                              alt="Tweet media"
-                            />
-                            <video
-                              *ngIf="sssooTweet.MediaType === 'video'"
-                              [src]="sssooTweet.MediaUrl"
-                              controls
-                              class="tweet-media"
-                            ></video>
-                          </div>
-                        </mat-card-content>
-
-                        <!-- <mat-card-actions align="end">
-                          <button mat-button color="primary" (click)="refreshTweet(sssooTweet)">Refresh</button>
-                          <button mat-button color="accent">Details</button>
-                        </mat-card-actions> -->
-                      </mat-card>
-                        </swiper-slide>
-            </swiper-container>
-            <button mat-icon-button class="nav-btn prev-btn" (click)="slidePrev()">
-    <mat-icon>arrow_circle_left</mat-icon>
-  </button>
-  <button mat-icon-button class="nav-btn next-btn" (click)="slideNext()">
-    <mat-icon>arrow_circle_right</mat-icon>
-  </button>
-
+      <div class="col-md-4 fb-wrapper">
+        <div class="fb-page"
+            data-href="https://www.facebook.com/sathyasaiodisha"
+            data-tabs="timeline"
+            data-width="500"
+            data-height="100vh"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="false">
         </div>
       </div>
+      <div class="col-md-4 sp-desk-msg">
+        <a
+        href="#/organization/messageFromStatePresident"
+        class="signature-button"
+      >
+        <img
+          src="assets/images/state_president_photo.png"
+          alt="SP desk"
+          class="img-fluid rounded-3 mb-2"
+          style="width: auto; height: auto;"
+        />
+        <!-- <h6 class="mb-0" style="text-align: center;">From State President's Desk</h6> -->
+         <!-- <button mat-stroked-button color="accent">
+          <i class="fas fa-feather-alt"></i>
+          From State President's Desk
+        </button> -->
+        <span class="sig-text">From State President's Desk</span>
+      </a>
+      </div>
     </div>
-    <hr />
+    </div>
   </div>
 
   <div class="col-12 svg_outer">
