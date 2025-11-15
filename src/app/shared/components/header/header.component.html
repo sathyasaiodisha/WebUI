@@ -27,33 +27,6 @@
   </div>
 </div>
 
-<!--mobile view-->
-<!--<p class="d-block d-md-none w-100 text-center mt-1">
-  {{ 'satya_sai_org_web_top' | translate }}
-</p>
-<div class="d-block d-md-none top-strip d-flex justify-content-between align-items-center px-3 py-1">
-  <div class="languageContainer">
-    <div class="btn-group btn-group-sm">
-      <button
-        type="button"
-        class="btn btn-sm btn-outline-secondary"
-        (click)="changeLanguage('ory')"
-        [class.active]="translate.currentLang === 'ory'"
-      >
-        ଓଡ଼ିଆ
-      </button>
-      <button
-        type="button"
-        class="btn btn-sm btn-outline-secondary"
-        (click)="changeLanguage('en')"
-        [class.active]="!translate.currentLang || translate.currentLang === 'en'"
-      >
-        en
-      </button>
-    </div>
-  </div>
-</div>-->
-
 <!-- Top Section: Language Selector (Right-Aligned) -->
 <div class="d-block d-md-none d-flex justify-content-end align-items-center px-3 py-2">
   <div class="languageContainer">
@@ -84,26 +57,6 @@
     {{ 'satya_sai_org_web_top' | translate }}
   </p>
 </div>
-
-
-<!-- Middle header with logo and text -->
-<!--<div class="main-header py-2">
-  <div class="container-fluid">
-    <div class="row align-items-center text-center">
-      <div class="col-md-3 text-md-start">
-        <img src="assets/images/logo.png" alt="logo" class="header-logo" />
-      </div>
-      <div class="col-md-6">
-        <h3 class="org-name">SRI SATHYA SAI SEVA ORGANISATIONS</h3>
-        <h4 class="org-location">ODISHA</h4>
-      </div>
-      <div class="col-md-3 text-md-end">
-        <h5 class="celebration-title mb-0">Centenary Celebrations of<br />Bhagawan Sri Sathya Sai Baba</h5>
-        <p class="celebration-sub">(Commemorating 100 years of His divine advent)</p>
-      </div>
-    </div>
-  </div>
-</div>-->
 
 <div class="middle-header">
   <div class="logo-org-text logoDiv">
@@ -153,8 +106,8 @@
       >
         <a
           class="nav-link"
-          [routerLink]="topMenu.link"
-          routerLinkActive="active"
+          [routerLink]="topMenu.subMenu?.length ? null : topMenu.link"
+          [class.active]="isTopMenuActive(topMenu)"
           [attr.aria-expanded]="activeMenu === topMenu"
           [attr.aria-collapsed]="activeMenu === null"
         >
@@ -183,143 +136,6 @@
 </nav>
 
 <!--navigation bar mobile-->
-<!--<nav class="d-block d-md-none navbar navbar-expand-lg main-nav">
-  <div class="container-fluid">
-    &lt;!&ndash; Toggler Button for mobile view &ndash;&gt;
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" id="main-menu">
-        <li
-          class="nav-item dropdown"
-          *ngFor="let topMenu of menus"
-          (mouseenter)="activeMenu = topMenu"
-          (mouseleave)="activeMenu = null"
-          [ngClass]="{'active': activeMenu === topMenu}"
-        >
-          <a class="nav-link" [routerLink]="topMenu.link" routerLinkActive="active" [attr.aria-expanded]="activeMenu === topMenu">
-            {{ topMenu.name | translate }}
-            &lt;!&ndash; Optional indicator for submenus &ndash;&gt;
-            <span *ngIf="topMenu.subMenu" class="sf-sub-indicator">»</span>
-          </a>
-
-          &lt;!&ndash; Submenu for large screens, displayed on hover &ndash;&gt;
-          <ul class="subnav-content" *ngIf="activeMenu === topMenu && topMenu.subMenu?.length">
-            <li *ngFor="let subMenu of topMenu.subMenu">
-              <a [routerLink]="topMenu.link + subMenu.link" routerLinkActive="active" class="submenu-link">
-                {{ subMenu.name | translate }}
-              </a>
-            </li>
-          </ul>
-
-          &lt;!&ndash; Submenu for mobile (Accordion-style) &ndash;&gt;
-          <ul class="subnav-content-mobile" *ngIf="topMenu.subMenu?.length">
-            <li *ngFor="let subMenu of topMenu.subMenu">
-              <a [routerLink]="topMenu.link + subMenu.link" routerLinkActive="active" class="submenu-link">
-                {{ subMenu.name | translate }}
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>-->
-
-<!--<nav class="d-block d-md-none navbar navbar-expand-lg main-nav">
-  <div class="container-fluid">
-    &lt;!&ndash; Toggler Button for mobile view &ndash;&gt;
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" id="main-menu">
-        <li
-          class="nav-item dropdown"
-          *ngFor="let topMenu of menus"
-          (mouseenter)="activeMenu = topMenu"
-          (mouseleave)="activeMenu = null"
-          [ngClass]="{'active': activeMenu === topMenu}"
-        >
-          &lt;!&ndash; Check if the menu item has a subMenu. If yes, prevent default link behavior. &ndash;&gt;
-          <a *ngIf="!topMenu.subMenu?.length; else noLink"
-             class="nav-link"
-             [routerLink]="topMenu.link"
-             routerLinkActive="active">
-            {{ topMenu.name | translate }}
-          </a>
-
-          &lt;!&ndash; Template for menu items with submenus (only shows submenu on click) &ndash;&gt;
-          <ng-template #noLink>
-            <a class="nav-link" href="javascript:void(0)" (click)="toggleSubMenu(topMenu)">
-              {{ topMenu.name | translate }}
-              &lt;!&ndash; Optional indicator for submenus &ndash;&gt;
-              <span *ngIf="topMenu.subMenu" class="sf-sub-indicator">»</span>
-            </a>
-          </ng-template>
-
-          &lt;!&ndash; Submenu for mobile (Accordion-style) &ndash;&gt;
-          <ul *ngIf="topMenu.subMenu" class="subnav-content-mobile">
-            <li *ngFor="let subMenu of topMenu.subMenu">
-              <a [routerLink]="topMenu.link + subMenu.link" routerLinkActive="active" class="submenu-link">
-                {{ subMenu.name | translate }}
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>-->
-
-<!--<nav class="d-block d-md-none navbar navbar-expand-lg main-nav">
-  <div class="container-fluid">
-    &lt;!&ndash; Toggler Button for mobile view &ndash;&gt;
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav" id="main-menu">
-        <li
-          class="nav-item"
-          *ngFor="let topMenu of menus"
-          [ngClass]="{'active': activeMenu === topMenu}"
-        >
-          &lt;!&ndash; If the menu has no subMenu, it should work as a normal link &ndash;&gt;
-          <a *ngIf="!topMenu.subMenu?.length; else hasSubMenu"
-             class="nav-link"
-             [routerLink]="topMenu.link"
-             routerLinkActive="active">
-            {{ topMenu.name | translate }}
-          </a>
-
-          &lt;!&ndash; Template for menu items with submenus (accordion toggle behavior on mobile) &ndash;&gt;
-          <ng-template #hasSubMenu>
-            <a href="javascript:void(0)" class="nav-link" (click)="toggleSubMenu(topMenu)">
-              {{ topMenu.name | translate }}
-              &lt;!&ndash; Optional indicator for submenus &ndash;&gt;
-              <span *ngIf="topMenu.subMenu" class="sf-sub-indicator">»</span>
-            </a>
-          </ng-template>
-
-          &lt;!&ndash; Submenu for mobile (Accordion-style) &ndash;&gt;
-          <ul *ngIf="topMenu.showSubMenu" class="subnav-content-mobile">
-            <li *ngFor="let subMenu of topMenu.subMenu">
-              <a [routerLink]="topMenu.link + subMenu.link" routerLinkActive="active" class="submenu-link">
-                {{ subMenu.name | translate }}
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>-->
-
 <nav class="d-block d-md-none navbar navbar-expand-lg main-nav">
   <div class="container-fluid">
     <!-- Toggler Button for mobile view -->
@@ -341,7 +157,7 @@
         <li
           class="nav-item"
           *ngFor="let topMenu of menus"
-          [ngClass]="{'active': activeMenu === topMenu}"
+          [ngClass]="{'active': isTopMenuActive(topMenu)}"
         >
           <!-- Menu WITHOUT submenu: normal link, closes navbar on click -->
           <a
@@ -349,6 +165,8 @@
             class="nav-link"
             [routerLink]="topMenu.link"
             routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            [class.active]="isTopMenuActive(topMenu)"
             (click)="onMenuClickWithoutSubMenu()"
           >
             {{ topMenu.name | translate }}
@@ -359,6 +177,7 @@
             <a
               href="javascript:void(0)"
               class="nav-link"
+              [class.active]="isTopMenuActive(topMenu)"
               (click)="toggleSubMenu(topMenu)"
             >
               {{ topMenu.name | translate }}

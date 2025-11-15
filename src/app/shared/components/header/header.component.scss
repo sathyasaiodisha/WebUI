@@ -60,6 +60,12 @@
   border-radius: 5px;
 }
 
+.subnavbtn.active > .nav-link {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-radius: 4px;
+}
+
 /* Optional indicator arrow styling */
 /*.sf-sub-indicator {
   margin-left: 5px;

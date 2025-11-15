@@ -192,6 +192,13 @@ export class HeaderComponent implements AfterViewInit{
     );
   }
 
+  isTopMenuActive(topMenu: any): boolean {
+    if (topMenu.link === '/') {
+      return this.router.url === '/' || this.router.url === '';
+    }
+    return this.router.url.startsWith(topMenu.link);
+  }
+
   toggleSubMenu(topMenu: any): void {
     // Close other submenus except the one clicked
     this.menus.forEach(menu => {
