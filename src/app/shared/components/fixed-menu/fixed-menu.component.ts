@@ -64,11 +64,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
       .fixed-menu__msg {
         position: fixed;
         background: url(/assets/images/msg.png) no-repeat center / cover;
-        width: 455px;
+        //width: 455px;
         height: 100vh;
         border-radius: 12px;
         left: 36px;
-        top: calc(50vh - 359px);
+        //top: calc(50vh - 359px);
         z-index: 1;
         border: 6px solid white;
       }
