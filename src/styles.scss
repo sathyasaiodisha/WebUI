@@ -102,19 +102,24 @@ p {
 }
 
 .fixed-menu__msg {
-  background: url(/assets/images/msg.png) no-repeat center / cover;
+  background-image: url(/assets/images/msg.png);
+  //background-position: center;
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   // width: 100vw;
   // height: 100vh;
   // width: 265px;
   // height: 333px;
   border-radius: 12px;
-  border: 6px solid white;
+  border: 6px solid #fff;
   //background-size: 360px 738px;
-  background-position: top;
+  //background-position: top;
+  text-align: center;
 
   .dateDiv {
     position: relative;
-    top: 224px;
+    top: 502px;
     text-align: center;
     font-size: 14px;
     //color: darkred;
@@ -123,10 +128,11 @@ p {
 
   .mseDiv {
     position: relative;
-    top: 222px;
+    top: 500px;
+    //width: 400px;
     /* font-size: 18px; */
-    padding: 0 10px;
-    text-align: justify;
+    padding: 0 22%;
+    text-align: center;
     line-height: 1.5;
     font-weight: bold;
     font-size: 1rem;
@@ -139,14 +145,14 @@ p {
 @media (max-width: 768px) {
   .fixed-menu__msg {
     width: 100vw;
-    height: 750px;
+    height: 700px;
   }
 }
 
 @media (min-width: 992px) {
   .fixed-menu__msg {
-    width: 30vw;
-    height: 100%;
+    width: 47vw;
+    height: 700px;
   }
 }
 

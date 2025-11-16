@@ -104,39 +104,36 @@ swiper-container {
 .next-btn { right: -30px; }
 
 .fb-page {
-  width: 100% !important;
+  //width: 100% !important;
 
 }
 
 .fb-wrapper
 {
   border-radius: 12px;
-  height: 520px;
+  height: 700px;
   border: 6px solid white;
   overflow: hidden;
-  box-sizing: border-box;
+  position: relative;
+  //box-sizing: border-box;
   text-align: center;
+}
+
+.fb-page iframe
+{
+  border-radius: 12px !important;
+  -webkit-border-radius: 12px !important;
 }
 
 @media (max-width: 768px) {
   .fb-wrapper {
     width: 100vw;
   }
-
-  .sp-desk-msg
-  {
-    width: 100vw;
-  }
 }
 
 @media (min-width: 992px) {
   .fb-wrapper {
-    width: 500px;
-  }
-
-  .sp-desk-msg
-  {
-    width: 30vw;
+    width: 47vw;
   }
 }
 

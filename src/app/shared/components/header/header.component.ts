@@ -90,6 +90,7 @@ export class HeaderComponent implements AfterViewInit{
           name: this.translate.instant('organization_sevaOrgOdisha_menu'),
           link: '/sevaOrgOdisha',
         },
+        { name: 'From State President\'s desk', link: '/messageFromStatePresident' },
         { name: 'State Coordinators', link: '/stateCoordinators' },
         { name: 'State In-Charges', link: '/sic' },
         { name: 'District Presidents', link: '/districtPresidents' },
