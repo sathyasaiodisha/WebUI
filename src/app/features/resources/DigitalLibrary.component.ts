@@ -30,7 +30,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 56px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink1"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Gurucharnambuja.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Gurucharnambuja.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -41,7 +41,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 56px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink2"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Kichi%20bi%20anabasyaka%20nuhen.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Kichi%20bi%20anabasyaka%20nuhen.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -50,7 +50,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink3"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/pdf1.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/pdf1.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -61,7 +61,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink4"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/pdf2.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/pdf2.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -70,7 +70,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink5"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/BaudhhaDharma.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/BaudhhaDharma.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -79,7 +79,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink6"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Rutang%20Cha%20Swadhhaya.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Rutang%20Cha%20Swadhhaya.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -90,7 +90,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink7"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Omkar.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Omkar.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -99,7 +99,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink8"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Kshema%20Eti%20Bachi-2.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Kshema%20Eti%20Bachi-2.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -108,7 +108,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink9"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Kshama%20Prarthana.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Kshama%20Prarthana.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -119,7 +119,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink10"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Mantrapushpam.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Mantrapushpam.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -128,7 +128,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink11"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Nagar%20Sankirtana.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Nagar%20Sankirtana.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -137,7 +137,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink12"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Ganapati%20Prarthana.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Ganapati%20Prarthana.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -148,7 +148,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink13"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Bruksha%20Debata.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Bruksha%20Debata.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -157,7 +157,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink14"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Damascha%20Swadhhaya.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Damascha%20Swadhhaya.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -166,7 +166,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink15"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Gurubramha%20Guruvishnnu.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Gurubramha%20Guruvishnnu.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -177,7 +177,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink16"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Amrutara%20Santana.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Amrutara%20Santana.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -186,7 +186,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink17"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/DibyaSparsha-3.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/DibyaSparsha-3.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -195,7 +195,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink18"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Bakratunda_fnl.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Bakratunda_fnl.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -206,7 +206,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink19"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/hanuman_1fn.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/hanuman_1fn.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -215,7 +215,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink20"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Dasha_avatar_Rev1.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Dasha_avatar_Rev1.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -224,7 +224,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink21"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Bande_devamumapati2.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Bande_devamumapati2.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -237,7 +237,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink22"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Om-Sarva-Mangal-Mangalya-Stotra-Sikshya.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Om-Sarva-Mangal-Mangalya-Stotra-Sikshya.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -246,7 +246,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink23"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/GuruBrahma.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/GuruBrahma.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -255,7 +255,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink24"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/purbamrama.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/purbamrama.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -266,7 +266,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink25"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/KailashRana.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/KailashRana.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -275,7 +275,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink26"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/SARASWATI-BANDANA-final.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/SARASWATI-BANDANA-final.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -284,7 +284,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink27"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Namastesumahamai-7.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Namastesumahamai-7.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -295,7 +295,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink28"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/karagre-basate-laxmi.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/karagre-basate-laxmi.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -304,7 +304,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink29"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/karacharana-krutam-odia.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/karacharana-krutam-odia.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -313,7 +313,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink30"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/nilachal-nibasaya.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/nilachal-nibasaya.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -324,7 +324,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink31"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/om-karam.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/om-karam.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -333,7 +333,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink32"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Harirdata-Haribhokta.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Harirdata-Haribhokta.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -342,7 +342,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink33"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Om-SAHANAVAVATU.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Om-SAHANAVAVATU.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -353,7 +353,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink34"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Ganesh-chaturthi.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Ganesh-chaturthi.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -362,7 +362,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink35"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/patram%20pushpam2.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/patram%20pushpam2.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -371,7 +371,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink36"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/aham.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/aham.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -382,7 +382,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink37"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Geeta.pptx"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Geeta.pptx"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -393,7 +393,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink38"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/GeetaSloka-Yada-Yada-hi.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/GeetaSloka-Yada-Yada-hi.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -404,7 +404,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink39"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/GeetaSloka-Pashya-men-partha-Rupani.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/GeetaSloka-Pashya-men-partha-Rupani.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -417,7 +417,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink40"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Geeta-Sloka-Paritranaya-Sadhunam.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Geeta-Sloka-Paritranaya-Sadhunam.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -426,7 +426,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink41"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/BhajanMahotsavam.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/BhajanMahotsavam.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -437,7 +437,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink42"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Report_on_sai_Premdhara_&amp;_raja_Festival.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Report_on_sai_Premdhara_&amp;_raja_Festival.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -450,7 +450,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink43"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Observation-of-Prematharu-Day-on-10th-July-2025.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Observation-of-Prematharu-Day-on-10th-July-2025.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -461,7 +461,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink44"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/Report-State-Conference-of-BalVikas-Gurus.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/Report-State-Conference-of-BalVikas-Gurus.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
@@ -472,7 +472,7 @@ import { SharedModule } from '@shared/shared.module';
               <td style="width: 259px; height:27px">
                 <a
                   id="ContentPlaceHolder1_HyperLink45"
-                  href="https://www.sathyasaiodisha.org/PdfFiles/digital_pdf/SSSSO+ODISHA-Annual+report+2024-25.pdf"
+                  href="https://www.sathyasaiodisha.org/files/pdf/digital_pdf/SSSSO+ODISHA-Annual+report+2024-25.pdf"
                   style="display:inline-block;width:36px;"
                   >View</a
                 >
