@@ -103,18 +103,11 @@ p {
 
 .fixed-menu__msg {
   background-image: url(/assets/images/msg.png);
-  //background-position: center;
   background-position-x: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  // width: 100vw;
-  // height: 100vh;
-  // width: 265px;
-  // height: 333px;
   border-radius: 12px;
   border: 6px solid #fff;
-  //background-size: 360px 738px;
-  //background-position: top;
   text-align: center;
 
   .dateDiv {
@@ -122,37 +115,32 @@ p {
     top: 68%;
     text-align: center;
     font-size: 14px;
-    //color: darkred;
     color:#5D221A;
   }
 
   .mseDiv {
     position: relative;
     top: 67%;
-    //width: 400px;
-    /* font-size: 18px; */
     padding: 0 22%;
     text-align: center;
     line-height: 1.5;
     font-weight: bold;
     font-size: 1rem;
-    //color: darkred;
     color: #5D221A;
   }
-
 }
 
 @media (max-width: 768px) {
   .fixed-menu__msg {
     width: 100vw;
-    height: 700px;
+    height: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .fixed-menu__msg {
     width: 47vw;
-    height: 700px;
+    height: 100%;
   }
 }
 
