@@ -104,7 +104,6 @@ p {
 .fixed-menu__msg {
   background-image: url(/assets/images/msg.png);
   background-position-x: center;
-  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
   border: 6px solid #fff;
@@ -134,6 +133,7 @@ p {
   .fixed-menu__msg {
     width: 100vw;
     height: 700px;
+    background-size: cover;
   }
 }
 
@@ -141,6 +141,7 @@ p {
   .fixed-menu__msg {
     width: 47vw;
     height: 700px;
+    background-size: contain;
   }
 }
 
