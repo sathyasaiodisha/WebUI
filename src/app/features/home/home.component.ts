@@ -79,46 +79,61 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   constructor(private apiService: ApiService, private sssooTweetsSvc: SSSOOtweetsService) {}
   banner = [
     {
+      image: 'assets/images/banners_and_eventphotos/occasionalbanners/banner.png',
+      interval: '15000',
+      carouselFadeClass: 'slow-fade'
+      //caption:'"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
+    },
+    {
       image: 'assets/images/baba-min.jpg',
       caption:
         '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b1.jpg',
       caption:
         '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b2.jpg',
       caption:
         '"Love lives by giving and forgiving. Ego lives by getting and forgetting."',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b3.jpg',
       caption:
         '"See no evil, See what is good. Hear no evil, Hear what is good. Talk no evil, Talk what is good. Think no evil, Think what is good. Do no evil, Do what is good."',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b4.jpg',
       caption: '"Education should be for life, not for a living."',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b5.jpg',
       caption: '"Money comes and goes. Morality comes and grows."',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b6.jpg',
       caption: '"Work is worship. Duty is God."',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b7.jpg',
       caption: '"The best way to love God is to love all and serve all."',
+      interval: '4000'
     },
     {
       image: 'assets/images/home/b8.jpg',
       caption:
         '"Some say that knowledge is power, but it is not true. Character is power."',
-    },
+      interval: '4000'
+    }
   ];
   ngOnInit(): void {
     //this.posts$ = this.apiService.getPosts();

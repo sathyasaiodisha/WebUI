@@ -9,7 +9,7 @@ import { Carousel } from 'bootstrap';
       id="carouselZoom"
       class="carousel slide carousel-fade"
       data-bs-ride="carousel"
-      data-bs-interval="4000"
+      
     >
       <div class="carousel-indicators">
         <button
@@ -24,7 +24,8 @@ import { Carousel } from 'bootstrap';
       <div class="carousel-inner">
         <div
           *ngFor="let slide of banner; let i = index"
-          class="carousel-item"
+          class="carousel-item {{slide.carouselFadeClass}}"
+          [attr.data-bs-interval]="slide.interval"
           [class.active]="i === 0"
         >
           <img
@@ -60,7 +61,7 @@ import { Carousel } from 'bootstrap';
   styles: [
     `
       .carousel-item img {
-        height: 850px; /* adjust as needed */
+        /* height: 850px; adjust as needed */
         object-fit: cover;
         transition: transform 8s ease-in-out;
       }
@@ -68,11 +69,30 @@ import { Carousel } from 'bootstrap';
       .carousel-item.active img {
         transform: scale(1.3); /* zoom in */
       }
+      .carousel-item.slow-fade img
+      {      
+        transform: scale(1);
+        transition: transform 4s ease-in-out 11s !important;        
+      }
+
+      .carousel-item.slow-fade.active img {
+        transform: scale(1);
+        animation: zoomAfterDelay 4s ease-in-out 11s forwards !important;
+      }
+
+      @keyframes zoomAfterDelay {
+        from {
+          transform: scale(1);
+        }
+        to {
+          transform: scale(1.3);
+        }
+      }
     `,
   ],
 })
 export class CarouselComponent implements AfterViewInit {
-  @Input() banner: { image: string; caption?: string; desc?: string }[] = [];
+  @Input() banner: { image: string; caption?: string; interval: string; carouselFadeClass?: string; desc?: string }[] = [];
 
   ngAfterViewInit(): void {
     const element = document.querySelector('#carouselZoom');
