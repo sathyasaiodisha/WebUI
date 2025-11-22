@@ -80,7 +80,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   banner = [
     {
       image: 'assets/images/banners_and_eventphotos/occasionalbanners/banner.png',
-      interval: '15000',
+      interval: '20000',
       carouselFadeClass: 'slow-fade'
       //caption:'"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
     },

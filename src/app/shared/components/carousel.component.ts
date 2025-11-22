@@ -72,12 +72,12 @@ import { Carousel } from 'bootstrap';
       .carousel-item.slow-fade img
       {      
         transform: scale(1);
-        transition: transform 4s ease-in-out 11s !important;        
+        transition: transform 4s ease-in-out 16s !important;        
       }
 
       .carousel-item.slow-fade.active img {
         transform: scale(1);
-        animation: zoomAfterDelay 4s ease-in-out 11s forwards !important;
+        animation: zoomAfterDelay 4s ease-in-out 16s forwards !important;
       }
 
       @keyframes zoomAfterDelay {
