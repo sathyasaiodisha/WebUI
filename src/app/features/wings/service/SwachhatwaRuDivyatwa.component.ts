@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
+import {SlideShowImageComponent} from '../../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-SwachhatwaRuDivyatwa',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'SwachhatwaRuDivyatwa' | translate }}
         </h1>
+        <div class="carousel">
+          <!--Image carousel (Each image is linked to a page)-->
+          <app-slideshowimage [banner]="banner"></app-slideshowimage>
+        </div>
         <p>
           "SWACHHATA RU DIVYATWA" (Cleanliness to Godliness) is a nationwide
           annual cleanliness drive by the Sri Sathya Sai Seva Organisations,
@@ -31,4 +36,7 @@ import { SharedModule } from '@shared/shared.module';
 })
 export class SwachhatwaRuDivyatwaComponent implements OnInit {
   ngOnInit(): void {}
+  banner = [
+    { image: 'assets/images/service_wing/swacchata_se_divyata.jpg', caption: '' }
+  ];
 }

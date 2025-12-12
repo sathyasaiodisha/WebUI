@@ -16,6 +16,10 @@ import { SlideShowImageComponent } from '../shared/components/slideshow_image/sl
             <app-slideshowimage [banner]="banner"></app-slideshowimage>
           </div>
         </div> -->
+        <div class="carousel">
+          <!--Image carousel (Each image is linked to a page)-->
+          <app-slideshowimage [banner]="banner"></app-slideshowimage>
+        </div>
 
         <p>
           Bhagawan Baba emphasised that true education must empower youth to
@@ -114,13 +118,7 @@ import { SlideShowImageComponent } from '../shared/components/slideshow_image/sl
 export class SSSSkillDevelopmentProgramComponent implements OnInit {
   ngOnInit(): void {}
   banner = [
-    { image: 'assets/images/mobileHospital/b10.jpg', caption: '' },
-    { image: 'assets/images/mobileHospital/b1.jpg', caption: '' },
-    { image: 'assets/images/mobileHospital/b2.jpg', caption: '' },
-    { image: 'assets/images/mobileHospital/b5.jpg', caption: '' },
-    { image: 'assets/images/mobileHospital/b6.jpg', caption: '' },
-    { image: 'assets/images/mobileHospital/b7.jpg', caption: '' },
-    { image: 'assets/images/mobileHospital/b8.jpg', caption: '' },
-    { image: 'assets/images/mobileHospital/b9.jpg', caption: '' },
+    { image: 'assets/images/service_wing/skill_development.JPG', caption: '' },
+    { image: 'assets/images/service_wing/skill_development_2.JPG', caption: '' }
   ];
 }
