@@ -317,6 +317,14 @@ export const routes: Routes = [
               ),
           },
           {
+            path: 'saiSymphony',
+            data: { breadcrumb: 'Study circle' },
+            loadComponent: () =>
+              import('./features/wings/spiritual/saiSymphony.component').then(
+                (c) => c.SaiSymphonyComponent
+              ),
+          },
+          {
             path: 'swadhyaya',
             data: { breadcrumb: 'Swadhyaya' },
             loadComponent: () =>

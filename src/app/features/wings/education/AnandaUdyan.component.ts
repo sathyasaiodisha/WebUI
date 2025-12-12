@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
+import {SlideShowImageComponent} from '../../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-education-AnandaUdyan',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'AnandaUdyan' | translate }}
         </h1>
-
+        <div class="carousel">
+          <!--Image carousel (Each image is linked to a page)-->
+          <app-slideshowimage [banner]="banner"></app-slideshowimage>
+        </div>
         <p>
           In a letter to His elder brother Bhagavan wrote in 1947, “I have a
           task, to foster all mankind and ensure them lives full of Ananda.” So
@@ -54,4 +58,7 @@ import { SharedModule } from '@shared/shared.module';
 })
 export class AnandaUdyanComponent implements OnInit {
   ngOnInit(): void {}
+  banner = [
+    { image: 'assets/images/education_wing/Ananda_udyana.jpg', caption: '' }
+  ];
 }

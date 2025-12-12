@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
+import {SlideShowImageComponent} from '../../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-SaiBratakalpa',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'SaiBratakalpa' | translate }}
         </h1>
+        <div class="carousel">
+          <!--Image carousel (Each image is linked to a page)-->
+          <app-slideshowimage [banner]="banner"></app-slideshowimage>
+        </div>
         <p>
           Sai Brata Kalpa is a devotional ritual or puja (worship ceremony)
           observed by sisters being organized at the community level (e.g., in
@@ -27,4 +32,7 @@ import { SharedModule } from '@shared/shared.module';
 })
 export class SaiBratakalpaComponent implements OnInit {
   ngOnInit(): void {}
+  banner = [
+    { image: 'assets/images/spiritual_wing/bratakalpa.jpg', caption: '' }
+  ];
 }

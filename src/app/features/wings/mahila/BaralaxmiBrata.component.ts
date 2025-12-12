@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
+import {SlideShowImageComponent} from '../../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-BaralaxmiBrata',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="container container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'BaralaxmiBrata' | translate }}
         </h1>
+        <div class="carousel">
+          <!--Image carousel (Each image is linked to a page)-->
+          <app-slideshowimage [banner]="banner"></app-slideshowimage>
+        </div>
         <p>
           <b>Baralaxmi Brata</b> is a sacred Hindu vow or fast observed
           primarily by married women in Odisha and other eastern Indian regions.
@@ -41,4 +46,7 @@ import { SharedModule } from '@shared/shared.module';
 })
 export class BaralaxmiBrataComponent implements OnInit {
   ngOnInit(): void {}
+  banner = [
+    { image: 'assets/images/spiritual_wing/baralaxmi_puja.jpg', caption: '' }
+  ];
 }

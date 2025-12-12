@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
+import {SlideShowImageComponent} from '../../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-education-VidyaVahini',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'VidyaVahini' | translate }}
         </h1>
+        <div class="carousel">
+          <!--Image carousel (Each image is linked to a page)-->
+          <app-slideshowimage [banner]="banner"></app-slideshowimage>
+        </div>
         <p>
           Sri Sathya Sai Vidya Vahini (SSSVV) is a volunteer driven digital
           initiative of the Sri Sathya Sai Central Trust focusing on providing
@@ -48,4 +53,7 @@ import { SharedModule } from '@shared/shared.module';
 })
 export class VidyaVahiniComponent implements OnInit {
   ngOnInit(): void {}
+  banner = [
+    { image: 'assets/images/education_wing/sssvv.JPG', caption: '' }
+  ];
 }

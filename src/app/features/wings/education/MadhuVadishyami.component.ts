@@ -1,16 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
+import {SlideShowImageComponent} from '../../../shared/components/slideshow_image/slideshowimage.component';
 
 @Component({
   selector: 'app-education-MadhuVadishyami',
-  imports: [SharedModule],
+  imports: [SharedModule, SlideShowImageComponent],
   template: `
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'MadhuVadishyami' | translate }}
         </h1>
-
+        <div class="carousel">
+          <!--Image carousel (Each image is linked to a page)-->
+          <app-slideshowimage [banner]="banner"></app-slideshowimage>
+        </div>
         <p>
           To sow the seeds of faith in the tender hearts of tiny-tots, the
           Balvikash Wing of Sri Sathya Sai Seva Organisations Odisha prayed
@@ -53,4 +57,7 @@ import { SharedModule } from '@shared/shared.module';
 })
 export class MadhuVadishyamiComponent implements OnInit {
   ngOnInit(): void {}
+  banner = [
+    { image: 'assets/images/education_wing/madhu_vadishyaami.JPG', caption: '' }
+  ];
 }
