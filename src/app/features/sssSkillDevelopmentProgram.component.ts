@@ -11,16 +11,10 @@ import { SlideShowImageComponent } from '../shared/components/slideshow_image/sl
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'SSSSkillDevelopmentProgram' | translate }}
         </h1>
-        <!-- <div class="spiritual_wrapper_top">
-          <div class="carousel">
-            <app-slideshowimage [banner]="banner"></app-slideshowimage>
-          </div>
-        </div> -->
         <div class="carousel">
           <!--Image carousel (Each image is linked to a page)-->
           <app-slideshowimage [banner]="banner"></app-slideshowimage>
         </div>
-
         <p>
           Bhagawan Baba emphasised that true education must empower youth to
           lead dignified, self-reliant lives. The Sri Sathya Sai Skill

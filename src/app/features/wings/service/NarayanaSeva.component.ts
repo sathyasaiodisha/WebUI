@@ -10,13 +10,17 @@ import { SharedModule } from '@shared/shared.module';
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
           {{ 'NarayanaSeva' | translate }}
         </h1>
+         <div class="spiritual_wrapper_top">
+          <div class="carousel">
+            <app-slideshowimage [banner]="banner"></app-slideshowimage>
+          </div>
+        </div>
         <p>
-          Sri Sathya Sai Summer course is one of the outreach activities by the
-          Youth wing of SSSSO Odisha, where the youths from the educational
-          institutions are approached, appreciated with the importance of Indian
-          Culture and spirituality based on the summer showers at Brindaban. The
-          summer course over the years has come up as an unique platform to
-          reenergize youths of the state.
+          Narayan Seva is one of most important & compassionate service, that involves the selfless distribution of food
+          and essentials to the underprivileged, following the spiritual teachings of Sri Sathya Sai Baba. Members &
+          Devotees regularly organize these events, in huge numbers during festivals or auspicious occasions, to serve
+          "Narayanas" (people in need) with food, water, and other support, embodying Baba's principle of "Love All,
+          Serve All".
         </p>
         <app-sub-sections-links
           [page]="'wings_service'"
@@ -27,4 +31,5 @@ import { SharedModule } from '@shared/shared.module';
 })
 export class NarayanaSevaComponent implements OnInit {
   ngOnInit(): void {}
+  banner = [{ image: 'assets/images/service_wing/narayan_seva.jpg', caption: '' }];
 }
