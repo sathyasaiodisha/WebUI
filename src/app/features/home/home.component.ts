@@ -1,4 +1,11 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  ElementRef,
+  ViewChild,
+  CUSTOM_ELEMENTS_SCHEMA,
+} from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
 
 //import { AsyncPipe } from '@angular/common';
@@ -12,13 +19,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { SSSOOtweetsService, SSSOOTweet } from '../../core/services/sssootweets.service';
+import {
+  SSSOOtweetsService,
+  SSSOOTweet,
+} from '../../core/services/sssootweets.service';
 import Swiper from 'swiper';
-
+import { MatDialog } from '@angular/material/dialog';
 // import { SwiperOptions, SwiperModule } from 'swiper/types';
 // import { Autoplay, Pagination } from 'swiper/modules';
-
-
+import { ImageModalComponent } from '../../shared/components/image-modal.component';
 
 import Map from 'ol/Map';
 declare var FB: any;
@@ -29,12 +38,21 @@ declare var FB: any;
 //declare let $: any;
 @Component({
   selector: 'app-home',
-  imports: [TranslateModule, RouterLink, SharedModule, MatButtonModule, MatCardModule, MatProgressSpinnerModule, MatIconModule, MatToolbarModule],
+  imports: [
+    TranslateModule,
+    RouterLink,
+    SharedModule,
+    MatButtonModule,
+    MatCardModule,
+    MatProgressSpinnerModule,
+    MatIconModule,
+    MatToolbarModule,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class HomeComponent implements OnInit, AfterViewInit  {
+export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('tweetSwiper') tweetSwiper!: ElementRef;
   private swiper: any;
 
@@ -43,9 +61,22 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   loading = true;
 
   duration = 2000;
-  count = { dist: 35, bhajan: 774, samithis: 242, bv: 3269, active_workers: 43954, bv_students: 25166,
-    prematharu: 438649, permanent_medical_clinics: 56, liquid_love_registered: 13622, liquid_love_units: 6420, medical_camps: 586, patients_treated_phc: 5668,
-  patients_treated_medical_camps: 17981, drinking_water_projects_ftc: 62};
+  count = {
+    dist: 35,
+    bhajan: 774,
+    samithis: 242,
+    bv: 3269,
+    active_workers: 43954,
+    bv_students: 25166,
+    prematharu: 438649,
+    permanent_medical_clinics: 56,
+    liquid_love_registered: 13622,
+    liquid_love_units: 6420,
+    medical_camps: 586,
+    patients_treated_phc: 5668,
+    patients_treated_medical_camps: 17981,
+    drinking_water_projects_ftc: 62,
+  };
   wings = [
     {
       name: 'Service',
@@ -76,64 +107,69 @@ export class HomeComponent implements OnInit, AfterViewInit  {
   map: Map = new Map({});
   //posts$!: Observable<any>;
   posts$: any = null;
-  constructor(private apiService: ApiService, private sssooTweetsSvc: SSSOOtweetsService) {}
+  constructor(
+    private dialog: MatDialog,
+    private apiService: ApiService,
+    private sssooTweetsSvc: SSSOOtweetsService
+  ) {}
   banner = [
     {
-      image: 'assets/images/banners_and_eventphotos/occasionalbanners/banner.png',
+      image:
+        'assets/images/banners_and_eventphotos/occasionalbanners/banner.png',
       interval: '20000',
-      carouselFadeClass: 'slow-fade'
+      carouselFadeClass: 'slow-fade',
       //caption:'"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
     },
     {
       image: 'assets/images/baba-min.jpg',
       caption:
         '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b1.jpg',
       caption:
         '"Life is a challenge, meet it! Life is a dream, realize it! Life is a game, play it! Life is love, enjoy it!"',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b2.jpg',
       caption:
         '"Love lives by giving and forgiving. Ego lives by getting and forgetting."',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b3.jpg',
       caption:
         '"See no evil, See what is good. Hear no evil, Hear what is good. Talk no evil, Talk what is good. Think no evil, Think what is good. Do no evil, Do what is good."',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b4.jpg',
       caption: '"Education should be for life, not for a living."',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b5.jpg',
       caption: '"Money comes and goes. Morality comes and grows."',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b6.jpg',
       caption: '"Work is worship. Duty is God."',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b7.jpg',
       caption: '"The best way to love God is to love all and serve all."',
-      interval: '4000'
+      interval: '4000',
     },
     {
       image: 'assets/images/home/b8.jpg',
       caption:
         '"Some say that knowledge is power, but it is not true. Character is power."',
-      interval: '4000'
-    }
+      interval: '4000',
+    },
   ];
   ngOnInit(): void {
     //this.posts$ = this.apiService.getPosts();
@@ -141,7 +177,7 @@ export class HomeComponent implements OnInit, AfterViewInit  {
       this.posts$ = data;
     });
 
-     this.sssooTweetsSvc.getItems().subscribe({
+    this.sssooTweetsSvc.getItems().subscribe({
       next: (data) => {
         this.sssooTweets = data;
         this.loading = false;
@@ -166,8 +202,15 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     });
     */
   }
-
-    ngAfterViewInit() {
+  openImage(imageUrl: string) {
+    this.dialog.open(ImageModalComponent, {
+      data: { imageUrl },
+      panelClass: 'image-dialog',
+      maxWidth: '90vw',
+      maxHeight: '90vh',
+    });
+  }
+  ngAfterViewInit() {
     // If SDK is loaded, parse FB tags inside the component
     if (typeof FB !== 'undefined' && FB !== null) {
       FB.XFBML.parse();
@@ -197,12 +240,11 @@ export class HomeComponent implements OnInit, AfterViewInit  {
     observer.observe(swiperEl);
   }
 
-    slidePrev() {
+  slidePrev() {
     this.swiper?.slidePrev();
   }
 
   slideNext() {
     this.swiper?.slideNext();
   }
-
 }
