@@ -59,7 +59,7 @@ swiper-container {
   text-align: center;
   padding: 1rem;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   user-select: text !important;
   cursor: text;
 }
@@ -71,7 +71,7 @@ swiper-container {
 
 .tweet-swiper swiper-slide mat-card {
   height: 100%;
-  overflow: auto;
+  overflow: auto;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -91,7 +91,7 @@ swiper-container {
   transform: translateY(-50%);
   background: white;
   border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   z-index: 10;
 }
@@ -100,16 +100,20 @@ swiper-container {
   transform: translateY(-50%) scale(1.1);
 }
 
-.prev-btn { left: -30px; }
-.next-btn { right: -30px; }
+.prev-btn {
+  left: -30px;
+}
+
+.next-btn {
+  right: -30px;
+}
 
 .fb-page {
   //width: 100% !important;
 
 }
 
-.fb-wrapper
-{
+.fb-wrapper {
   border-radius: 12px;
   height: 700px;
   border: 6px solid white;
@@ -119,8 +123,7 @@ swiper-container {
   text-align: center;
 }
 
-.fb-page iframe
-{
+.fb-page iframe {
   border-radius: 12px !important;
   -webkit-border-radius: 12px !important;
 }
@@ -133,12 +136,24 @@ swiper-container {
 
 @media (min-width: 992px) {
   .fb-wrapper {
-    width: 47vw;
+    width: 32vw;
   }
 }
 
-.sp-desk-msg
-{
+.info_image__msg_div {
+  display: table;
+}
+
+.info_image__msg {
+  vertical-align: middle;
+  display: table-cell;
+
+  img {
+    width: 100%;
+  }
+}
+
+.sp-desk-msg {
   height: auto;
   text-align: center;
   border: 6px solid white;
@@ -150,10 +165,10 @@ swiper-container {
   display: inline-block;
   padding: 14px 28px;
   background: linear-gradient(135deg, #f7d88a, #d5a43b, #f8e5b5);
-  color: #4b3a09; 
+  color: #4b3a09;
   text-decoration: none;
   border-radius: 30px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: 0.3s ease-in-out;
   border: 1px solid #d5a43b;
   position: relative;
@@ -168,7 +183,7 @@ swiper-container {
 
 .signature-button:hover {
   background: linear-gradient(135deg, #ffe9a7, #e2b959, #fff2d0);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
   transform: translateY(-3px);
 }
 

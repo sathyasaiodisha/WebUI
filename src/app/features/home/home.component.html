@@ -27,15 +27,21 @@
   </div>
   <div class="col-12">
     <div class="msgrow_outer">
-    <div class="row">
-      <div class="col-md-6 col-lg-6 col-xl-6">
-        <div class="fixed-menu__msg">
-          <div class="mseDiv">{{ "saiSandesh" | translate }}</div>
-          <div class="dateDiv">{{ dateText }}</div>
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <div class="fixed-menu__msg">
+            <div class="mseDiv">{{ "saiSandesh" | translate }}</div>
+            <div class="dateDiv">{{ dateText }}</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-6 col-xl-6 g-0 fb-wrapper">
-        <div class="fb-page"
+        <div class="col-md-4 col-lg-4 col-xl-4 info_image__msg_div">
+          <div class="info_image__msg">
+            <img src="assets/images/50thStateConf.jpeg" />
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4 g-0 fb-wrapper">
+          <div
+            class="fb-page"
             data-href="https://www.facebook.com/sathyasaiodisha"
             data-tabs="timeline"
             data-width="500"
@@ -43,10 +49,10 @@
             data-small-header="false"
             data-adapt-container-width="true"
             data-hide-cover="false"
-            data-show-facepile="false">
+            data-show-facepile="false"
+          ></div>
         </div>
-      </div>
-      <!-- <div class="col-md-4 sp-desk-msg">
+        <!-- <div class="col-md-4 sp-desk-msg">
         <a
         href="#/organization/messageFromStatePresident"
         class="signature-button"
@@ -60,7 +66,7 @@
         <span class="sig-text">From State President's Desk</span>
       </a>
       </div> -->
-    </div>
+      </div>
     </div>
   </div>
 
@@ -74,15 +80,17 @@
             src="assets/images/odisha-sai-map-Oct2025.png"
             style="width: 100%"
           />
-<!--          Bhajan Mandali & Samithi Section-->
-          <div class="photo-labels d-none d-md-flex justify-content-center align-items-center gap-4">
+          <!--          Bhajan Mandali & Samithi Section-->
+          <div
+            class="photo-labels d-none d-md-flex justify-content-center align-items-center gap-4"
+          >
             <!-- Bhajan Mandali -->
             <div class="text-center">
               <img
                 src="assets/images/bhajanmandali-legend.png"
                 alt="Bhajan Mandali"
                 class="img-fluid rounded-circle mb-1"
-                style="width: 40px; height: 40px; object-fit: cover;"
+                style="width: 40px; height: 40px; object-fit: cover"
               />
               <div class="fw-semibold text-dark small">BHAJAN MANDALI</div>
             </div>
@@ -93,20 +101,22 @@
                 src="assets/images/samithi-legend.png"
                 alt="Samithi"
                 class="img-fluid rounded-circle mb-1"
-                style="width: 40px; height: 40px; object-fit: cover;"
+                style="width: 40px; height: 40px; object-fit: cover"
               />
               <div class="fw-semibold text-dark small">SAMITHI</div>
             </div>
           </div>
 
-          <div class="d-flex d-md-none justify-content-center align-items-center gap-4 mt-3">
+          <div
+            class="d-flex d-md-none justify-content-center align-items-center gap-4 mt-3"
+          >
             <!-- Bhajan Mandali -->
             <div class="text-center">
               <img
                 src="assets/images/bhajanmandali-legend.png"
                 alt="Bhajan Mandali"
                 class="img-fluid rounded-circle mb-1"
-                style="width: 40px; height: 40px; object-fit: cover;"
+                style="width: 40px; height: 40px; object-fit: cover"
               />
               <div class="fw-semibold text-dark small">BHAJAN MANDALI</div>
             </div>
@@ -117,7 +127,7 @@
                 src="assets/images/samithi-legend.png"
                 alt="Samithi"
                 class="img-fluid rounded-circle mb-1"
-                style="width: 40px; height: 40px; object-fit: cover;"
+                style="width: 40px; height: 40px; object-fit: cover"
               />
               <div class="fw-semibold text-dark small">SAMITHI</div>
             </div>
@@ -163,65 +173,104 @@
         </div>
       </div>
       <div class="col-md-4 stats_section">
-<!--        <h4>Statistics</h4>-->
-<!--        ....-->
-        <table class="table table-sm table-borderless w-auto mx-auto text-center align-middle">
+        <!--        <h4>Statistics</h4>-->
+        <!--        ....-->
+        <table
+          class="table table-sm table-borderless w-auto mx-auto text-center align-middle"
+        >
           <tbody>
-          <tr class="table-success">
-            <td><strong>Active Workers</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.active_workers"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-danger">
-            <td><strong>Bala Vikas Students</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.bv_students"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-warning">
-            <td><strong>Bala Vikas Centres</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.bv"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-success">
-            <td><strong>Prematharu</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.prematharu"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-danger">
-            <td><strong>Permanent Medical Clinics</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.permanent_medical_clinics"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-warning">
-            <td><strong>Blood Donors registered in Liquid Love</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.liquid_love_registered"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-success">
-            <td><strong>Units of Blood offered under Liquid Love</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.liquid_love_units"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-danger">
-            <td><strong>Medical Camps conducted</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.medical_camps"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-warning">
-            <td><strong>Patients treated in Permanent Hospitals &Clinics</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.patients_treated_phc"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-success">
-            <td><strong>Patients treated in Medical Camps</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.patients_treated_medical_camps"
-                [duration]="duration"></td>
-          </tr>
-          <tr class="table-danger">
-            <td><strong>Drinking Water Projects</strong></td>
-            <td class="text-dark fw-bold sum-counter_value" [countUp]="count.drinking_water_projects_ftc"
-                [duration]="duration"></td>
-          </tr>
+            <tr class="table-success">
+              <td><strong>Active Workers</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.active_workers"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-danger">
+              <td><strong>Bala Vikas Students</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.bv_students"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-warning">
+              <td><strong>Bala Vikas Centres</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.bv"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-success">
+              <td><strong>Prematharu</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.prematharu"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-danger">
+              <td><strong>Permanent Medical Clinics</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.permanent_medical_clinics"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-warning">
+              <td><strong>Blood Donors registered in Liquid Love</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.liquid_love_registered"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-success">
+              <td><strong>Units of Blood offered under Liquid Love</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.liquid_love_units"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-danger">
+              <td><strong>Medical Camps conducted</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.medical_camps"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-warning">
+              <td>
+                <strong
+                  >Patients treated in Permanent Hospitals &Clinics</strong
+                >
+              </td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.patients_treated_phc"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-success">
+              <td><strong>Patients treated in Medical Camps</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.patients_treated_medical_camps"
+                [duration]="duration"
+              ></td>
+            </tr>
+            <tr class="table-danger">
+              <td><strong>Drinking Water Projects</strong></td>
+              <td
+                class="text-dark fw-bold sum-counter_value"
+                [countUp]="count.drinking_water_projects_ftc"
+                [duration]="duration"
+              ></td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -278,12 +327,12 @@
             font-size: 9px;
             cursor: pointer;
           }
-          .table{
+          .table {
             margin-top: 30%;
           }
-          .table td, .table th {
+          .table td,
+          .table th {
             vertical-align: middle;
-
           }
 
           .table td:first-child {
@@ -302,7 +351,12 @@
             right: 15%;
             bottom: 20%; /* slightly above sum_counter */
             z-index: 2;
-            background: rgba(255, 255, 255, 0.8); /* optional subtle background */
+            background: rgba(
+              255,
+              255,
+              255,
+              0.8
+            ); /* optional subtle background */
             padding: 6px 10px;
             border-radius: 8px;
           }
@@ -340,7 +394,6 @@
               margin: 0.5rem;
             }
           }
-
         </style>
         <path
           class="st0 dist-block"

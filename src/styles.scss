@@ -114,7 +114,7 @@ p {
     top: 68%;
     text-align: center;
     font-size: 14px;
-    color:#5D221A;
+    color: #5D221A;
   }
 
   .mseDiv {
@@ -139,7 +139,7 @@ p {
 
 @media (min-width: 992px) {
   .fixed-menu__msg {
-    width: 47vw;
+    width: 32vw;
     height: 700px;
     background-size: contain;
   }
@@ -266,7 +266,7 @@ p {
 
 .bottom {
   padding: 20px 3rem;
-  
+
   background-color: #F79623;
 
   .footer-button {
@@ -380,11 +380,10 @@ p {
   }
 }
 
-.msgrow_outer
-  {
-    border-bottom: 5px solid #e1e0e0;
-    padding: 10px 1rem;
-  }
+.msgrow_outer {
+  border-bottom: 5px solid #e1e0e0;
+  padding: 10px 1rem;
+}
 
 
 .content_topgape {
@@ -508,7 +507,7 @@ p {
     padding: 2rem 1rem;
   }
 
-  .msgrow_outer { 
+  .msgrow_outer {
     padding: 20px 1rem;
   }
 
