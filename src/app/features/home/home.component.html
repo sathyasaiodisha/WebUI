@@ -28,10 +28,16 @@
   <div class="col-12">
     <div class="msgrow_outer">
       <div class="row">
-        <div class="col-md-4 col-lg-4 col-xl-4">
-          <div class="fixed-menu__msg">
-            <div class="mseDiv">{{ "saiSandesh" | translate }}</div>
-            <div class="dateDiv">{{ dateText }}</div>
+        <div class="col-md-4 col-lg-4 col-xl-4 sai-sandesh_div">
+<!--          <div class="fixed-menu__msg">-->
+<!--            <div class="mseDiv">{{ "saiSandesh" | translate }}</div>-->
+<!--            <div class="dateDiv">{{ dateText }}</div>-->
+<!--          </div>-->
+          <div class="sai-sandesh_div">
+            <img class="sai-sandesh"
+              src="assets/images/social_media/sai-sandesh_20251221.jpg"
+              (click)="openImage('assets/images/social_media/sai-sandesh_20251221.jpg')"
+            />
           </div>
         </div>
         <div class="col-md-4 col-lg-4 col-xl-4 info_image__msg_div">

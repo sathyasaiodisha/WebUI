@@ -153,6 +153,17 @@ swiper-container {
     cursor: zoom-in;
   }
 }
+.sai-sandesh_div{
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.sai-sandesh{
+  width: 80%;
+  height: 80%;
+}
 
 .sp-desk-msg {
   height: auto;
