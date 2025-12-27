@@ -13,13 +13,15 @@
     <div class="wings_outer">
       <div class="row">
         @for(item of wings; track item.name){
-        <div class="wings col-4 col-md">
-          <a [routerLink]="item.link">
-            <img class="wings-img-top" src="{{ item.img }}" alt="Mahilas"
-          /></a>
-          <!--div-- class="wings-body">
+        <div class="col-4 col-md">
+          <div class="wings">
+            <a [routerLink]="item.link">
+              <img class="wings-img-top" src="{{ item.img }}" alt="Mahilas"
+            /></a>
+            <!--div-- class="wings-body">
             <h5 class="wings-title">{{ item.name | translate }}</h5>
           </div-->
+          </div>
         </div>
         }
       </div>
@@ -28,7 +30,7 @@
   <div class="col-12">
     <div class="msgrow_outer">
       <div class="row">
-        <div class="col-md-3 col-lg-3 col-xl-3 sai-sandesh_div">
+        <div class="col-6 col-md-3 col-lg-3 col-xl-3 sai-sandesh_div">
           <!--          <div class="fixed-menu__msg">-->
           <!--            <div class="mseDiv">{{ "saiSandesh" | translate }}</div>-->
           <!--            <div class="dateDiv">{{ dateText }}</div>-->
@@ -43,7 +45,7 @@
             />
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 col-xl-6 info_image__msg_div">
+        <div class="col-6 col-md-6 col-lg-6 col-xl-6 info_image__msg_div">
           <div class="info_image__msg">
             <img
               src="assets/images/50thStateConf.jpeg"

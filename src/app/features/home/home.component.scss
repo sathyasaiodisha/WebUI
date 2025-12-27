@@ -135,7 +135,7 @@ swiper-container {
 }
 
 .sai-sandesh {
-  max-width: 80vw
+  max-width: 80%
 }
 
 @media (min-width: 768px) {
@@ -157,11 +157,13 @@ swiper-container {
 .info_image__msg {
   vertical-align: middle;
   display: table-cell;
-  background-color: #2e42b4;
 
   img {
     width: 100%;
     cursor: zoom-in;
+    border: 100px solid #f9f9f9;
+    border-right: 0;
+    border-left: 0;
   }
 }
 
