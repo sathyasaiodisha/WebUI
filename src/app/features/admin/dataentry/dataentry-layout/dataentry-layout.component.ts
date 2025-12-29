@@ -22,6 +22,7 @@ export class DataentryLayoutComponent {
 
   userJurisdiction: string | null = "";
   navLinks =[
+              { path: 'saisandesh', label: 'Sai Sandesh upload'},
               { path: 'bhajanmandali', label: 'Bhajan Mandali'},
               { path: 'samithi', label: 'Samithi'},
               { path: 'district', label: 'District'},
@@ -47,6 +48,7 @@ export class DataentryLayoutComponent {
         {
           case "1":
             this.navLinks =[
+                            { path: 'saisandesh', label: 'Sai Sandesh upload'},
                             { path: 'bhajanmandali', label: 'Bhajan Mandali'},
                             { path: 'samithi', label: 'Samithi'},
                             { path: 'district', label: 'District'},

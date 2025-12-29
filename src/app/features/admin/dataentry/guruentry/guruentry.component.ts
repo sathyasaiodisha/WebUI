@@ -254,29 +254,29 @@ export class GuruentryComponent implements OnInit, AfterViewInit  {
               }, 5000);
           }
           else{
-            if (!this.selectedFile) return;
-          this.bvguruService.uploadFile(this.selectedFile).subscribe(event => {
-            if (event.type === HttpEventType.UploadProgress)
-            {
-              this.uploadProgress = Math.round(100 * event.loaded/(event.total || 1));
-            }
-            else if (event.type === HttpEventType.Response) {
-              console.log('Upload complete:', event.body);
-              this.newbvGuru.Photo = event.body.fileurl;
-              
-              this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated; 
-              this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
-                this.successMsg = "Bal Vikas Guru added successfully";
-                this.showSuccessMsg = true;
-              });
-            }
+              if (!this.selectedFile) return;
+            this.bvguruService.uploadFile(this.selectedFile).subscribe(event => {
+              if (event.type === HttpEventType.UploadProgress)
+              {
+                this.uploadProgress = Math.round(100 * event.loaded/(event.total || 1));
+              }
+              else if (event.type === HttpEventType.Response) {
+                console.log('Upload complete:', event.body);
+                this.newbvGuru.Photo = event.body.fileurl;
+                
+                this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated; 
+                this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
+                  this.successMsg = "Bal Vikas Guru added successfully";
+                  this.showSuccessMsg = true;
+                });
+              }
 
-          });
-          // this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated;
-          // this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
-          //       this.successMsg = "Bal Vikas Guru added successfully";
-          //       this.showSuccessMsg = true;
-          // });
-        }
+            });
+            // this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated;
+            // this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
+            //       this.successMsg = "Bal Vikas Guru added successfully";
+            //       this.showSuccessMsg = true;
+            // });
+          }
         }
 }

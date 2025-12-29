@@ -6,6 +6,7 @@ import { UsercontrolLayoutComponent } from './features/admin/usercontrol/usercon
 import { DataadminentryComponent } from './features/admin/usercontrol/dataadminentry/dataadminentry.component';
 import { PasswordmanagementComponent } from './features/admin/usercontrol/passwordmanagement/passwordmanagement.component';
 import { BmentryComponent } from './features/admin/dataentry/bmentry/bmentry.component';
+import { SaisandeshuploadComponent } from './features/admin/dataentry/saisandeshupload/saisandeshupload.component';
 import { GuruentryComponent } from './features/admin/dataentry/guruentry/guruentry.component';
 import { StateofficebearersentryComponent } from './features/admin/dataentry/stateofficebearersentry/stateofficebearersentry.component';
 import { DistrictofficebearersentryComponent } from './features/admin/dataentry/districtofficebearersentry/districtofficebearersentry.component';
@@ -1018,6 +1019,7 @@ export const routes: Routes = [
     data: { breadcrumb: 'Data Entry' },
     component: DataentryLayoutComponent,
     children: [
+      { path: 'saisandesh', component: SaisandeshuploadComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
       { path: 'bhajanmandali', component: BmentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
       { path: 'samithi', component: SamithientryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] }  },
       { path: 'district', component: DistrictentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1'] } },

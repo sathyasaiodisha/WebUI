@@ -1,0 +1,18 @@
+<div class="add-saisandesh-form">
+    <form (ngSubmit)="uploadImage()" #itemForm="ngForm">
+        <div>
+            <input type="file" #fileInput (change)="onFileSelected($event)" hidden>
+                <!-- Material button to trigger file input -->
+                <button mat-raised-button color="primary" type="button" (click)="fileInput.click()">
+                    Browse Sai Sandesh image
+                </button>
+
+                <!-- Show selected file -->
+                <p *ngIf="selectedFile">Selected: {{ selectedFile.name }}</p>
+        </div>
+        <br>
+        <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!isPhotoAvailable">
+            Upload
+        </button>
+    </form>
+</div>
