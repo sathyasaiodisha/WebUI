@@ -3,12 +3,13 @@ import { HttpEventType } from '@angular/common/http';
 import { SaiSandeshItem, SaisandeshService } from '../../../../core/services/saisandesh.service';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatProgressBar } from '@angular/material/progress-bar';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   standalone: true,
-  imports: [FormsModule, CommonModule, MatButtonModule],
+  imports: [FormsModule, CommonModule, MatButtonModule, MatProgressBar],
   templateUrl: './saisandeshupload.component.html',
   styleUrl: './saisandeshupload.component.scss'
 })
@@ -34,6 +35,10 @@ export class SaisandeshuploadComponent {
               if (event.type === HttpEventType.UploadProgress)
               {
                 this.uploadProgress = Math.round(100 * event.loaded/(event.total || 1));
+              }
+              else if (event.type === HttpEventType.Response) {
+                this.uploadProgress = 100;
+                console.log('Sai Sandesh successfuly uploaded', event.body);
               }
         });
       }

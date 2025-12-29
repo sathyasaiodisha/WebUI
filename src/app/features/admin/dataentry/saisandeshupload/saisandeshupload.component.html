@@ -14,5 +14,11 @@
         <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!isPhotoAvailable">
             Upload
         </button>
+        <br>
+        <br>
+        <div *ngIf="uploadProgress >= 0">
+            <mat-progress-bar mode="determinate" [value]="uploadProgress"></mat-progress-bar>
+            <p *ngIf="uploadProgress === 100">Sai Sandesh successfuly uploaded ✅</p>
+        </div>
     </form>
 </div>
