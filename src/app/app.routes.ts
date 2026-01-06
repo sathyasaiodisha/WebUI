@@ -854,12 +854,26 @@ export const routes: Routes = [
   },
   {
     path: 'institutions',
-    data: { breadcrumb: 'Institutions' },
-    loadComponent: () =>
-      import('./features/institutions.component').then(
-        (c) => c.InstitutionsComponent
-      ),
+    data: { breadcrumb: 'Institutions', link: 0},
+    children: [
+      {
+        path: 'sssSchool',
+        data: { breadcrumb: 'Sri Sathya Sai School' },
+        loadComponent: () =>
+          import('./features/SriSathyaSaiSchool').then(
+            (c) => c.SriSathyaSaiSchoolComponent
+          ),
+      },
+      {
+        path: 'sssCollege',
+        data: { breadcrumb: 'Sri Sathya Sai College' },
+        loadComponent: () =>
+          import('./features/sri_sathya_sai/life.component').then(
+            (c) => c.LifeComponent
+          ),
+      }],
   },
+
   {
     path: 'resources',
     data: { breadcrumb: 'Resources' },

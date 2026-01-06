@@ -145,11 +145,11 @@ export class HeaderComponent implements AfterViewInit{
       name: this.translate.instant('institutions'),
       // link: '/sssSchoolOdisha',
       link: '/institutions',
-      showSubMenu: false
-      // subMenu: [
-      //           { name: 'SSS Trust-Odisha', link: '/centralTrust' },
-
-      // ],
+      showSubMenu: false,
+      subMenu: [
+        { name: 'Sri Sathya Sai School', link: '/sssSchool' },
+        { name: 'Sri Sathya Sai College', link: '/todo' }
+      ],
     },
     {
       name: 'resources',
