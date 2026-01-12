@@ -1,10 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {SharedModule} from '@shared/shared.module';
 import {ApiService} from '../core/services/api.service';
+import {ImageModalComponent} from '../shared/components/image-modal.component';
+import {MatDialog} from '@angular/material/dialog';
+import {RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'app-sssschool',
-  imports: [SharedModule],
+  imports: [SharedModule, RouterLinkActive],
   template: `
     <div class="content container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
@@ -97,14 +100,57 @@ import {ApiService} from '../core/services/api.service';
           School Factsheet
         </h2>
         <img style="height: auto;width: 100%;" src="assets/images/institutions/schools_data_and_graph.jpg" alt="School Data and Graph">
+        <h2>
+          School Statistics:
+        </h2>
+        <div class ="sub_wing_wrapper_bottom">
+          <button type="button" class="btn btn-light" (click)="
+                openImage('assets/images/institutions/year_of_establishment.jpg')">
+            Year Of Establishment
+          </button>
+          <button type="button" class="btn btn-light" (click)="
+                openImage('assets/images/institutions/address_ssss.jpg')">
+            Address of Sri Sathya Sai Schools
+          </button>
+          <button type="button" class="btn btn-light" (click)="
+                openImage('assets/images/institutions/email_ssss.jpg')">
+            Email ID of Sri Sathya Sai Schools
+          </button>
+          <button type="button" class="btn btn-light" (click)="
+                openImage('assets/images/institutions/enrolment_ssss.jpg')">
+            Enrolment Status in Schools
+          </button>
+          <button type="button" class="btn btn-light" (click)="
+                openImage('assets/images/institutions/national_council_code_ssss.jpg')">
+            National Council Code for Schools
+          </button>
+          <button type="button" class="btn btn-light" (click)="
+                openImage('assets/images/institutions/teachers_no_ssss.jpg')">
+            Number of Teachers in Schools
+          </button>
+
+        </div>
+        <div style="margin-top: 1rem; margin-bottom: 0.5rem">
+          <h2>Contact For Sri Sathya Sai Schools</h2>
+          <h5>Email: schoolcommitee&#64;sathyasaiodisha.org <br/></h5>
+          <h5>Phone: 9437108062</h5>
+        </div>
       </div>
+
     </div>`,
 })
 export class SriSathyaSaiSchoolComponent implements OnInit {
 
-  constructor(private apiService: ApiService) {
+  constructor(private dialog: MatDialog, private apiService: ApiService) {
   }
-
+  openImage(imageUrl: string) {
+    this.dialog.open(ImageModalComponent, {
+      data: { imageUrl },
+      panelClass: 'image-dialog',
+      maxWidth: '90vw',
+      maxHeight: '90vh',
+    });
+  }
   ngOnInit(): void {
 
   }
