@@ -105,27 +105,27 @@ import {RouterLinkActive} from '@angular/router';
         </h2>
         <div class ="sub_wing_wrapper_bottom">
           <button type="button" class="btn btn-light" (click)="
-                openImage('assets/images/institutions/year_of_establishment.jpg')">
-            Year Of Establishment
+                openImage('assets/images/institutions/year_of_establishment.png')">
+            Year of Establishment
           </button>
           <button type="button" class="btn btn-light" (click)="
-                openImage('assets/images/institutions/address_ssss.jpg')">
+                openImage('assets/images/institutions/address_of_ssss.png')">
             Address of Sri Sathya Sai Schools
           </button>
           <button type="button" class="btn btn-light" (click)="
-                openImage('assets/images/institutions/email_ssss.jpg')">
+                openImage('assets/images/institutions/email_id_ssss.png')">
             Email ID of Sri Sathya Sai Schools
           </button>
           <button type="button" class="btn btn-light" (click)="
-                openImage('assets/images/institutions/enrolment_ssss.jpg')">
+                openImage('assets/images/institutions/enrolment_ssss.png')">
             Enrolment Status in Schools
           </button>
           <button type="button" class="btn btn-light" (click)="
-                openImage('assets/images/institutions/national_council_code_ssss.jpg')">
+                openImage('assets/images/institutions/ncc_ssss.png')">
             National Council Code for Schools
           </button>
           <button type="button" class="btn btn-light" (click)="
-                openImage('assets/images/institutions/teachers_no_ssss.jpg')">
+                openImage('assets/images/institutions/number_of_teachers_ssss.png')">
             Number of Teachers in Schools
           </button>
 
@@ -143,12 +143,15 @@ export class SriSathyaSaiSchoolComponent implements OnInit {
 
   constructor(private dialog: MatDialog, private apiService: ApiService) {
   }
+
   openImage(imageUrl: string) {
+    const isMobile = window.innerWidth < 768;
+
     this.dialog.open(ImageModalComponent, {
       data: { imageUrl },
       panelClass: 'image-dialog',
-      maxWidth: '90vw',
-      maxHeight: '90vh',
+      width: isMobile ? '95vw' : '120vw',
+      height: isMobile ? '70vh' : '90vh'
     });
   }
   ngOnInit(): void {
