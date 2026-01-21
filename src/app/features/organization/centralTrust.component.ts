@@ -39,6 +39,9 @@ import { ApiService } from '../../core/services/api.service';
           <li>{{ 'sssTrustOdisha_about_ul5' | translate }}</li>
           <li>{{ 'sssTrustOdisha_about_ul6' | translate }}</li>
         </ol>
+        <div class="content_topgape">
+          <img class="responsive" src="/assets/images/sssto_board_members.png">
+        </div>
       </div>
     </div>
   `,
