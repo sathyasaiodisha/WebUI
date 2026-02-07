@@ -1,0 +1,46 @@
+.sidenav-container {
+    height: 100vh;
+  }
+  
+  .sidenav {
+    width: 20%;
+    background-color: #fafafa;
+  }
+  
+  .content {
+    // display: flex;
+    // flex-direction: column;
+    // height: 100vh;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  .content-body {
+    //flex: 1;
+    max-width: 100%;
+    margin: 20px auto; /* introduces gap on right */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .active {
+    font-weight: bold;
+    color:#1976d2;
+  }
+
+  .active-link {
+    background-color: #e0f7fa;
+    font-weight: bold;
+    color:#00110f;
+  }
+
+  .buttonAlign {
+    text-align: center;
+  }
+
+  .buttonStyle {
+    border-radius: 50%;
+    border: none;
+    // background-color:lightcyan;
+  }

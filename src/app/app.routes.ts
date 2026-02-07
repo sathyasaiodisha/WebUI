@@ -19,6 +19,8 @@ import { UnauthorizedComponent } from './features/admin/unauthorized/unauthorize
 import { AuthGuard } from './guards/auth.guard';
 import { RoleGuard } from './guards/role.guard';
 import {StatePresidentMessageComponent} from './features/statePresidentMessage';
+import { EventComponent } from './features/admin/events/event/event.component';
+import { EventLayoutComponent } from './features/admin/events/event-layout/event-layout.component';
 
 export const routes: Routes = [
   {
@@ -1038,6 +1040,14 @@ export const routes: Routes = [
     children: [
       { path: 'dataadmin', component: DataadminentryComponent },
       { path: 'pwdmanagement', component: PasswordmanagementComponent },
+    ],
+  },
+  {
+    path: 'eventmanagement',
+    data: { breadcrumb: 'Event Management' },
+    component: EventLayoutComponent,
+    children: [
+      { path: 'manageevent', component: EventComponent },
     ],
   },
   {

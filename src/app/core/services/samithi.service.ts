@@ -1,15 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-export interface SamithiItem {
-  ID?: number;
-  DistrictID?: number;
-  SamithiCode: string;
-  SamithiName: string;
-  SamithiRegNo: string;
-  isEditing?: boolean;
-}
+import { SamithiItem } from '../models/samithi';
 
 export interface DistItem {
   ID?: number;
@@ -23,7 +15,9 @@ export interface DistItem {
 export class SamithiService {
 
   private apiUrl = 'https://www.sathyasaiodisha.org/api/samithis'; 
-  private distApiUrl = 'https://www.sathyasaiodisha.org/api/saidistricts';
+  private distsApiUrl = 'https://www.sathyasaiodisha.org/api/saidistricts';
+  private distApiUrl = 'https://www.sathyasaiodisha.org/api/district';
+
 
   constructor(private http: HttpClient) {}
 
@@ -32,7 +26,7 @@ export class SamithiService {
   }
 
   getDists(): Observable<DistItem[]> {
-    return this.http.get<DistItem[]>(this.distApiUrl);
+    return this.http.get<DistItem[]>(this.distsApiUrl);
   }
 
   getItemsbydistrict(distID: number): Observable<SamithiItem[]> {

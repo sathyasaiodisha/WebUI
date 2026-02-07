@@ -26,7 +26,7 @@ export class AdminComponent {
       { title: 'Digital Archive', text: '' },
       { title: 'Annual Planner', text: '' },
       { title: 'User Control', link: '/usercontrol' },
-      { title: 'Upcoming & Recent Events', text: '' },
+      { title: 'Upcoming & Recent Events', link: '/eventmanagement' },
       { title: 'Manage resources', text: '' },
       { title: 'Manage quotes', text: '' },
       { title: 'Manage forms', text: '' },
@@ -50,7 +50,7 @@ export class AdminComponent {
                           { title: 'Digital Archive', text: '' },
                           { title: 'Annual Planner', text: '' },
                           { title: 'User Control', link: '/usercontrol' },
-                          { title: 'Upcoming & Recent Events', text: '' },
+                          { title: 'Upcoming & Recent Events', link: '/eventmanagement' },
                           { title: 'Manage resources', text: '' },
                           { title: 'Manage quotes', text: '' },
                           { title: 'Manage forms', text: '' }
@@ -61,7 +61,7 @@ export class AdminComponent {
             this.tiles =[
                           { title: 'Data Entry', link: '/dataentry' },
                           { title: 'Digital Archive', text: '' },
-                          { title: 'Upcoming & Recent Events', text: '' },
+                          { title: 'Upcoming & Recent Events', link: '/eventmanagement' },
                           { title: 'Manage resources', text: '' },
                           { title: 'Manage quotes', text: '' },
                           { title: 'Manage forms', text: '' }

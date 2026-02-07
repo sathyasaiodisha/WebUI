@@ -12,9 +12,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from '../../../../shared/components/confirm-dialog/confirm-dialog.component';
 import { FormsModule } from '@angular/forms';
+import { DistictItem } from '../../../../core/models/district';
 
 
-import { DistictItem, DistrictService } from '../../../../core/services/district.service';
+import { DistrictService } from '../../../../core/services/district.service';
 
 @Component({
   standalone: true,

@@ -1,13 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-export interface DistictItem {
-  ID?: number;
-  DistrictCode: string;
-  DistrictName: string;
-  isEditing?: boolean;
-}
+import { DistictItem } from '../models/district';
 
 @Injectable({
   providedIn: 'root'

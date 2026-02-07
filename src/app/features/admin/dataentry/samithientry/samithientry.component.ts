@@ -15,7 +15,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from '../../../../shared/components/confirm-dialog/confirm-dialog.component';
 import { FormsModule } from '@angular/forms';
 
-import { SamithiItem, DistItem, SamithiService } from '../../../../core/services/samithi.service';
+import { SamithiItem } from '../../../../core/models/samithi';
+import { DistItem, SamithiService } from '../../../../core/services/samithi.service';
 import { AuthService, UserItem } from '../../../../core/services/auth.service';
 import { DataAdminItem, DataAdminService } from '../../../../core/services/dataadmin.service';
 import { faL } from '@fortawesome/free-solid-svg-icons';

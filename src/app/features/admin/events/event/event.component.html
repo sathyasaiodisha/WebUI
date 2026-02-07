@@ -1,0 +1,159 @@
+<div class="add-event-form">
+    <form (ngSubmit)="addEvent()" #itemForm="ngForm">
+        <div class="card-container">
+            <mat-card>
+                <mat-card-content>
+                    <mat-label class="radio-label">Level at which the event is organized</mat-label>
+                    <mat-radio-group [(ngModel)]="newEvent.OrgLevelID" name="Organization Level" (change)="onOrgLevelChange($event.value)">
+                        <mat-radio-button value=1>State</mat-radio-button>
+                        <mat-radio-button value=2>Distict</mat-radio-button>
+                        <mat-radio-button value=3>Samithi</mat-radio-button>
+                    </mat-radio-group>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select District</mat-label>
+            <mat-select [(value)]="newEvent.DistrictID" (selectionChange)="onDistrictChange($event.value)" [disabled]="isDistrictSelectionDisabled">
+                <mat-option *ngFor="let district of districts" [value]="district.ID">
+                {{ district.DistrictName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select Samithi</mat-label>
+            <mat-select [(value)]="newEvent.SamithiID" (selectionChange)="onSamithiChange($event.value)" [disabled]="isSamithiSelectionDisabled">
+                <mat-option *ngFor="let samithi of filteredSamithis" [value]="samithi.ID">
+                {{ samithi.SamithiName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select Wing</mat-label>
+            <mat-select [(value)]="selectedWingID" [disabled]="isWingSelectionDisabled" (selectionChange)="onWingChange($event)">
+                <mat-option *ngFor="let wing of wings" [value]="wing.ID">
+                {{ wing.WingName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select Programme</mat-label>
+            <mat-select (selectionChange)="onProgrammeChange($event.value)" [disabled]="isProgrammeSelectionDisabled">
+                <mat-option *ngFor="let programme of filteredProgrammes" [value]="programme.ID">
+                {{ programme.ProgrammeName }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Select Event Type</mat-label>
+            <mat-select [(value)]="newEvent.ActivityID" (selectionChange)="onEventTypeChange($event.value)" [disabled]="isActivitySelectionDisabled">
+                <mat-option *ngFor="let activity of fiteredActivities" [value]="activity.ID">
+                {{ activity.Activity }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Event Title</mat-label>
+            <input matInput [(ngModel)]="newEvent.EventTitle" name="EventTitle" required maxlength="100" [disabled]="isDisabled"/>
+        </mat-form-field>
+                <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Event Venue</mat-label>
+            <input matInput [(ngModel)]="newEvent.EventVenue" name="EventVenue" required maxlength="100" [disabled]="isDisabled"/>
+        </mat-form-field>
+                <mat-form-field appearance="outline" class="formfield">
+            <mat-label>Event Date</mat-label>
+            <input matInput [matDatepicker]="picker" [(ngModel)]="newEvent.EventDate" name="EventDate" [disabled]="isDisabled">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <br>
+        <div>
+            <input type="file" #bannerFileInput (change)="onBannerFileSelected($event)" hidden class="pre-event-file-input">
+                <!-- Material button to trigger file input -->
+                <button mat-raised-button color="primary" type="button" class="pre-event-file-input" (click)="bannerFileInput.click()">
+                    Upload banner
+                </button>
+
+                <!-- Show selected file -->
+                <p *ngIf="selectedBannerFile">Selected: {{ selectedBannerFile.name }}</p>
+        </div>
+        <br>
+        <div>
+            <input type="file" #agendaFile1Input (change)="onAgendaImage1FileSelected($event)" hidden class="pre-event-file-input">
+                <!-- Material button to trigger file input -->
+                <button mat-raised-button color="primary" type="button" class="pre-event-file-input" (click)="agendaFile1Input.click()">
+                    Upload Agenda (first image)
+                </button>
+
+                <!-- Show selected file -->
+                <p *ngIf="selectedAgendaFile1">Selected: {{ selectedAgendaFile1.name }}</p>
+        </div>
+        <br>
+        <div>
+            <input type="file" #agendaFile2Input (change)="onAgendaImage2FileSelected($event)" hidden class="pre-event-file-input">
+                <!-- Material button to trigger file input -->
+                <button mat-raised-button color="primary" type="button" (click)="agendaFile2Input.click()" class="pre-event-file-input">
+                    Upload Agenda (second image)
+                </button>
+
+                <!-- Show selected file -->
+                <p *ngIf="selectedAgendaFile2">Selected: {{ selectedAgendaFile2.name }}</p>
+        </div>
+        <br>
+        <mat-form-field appearance="outline" class="formfield" class="col-md-12 col-xs-18 col-sm-12">
+            <mat-label>Event Description</mat-label>
+            <textarea matInput [(ngModel)]="newEvent.EventDescription" rows="5" name="EventDescription" required maxlength="1000" [disabled]="isDisabled">
+            </textarea>
+        </mat-form-field>
+        <h3 class="activities-section">Activities</h3>
+        <div *ngFor="let activity of digitalArchivesToAdd; let i = index" class="activity-row">
+            <!-- Activity Name -->
+            <mat-form-field appearance="outline" class="activity-name">
+                <mat-label>Activity Name</mat-label>
+                <input [disabled]="isDisabled"
+                    matInput
+                    name="activityName{{i}}"
+                    [(ngModel)]="activity.ActivityName"
+                    required>
+            </mat-form-field>
+            
+            <!-- Image Upload -->
+            <input [disabled]="isDisabled"
+            type="file"
+            accept="image/*"
+            (change)="onFileSelected($event, i)"
+            class="file-input">
+            
+            <!-- Add Button (only on last row) -->
+            <button [disabled]="isDisabled"
+                mat-icon-button
+                color="primary"
+                type="button"
+                *ngIf="i === digitalArchivesToAdd.length - 1"
+                (click)="addActivity()"
+                matTooltip="Add Activity">
+                <mat-icon>add_circle</mat-icon>
+            </button>
+
+            <!-- Delete Button -->
+            <button
+                mat-icon-button
+                color="warn"
+                type="button"
+                *ngIf="digitalArchivesToAdd.length > 1"
+                (click)="removeActivity(i)"
+                matTooltip="Remove Activity">
+                <mat-icon>delete</mat-icon>
+            </button>
+            
+        </div>
+        <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!itemForm.valid">
+        Add Event
+        </button>
+        <br>
+        <span *ngIf="showSuccessMsg" class="success-message">{{successMsg}}</span>
+        <span *ngIf="showErrMsg" class="error-message">{{errMsg}}</span>
+    </form>
+</div>
