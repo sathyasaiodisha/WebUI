@@ -73,9 +73,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     liquid_love_registered: 13622,
     liquid_love_units: 6420,
     medical_camps: 586,
+    sri_sathya_sai_schools: 18,
     patients_treated_phc: 5668,
     patients_treated_medical_camps: 17981,
-    drinking_water_projects_ftc: 62,
+    drinking_water_projects_ftc: 62
   };
   wings = [
     {
