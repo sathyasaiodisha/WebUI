@@ -18,7 +18,7 @@ import { SSSMobileHospitalComponent } from './features/sssMobileHospital.compone
 import { UnauthorizedComponent } from './features/admin/unauthorized/unauthorized.component';
 import { AuthGuard } from './guards/auth.guard';
 import { RoleGuard } from './guards/role.guard';
-import {StatePresidentMessageComponent} from './features/statePresidentMessage';
+import { StatePresidentMessageComponent } from './features/statePresidentMessage';
 import { EventComponent } from './features/admin/events/event/event.component';
 import { EventLayoutComponent } from './features/admin/events/event-layout/event-layout.component';
 
@@ -38,7 +38,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Introduction' },
         loadComponent: () =>
           import('./features/sri_sathya_sai/introduction.component').then(
-            (c) => c.IntroductionComponent
+            (c) => c.IntroductionComponent,
           ),
       },
       {
@@ -46,7 +46,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Life' },
         loadComponent: () =>
           import('./features/sri_sathya_sai/life.component').then(
-            (c) => c.LifeComponent
+            (c) => c.LifeComponent,
           ),
       },
       {
@@ -54,7 +54,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Teachings' },
         loadComponent: () =>
           import('./features/sri_sathya_sai/teachings.component').then(
-            (c) => c.TeachingsComponent
+            (c) => c.TeachingsComponent,
           ),
       },
       {
@@ -62,7 +62,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Works' },
         loadComponent: () =>
           import('./features/sri_sathya_sai/works.component').then(
-            (c) => c.WorksComponent
+            (c) => c.WorksComponent,
           ),
       },
     ],
@@ -80,23 +80,23 @@ export const routes: Routes = [
             data: { breadcrumb: 'NarayanaSeva' },
             loadComponent: () =>
               import('./features/wings/service/NarayanaSeva.component').then(
-                (c) => c.NarayanaSevaComponent
+                (c) => c.NarayanaSevaComponent,
               ),
           },
           {
             path: 'TribalVillageProgramme',
             data: { breadcrumb: 'TribalVillageProgramme' },
             loadComponent: () =>
-              import(
-                './features/wings/service/TribalVillageProgramme.component'
-              ).then((c) => c.TribalVillageProgrammeComponent),
+              import('./features/wings/service/TribalVillageProgramme.component').then(
+                (c) => c.TribalVillageProgrammeComponent,
+              ),
           },
           {
             path: 'JalaChhatraSeva',
             data: { breadcrumb: 'JalaChhatraSeva' },
             loadComponent: () =>
               import('./features/wings/service/JalaChhatraSeva.component').then(
-                (c) => c.JalaChhatraSevaComponent
+                (c) => c.JalaChhatraSevaComponent,
               ),
           },
           {
@@ -104,31 +104,31 @@ export const routes: Routes = [
             data: { breadcrumb: 'AmrutaKalasam' },
             loadComponent: () =>
               import('./features/wings/service/AmrutaKalasam.component').then(
-                (c) => c.AmrutaKalasamComponent
+                (c) => c.AmrutaKalasamComponent,
               ),
           },
           {
             path: 'NityaNarayanaSeva',
             data: { breadcrumb: 'NityaNarayanaSeva' },
             loadComponent: () =>
-              import(
-                './features/wings/service/NityaNarayanaSeva.component'
-              ).then((c) => c.NityaNarayanaSevaComponent),
+              import('./features/wings/service/NityaNarayanaSeva.component').then(
+                (c) => c.NityaNarayanaSevaComponent,
+              ),
           },
           {
             path: 'HolisticHealthCare',
             data: { breadcrumb: 'HolisticHealthCare' },
             loadComponent: () =>
-              import(
-                './features/wings/service/HolisticHealthCare.component'
-              ).then((c) => c.HolisticHealthCareComponent),
+              import('./features/wings/service/HolisticHealthCare.component').then(
+                (c) => c.HolisticHealthCareComponent,
+              ),
           },
           {
             path: 'SaiSwabalambi',
             data: { breadcrumb: 'SaiSwabalambi' },
             loadComponent: () =>
               import('./features/wings/service/SaiSwabalambi.component').then(
-                (c) => c.SaiSwabalambiComponent
+                (c) => c.SaiSwabalambiComponent,
               ),
           },
           {
@@ -136,7 +136,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'BloodDonation' },
             loadComponent: () =>
               import('./features/wings/service/BloodDonation.component').then(
-                (c) => c.BloodDonationComponent
+                (c) => c.BloodDonationComponent,
               ),
           },
           {
@@ -144,23 +144,23 @@ export const routes: Routes = [
             data: { breadcrumb: 'rvtc' },
             loadComponent: () =>
               import('./features/wings/service/rvtc.component').then(
-                (c) => c.rvtcComponent
+                (c) => c.rvtcComponent,
               ),
           },
           {
             path: 'SwachhatwaRuDivyatwa',
             data: { breadcrumb: 'SwachhatwaRuDivyatwa' },
             loadComponent: () =>
-              import(
-                './features/wings/service/SwachhatwaRuDivyatwa.component'
-              ).then((c) => c.SwachhatwaRuDivyatwaComponent),
+              import('./features/wings/service/SwachhatwaRuDivyatwa.component').then(
+                (c) => c.SwachhatwaRuDivyatwaComponent,
+              ),
           },
           {
             path: 'SanitationSeva',
             data: { breadcrumb: 'SanitationSeva' },
             loadComponent: () =>
               import('./features/wings/service/SanitationSeva.component').then(
-                (c) => c.SanitationSevaComponent
+                (c) => c.SanitationSevaComponent,
               ),
           },
           {
@@ -168,61 +168,61 @@ export const routes: Routes = [
             data: { breadcrumb: 'AgriCare' },
             loadComponent: () =>
               import('./features/wings/service/AgriCare.component').then(
-                (c) => c.AgriCareComponent
+                (c) => c.AgriCareComponent,
               ),
           },
           {
             path: 'SriSathyaSaiHousingProject',
             data: { breadcrumb: 'SriSathyaSaiHousingProject' },
             loadComponent: () =>
-              import(
-                './features/wings/service/SriSathyaSaiHousingProject.component'
-              ).then((c) => c.SriSathyaSaiHousingProjectComponent),
+              import('./features/wings/service/SriSathyaSaiHousingProject.component').then(
+                (c) => c.SriSathyaSaiHousingProjectComponent,
+              ),
           },
           {
             path: 'SriSathyaSaiWaterProject',
             data: { breadcrumb: 'SriSathyaSaiWaterProject' },
             loadComponent: () =>
-              import(
-                './features/wings/service/SriSathyaSaiWaterProject.component'
-              ).then((c) => c.SriSathyaSaiWaterProjectComponent),
+              import('./features/wings/service/SriSathyaSaiWaterProject.component').then(
+                (c) => c.SriSathyaSaiWaterProjectComponent,
+              ),
           },
           {
             path: 'DisasterManagement',
             data: { breadcrumb: 'DisasterManagement' },
             loadComponent: () =>
-              import(
-                './features/wings/service/DisasterManagement.component'
-              ).then((c) => c.DisasterManagementComponent),
+              import('./features/wings/service/DisasterManagement.component').then(
+                (c) => c.DisasterManagementComponent,
+              ),
           },
           {
             path: 'SriSathyaSaiSudarshan',
             data: { breadcrumb: 'SriSathyaSaiSudarshan' },
             loadComponent: () =>
-              import(
-                './features/wings/service/SriSathyaSaiSudarshan.component'
-              ).then((c) => c.SriSathyaSaiSudarshanComponent),
+              import('./features/wings/service/SriSathyaSaiSudarshan.component').then(
+                (c) => c.SriSathyaSaiSudarshanComponent,
+              ),
           },
           {
             path: 'PrasanthiSeva',
             data: { breadcrumb: 'PrasanthiSeva' },
             loadComponent: () =>
               import('./features/wings/service/PrasanthiSeva.component').then(
-                (c) => c.PrasanthiSevaComponent
+                (c) => c.PrasanthiSevaComponent,
               ),
           },
           {
             path: ':page',
             loadComponent: () =>
               import('./features/wings/service.component').then(
-                (c) => c.ServiceComponent
+                (c) => c.ServiceComponent,
               ),
           },
           {
             path: '',
             loadComponent: () =>
               import('./features/wings/service.component').then(
-                (c) => c.ServiceComponent
+                (c) => c.ServiceComponent,
               ),
           },
         ],
@@ -236,7 +236,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'Bhajan' },
             loadComponent: () =>
               import('./features/wings/spiritual/bhajan.component').then(
-                (c) => c.BhajanComponent
+                (c) => c.BhajanComponent,
               ),
           },
           {
@@ -244,7 +244,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'Veda Prabaham' },
             loadComponent: () =>
               import('./features/wings/spiritual/vedaPrabaham.component').then(
-                (c) => c.VedaPrabahamComponent
+                (c) => c.VedaPrabahamComponent,
               ),
           },
           {
@@ -252,7 +252,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'Seminar' },
             loadComponent: () =>
               import('./features/wings/spiritual/sadhanaShibir.component').then(
-                (c) => c.SadhanaShibirComponent
+                (c) => c.SadhanaShibirComponent,
               ),
           },
           {
@@ -260,23 +260,23 @@ export const routes: Routes = [
             data: { breadcrumb: 'Veda Prabaham' },
             loadComponent: () =>
               import('./features/wings/spiritual/seminars.component').then(
-                (c) => c.SeminarsComponent
+                (c) => c.SeminarsComponent,
               ),
           },
           {
             path: 'dhyanaVrukshya',
             data: { breadcrumb: 'Dhyana Vrukshya' },
             loadComponent: () =>
-              import(
-                './features/wings/spiritual/dhyanaVrukshya.component'
-              ).then((c) => c.DhyanaVrukshyaComponent),
+              import('./features/wings/spiritual/dhyanaVrukshya.component').then(
+                (c) => c.DhyanaVrukshyaComponent,
+              ),
           },
           {
             path: 'parthiYatra',
             data: { breadcrumb: 'Parthi Yatra' },
             loadComponent: () =>
               import('./features/wings/spiritual/parthiYatra.component').then(
-                (c) => c.ParthiYatraComponent
+                (c) => c.ParthiYatraComponent,
               ),
           },
           {
@@ -284,7 +284,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'Jyothi Yatra' },
             loadComponent: () =>
               import('./features/wings/spiritual/jyothiYatra.component').then(
-                (c) => c.JyothiYatraComponent
+                (c) => c.JyothiYatraComponent,
               ),
           },
           {
@@ -292,23 +292,23 @@ export const routes: Routes = [
             data: { breadcrumb: 'Jyothi Yatra' },
             loadComponent: () =>
               import('./features/wings/spiritual/jyothiYatra.component').then(
-                (c) => c.JyothiYatraComponent
+                (c) => c.JyothiYatraComponent,
               ),
           },
           {
             path: 'celebrationOfFestivals',
             data: { breadcrumb: 'Celebration of Festivals' },
             loadComponent: () =>
-              import(
-                './features/wings/spiritual/celebrationOfFestivals.component'
-              ).then((c) => c.CelebrationOfFestivalsComponent),
+              import('./features/wings/spiritual/celebrationOfFestivals.component').then(
+                (c) => c.CelebrationOfFestivalsComponent,
+              ),
           },
           {
             path: 'Lakshyarchana',
             data: { breadcrumb: 'Lakshyarchana' },
             loadComponent: () =>
               import('./features/wings/spiritual/lakshyarchana.component').then(
-                (c) => c.LakshyarchanaComponent
+                (c) => c.LakshyarchanaComponent,
               ),
           },
           {
@@ -316,7 +316,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'Study circle' },
             loadComponent: () =>
               import('./features/wings/spiritual/studyCircle.component').then(
-                (c) => c.StudyCircleComponent
+                (c) => c.StudyCircleComponent,
               ),
           },
           {
@@ -324,7 +324,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'Study circle' },
             loadComponent: () =>
               import('./features/wings/spiritual/saiSymphony.component').then(
-                (c) => c.SaiSymphonyComponent
+                (c) => c.SaiSymphonyComponent,
               ),
           },
           {
@@ -332,37 +332,37 @@ export const routes: Routes = [
             data: { breadcrumb: 'Swadhyaya' },
             loadComponent: () =>
               import('./features/wings/spiritual/swadhyaya.component').then(
-                (c) => c.SwadhyayaComponent
+                (c) => c.SwadhyayaComponent,
               ),
           },
           {
             path: 'vahiniParayana',
             data: { breadcrumb: 'Vahini Parayana' },
             loadComponent: () =>
-              import(
-                './features/wings/spiritual/vahiniParayana.component'
-              ).then((c) => c.VahiniParayanaComponent),
+              import('./features/wings/spiritual/vahiniParayana.component').then(
+                (c) => c.VahiniParayanaComponent,
+              ),
           },
           {
             path: 'devoteesMeet',
             data: { breadcrumb: 'Devotees meet' },
             loadComponent: () =>
               import('./features/wings/spiritual/devoteesMeet.component').then(
-                (c) => c.DevoteesMeetComponent
+                (c) => c.DevoteesMeetComponent,
               ),
           },
           {
             path: ':page',
             loadComponent: () =>
               import('./features/wings/spiritual.component').then(
-                (c) => c.SpiritualComponent
+                (c) => c.SpiritualComponent,
               ),
           },
           {
             path: '',
             loadComponent: () =>
               import('./features/wings/spiritual.component').then(
-                (c) => c.SpiritualComponent
+                (c) => c.SpiritualComponent,
               ),
           },
         ],
@@ -375,48 +375,48 @@ export const routes: Routes = [
             path: 'SriSathyaSaiBalVikas',
             data: { breadcrumb: 'SriSathyaSaiBalVikas' },
             loadComponent: () =>
-              import(
-                './features/wings/education/SriSathyaSaiBalVikas.component'
-              ).then((c) => c.SriSathyaSaiBalVikasComponent),
+              import('./features/wings/education/SriSathyaSaiBalVikas.component').then(
+                (c) => c.SriSathyaSaiBalVikasComponent,
+              ),
           },
           {
             path: 'SriSathyaSaiVidyaJyothi',
             data: { breadcrumb: 'SriSathyaSaiVidyaJyothi' },
             loadComponent: () =>
-              import(
-                './features/wings/education/SriSathyaSaiVidyaJyothi.component'
-              ).then((c) => c.SriSathyaSaiVidyaJyothiComponent),
+              import('./features/wings/education/SriSathyaSaiVidyaJyothi.component').then(
+                (c) => c.SriSathyaSaiVidyaJyothiComponent,
+              ),
           },
           {
             path: 'NityaSikshyaDana',
             data: { breadcrumb: 'NityaSikshyaDana' },
             loadComponent: () =>
-              import(
-                './features/wings/education/NityaSikshyaDana.component'
-              ).then((c) => c.NityaSikshyaDanaComponent),
+              import('./features/wings/education/NityaSikshyaDana.component').then(
+                (c) => c.NityaSikshyaDanaComponent,
+              ),
           },
           {
             path: 'VidyaVahini',
             data: { breadcrumb: 'VidyaVahini' },
             loadComponent: () =>
               import('./features/wings/education/VidyaVahini.component').then(
-                (c) => c.VidyaVahiniComponent
+                (c) => c.VidyaVahiniComponent,
               ),
           },
           {
             path: 'FestivalsOfJoy',
             data: { breadcrumb: 'FestivalsOfJoy' },
             loadComponent: () =>
-              import(
-                './features/wings/education/FestivalsOfJoy.component'
-              ).then((c) => c.FestivalsOfJoyComponent),
+              import('./features/wings/education/FestivalsOfJoy.component').then(
+                (c) => c.FestivalsOfJoyComponent,
+              ),
           },
           {
             path: 'SSSCHumanExcellence',
             data: { breadcrumb: 'SSSCHumanExcellence' },
             loadComponent: () =>
               import('./features/wings/education/SSSCHumanExcellence.component').then(
-                (c) => c.SSSCHumanExcellenceComponent
+                (c) => c.SSSCHumanExcellenceComponent,
               ),
           },
           {
@@ -424,7 +424,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'AnandaUdyan' },
             loadComponent: () =>
               import('./features/wings/education/AnandaUdyan.component').then(
-                (c) => c.AnandaUdyanComponent
+                (c) => c.AnandaUdyanComponent,
               ),
           },
           {
@@ -432,7 +432,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'MadhuVadishyami' },
             loadComponent: () =>
               import('./features/wings/education/MadhuVadishyami.component').then(
-                (c) => c.MadhuVadishyamiComponent
+                (c) => c.MadhuVadishyamiComponent,
               ),
           },
           {
@@ -440,7 +440,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'SaiVaatika' },
             loadComponent: () =>
               import('./features/wings/education/SaiVaatika.component').then(
-                (c) => c.SaiVaatikaComponent
+                (c) => c.SaiVaatikaComponent,
               ),
           },
           {
@@ -448,7 +448,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'ManmanaaBhava' },
             loadComponent: () =>
               import('./features/wings/education/ManmanaaBhava.component').then(
-                (c) => c.ManmanaaBhavaComponent
+                (c) => c.ManmanaaBhavaComponent,
               ),
           },
           {
@@ -456,21 +456,21 @@ export const routes: Routes = [
             data: { breadcrumb: 'FestivalsFlavours' },
             loadComponent: () =>
               import('./features/wings/education/FestivalsFlavours.component').then(
-                (c) => c.FestivalsFlavoursComponent
+                (c) => c.FestivalsFlavoursComponent,
               ),
           },
           {
             path: ':page',
             loadComponent: () =>
               import('./features/wings/education.component').then(
-                (c) => c.EducationComponent
+                (c) => c.EducationComponent,
               ),
           },
           {
             path: '',
             loadComponent: () =>
               import('./features/wings/education.component').then(
-                (c) => c.EducationComponent
+                (c) => c.EducationComponent,
               ),
           },
         ],
@@ -483,40 +483,40 @@ export const routes: Routes = [
             path: 'SaktiSwaroopiniDiwas',
             data: { breadcrumb: 'SaktiSwaroopiniDiwas' },
             loadComponent: () =>
-              import(
-                './features/wings/mahila/SaktiSwaroopiniDiwas.component'
-              ).then((c) => c.SaktiSwaroopiniDiwasComponent),
+              import('./features/wings/mahila/SaktiSwaroopiniDiwas.component').then(
+                (c) => c.SaktiSwaroopiniDiwasComponent,
+              ),
           },
           {
             path: 'SaiBratakalpa',
             data: { breadcrumb: 'SaiBratakalpa' },
             loadComponent: () =>
               import('./features/wings/mahila/SaiBratakalpa.component').then(
-                (c) => c.SaiBratakalpaComponent
+                (c) => c.SaiBratakalpaComponent,
               ),
           },
           {
             path: 'LalitaSahasraNama',
             data: { breadcrumb: 'LalitaSahasraNama' },
             loadComponent: () =>
-              import(
-                './features/wings/mahila/LalitaSahasraNama.component'
-              ).then((c) => c.LalitaSahasraNamaComponent),
+              import('./features/wings/mahila/LalitaSahasraNama.component').then(
+                (c) => c.LalitaSahasraNamaComponent,
+              ),
           },
           {
             path: 'KumkumaPujaArchana',
             data: { breadcrumb: 'KumkumaPujaArchana' },
             loadComponent: () =>
-              import(
-                './features/wings/mahila/KumkumaPujaArchana.component'
-              ).then((c) => c.KumkumaPujaArchanaComponent),
+              import('./features/wings/mahila/KumkumaPujaArchana.component').then(
+                (c) => c.KumkumaPujaArchanaComponent,
+              ),
           },
           {
             path: 'BaralaxmiBrata',
             data: { breadcrumb: 'BaralaxmiBrata' },
             loadComponent: () =>
               import('./features/wings/mahila/BaralaxmiBrata.component').then(
-                (c) => c.BaralaxmiBrataComponent
+                (c) => c.BaralaxmiBrataComponent,
               ),
           },
           {
@@ -524,7 +524,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'SaiSanatani' },
             loadComponent: () =>
               import('./features/wings/mahila/SaiSanatani.component').then(
-                (c) => c.SaiSanataniComponent
+                (c) => c.SaiSanataniComponent,
               ),
           },
           {
@@ -532,7 +532,7 @@ export const routes: Routes = [
             data: { breadcrumb: 'SaiPremadhara' },
             loadComponent: () =>
               import('./features/wings/mahila/SaiPremadhara.component').then(
-                (c) => c.SaiPremadharaComponent
+                (c) => c.SaiPremadharaComponent,
               ),
           },
           {
@@ -540,22 +540,22 @@ export const routes: Routes = [
             data: { breadcrumb: 'MahilaConvention' },
             loadComponent: () =>
               import('./features/wings/mahila/MahilaConvention.component').then(
-                (c) => c.MahilaConventionComponent
+                (c) => c.MahilaConventionComponent,
               ),
           },
           {
             path: 'MahilaBhajanSatsangStudyCircle',
             data: { breadcrumb: 'MahilaBhajanSatsangStudyCircle' },
             loadComponent: () =>
-              import(
-                './features/wings/mahila/MahilaBhajanSatsangStudyCircle.component'
-              ).then((c) => c.MahilaBhajanSatsangStudyCircleComponent),
+              import('./features/wings/mahila/MahilaBhajanSatsangStudyCircle.component').then(
+                (c) => c.MahilaBhajanSatsangStudyCircleComponent,
+              ),
           },
           {
             path: '',
             loadComponent: () =>
               import('./features/wings/ladies.component').then(
-                (c) => c.LadiesComponent
+                (c) => c.LadiesComponent,
               ),
           },
         ],
@@ -568,40 +568,40 @@ export const routes: Routes = [
             path: 'NationalInitiatives',
             data: { breadcrumb: 'NationalInitiatives' },
             loadComponent: () =>
-              import(
-                './features/wings/youth/NationalInitiatives.component'
-              ).then((c) => c.NationalInitiativesComponent),
+              import('./features/wings/youth/NationalInitiatives.component').then(
+                (c) => c.NationalInitiativesComponent,
+              ),
           },
           {
             path: 'PracticingCod',
             data: { breadcrumb: 'PracticingCod' },
             loadComponent: () =>
               import('./features/wings/youth/PracticingCod.component').then(
-                (c) => c.PracticingCodComponent
+                (c) => c.PracticingCodComponent,
               ),
           },
           {
             path: 'MaintainingOfSpiritualDairy',
             data: { breadcrumb: 'MaintainingOfSpiritualDairy' },
             loadComponent: () =>
-              import(
-                './features/wings/youth/MaintainingOfSpiritualDairy.component'
-              ).then((c) => c.MaintainingOfSpiritualDairyComponent),
+              import('./features/wings/youth/MaintainingOfSpiritualDairy.component').then(
+                (c) => c.MaintainingOfSpiritualDairyComponent,
+              ),
           },
           {
             path: 'YouthMeetYouthDayCelebration',
             data: { breadcrumb: 'YouthMeetYouthDayCelebration' },
             loadComponent: () =>
-              import(
-                './features/wings/youth/YouthMeetYouthDayCelebration.component'
-              ).then((c) => c.YouthMeetYouthDayCelebrationComponent),
+              import('./features/wings/youth/YouthMeetYouthDayCelebration.component').then(
+                (c) => c.YouthMeetYouthDayCelebrationComponent,
+              ),
           },
           {
             path: 'YouthStudyCircle',
             data: { breadcrumb: 'YouthStudyCircle' },
             loadComponent: () =>
               import('./features/wings/youth/YouthStudyCircle.component').then(
-                (c) => c.YouthStudyCircleComponent
+                (c) => c.YouthStudyCircleComponent,
               ),
           },
           {
@@ -609,30 +609,30 @@ export const routes: Routes = [
             data: { breadcrumb: 'SaiSradha' },
             loadComponent: () =>
               import('./features/wings/youth/SaiSradha.component').then(
-                (c) => c.SaiSradhaComponent
+                (c) => c.SaiSradhaComponent,
               ),
           },
           {
             path: 'SriSathyaSaiJagruti',
             data: { breadcrumb: 'SriSathyaSaiJagruti' },
             loadComponent: () =>
-              import(
-                './features/wings/youth/SriSathyaSaiJagruti.component'
-              ).then((c) => c.SriSathyaSaiJagrutiComponent),
+              import('./features/wings/youth/SriSathyaSaiJagruti.component').then(
+                (c) => c.SriSathyaSaiJagrutiComponent,
+              ),
           },
           {
             path: 'SummerCourse',
             data: { breadcrumb: 'SummerCourse' },
             loadComponent: () =>
               import('./features/wings/youth/SummerCourse.component').then(
-                (c) => c.SummerCourseComponent
+                (c) => c.SummerCourseComponent,
               ),
           },
           {
             path: '',
             loadComponent: () =>
               import('./features/wings/youth.component').then(
-                (c) => c.YouthComponent
+                (c) => c.YouthComponent,
               ),
           },
         ],
@@ -641,7 +641,7 @@ export const routes: Routes = [
         path: ':page',
         loadComponent: () =>
           import('./features/wings/wings.component').then(
-            (c) => c.WingsComponent
+            (c) => c.WingsComponent,
           ),
       },
     ],
@@ -655,7 +655,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Holistic Health Care' },
         loadComponent: () =>
           import('./features/wings/holisticHealthCare.component').then(
-            (c) => c.HolisticHealthCareComponent
+            (c) => c.HolisticHealthCareComponent,
           ),
       },
       {
@@ -663,7 +663,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Sri Sathya Sai Grama Seva' },
         loadComponent: () =>
           import('./features/sssGramaSeva.component').then(
-            (c) => c.SssGramaSevaComponent
+            (c) => c.SssGramaSevaComponent,
           ),
       },
       {
@@ -671,7 +671,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Sri Sathya Sai Divya Paduka Yatra' },
         loadComponent: () =>
           import('./features/sssDivyaPadukaYatra.component').then(
-            (c) => c.SSSDivyaPadukaYatraComponent
+            (c) => c.SSSDivyaPadukaYatraComponent,
           ),
       },
     ],
@@ -685,7 +685,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Central Trust' },
         loadComponent: () =>
           import('./features/organization/centralTrust.component').then(
-            (c) => c.CentralTrustComponent
+            (c) => c.CentralTrustComponent,
           ),
       },
       {
@@ -693,7 +693,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'SSSBPT' },
         loadComponent: () =>
           import('./features/wings/bookTrust.component').then(
-            (c) => c.BookTrustComponent
+            (c) => c.BookTrustComponent,
           ),
       },
       {
@@ -701,7 +701,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Tele Medicine Center' },
         loadComponent: () =>
           import('./features/wings/teleMedicineCenter.component').then(
-            (c) => c.TeleMedicineCenterComponent
+            (c) => c.TeleMedicineCenterComponent,
           ),
       },
       {
@@ -709,7 +709,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Sri Sathya Sai Prematharu' },
         loadComponent: () =>
           import('./features/sssPrematharu.component').then(
-            (c) => c.SssPrematharuComponent
+            (c) => c.SssPrematharuComponent,
           ),
       },
       {
@@ -717,7 +717,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Sri Sathya Sai Nirmala Jhar' },
         loadComponent: () =>
           import('./features/sssNirmalaJhar.component').then(
-            (c) => c.SSSNirmalaJharComponent
+            (c) => c.SSSNirmalaJharComponent,
           ),
       },
       {
@@ -725,7 +725,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Sri Sathya Sai Mobile Hospital' },
         loadComponent: () =>
           import('./features/sssMobileHospital.component').then(
-            (c) => c.SSSMobileHospitalComponent
+            (c) => c.SSSMobileHospitalComponent,
           ),
       },
       {
@@ -733,23 +733,23 @@ export const routes: Routes = [
         data: { breadcrumb: 'sssSkillDevelopmentProgram' },
         loadComponent: () =>
           import('./features/sssSkillDevelopmentProgram.component').then(
-            (c) => c.SSSSkillDevelopmentProgramComponent
+            (c) => c.SSSSkillDevelopmentProgramComponent,
           ),
       },
       {
         path: 'TelemedicineCentreThalassemiaclinics',
         data: { breadcrumb: 'TelemedicineCentreThalassemiaclinics' },
         loadComponent: () =>
-          import(
-            './features/TelemedicineCentreThalassemiaclinics.component'
-          ).then((c) => c.TelemedicineCentreThalassemiaclinicsComponent),
+          import('./features/TelemedicineCentreThalassemiaclinics.component').then(
+            (c) => c.TelemedicineCentreThalassemiaclinicsComponent,
+          ),
       },
       {
         path: 'CardioPulmonaryResuscitation',
         data: { breadcrumb: 'CardioPulmonaryResuscitation' },
         loadComponent: () =>
           import('./features/CardioPulmonaryResuscitation.component').then(
-            (c) => c.CardioPulmonaryResuscitationComponent
+            (c) => c.CardioPulmonaryResuscitationComponent,
           ),
       },
       {
@@ -757,7 +757,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'SaiRehabilitationProgramClinics' },
         loadComponent: () =>
           import('./features/SaiRehabilitationProgramClinics.component').then(
-            (c) => c.SaiRehabilitationProgramClinicsComponent
+            (c) => c.SaiRehabilitationProgramClinicsComponent,
           ),
       },
       {
@@ -765,7 +765,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'SSSNityaNarayanaSeva' },
         loadComponent: () =>
           import('./features/SSSNityaNarayanaSeva.component').then(
-            (c) => c.SSSNityaNarayanaSevaComponent
+            (c) => c.SSSNityaNarayanaSevaComponent,
           ),
       },
     ],
@@ -779,22 +779,23 @@ export const routes: Routes = [
         data: { breadcrumb: 'Seva Organisations' },
         loadComponent: () =>
           import('./features/organization/sevaOrgOdisha.component').then(
-            (c) => c.SevaOrgOdishaComponent
+            (c) => c.SevaOrgOdishaComponent,
           ),
       },
       {
         path: 'messageFromStatePresident',
         data: { breadcrumb: 'messageFromStatePresident' },
         loadComponent: () =>
-          import('./features/statePresidentMessage')
-            .then((c) => c.StatePresidentMessageComponent),
+          import('./features/statePresidentMessage').then(
+            (c) => c.StatePresidentMessageComponent,
+          ),
       },
       {
         path: 'stateCoordinators',
         data: { breadcrumb: 'State Coordinators' },
         loadComponent: () =>
           import('./features/organization/stateCoordinators.component').then(
-            (c) => c.StateCoordinatorsComponent
+            (c) => c.StateCoordinatorsComponent,
           ),
       },
       {
@@ -802,7 +803,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'State In-Charges' },
         loadComponent: () =>
           import('./features/organization/sic.component').then(
-            (c) => c.SICComponent
+            (c) => c.SICComponent,
           ),
       },
       {
@@ -810,7 +811,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'District Presidents' },
         loadComponent: () =>
           import('./features/organization/districtPresidents.component').then(
-            (c) => c.DistrictPresidentsComponent
+            (c) => c.DistrictPresidentsComponent,
           ),
       },
       {
@@ -818,7 +819,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'District Coordinator' },
         loadComponent: () =>
           import('./features/organization/districtCoordinator.component').then(
-            (c) => c.DistrictCoordinatorComponent
+            (c) => c.DistrictCoordinatorComponent,
           ),
       },
       {
@@ -826,7 +827,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Samithi Convenors' },
         loadComponent: () =>
           import('./features/organization/samithiConvenors.component').then(
-            (c) => c.SamithiConvenorsComponent
+            (c) => c.SamithiConvenorsComponent,
           ),
       },
       {
@@ -834,7 +835,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Samithis' },
         loadComponent: () =>
           import('./features/organization/samithis.component').then(
-            (c) => c.SamithisComponent
+            (c) => c.SamithisComponent,
           ),
       },
       {
@@ -842,28 +843,28 @@ export const routes: Routes = [
         data: { breadcrumb: 'Bhajan Mandalis' },
         loadComponent: () =>
           import('./features/organization/BhajanMandalis.component').then(
-            (c) => c.BhajanMandalisComponent
+            (c) => c.BhajanMandalisComponent,
           ),
       },
       {
         path: ':page',
         loadComponent: () =>
           import('./features/organization/organization.component').then(
-            (c) => c.OrganizationComponent
+            (c) => c.OrganizationComponent,
           ),
       },
     ],
   },
   {
     path: 'institutions',
-    data: { breadcrumb: 'Institutions', link: 0},
+    data: { breadcrumb: 'Institutions', link: 0 },
     children: [
       {
         path: 'sssSchool',
         data: { breadcrumb: 'Sri Sathya Sai School' },
         loadComponent: () =>
           import('./features/SriSathyaSaiSchool').then(
-            (c) => c.SriSathyaSaiSchoolComponent
+            (c) => c.SriSathyaSaiSchoolComponent,
           ),
       },
       {
@@ -871,9 +872,10 @@ export const routes: Routes = [
         data: { breadcrumb: 'Sri Sathya Sai College' },
         loadComponent: () =>
           import('./features/sri_sathya_sai/life.component').then(
-            (c) => c.LifeComponent
+            (c) => c.LifeComponent,
           ),
-      }],
+      },
+    ],
   },
 
   {
@@ -885,7 +887,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Videos' },
         loadComponent: () =>
           import('./features/resources/Videos.component').then(
-            (c) => c.VideosComponent
+            (c) => c.VideosComponent,
           ),
       },
       {
@@ -893,7 +895,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Audio' },
         loadComponent: () =>
           import('./features/resources/Audio.component').then(
-            (c) => c.AudioComponent
+            (c) => c.AudioComponent,
           ),
       },
       {
@@ -901,7 +903,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'DigitalLibrary' },
         loadComponent: () =>
           import('./features/resources/DigitalLibrary.component').then(
-            (c) => c.DigitalLibraryComponent
+            (c) => c.DigitalLibraryComponent,
           ),
       },
       {
@@ -909,7 +911,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Wallpapers' },
         loadComponent: () =>
           import('./features/resources/Wallpapers.component').then(
-            (c) => c.WallpapersComponent
+            (c) => c.WallpapersComponent,
           ),
       },
       {
@@ -917,7 +919,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'Presentations' },
         loadComponent: () =>
           import('./features/resources/Presentations.component').then(
-            (c) => c.PresentationsComponent
+            (c) => c.PresentationsComponent,
           ),
       },
       {
@@ -925,7 +927,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'TeachingAid' },
         loadComponent: () =>
           import('./features/resources/TeachingAid.component').then(
-            (c) => c.TeachingAidComponent
+            (c) => c.TeachingAidComponent,
           ),
       },
       {
@@ -933,7 +935,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'BannerDesign' },
         loadComponent: () =>
           import('./features/resources/BannerDesign.component').then(
-            (c) => c.BannerDesignComponent
+            (c) => c.BannerDesignComponent,
           ),
       },
       {
@@ -941,7 +943,7 @@ export const routes: Routes = [
         data: { breadcrumb: 'SathyaSaiSpeak' },
         loadComponent: () =>
           import('./features/resources/SathyaSaiSpeak.component').then(
-            (c) => c.SathyaSaiSpeakComponent
+            (c) => c.SathyaSaiSpeakComponent,
           ),
       },
       {
@@ -949,14 +951,14 @@ export const routes: Routes = [
         data: { breadcrumb: 'SummerCourse' },
         loadComponent: () =>
           import('./features/resources/resources.component').then(
-            (c) => c.ResourcesComponent
+            (c) => c.ResourcesComponent,
           ),
       },
       {
         path: '',
         loadComponent: () =>
           import('./features/resources/resources.component').then(
-            (c) => c.ResourcesComponent
+            (c) => c.ResourcesComponent,
           ),
       },
     ],
@@ -966,7 +968,7 @@ export const routes: Routes = [
     data: { breadcrumb: 'Events' },
     loadComponent: () =>
       import('./features/events/events.component').then(
-        (c) => c.EventsComponent
+        (c) => c.EventsComponent,
       ),
   },
   {
@@ -974,7 +976,7 @@ export const routes: Routes = [
     data: { breadcrumb: 'Report' },
     loadComponent: () =>
       import('./features/report/report.component').then(
-        (c) => c.ReportComponent
+        (c) => c.ReportComponent,
       ),
   },
   {
@@ -982,7 +984,7 @@ export const routes: Routes = [
     data: { breadcrumb: 'ContactUs' },
     loadComponent: () =>
       import('./features/ContactUs.component').then(
-        (c) => c.ContactUsComponent
+        (c) => c.ContactUsComponent,
       ),
   },
   {
@@ -990,7 +992,7 @@ export const routes: Routes = [
     data: { breadcrumb: 'PrivacyPolicy' },
     loadComponent: () =>
       import('./features/PrivacyPolicy.component').then(
-        (c) => c.PrivacyPolicyComponent
+        (c) => c.PrivacyPolicyComponent,
       ),
   },
   {
@@ -998,7 +1000,7 @@ export const routes: Routes = [
     data: { breadcrumb: 'Trademarks' },
     loadComponent: () =>
       import('./features/Trademarks.component').then(
-        (c) => c.TrademarksComponent
+        (c) => c.TrademarksComponent,
       ),
   },
   {
@@ -1006,21 +1008,21 @@ export const routes: Routes = [
     data: { breadcrumb: 'Disclaimer' },
     loadComponent: () =>
       import('./features/Disclaimer.component').then(
-        (c) => c.DisclaimerComponent
+        (c) => c.DisclaimerComponent,
       ),
   },
   {
     path: 'login',
     loadComponent: () =>
       import('./features/admin/login/login.component').then(
-        (c) => c.LoginComponent
+        (c) => c.LoginComponent,
       ),
   },
   {
     path: 'unauthorized',
     loadComponent: () =>
       import('./features/admin/unauthorized/unauthorized.component').then(
-        (c) => c.UnauthorizedComponent
+        (c) => c.UnauthorizedComponent,
       ),
   },
   {
@@ -1035,15 +1037,60 @@ export const routes: Routes = [
     data: { breadcrumb: 'Data Entry' },
     component: DataentryLayoutComponent,
     children: [
-      { path: 'saisandesh', component: SaisandeshuploadComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
-      { path: 'bhajanmandali', component: BmentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
-      { path: 'samithi', component: SamithientryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] }  },
-      { path: 'district', component: DistrictentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1'] } },
-      { path: 'guru', component: GuruentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
-      { path: 'stateofficebearers', component: StateofficebearersentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1'] }},
-      { path: 'designation', component: DesignationentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1']  }},
-      { path: 'districtofficebearers', component: DistrictofficebearersentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1']  }},
-      { path: 'samithiofficebearers', component: SamithiofficebearersentryComponent, canActivate:[RoleGuard], data: { jurisdictions: ['1', '2'] } },
+      {
+        path: 'saisandesh',
+        component: SaisandeshuploadComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1', '2'] },
+      },
+      {
+        path: 'bhajanmandali',
+        component: BmentryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1', '2'] },
+      },
+      {
+        path: 'samithi',
+        component: SamithientryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1', '2'] },
+      },
+      {
+        path: 'district',
+        component: DistrictentryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1'] },
+      },
+      {
+        path: 'guru',
+        component: GuruentryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1', '2'] },
+      },
+      {
+        path: 'stateofficebearers',
+        component: StateofficebearersentryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1'] },
+      },
+      {
+        path: 'designation',
+        component: DesignationentryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1'] },
+      },
+      {
+        path: 'districtofficebearers',
+        component: DistrictofficebearersentryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1'] },
+      },
+      {
+        path: 'samithiofficebearers',
+        component: SamithiofficebearersentryComponent,
+        canActivate: [RoleGuard],
+        data: { jurisdictions: ['1', '2'] },
+      },
       { path: '', redirectTo: 'bhajanmandali', pathMatch: 'full' },
     ],
   },
@@ -1060,9 +1107,13 @@ export const routes: Routes = [
     path: 'eventmanagement',
     data: { breadcrumb: 'Event Management' },
     component: EventLayoutComponent,
-    children: [
-      { path: 'manageevent', component: EventComponent },
-    ],
+    children: [{ path: 'manageevent', component: EventComponent }],
+  },
+  {
+    path: 'demo',
+    data: { breadcrumb: 'Home' },
+    loadComponent: () =>
+      import('./features/home/homev2.component').then((c) => c.HomeComponent),
   },
   {
     path: '**',
