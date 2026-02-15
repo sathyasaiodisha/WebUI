@@ -4,7 +4,7 @@
             <mat-card>
                 <mat-card-content>
                     <mat-label class="radio-label">Level at which the event is organized</mat-label>
-                    <mat-radio-group [(ngModel)]="newEvent.OrgLevelID" name="Organization Level" (change)="onOrgLevelChange($event.value)">
+                    <mat-radio-group [(ngModel)]="newEventPlan.OrgLevelID" name="Organization Level" (change)="onOrgLevelChange($event.value)">
                         <mat-radio-button value=1>State</mat-radio-button>
                         <mat-radio-button value=2>Distict</mat-radio-button>
                         <mat-radio-button value=3>Samithi</mat-radio-button>
@@ -14,7 +14,7 @@
         </div>
         <mat-form-field appearance="outline" class="formfield">
             <mat-label>Select District</mat-label>
-            <mat-select [(value)]="newEvent.DistrictID" (selectionChange)="onDistrictChange($event.value)" [disabled]="isDistrictSelectionDisabled">
+            <mat-select [(value)]="newEventPlan.DistrictID" (selectionChange)="onDistrictChange($event.value)" [disabled]="isDistrictSelectionDisabled">
                 <mat-option *ngFor="let district of districts" [value]="district.ID">
                 {{ district.DistrictName }}
                 </mat-option>
@@ -23,7 +23,7 @@
         
         <mat-form-field appearance="outline" class="formfield">
             <mat-label>Select Samithi</mat-label>
-            <mat-select [(value)]="newEvent.SamithiID" (selectionChange)="onSamithiChange($event.value)" [disabled]="isSamithiSelectionDisabled">
+            <mat-select [(value)]="newEventPlan.SamithiID" (selectionChange)="onSamithiChange($event.value)" [disabled]="isSamithiSelectionDisabled">
                 <mat-option *ngFor="let samithi of filteredSamithis" [value]="samithi.ID">
                 {{ samithi.SamithiName }}
                 </mat-option>
@@ -48,7 +48,7 @@
         
         <mat-form-field appearance="outline" class="formfield">
             <mat-label>Select Event Type</mat-label>
-            <mat-select [(value)]="newEvent.ActivityID" (selectionChange)="onEventTypeChange($event.value)" [disabled]="isActivitySelectionDisabled">
+            <mat-select [(value)]="newEventPlan.ActivityID" (selectionChange)="onEventTypeChange($event.value)" [disabled]="isActivitySelectionDisabled">
                 <mat-option *ngFor="let activity of fiteredActivities" [value]="activity.ID">
                 {{ activity.Activity }}
                 </mat-option>
@@ -56,15 +56,15 @@
         </mat-form-field>
         <mat-form-field appearance="outline" class="formfield">
             <mat-label>Event Title</mat-label>
-            <input matInput [(ngModel)]="newEvent.EventTitle" name="EventTitle" required maxlength="100" [disabled]="isDisabled"/>
+            <input matInput [(ngModel)]="newEventPlan.EventTitle" name="EventTitle" required maxlength="100" [disabled]="isDisabled"/>
         </mat-form-field>
                 <mat-form-field appearance="outline" class="formfield">
             <mat-label>Event Venue</mat-label>
-            <input matInput [(ngModel)]="newEvent.EventVenue" name="EventVenue" required maxlength="100" [disabled]="isDisabled"/>
+            <input matInput [(ngModel)]="newEventPlan.EventVenue" name="EventVenue" required maxlength="100" [disabled]="isDisabled"/>
         </mat-form-field>
-                <mat-form-field appearance="outline" class="formfield">
+        <mat-form-field appearance="outline" class="formfield">
             <mat-label>Event Date</mat-label>
-            <input matInput [matDatepicker]="picker" [(ngModel)]="newEvent.EventDate" name="EventDate" [disabled]="isDisabled">
+            <input matInput [matDatepicker]="picker" [(ngModel)]="newEventPlan.EventDate" name="EventDate" [disabled]="isDisabled">
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
@@ -102,14 +102,17 @@
                 <p *ngIf="selectedAgendaFile2">Selected: {{ selectedAgendaFile2.name }}</p>
         </div>
         <br>
-        <mat-form-field appearance="outline" class="formfield" class="col-md-12 col-xs-18 col-sm-12">
+        <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!itemForm.valid" (click)="addPlan()" class="event-plan-add">
+        Add Plan
+        </button>
+        <!-- <mat-form-field appearance="outline" class="formfield" class="col-md-12 col-xs-18 col-sm-12">
             <mat-label>Event Description</mat-label>
-            <textarea matInput [(ngModel)]="newEvent.EventDescription" rows="5" name="EventDescription" required maxlength="1000" [disabled]="isDisabled">
+            <textarea matInput [(ngModel)]="newEventPlan.EventDescription" rows="5" name="EventDescription" required maxlength="1000" [disabled]="isDisabled">
             </textarea>
         </mat-form-field>
         <h3 class="activities-section">Activities</h3>
         <div *ngFor="let activity of digitalArchivesToAdd; let i = index" class="activity-row">
-            <!-- Activity Name -->
+            
             <mat-form-field appearance="outline" class="activity-name">
                 <mat-label>Activity Name</mat-label>
                 <input [disabled]="isDisabled"
@@ -119,14 +122,12 @@
                     required>
             </mat-form-field>
             
-            <!-- Image Upload -->
             <input [disabled]="isDisabled"
             type="file"
             accept="image/*"
             (change)="onFileSelected($event, i)"
             class="file-input">
             
-            <!-- Add Button (only on last row) -->
             <button [disabled]="isDisabled"
                 mat-icon-button
                 color="primary"
@@ -137,7 +138,6 @@
                 <mat-icon>add_circle</mat-icon>
             </button>
 
-            <!-- Delete Button -->
             <button
                 mat-icon-button
                 color="warn"
@@ -151,7 +151,7 @@
         </div>
         <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!itemForm.valid">
         Add Event
-        </button>
+        </button> -->
         <br>
         <span *ngIf="showSuccessMsg" class="success-message">{{successMsg}}</span>
         <span *ngIf="showErrMsg" class="error-message">{{errMsg}}</span>
