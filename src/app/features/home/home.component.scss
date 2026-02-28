@@ -221,3 +221,82 @@ swiper-container {
 .signature-button:active {
   transform: scale(0.98);
 }
+
+
+
+/** * State map styles
+ */
+
+.dashboard-container {
+  padding: 25px 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* EXACTLY 2 PER ROW */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* Compact Card */
+.stat-card {
+  padding: .1rem .3rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4rem;
+  transition: 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Text */
+.stat-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Category Accent Line */
+.card-general {
+  border-left: 4px solid #1877f2;
+}
+
+.card-education {
+  border-left: 4px solid #f4b400;
+}
+
+.card-medical {
+  border-left: 4px solid #db4437;
+}
+
+.card-service {
+  border-left: 4px solid #0f9d58;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
