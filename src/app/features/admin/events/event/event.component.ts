@@ -74,16 +74,25 @@ export class EventComponent implements OnInit {
   selectedAgendaFile1: File | null = null;
   selectedAgendaFile2: File | null = null;
 
-  newEvent: EventItem = {
+  selectedBannerFileUrl: string = "";
+  selectedAgendaFile1Url: string = "";
+  selectedAgendaFile2Url: string = "";
+
+  uploadBannerProgress = 0;
+  uploadAgenda1Progress = 0;
+  uploadAgenda2Progress = 0;
+
+  newEventPlan: EventItem = {
             ActivityID: -1,
             OrgLevelID: -1,
             DistrictID: -1,
             SamithiID: -1,
             EventTitle: '',
             EventVenue: '',
-            EventDescription: '',
-            EventAgendaImageUrl: '',
-            EventDate: ''
+            EventBannerImageUrl: '',
+            EventDate: '',
+            EventAgendaImage1Url: '',
+            EventAgendaImage2Url: ''
         };
 
   constructor(private wingService: WingService, private programmeService: ProgrammeService, private districtService: DistrictService, private eventService: EventService,private samithiService: SamithiService, private activitiesService: ActivitiesService, private dialog: MatDialog) {
@@ -127,20 +136,20 @@ export class EventComponent implements OnInit {
     else
       this.isActivitySelectionDisabled = true;
 
-    if (this.newEvent.SamithiID != -1)
+    if (this.newEventPlan.SamithiID != -1)
     {
-      this.newEvent.OrgLevelID = 3;
+      this.newEventPlan.OrgLevelID = 3;
     }
-    else if (this.newEvent.DistrictID != -1)
+    else if (this.newEventPlan.DistrictID != -1)
     {
-      this.newEvent.OrgLevelID = 2;
+      this.newEventPlan.OrgLevelID = 2;
     }
     else
     {
-      this.newEvent.OrgLevelID = 1;
+      this.newEventPlan.OrgLevelID = 1;
     }
 
-    this.activitiesService.getActivitiesByProgrammeIdAndOrgLvl(programmeId, this.newEvent.OrgLevelID).subscribe(data => {
+    this.activitiesService.getActivitiesByProgrammeIdAndOrgLvl(programmeId, this.newEventPlan.OrgLevelID).subscribe(data => {
       this.fiteredActivities = data;
     });
   }
@@ -166,9 +175,9 @@ export class EventComponent implements OnInit {
         this.selectedOrgLvlName = "Samithi";
         this.isWingSelectionDisabled = true;
 
-        if (this.newEvent.DistrictID != null && this.newEvent.DistrictID > 0)
+        if (this.newEventPlan.DistrictID != null && this.newEventPlan.DistrictID > 0)
         {
-          this.samithiService.getItemsbydistrict(this.newEvent.DistrictID).subscribe(data => {
+          this.samithiService.getItemsbydistrict(this.newEventPlan.DistrictID).subscribe(data => {
             this.filteredSamithis = data;
           });      
         }
@@ -177,7 +186,7 @@ export class EventComponent implements OnInit {
   }
 
   onDistrictChange(districtId: number){
-    this.newEvent.DistrictID = districtId;
+    this.newEventPlan.DistrictID = districtId;
 
     if (this.selectedOrgLvlID == 3)
     {
@@ -240,6 +249,172 @@ export class EventComponent implements OnInit {
       console.log('Selected file:', this.selectedAgendaFile2);
       }
     }
+
+  addPlan(): void {
+    if (this.selectedBannerFile || this.selectedAgendaFile1 || this.selectedAgendaFile2 )
+    {
+      if (this.selectedBannerFile)
+      {
+        this.eventService.uploadEventBannerPhoto(this.selectedBannerFile).subscribe(event => {
+              if (event.type === HttpEventType.UploadProgress)
+              {
+                this.uploadBannerProgress = Math.round(100 * event.loaded/(event.total || 1));
+              }
+              else if (event.type === HttpEventType.Response) {
+                this.uploadBannerProgress = 100;
+                console.log('Event banner successfuly uploaded', event.body);
+                this.selectedBannerFileUrl = event.body.fileurl;
+
+                if (this.selectedAgendaFile1)
+                {
+                  this.eventService.uploadEventAgendaPhoto1(this.selectedAgendaFile1).subscribe(event => {
+                        if (event.type === HttpEventType.UploadProgress)
+                        {
+                          this.uploadAgenda1Progress = Math.round(100 * event.loaded/(event.total || 1));
+                        }
+                        else if (event.type === HttpEventType.Response) {
+                          this.uploadAgenda1Progress = 100;
+                          console.log('Event agenda1 successfuly uploaded', event.body);
+                          this.selectedAgendaFile1Url = event.body.fileurl;
+                          
+                          if (this.selectedAgendaFile2)
+                          {
+                            this.eventService.uploadEventAgendaPhoto2(this.selectedAgendaFile2).subscribe(event => {
+                                  if (event.type === HttpEventType.UploadProgress)
+                                  {
+                                    this.uploadAgenda2Progress = Math.round(100 * event.loaded/(event.total || 1));
+                                  }
+                                  else if (event.type === HttpEventType.Response) {
+                                    this.uploadAgenda2Progress = 100;
+                                    console.log('Event agenda2 successfuly uploaded', event.body);
+                                    this.selectedAgendaFile2Url = event.body.fileurl;
+
+                                    this.createPlan();
+                                  }
+                            });
+                          }
+                          else{
+                            this.createPlan();
+                          }
+                        }
+                  });
+                }
+                else
+                {
+                  this.createPlan();
+                }
+              }
+        });
+      }
+      else if (this.selectedAgendaFile1)
+      {
+        this.eventService.uploadEventAgendaPhoto1(this.selectedAgendaFile1).subscribe(event => {
+                        if (event.type === HttpEventType.UploadProgress)
+                        {
+                          this.uploadAgenda1Progress = Math.round(100 * event.loaded/(event.total || 1));
+                        }
+                        else if (event.type === HttpEventType.Response) {
+                          this.uploadAgenda1Progress = 100;
+                          console.log('Event agenda1 successfuly uploaded', event.body);
+                          this.selectedAgendaFile1Url = event.body.fileurl;
+                          
+                          if (this.selectedAgendaFile2)
+                          {
+                            this.eventService.uploadEventAgendaPhoto2(this.selectedAgendaFile2).subscribe(event => {
+                                  if (event.type === HttpEventType.UploadProgress)
+                                  {
+                                    this.uploadAgenda2Progress = Math.round(100 * event.loaded/(event.total || 1));
+                                  }
+                                  else if (event.type === HttpEventType.Response) {
+                                    this.uploadAgenda2Progress = 100;
+                                    console.log('Event agenda2 successfuly uploaded', event.body);
+                                    this.selectedAgendaFile2Url = event.body.fileurl;
+
+                                    this.createPlan();
+                                  }
+                            });
+                          }
+                          else{
+                            this.createPlan();
+                          }
+                        }
+                  });
+      }
+      else if (this.selectedAgendaFile2)
+      {
+        this.eventService.uploadEventAgendaPhoto2(this.selectedAgendaFile2).subscribe(event => {
+                          if (event.type === HttpEventType.UploadProgress)
+                          {
+                            this.uploadAgenda2Progress = Math.round(100 * event.loaded/(event.total || 1));
+                          }
+                          else if (event.type === HttpEventType.Response) {
+                            this.uploadAgenda2Progress = 100;
+                            console.log('Event agenda2 successfuly uploaded', event.body);
+                            this.selectedAgendaFile2Url = event.body.fileurl;
+
+                            this.createPlan();
+                          }
+                    });
+      }
+    }
+    else
+    {
+      this.createPlan();
+    }
+  }
+
+  createPlan(): void {
+    this.newEventPlan.EventBannerImageUrl = this.selectedBannerFileUrl;
+    this.newEventPlan.EventAgendaImage1Url = this.selectedAgendaFile1Url;
+    this.newEventPlan.EventAgendaImage2Url = this.selectedAgendaFile2Url;
+
+    this.eventService.createPlan(this.newEventPlan).subscribe(() => {
+                  this.successMsg = "Event plan created successfully";
+                  this.showSuccessMsg = true;
+                });
+  }
+
+  uploadBannerImage() {
+      if (!this.selectedBannerFile) return;
+            this.eventService.uploadEventBannerPhoto(this.selectedBannerFile).subscribe(event => {
+              if (event.type === HttpEventType.UploadProgress)
+              {
+                this.uploadBannerProgress = Math.round(100 * event.loaded/(event.total || 1));
+              }
+              else if (event.type === HttpEventType.Response) {
+                this.uploadBannerProgress = 100;
+                console.log('Event banner successfuly uploaded', event.body);
+              }
+        });
+      }
+
+  uploadAgendaImage1() {
+      if (!this.selectedAgendaFile1) return;
+            this.eventService.uploadEventAgendaPhoto1(this.selectedAgendaFile1).subscribe(event => {
+              if (event.type === HttpEventType.UploadProgress)
+              {
+                this.uploadAgenda1Progress = Math.round(100 * event.loaded/(event.total || 1));
+              }
+              else if (event.type === HttpEventType.Response) {
+                this.uploadAgenda1Progress = 100;
+                console.log('Event agenda1 successfuly uploaded', event.body);
+              }
+        });
+      }
+
+  uploadAgendaImage2() {
+      if (!this.selectedAgendaFile2) return;
+            this.eventService.uploadEventAgendaPhoto1(this.selectedAgendaFile2).subscribe(event => {
+              if (event.type === HttpEventType.UploadProgress)
+              {
+                this.uploadAgenda2Progress = Math.round(100 * event.loaded/(event.total || 1));
+              }
+              else if (event.type === HttpEventType.Response) {
+                this.uploadAgenda2Progress = 100;
+                console.log('Event agenda2 successfuly uploaded', event.body);
+              }
+        });
+      }
 
   addActivity(): void {
     this.digitalArchivesToAdd.push({ ActivityName: '', ActivityImage: null });
