@@ -265,6 +265,7 @@ export class GuruentryComponent implements OnInit, AfterViewInit  {
                 this.newbvGuru.Photo = event.body.fileurl;
                 
                 this.newbvGuru.TargetGroupsOfStudents = this.selectedGroupsConcatenated; 
+                this.newbvGuru.AlumnusOf = this.newbvGuru.AlumnusOf == 'None' ? null : this.newbvGuru.AlumnusOf;
                 this.bvguruService.createItem(this.newbvGuru).subscribe(() => {
                   this.successMsg = "Bal Vikas Guru added successfully";
                   this.showSuccessMsg = true;

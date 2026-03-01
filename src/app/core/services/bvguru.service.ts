@@ -22,7 +22,7 @@ export interface BVGuruItem {
   HighestEducationalDegreeID: number,
   GraduationMajorSubjectID: number,
   OccupationID: number,
-  AlumnusOf: string,
+  AlumnusOf: string | null,
   Photo: string,
   TargetGroupsOfStudents: string,
   isEditing?: boolean;
