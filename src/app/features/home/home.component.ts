@@ -36,6 +36,12 @@ declare var FB: any;
 //import OSM from 'ol/source/OSM';
 //import $ from 'jquery';
 //declare let $: any;
+export interface StatItem {
+  title: string;
+  value: number;
+  category: 'general' | 'education' | 'medical' | 'service';
+}
+
 @Component({
   selector: 'app-home',
   imports: [
@@ -76,8 +82,90 @@ export class HomeComponent implements OnInit, AfterViewInit {
     sri_sathya_sai_schools: 18,
     patients_treated_phc: 5668,
     patients_treated_medical_camps: 17981,
-    drinking_water_projects_ftc: 62
+    drinking_water_projects_ftc: 62,
   };
+
+  stats: StatItem[] = [
+    { title: 'Active Workers', value: 43954, category: 'general' },
+    { title: 'Districts', value: 35, category: 'general' },
+    { title: 'Bhajan Mandalis', value: 774, category: 'general' },
+    { title: 'Samithis', value: 242, category: 'general' },
+    { title: 'Bhajan Varnams', value: 3269, category: 'general' },
+
+    { title: 'Bala Vikas Students', value: 25166, category: 'education' },
+    { title: 'Bala Vikas Centres', value: 3269, category: 'education' },
+    { title: 'Sri Sathya Sai Schools', value: 18, category: 'education' },
+
+    { title: 'Prematharu', value: 438649, category: 'service' },
+    { title: 'Drinking Water Projects', value: 62, category: 'service' },
+
+    { title: 'Permanent Medical Clinics', value: 56, category: 'medical' },
+    { title: 'Medical Camps Conducted', value: 586, category: 'medical' },
+    {
+      title: 'Patients treated in Permanent Hospitals & Clinics',
+      value: 5668,
+      category: 'medical',
+    },
+    {
+      title: 'Patients treated in Medical Camps',
+      value: 17981,
+      category: 'medical',
+    },
+
+    {
+      title: 'Blood Donors Registered in Liquid Love',
+      value: 13622,
+      category: 'service',
+    },
+    {
+      title: 'Units of Blood offered under Liquid Love',
+      value: 6420,
+      category: 'service',
+    },
+  ];
+  getCategoryClass(category: string): string {
+    return `card-${category}`;
+  }
+  distarr = [
+    [0, ''],
+    [1, ''],
+    [2, 'Angul'],
+    [3, 'Boudh'],
+    [4, 'Balangir'],
+    [5, 'Bargarh'],
+    [6, 'Balasore'],
+    [7, 'Bhadrak'],
+    [8, 'Cuttack'],
+    [9, 'Deogarh'],
+    [10, 'Dhenkanal'],
+    [11, 'Ganjam'],
+    [12, 'Gajapati'],
+    [13, 'Ganjam'],
+    [14, 'Jajpur'],
+    [15, 'Jagatsinghpur'],
+    [16, 'Khordha'],
+    [17, 'Kendujhar'],
+    [18, 'Kalahandi'],
+    [19, 'Kandhamal'],
+    [20, 'Koraput'],
+    [21, 'Kendrapara'],
+    [22, 'Malkangiri'],
+    [23, 'Mayurbhanj'],
+    [24, 'Nabarangpur'],
+    [25, 'Nuapada'],
+    [26, 'Nayagarh'],
+    [27, 'Puri'],
+    [28, 'Rayagada'],
+    [29, 'Sambalpur'],
+    [30, 'Subarnapur'],
+    [31, 'Sundargarh'],
+  ]; // district id array.
+  onDistrictClick(id: number) {
+    console.log(this.distarr[id][1]);
+    //this.districtName = ': ' + this.distarr[id][1];
+    // your logic here
+  }
+  districtName = '';
   wings = [
     {
       name: 'Service',
@@ -111,7 +199,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   constructor(
     private dialog: MatDialog,
     private apiService: ApiService,
-    private sssooTweetsSvc: SSSOOtweetsService
+    private sssooTweetsSvc: SSSOOtweetsService,
   ) {}
   banner = [
     {
