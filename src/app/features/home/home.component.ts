@@ -126,44 +126,55 @@ export class HomeComponent implements OnInit, AfterViewInit {
   getCategoryClass(category: string): string {
     return `card-${category}`;
   }
-  distarr = [
+  distarr: any[] = [
+    // id, name, BhajanMandali count, Samithi count
     [0, ''],
     [1, ''],
-    [2, 'Angul'],
-    [3, 'Boudh'],
-    [4, 'Balangir'],
-    [5, 'Bargarh'],
-    [6, 'Balasore'],
-    [7, 'Bhadrak'],
-    [8, 'Cuttack'],
-    [9, 'Deogarh'],
-    [10, 'Dhenkanal'],
-    [11, 'Ganjam'],
-    [12, 'Gajapati'],
-    [13, 'Ganjam'],
-    [14, 'Jajpur'],
-    [15, 'Jagatsinghpur'],
-    [16, 'Khordha'],
-    [17, 'Kendujhar'],
-    [18, 'Kalahandi'],
-    [19, 'Kandhamal'],
-    [20, 'Koraput'],
-    [21, 'Kendrapara'],
-    [22, 'Malkangiri'],
-    [23, 'Mayurbhanj'],
-    [24, 'Nabarangpur'],
-    [25, 'Nuapada'],
-    [26, 'Nayagarh'],
-    [27, 'Puri'],
-    [28, 'Rayagada'],
-    [29, 'Sambalpur'],
-    [30, 'Subarnapur'],
-    [31, 'Sundargarh'],
+    [2, 'Angul', 10, 11],
+    [3, 'Boudh', 4, 14],
+    [4, 'Balangir', 7, 33],
+    [5, 'Bargarh', 7, 27],
+    [6, 'Balasore', 4, 44, 4, 22],
+    [7, 'Bhadrak', 8, 45, 7, 50],
+    [8, 'Cuttack', 10, 38],
+    [9, 'Deogarh', 5, 4],
+    [10, 'Dhenkanal', 8, 22],
+    [11, 'Ganjam', 10, 47, 5, 20],
+    [12, 'Gajapati', 3, 16],
+    [13, 'Jharsuguda', 5, 2],
+    [14, 'Jajpur', 14, 38],
+    [15, 'Jagatsinghpur', 8, 17],
+    [16, 'Khordha', 8, 6],
+    [17, 'Keonjhar', 9, 10, 9, 21],
+    [18, 'Kalahandi', 5, 39],
+    [19, 'Kandhamal', 4, 5],
+    [20, 'Koraput', 8, 14],
+    [21, 'Kendrapara', 12, 26],
+    [22, 'Malkangiri', 5, 5],
+    [23, 'Mayurbhanj', 10, 43],
+    [24, 'Nabarangpur', 5, 3],
+    [25, 'Nuapada', 5, 11],
+    [26, 'Nayagarh', 5, 9],
+    [27, 'Puri', 7, 15],
+    [28, 'Rayagada', 9, 31],
+    [29, 'Sambalpur', 5, 5],
+    [30, 'Subarnapur', 4, 14],
+    [31, 'Sundargarh', 5, 12],
   ]; // district id array.
   onDistrictClick(id: number) {
     console.log(this.distarr[id][1]);
     //this.districtName = ': ' + this.distarr[id][1];
     // your logic here
+  }
+  getDistrictData(id: number): string {
+    return this.distarr[id] && this.distarr[id][1]
+      ? `B:${this.distarr[id][2]}, S:${this.distarr[id][3]}`
+      : '';
+  }
+  getDistrictData2(id: number): string {
+    return this.distarr[id] && this.distarr[id][1]
+      ? `B:${this.distarr[id][4]}, S:${this.distarr[id][5]}`
+      : '';
   }
   districtName = '';
   wings = [
