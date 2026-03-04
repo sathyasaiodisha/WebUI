@@ -128,7 +128,7 @@ swiper-container {
   -webkit-border-radius: 12px !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .fb-wrapper {
     width: 100vw;
   }
@@ -138,9 +138,9 @@ swiper-container {
   max-width: 80%
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .fb-wrapper {
-    width: 23.8vw;
+    width: 47vw;
   }
 
   .sai-sandesh {
