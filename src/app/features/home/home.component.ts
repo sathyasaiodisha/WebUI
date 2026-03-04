@@ -165,14 +165,35 @@ export class HomeComponent implements OnInit, AfterViewInit {
     console.log(this.distarr[id][1]);
     //this.districtName = ': ' + this.distarr[id][1];
     // your logic here
+    if (
+      this.distarr[id] &&
+      this.distarr[id][1] &&
+      this.distarr[id][2] &&
+      this.distarr[id][3]
+    ) {
+      this.lastDInfo.bMc = this.distarr[id][2];
+      this.lastDInfo.sC = this.distarr[id][3];
+      this.lastDInfo.nM = this.distarr[id][1];
+      this.lastDInfo.bMc2 = this.distarr[id][4] ? this.distarr[id][4] : '';
+      this.lastDInfo.sC2 = this.distarr[id][5] ? this.distarr[id][5] : '';
+    }
   }
+  lastDInfo = { bMc: '', sC: '', nM: '', bMc2: '', sC2: '' };
   getDistrictData(id: number): string {
-    return this.distarr[id] && this.distarr[id][1]
+    return 0 &&
+      this.distarr[id] &&
+      this.distarr[id][1] &&
+      this.distarr[id][2] &&
+      this.distarr[id][3]
       ? `B:${this.distarr[id][2]}, S:${this.distarr[id][3]}`
       : '';
   }
   getDistrictData2(id: number): string {
-    return this.distarr[id] && this.distarr[id][1]
+    return 0 &&
+      this.distarr[id] &&
+      this.distarr[id][1] &&
+      this.distarr[id][4] &&
+      this.distarr[id][5]
       ? `B:${this.distarr[id][4]}, S:${this.distarr[id][5]}`
       : '';
   }

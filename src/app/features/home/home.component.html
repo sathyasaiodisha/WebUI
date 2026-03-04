@@ -1822,13 +1822,15 @@
           >
             <!-- Bhajan Mandali -->
             <div class="text-center">
-              B:
+              {{ lastDInfo.nM ?lastDInfo.nM+': ':'' }} {{ lastDInfo.bMc }}
+              {{ lastDInfo.bMc2 ? "(1), " + lastDInfo.bMc2 + "(2)" : "" }}
               <div class="fw-semibold text-dark small">BHAJAN MANDALI</div>
             </div>
 
             <!-- Samithi -->
             <div class="text-center">
-              S:
+              {{ lastDInfo.sC }}
+              {{ lastDInfo.sC2 ? "(1), " + lastDInfo.sC2 + "(2)" : "" }}
               <div class="fw-semibold text-dark small">SAMITHI</div>
             </div>
           </div>
@@ -1838,13 +1840,15 @@
           >
             <!-- Bhajan Mandali -->
             <div class="text-center">
-              B:
+              {{ lastDInfo.nM ?lastDInfo.nM+': ':'' }} {{ lastDInfo.bMc }}
+                {{ lastDInfo.bMc2 ? "(1), " + lastDInfo.bMc2 + "(2)" : "" }}
               <div class="fw-semibold text-dark small">BHAJAN MANDALI</div>
             </div>
 
             <!-- Samithi -->
             <div class="text-center">
-              S:
+              {{ lastDInfo.sC }}
+              {{ lastDInfo.sC2 ? "(1), " + lastDInfo.sC2 + "(2)" : "" }}
               <div class="fw-semibold text-dark small">SAMITHI</div>
             </div>
           </div>
