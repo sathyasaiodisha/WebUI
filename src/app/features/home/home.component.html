@@ -30,20 +30,20 @@
   <div class="col-12">
     <div class="msgrow_outer">
       <div class="row">
-        <div class="col-6 col-md-3 col-lg-3 col-xl-3 sai-sandesh_div">
-          <!--          <div class="fixed-menu__msg">-->
-          <!--            <div class="mseDiv">{{ "saiSandesh" | translate }}</div>-->
-          <!--            <div class="dateDiv">{{ dateText }}</div>-->
-          <!--          </div>-->
-          <div class="sai-sandesh_div">
+        <!-- <div class="col-6 col-md-3 col-lg-3 col-xl-3 sai-sandesh_div"> -->
+        <!--          <div class="fixed-menu__msg">-->
+        <!--            <div class="mseDiv">{{ "saiSandesh" | translate }}</div>-->
+        <!--            <div class="dateDiv">{{ dateText }}</div>-->
+        <!--          </div>-->
+        <!-- <div class="sai-sandesh_div">
             <img
               class="sai-sandesh"
               src="/images/saisandesh/sai-sandesh.jpg"
               (click)="openImage('/images/saisandesh/sai-sandesh.jpg')"
             />
           </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-6 col-xl-6 info_image__msg_div">
+        </div> -->
+        <div class="col-md-12 col-lg-6 col-xl-6 info_image__msg_div">
           <div class="info_ytub__vdo">
             <iframe
               width="100%"
@@ -83,7 +83,7 @@
             </a>
           </div-->
         </div>
-        <div class="col-md-3 col-lg-3 col-xl-3 g-0 fb-wrapper">
+        <div class="col-md-12 col-lg-3 col-xl-3 g-0 fb-wrapper">
           <div
             class="fb-page"
             data-href="https://www.facebook.com/sathyasaiodisha"
@@ -118,7 +118,7 @@
     <!--    <h5>{{ "organization_map_title" | translate }}</h5>-->
     <!-- <div id="ol-map" class="map-container"></div> -->
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-12 col-lg-8">
         <div class="svg_containner position-relative">
           <div class="svg_containner">
             <svg
@@ -1822,7 +1822,7 @@
           >
             <!-- Bhajan Mandali -->
             <div class="text-center">
-              {{ lastDInfo.nM ?lastDInfo.nM+': ':'' }} {{ lastDInfo.bMc }}
+              {{ lastDInfo.nM ? lastDInfo.nM + ": " : "" }} {{ lastDInfo.bMc }}
               {{ lastDInfo.bMc2 ? "(1), " + lastDInfo.bMc2 + "(2)" : "" }}
               <div class="fw-semibold text-dark small">BHAJAN MANDALI</div>
             </div>
@@ -1840,8 +1840,8 @@
           >
             <!-- Bhajan Mandali -->
             <div class="text-center">
-              {{ lastDInfo.nM ?lastDInfo.nM+': ':'' }} {{ lastDInfo.bMc }}
-                {{ lastDInfo.bMc2 ? "(1), " + lastDInfo.bMc2 + "(2)" : "" }}
+              {{ lastDInfo.nM ? lastDInfo.nM + ": " : "" }} {{ lastDInfo.bMc }}
+              {{ lastDInfo.bMc2 ? "(1), " + lastDInfo.bMc2 + "(2)" : "" }}
               <div class="fw-semibold text-dark small">BHAJAN MANDALI</div>
             </div>
 
@@ -1892,7 +1892,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 stats_section">
+      <div class="col-md-12 col-lg-4 stats_section">
         <!--        <h4>Statistics</h4>-->
         <!--        ....-->
         <div class="dashboard-container">
