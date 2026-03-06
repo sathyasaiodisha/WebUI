@@ -4,7 +4,7 @@ import {
   AfterViewInit,
   ElementRef,
   ViewChild,
-  CUSTOM_ELEMENTS_SCHEMA, NgZone, ChangeDetectionStrategy,
+  CUSTOM_ELEMENTS_SCHEMA,
 } from '@angular/core';
 import { ApiService } from '../../core/services/api.service';
 
@@ -57,7 +57,6 @@ export interface StatItem {
   templateUrl: './homev2.component.html',
   styleUrl: './homev2.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   @ViewChild('tweetSwiper') tweetSwiper!: ElementRef;
@@ -200,7 +199,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     private dialog: MatDialog,
     private apiService: ApiService,
     private sssooTweetsSvc: SSSOOtweetsService,
-    private ngZone: NgZone
   ) {}
   banner = [
     {
@@ -277,15 +275,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
         this.loading = false;
       },
     });
-
-    this.ngZone.runOutsideAngular(() => {
-      // Only parse once, after view is ready
-      setTimeout(() => {
-        if ((window as any).FB) {
-          (window as any).FB.XFBML.parse();
-        }
-      }, 500);
-    });
     /*
     this.map = new Map({
       view: new View({
@@ -311,9 +300,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit() {
     // If SDK is loaded, parse FB tags inside the component
-    /*if (typeof FB !== 'undefined' && FB !== null) {
+    if (typeof FB !== 'undefined' && FB !== null) {
       FB.XFBML.parse();
-    }*/
+    }
 
     const script = document.createElement('script');
     script.src = 'https://platform.twitter.com/widgets.js';
