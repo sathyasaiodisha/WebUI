@@ -171,11 +171,11 @@ export class HomeComponent implements OnInit, AfterViewInit {
       this.distarr[id][2] &&
       this.distarr[id][3]
     ) {
-      this.lastDInfo.bMc = this.distarr[id][2];
-      this.lastDInfo.sC = this.distarr[id][3];
+      this.lastDInfo.bMc = this.distarr[id][3];
+      this.lastDInfo.sC = this.distarr[id][2];
       this.lastDInfo.nM = this.distarr[id][1];
-      this.lastDInfo.bMc2 = this.distarr[id][4] ? this.distarr[id][4] : '';
-      this.lastDInfo.sC2 = this.distarr[id][5] ? this.distarr[id][5] : '';
+      this.lastDInfo.bMc2 = this.distarr[id][5] ? this.distarr[id][5] : '';
+      this.lastDInfo.sC2 = this.distarr[id][4] ? this.distarr[id][4] : '';
     }
   }
   lastDInfo = { bMc: '', sC: '', nM: '', bMc2: '', sC2: '' };
