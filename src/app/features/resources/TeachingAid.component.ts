@@ -31,7 +31,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
           </tbody>
         </table>
         <h1 class="h1 text-darkblue ff-source-serif-semi-bold border-heading">
-          {{ 'stotras' | translate }}
+          {{ 'Stotras' | translate }}
         </h1>
         <ng-container
           *ngTemplateOutlet="listTemplate; context: { list: data_stotras }"
