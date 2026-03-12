@@ -44,7 +44,9 @@ import { MatExpansionModule } from '@angular/material/expansion';
           @if (cat.links?.length > 0) {
             <mat-expansion-panel [expanded]="i === 0">
               <mat-expansion-panel-header>
-                <mat-panel-title> {{ cat.title }} </mat-panel-title>
+                <mat-panel-title>
+                  <b>{{ cat.title }}</b>
+                </mat-panel-title>
                 <mat-panel-description> </mat-panel-description>
               </mat-expansion-panel-header>
               <ng-container
