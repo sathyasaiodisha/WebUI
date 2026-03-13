@@ -57,32 +57,33 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
             </mat-expansion-panel>
           } @else {
             <p>
-              @if (
-                cat.link.endsWith('.mp3') ||
-                cat.link.endsWith('.aac') ||
-                cat.link.endsWith('.wav') ||
-                cat.link.endsWith('.ogg')
-              ) {
-                <a
-                  class="link cursor"
-                  mat-raised-button
-                  role="button"
-                  (click)="openAudio(cat.link)"
-                >
-                  {{ cat.title }}
-                </a>
-              } @else if (cat.link.endsWith('.mp4')) {
-                <a
-                  class="link cursor"
-                  mat-raised-button
-                  role="button"
-                  (click)="openVideo(cat.link)"
-                >
-                  {{ cat.title }}
-                </a>
-              } @else {
-                <a [href]="cat?.link" target="_blank"> {{ cat.title }} </a>
+              @if (0) {
+                @if (
+                  cat.link.endsWith('.mp3') ||
+                  cat.link.endsWith('.aac') ||
+                  cat.link.endsWith('.wav') ||
+                  cat.link.endsWith('.ogg')
+                ) {
+                  <a
+                    class="link cursor"
+                    mat-raised-button
+                    role="button"
+                    (click)="openAudio(cat.link)"
+                  >
+                    {{ cat.title }}
+                  </a>
+                } @else if (cat.link.endsWith('.mp4')) {
+                  <a
+                    class="link cursor"
+                    mat-raised-button
+                    role="button"
+                    (click)="openVideo(cat.link)"
+                  >
+                    {{ cat.title }}
+                  </a>
+                } @else {}
               }
+              <a [href]="cat?.link" target="_blank"> {{ cat.title }} </a>
             </p>
           }
         }
