@@ -253,8 +253,6 @@ export class TeachingAidComponent implements OnInit {
         {
           title: 'ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ',
           links: [
-            //   ''  ''  'ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.pdf'  'ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.pptx'
-
             {
               title: 'Audio (mp3)',
               link: 'files/stotras/GROUP-1_1ST_YEAR/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ/GuruBrahma.mp3',
@@ -358,7 +356,179 @@ export class TeachingAidComponent implements OnInit {
       title: 'GROUP-1 2ND YEAR',
       links: [
         {
-          title: 'Sri Sathya Sai Stotras-1st Year',
+          title: 'ଅସତୋ ମା',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ଅସତୋ ମା/AsatoMaa.mp3',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ଅସତୋ ମା/ଅସତୋ ମା ର ଭିଡିଓ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ଅସତୋ ମା/ଅସତୋ ମା ସଦଗମୟ.pdf',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ଅସତୋ ମା/ଅସତୋ ମା ସମୂହ ଗାନ.aac',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ଅସତୋ ମା/ଅସତୋମା ସଦଗମୟ.pptx',
+            },
+          ],
+        },
+        {
+          title: 'କୈଳାସ ରାଣା',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/କୈଳାସ ରାଣା/kailasarana.mp3',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/କୈଳାସ ରାଣା/କୈଳାସ ରାଣା ଶିବଚନ୍ଦ୍ର ମୌଳୀ.mp4',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/କୈଳାସ ରାଣା/କୈଳାସ ରାଣା ସମୂହ ଗାନ.aac',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/କୈଳାସ ରାଣା/କୈଳାସ ରାଣା.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/କୈଳାସ ରାଣା/କୈଳାସରାଣା.pptx',
+            },
+          ],
+        },
+        {
+          title: 'ନମସ୍ତେସ୍ତୁ ମହାମାୟେ',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ/namastestu_mahaamaaye Music.mp3',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ.pptx',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ_1.mp4',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ନମସ୍ତେସ୍ତୁ ମହାମାୟେ/ନମୋସ୍ତୁତେ ସମୂହ ଗାନ.aac',
+            },
+          ],
+        },
+        {
+          title: 'ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ/sarva_mangala Music.mp3',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ ର ସମୂହ ଗାନ.aac',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ/ସର୍ବ ମଙ୍ଗଳ ମାଙ୍ଗଲ୍ୟେ.pptx',
+            },
+          ],
+        },
+        {
+          title: 'ସର୍ବୈ ବୈ',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବୈ ବୈ/Save vei sukhino.mp3',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବୈ ବୈ/ସର୍ବ ବୈ ସୁଖିନଃ ସନ୍ତୁ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବୈ ବୈ/ସର୍ବ ବୈ ସୁଖିନଃ ସନ୍ତୁ.pptx',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବୈ ବୈ/ସର୍ବେ ବୈ ର ସମୂହ ଗାନ.aac',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସର୍ବୈ ବୈ/ସର୍ବେ ବୈ ସୁଖିନୋ ସନ୍ତୁ.mp4',
+            },
+          ],
+        },
+        {
+          title: 'ସହନା ବବତୁ',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସହନା ବବତୁ/SahanaVavatu.mp3',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସହନା ବବତୁ/ସହନ ବବତୁ ସମୂହ ଗାନ.aac',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସହନା ବବତୁ/ସହନା ବବତୁ ଅଭିନୟ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସହନା ବବତୁ/ସହନା ବବତୁ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ସହନା ବବତୁ/ସହନା ବବତୁ.pptx',
+            },
+          ],
+        },
+        {
+          title: 'ୟା କୁନ୍ଦେନ୍ଦୁ',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ୟା କୁନ୍ଦେନ୍ଦୁ/Yaa Kundendu.mp3',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ୟା କୁନ୍ଦେନ୍ଦୁ/ୟା କୁନ୍ଦେନ୍ଦୁ ତୁଷାର...pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ୟା କୁନ୍ଦେନ୍ଦୁ/ୟା କୁନ୍ଦେନ୍ଦୁ ତୁଷାର...pptx',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ୟା କୁନ୍ଦେନ୍ଦୁ/ୟା କୁନ୍ଦେନ୍ଦୁ ର ଭିଡିଓ.mp4',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_2ND_YEAR/ୟା କୁନ୍ଦେନ୍ଦୁ/ୟା କୁନ୍ଦେନ୍ଦୁ ର ସମୂହ ଗାନ.aac',
+            },
+          ],
         },
       ],
     },
