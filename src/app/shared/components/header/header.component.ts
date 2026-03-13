@@ -123,8 +123,8 @@ export class HeaderComponent implements AfterViewInit {
       link: '/sssBPTOdisha',
       subMenu: [
         {
-          name: this.translate.instant('books'),
-          link: '/sssBPTOBooks',
+          name: this.translate.instant('printedbooks'),
+          link: '/sssBPTOPrintedBooks',
         },
         {
           name: this.translate.instant('pdfbooks'),
