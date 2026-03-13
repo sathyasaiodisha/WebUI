@@ -536,7 +536,177 @@ export class TeachingAidComponent implements OnInit {
       title: 'GROUP-1 3RD YEAR',
       links: [
         {
-          title: 'Sri Sathya Sai Stotras-1st Year',
+          title: 'ଗାୟତ୍ରୀ ମନ୍ତ୍ର',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଗାୟତ୍ରୀ ମନ୍ତ୍ର/baba gayatri mantra.mp3',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଗାୟତ୍ରୀ ମନ୍ତ୍ର/ଗାୟତ୍ରୀ ମନ୍ତ୍ର ଅଭିନୟରେ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଗାୟତ୍ରୀ ମନ୍ତ୍ର/ଗାୟତ୍ରୀ ମନ୍ତ୍ର.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଗାୟତ୍ରୀ ମନ୍ତ୍ର/ଗାୟତ୍ରୀ ମନ୍ତ୍ର.pptx',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଗାୟତ୍ରୀ ମନ୍ତ୍ର/ଗାୟତ୍ରୀ ମନ୍ତ୍ରର ସମୂହ ଗାନ.aac',
+            },
+          ],
+        },
+        {
+          title: 'ନୀଳାଚଳ ନିବାସାୟ',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ନୀଳାଚଳ ନିବାସାୟ/Nilachala nibasaya.mp3',
+            },
+            {
+              title: 'Audio (m4a)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ନୀଳାଚଳ ନିବାସାୟ/ନୀଳାଚଳ ନିବାସାୟ ସମୂହ ଗାନ.m4a',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ନୀଳାଚଳ ନିବାସାୟ/ନୀଳାଚଳ ନିବାସାୟ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ନୀଳାଚଳ ନିବାସାୟ/ନୀଳାଚଳ ନିବାସାୟ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ନୀଳାଚଳ ନିବାସାୟ/ନୀଳାଚଳ ନିବାସାୟ.pptx',
+            },
+          ],
+        },
+        {
+          title: 'ପୂର୍ବରାମଂ ତପୋବନାଦି',
+          links: [
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/PurvamRamam.mp3',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବ ରାମଂ ତପୋବନାଦି ଗମନଂ ଅଡିଓ.aac',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବ ରାମଂ ତପୋବନାଦି.mp4',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବଂ ରାମ ତପୋବନାଦି......pdf',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବଂ ରାମ ତପୋବନାଦି......pptx',
+            },
+          ],
+        },
+        {
+          title: 'ବନ୍ଦେଦେବ ଉମାପତିଂ',
+          links: [
+            //''  ''  ''  ''  ''
+
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବନ୍ଦେଦେବ ଉମାପତିଂ/Vande deva.mp3',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବନ୍ଦେଦେବ ଉମାପତିଂ/ବନ୍ଦେ ଦେବମୁମାପତି.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବନ୍ଦେଦେବ ଉମାପତିଂ/ବନ୍ଦେ ଦେବମୁମାପତି.pptx',
+            },
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବନ୍ଦେଦେବ ଉମାପତିଂ/ବନ୍ଦେଦେବ ଉମାପତିଂ.mp3',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବନ୍ଦେଦେବ ଉମାପତିଂ/ବନ୍ଦେଦେବଂ ଉମାପତିଂ.mp4',
+            },
+          ],
+        },
+        {
+          title: 'ବେଦାନୁଦ୍ଧରତେ',
+          links: [
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/Vedanuddrate.mp3',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ ଜଗନ୍ନିବହତେ ସମୂହ ଗାନ.aac',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ....pdf',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ....pptx',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ...mp4',
+            },
+          ],
+        },
+        {
+          title: 'ମନୋଜବଂ ମାରୁତତୁଲ୍ୟଂ',
+          links: [
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ମନୋଜବଂ ମାରୁତତୁଲ୍ୟଂ/Manojavam.mp3',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ମନୋଜବଂ ମାରୁତତୁଲ୍ୟଂ/ମନୋଜବଂ ମାରୁତତୁଲ୍ୟ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ମନୋଜବଂ ମାରୁତତୁଲ୍ୟଂ/ମନୋଜବଂ ମାରୁତତୁଲ୍ୟ.pptx',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ମନୋଜବଂ ମାରୁତତୁଲ୍ୟଂ/ମନୋଜବଂ ମାରୁତ୍ୟ ତୁଲ୍ୟ ଭିଡିଓ.mp4',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ମନୋଜବଂ ମାରୁତତୁଲ୍ୟଂ/ମନୋଜବଂ ର ସମୂହ ଗାନ.aac',
+            },
+          ],
+        },
+        {
+          title: 'ଶାନ୍ତାକାରଂ',
+          links: [
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/Shantakaram.mp3',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/ଶାନ୍ତାକାରଂ ଭୁଜଗଶୟନଂ.aac',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/ଶାନ୍ତାକାରଂ.pdf',
+            },
+            {
+              title: '',
+              link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/ଶାନ୍ତାକାରଂ.pptx',
+            },
+          ],
         },
       ],
     },
