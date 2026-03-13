@@ -677,6 +677,15 @@ export const routes: Routes = [
     ],
   },
   {
+    path: 'sssBPTOdisha',
+    data: { breadcrumb: 'sssBPTOdisha' },
+    loadComponent: () =>
+      import('./features/wings/bookTrust.component').then(
+        (c) => c.BookTrustComponent,
+      ),
+  },
+
+  {
     path: 'sssTrustOdisha',
     data: { breadcrumb: 'sssTrustOdisha', link: 0 },
     children: [

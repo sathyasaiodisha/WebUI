@@ -121,29 +121,29 @@ export class HeaderComponent implements AfterViewInit {
     {
       name: this.translate.instant('ssbpt'),
       link: '/sssBPTOdisha',
-      subMenu: [
-        {
-          name: this.translate.instant('printedbooks'),
-          link: '/sssBPTOPrintedBooks',
-        },
-        {
-          name: this.translate.instant('pdfbooks'),
-          link: '/sssBPTOPDFBooks',
-        },
-        {
-          name: this.translate.instant('audiobooks'),
-          link: '/sssBPTOAudiobooks',
-        },
-        {
-          name: this.translate.instant('subscriptions'),
-          link: '/sssBPTOSubscriptions',
-        },
-        {
-          name: this.translate.instant('contact'),
-          link: '/sssBPTOContact',
-        },
-      ],
-      showSubMenu: false,
+      // subMenu: [
+      //   {
+      //     name: this.translate.instant('printedbooks'),
+      //     link: '/sssBPTOPrintedBooks',
+      //   },
+      //   {
+      //     name: this.translate.instant('pdfbooks'),
+      //     link: '/sssBPTOPDFBooks',
+      //   },
+      //   {
+      //     name: this.translate.instant('audiobooks'),
+      //     link: '/sssBPTOAudiobooks',
+      //   },
+      //   {
+      //     name: this.translate.instant('subscriptions'),
+      //     link: '/sssBPTOSubscriptions',
+      //   },
+      //   {
+      //     name: this.translate.instant('contact'),
+      //     link: '/sssBPTOContact',
+      //   },
+      // ],
+      // showSubMenu: false,
     },
     {
       name: this.translate.instant('trust_menu'),
@@ -177,10 +177,10 @@ export class HeaderComponent implements AfterViewInit {
           name: this.translate.instant('SSSNityaNarayanaSeva'),
           link: '/SSSNityaNarayanaSeva',
         },
-        {
-          name: 'Sri Sathya Sai Books and Publications Trust ',
-          link: '/SSSBPT',
-        },
+        // {
+        //   name: 'Sri Sathya Sai Books and Publications Trust ',
+        //   link: '/SSSBPT',
+        // },
 
         // { name: 'SSS Trust-Odisha', link: '/centralTrust' }
       ],

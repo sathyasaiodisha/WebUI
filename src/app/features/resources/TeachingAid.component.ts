@@ -1,9 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject, Inject } from '@angular/core';
 import { SharedModule } from '@shared/shared.module';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 @Component({
   selector: 'app-TeachingAid',
-  imports: [SharedModule, MatExpansionModule],
+  imports: [SharedModule, MatExpansionModule, MatDialogModule],
   template: `
     <div class="content_topgape container py-2 px-4 border-secondary">
       <div class="col text-grey-blue">
@@ -55,7 +57,32 @@ import { MatExpansionModule } from '@angular/material/expansion';
             </mat-expansion-panel>
           } @else {
             <p>
-              <a [href]="cat?.link" target="_blank"> {{ cat.title }} </a>
+              @if (
+                cat.link.endsWith('.mp3') ||
+                cat.link.endsWith('.aac') ||
+                cat.link.endsWith('.wav') ||
+                cat.link.endsWith('.ogg')
+              ) {
+                <a
+                  class="link cursor"
+                  mat-raised-button
+                  role="button"
+                  (click)="openAudio(cat.link)"
+                >
+                  {{ cat.title }}
+                </a>
+              } @else if (cat.link.endsWith('.mp4')) {
+                <a
+                  class="link cursor"
+                  mat-raised-button
+                  role="button"
+                  (click)="openVideo(cat.link)"
+                >
+                  {{ cat.title }}
+                </a>
+              } @else {
+                <a [href]="cat?.link" target="_blank"> {{ cat.title }} </a>
+              }
             </p>
           }
         }
@@ -65,7 +92,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 })
 export class TeachingAidComponent implements OnInit {
   ngOnInit(): void {}
-
+  private dialog: MatDialog = inject(MatDialog);
   data = [
     {
       title: 'Satya Sai School Prayer',
@@ -343,4 +370,63 @@ export class TeachingAidComponent implements OnInit {
       ],
     },
   ];
+  openAudio(link: string) {
+    this.dialog.open(AudioDialogComponent, {
+      width: '400px',
+      data: {
+        audioUrl: link,
+      },
+    });
+  }
+  openVideo(link: string) {
+    this.dialog.open(VideoDialogComponent, {
+      width: '80%',
+      maxWidth: '900px',
+      data: {
+        videoUrl: link,
+      },
+    });
+  }
+}
+
+@Component({
+  selector: 'app-audio-dialog',
+  imports: [SharedModule, MatExpansionModule, MatDialogModule],
+
+  template: ` <h2 mat-dialog-title>Audio Player</h2>
+
+    <mat-dialog-content>
+      <audio controls style="width:100%">
+        <source [src]="data.audioUrl" type="audio/mpeg" />
+        Your browser does not support audio.
+      </audio>
+    </mat-dialog-content>
+
+    <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Close</button>
+    </mat-dialog-actions>`,
+})
+export class AudioDialogComponent {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
+}
+
+@Component({
+  selector: 'app-video-dialog',
+  imports: [SharedModule, MatExpansionModule, MatDialogModule],
+
+  template: ` <h2 mat-dialog-title>Video Player</h2>
+
+    <mat-dialog-content>
+      <video width="100%" controls autoplay>
+        <source [src]="data.videoUrl" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </mat-dialog-content>
+
+    <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Close</button>
+    </mat-dialog-actions>`,
+})
+export class VideoDialogComponent {
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
 }
