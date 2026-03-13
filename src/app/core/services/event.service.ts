@@ -64,4 +64,9 @@ export class EventService {
         }
       );
     }
+
+    getEvents(): Observable<EventItem[]>{
+      return this.http.get<EventItem[]>(`${this.apiUrl}`);
+    }
+
 }

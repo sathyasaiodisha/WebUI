@@ -40,10 +40,10 @@ import { ActivitiesService } from '../../../../core/services/activities.service'
 export class EventComponent implements OnInit {
   successMsg: string = "";
   showSuccessMsg: boolean = false;
-  
+
   errMsg: string = "";
   showErrMsg: boolean = false;
-  
+
   wings: WingItem[] = [];
   selectedWingID: number = -1
   selectedWingName: string = ""
@@ -57,6 +57,8 @@ export class EventComponent implements OnInit {
   districts: DistictItem[] = [];
   selectedDistID: number = -1
 
+  eventsDataSrc = new MatTableDataSource<EventItem>([]);
+  displayedColumns: string[] = ['EventTitle','EventVenue','EventDescription','EventDate']
   samithis: SamithiItem[]= [];
   filteredSamithis: SamithiItem[] = [];
 
@@ -98,7 +100,7 @@ export class EventComponent implements OnInit {
   constructor(private wingService: WingService, private programmeService: ProgrammeService, private districtService: DistrictService, private eventService: EventService,private samithiService: SamithiService, private activitiesService: ActivitiesService, private dialog: MatDialog) {
     this.addActivity();
   }
-  
+
   ngOnInit(): void {
       this.wingService.getItems().subscribe(data => {
         this.wings = data;
@@ -107,6 +109,10 @@ export class EventComponent implements OnInit {
       this.districtService.getItems().subscribe(data => {
         this.districts = data;
       });
+
+      this.eventService.getEvents().subscribe(data => {
+        this.eventsDataSrc.data = data;
+      })
     }
 
   onWingChange(event: MatSelectChange){
@@ -154,7 +160,7 @@ export class EventComponent implements OnInit {
     });
   }
 
-  onOrgLevelChange(orgLvlId: number){ 
+  onOrgLevelChange(orgLvlId: number){
     this.selectedOrgLvlID = orgLvlId;
 
     switch(orgLvlId.toString())
@@ -179,10 +185,10 @@ export class EventComponent implements OnInit {
         {
           this.samithiService.getItemsbydistrict(this.newEventPlan.DistrictID).subscribe(data => {
             this.filteredSamithis = data;
-          });      
+          });
         }
         break;
-    }    
+    }
   }
 
   onDistrictChange(districtId: number){
@@ -276,7 +282,7 @@ export class EventComponent implements OnInit {
                           this.uploadAgenda1Progress = 100;
                           console.log('Event agenda1 successfuly uploaded', event.body);
                           this.selectedAgendaFile1Url = event.body.fileurl;
-                          
+
                           if (this.selectedAgendaFile2)
                           {
                             this.eventService.uploadEventAgendaPhoto2(this.selectedAgendaFile2).subscribe(event => {
@@ -317,7 +323,7 @@ export class EventComponent implements OnInit {
                           this.uploadAgenda1Progress = 100;
                           console.log('Event agenda1 successfuly uploaded', event.body);
                           this.selectedAgendaFile1Url = event.body.fileurl;
-                          
+
                           if (this.selectedAgendaFile2)
                           {
                             this.eventService.uploadEventAgendaPhoto2(this.selectedAgendaFile2).subscribe(event => {

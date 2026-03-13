@@ -20,7 +20,7 @@
                 </mat-option>
             </mat-select>
         </mat-form-field>
-        
+
         <mat-form-field appearance="outline" class="formfield">
             <mat-label>Select Samithi</mat-label>
             <mat-select [(value)]="newEventPlan.SamithiID" (selectionChange)="onSamithiChange($event.value)" [disabled]="isSamithiSelectionDisabled">
@@ -45,7 +45,7 @@
                 </mat-option>
             </mat-select>
         </mat-form-field>
-        
+
         <mat-form-field appearance="outline" class="formfield">
             <mat-label>Select Event Type</mat-label>
             <mat-select [(value)]="newEventPlan.ActivityID" (selectionChange)="onEventTypeChange($event.value)" [disabled]="isActivitySelectionDisabled">
@@ -112,7 +112,7 @@
         </mat-form-field>
         <h3 class="activities-section">Activities</h3>
         <div *ngFor="let activity of digitalArchivesToAdd; let i = index" class="activity-row">
-            
+
             <mat-form-field appearance="outline" class="activity-name">
                 <mat-label>Activity Name</mat-label>
                 <input [disabled]="isDisabled"
@@ -121,13 +121,13 @@
                     [(ngModel)]="activity.ActivityName"
                     required>
             </mat-form-field>
-            
+
             <input [disabled]="isDisabled"
             type="file"
             accept="image/*"
             (change)="onFileSelected($event, i)"
             class="file-input">
-            
+
             <button [disabled]="isDisabled"
                 mat-icon-button
                 color="primary"
@@ -147,7 +147,7 @@
                 matTooltip="Remove Activity">
                 <mat-icon>delete</mat-icon>
             </button>
-            
+
         </div>
         <button mat-raised-button color="primary" class="buttonfield" type="submit" [disabled]="!itemForm.valid">
         Add Event
@@ -157,3 +157,31 @@
         <span *ngIf="showErrMsg" class="error-message">{{errMsg}}</span>
     </form>
 </div>
+  <mat-divider class="divider"></mat-divider>
+
+  <mat-table [dataSource]="eventsDataSrc" class="mat-elevation-z8 table-container">
+
+    <ng-container matColumnDef="EventTitle">
+      <mat-header-cell *matHeaderCellDef> Event Title</mat-header-cell>
+      <mat-cell *matCellDef="let itemrow"> {{itemrow.EventTitle}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="EventVenue">
+      <mat-header-cell *matHeaderCellDef> Event Venue</mat-header-cell>
+      <mat-cell *matCellDef="let itemrow"> {{itemrow.EventVenue}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="EventDescription">
+      <mat-header-cell *matHeaderCellDef> Event Description</mat-header-cell>
+      <mat-cell *matCellDef="let itemrow"> {{itemrow.EventDescription}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="EventDate">
+      <mat-header-cell *matHeaderCellDef> Event Date</mat-header-cell>
+      <mat-cell *matCellDef="let itemrow"> {{itemrow.EventDate}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns" class="custom-header"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" class="custom-row"></mat-row>
+  </mat-table>
+<mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]"></mat-paginator>
