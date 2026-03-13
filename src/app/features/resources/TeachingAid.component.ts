@@ -201,17 +201,51 @@ export class TeachingAidComponent implements OnInit {
           title: 'କରାଗ୍ରେ ବସତେ',
           links: [
             {
-              title: '',
-              link: '',
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/କରାଗ୍ରେ ବସତେ/KaragreVasate.mp3',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/କରାଗ୍ରେ ବସତେ/କରାଗ୍ରେ ବସତେ ଲକ୍ଷ୍ମୀ ସମୂହ ଗാന.aac',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/କରାଗ୍ରେ ବସତେ/କରାଗ୍ରେ ବସତେ ଲକ୍ଷ୍ମୀ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/କରାଗ୍ରେ ବସତେ/କରାଗ୍ରେ ବସତେ ଲിങ്ക്.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/କରାଗ୍ରେ ବସତେ/କରାଗ୍ରେ ବସତେ ଲକ୍ଷ୍ମୀ.pptx',
             },
           ],
         },
         {
           title: 'ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ',
           links: [
+            //   ''  ''  'ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.pdf'  'ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.pptx'
+
             {
-              title: '',
-              link: '',
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ/GuruBrahma.mp3',
+            },
+            {
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.mp3',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ/ଗୁରୁର୍ବ୍ରହ୍ମା ଗୁରୁର୍ବିଷ୍ଣୁ.pptx',
             },
           ],
         },
@@ -219,8 +253,24 @@ export class TeachingAidComponent implements OnInit {
           title: 'ତ୍ବମେବ ମାତା',
           links: [
             {
-              title: '',
-              link: '',
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ତ୍ବମେବ ମାତା/TwamevaMata.mp3',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ତ୍ବମେବ ମାତା/ତ୍ବମେବ ମାତା ର ଭିଡିଓ.mp4',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ତ୍ବମେବ ମାତା/ତ୍ବମେବ ମାତା.. ସମୂହ ଗାନ.aac',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ତ୍ବମେବ ମାତା/ତ୍ୱମେବ ମାତା ଶ୍ଚ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ତ୍ବମେବ ମାତା/ତ୍ୱମେବ ମାତା ଶ୍ଚ.pptx',
             },
           ],
         },
@@ -228,8 +278,24 @@ export class TeachingAidComponent implements OnInit {
           title: 'ବକ୍ରତୁଣ୍ଡ ମହାକାୟ',
           links: [
             {
-              title: '',
-              link: '',
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ/Vakratunda.mp3',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ ଅଭିନୟ ଭିଡିଓ.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ.pptx',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ବକ୍ରତୁଣ୍ଡ ମହାକାୟ/ବକ୍ରତୁଣ୍ଡର ସମୂହ ଗାନ.aac',
             },
           ],
         },
@@ -237,8 +303,24 @@ export class TeachingAidComponent implements OnInit {
           title: 'ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା',
           links: [
             {
-              title: '',
-              link: '',
+              title: 'Audio (mp3)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା/Harir Data.mp3',
+            },
+            {
+              title: 'Audio (aac)',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା.aac',
+            },
+            {
+              title: 'Video',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା.mp4',
+            },
+            {
+              title: 'PDF',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା.pdf',
+            },
+            {
+              title: 'PowerPoint',
+              link: 'files/stotras/GROUP-1_1ST_YEAR/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା/ହରିର୍ଦାତା ହରିର୍ଭୋକ୍ତା.pptx',
             },
           ],
         },
