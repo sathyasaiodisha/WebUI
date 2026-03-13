@@ -589,23 +589,23 @@ export class TeachingAidComponent implements OnInit {
           title: 'ପୂର୍ବରାମଂ ତପୋବନାଦି',
           links: [
             {
-              title: '',
+              title: 'Audio (mp3)',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/PurvamRamam.mp3',
             },
             {
-              title: '',
+              title: 'Audio (aac)',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବ ରାମଂ ତପୋବନାଦି ଗମନଂ ଅଡିଓ.aac',
             },
             {
-              title: '',
+              title: 'Video',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବ ରାମଂ ତପୋବନାଦି.mp4',
             },
             {
-              title: '',
+              title: 'PDF',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବଂ ରାମ ତପୋବନାଦି......pdf',
             },
             {
-              title: '',
+              title: 'PowerPoint',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ପୂର୍ବରାମଂ ତପୋବନାଦି/ପୂର୍ବଂ ରାମ ତପୋବନାଦି......pptx',
             },
           ],
@@ -613,8 +613,6 @@ export class TeachingAidComponent implements OnInit {
         {
           title: 'ବନ୍ଦେଦେବ ଉମାପତିଂ',
           links: [
-            //''  ''  ''  ''  ''
-
             {
               title: 'Audio (mp3)',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ବନ୍ଦେଦେବ ଉମାପତିଂ/Vande deva.mp3',
@@ -641,23 +639,23 @@ export class TeachingAidComponent implements OnInit {
           title: 'ବେଦାନୁଦ୍ଧରତେ',
           links: [
             {
-              title: '',
+              title: 'Audio (mp3)',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/Vedanuddrate.mp3',
             },
             {
-              title: '',
+              title: 'Audio (aac)',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ ଜଗନ୍ନିବହତେ ସମୂହ ଗାନ.aac',
             },
             {
-              title: '',
+              title: 'PDF',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ....pdf',
             },
             {
-              title: '',
+              title: 'PowerPoint',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ....pptx',
             },
             {
-              title: '',
+              title: 'Video',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ବେଦାନୁଦ୍ଧରତେ/ବେଦାନୁଦ୍ଧରତେ...mp4',
             },
           ],
@@ -691,19 +689,19 @@ export class TeachingAidComponent implements OnInit {
           title: 'ଶାନ୍ତାକାରଂ',
           links: [
             {
-              title: '',
+              title: 'Audio (mp3)',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/Shantakaram.mp3',
             },
             {
-              title: '',
+              title: 'Audio (aac)',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/ଶାନ୍ତାକାରଂ ଭୁଜଗଶୟନଂ.aac',
             },
             {
-              title: '',
+              title: 'PDF',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/ଶାନ୍ତାକାରଂ.pdf',
             },
             {
-              title: '',
+              title: 'PowerPoint',
               link: 'files/stotras/GROUP-1_3RD_YEAR/ଶାନ୍ତାକାରଂ/ଶାନ୍ତାକାରଂ.pptx',
             },
           ],
