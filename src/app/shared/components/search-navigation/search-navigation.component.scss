@@ -1,0 +1,103 @@
+/* src/app/shared/components/search-navigation/search-navigation.component.scss */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); // Slight transparency to blend in
+  border-radius: 4px; // Matches the "Home" button corner style
+  padding: 0 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 32px; // Standard height for nav elements
+  width: 200px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+
+  &:focus-within {
+    width: 250px; // Expands slightly when typing
+    background-color: #ffffff;
+    border-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  .search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0.85rem; // Slightly smaller text for better proportion
+    width: 100%;
+    color: #333;
+    padding: 4px 0;
+
+    &::placeholder {
+      color: #888;
+      font-style: italic;
+    }
+  }
+
+  .search-btn {
+    background: transparent;
+    border: none;
+    color: #666;
+    padding: 0 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+::ng-deep .mat-mdc-autocomplete-panel {
+  background-color: rgba(255, 255, 255, 0.95) !important; // Match bar transparency
+  border-radius: 4px !important;                          // Match bar corners
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  margin-top: 4px;                                        // Gap between bar and list
+  min-width: 250px !important;                            // Matches the expanded width
+}
+
+/* Style the individual options inside the list */
+::ng-deep .mat-mdc-option {
+  min-height: 35px !important; // Slimmer rows to match the 32px bar height
+
+  .mdc-list-item__primary-text {
+    font-size: 0.85rem !important; // Match search-input font size
+    color: #333 !important;
+  }
+
+  &:hover {
+    background-color: rgba(13, 110, 253, 0.1) !important; // Light blue highlight on hover
+  }
+}
+
+/* Remove default material ripple effect if you want a cleaner look */
+::ng-deep .mat-mdc-option .mat-mdc-focus-indicator {
+  display: none;
+}
+
+
+/* Keep your existing .search-bar styles ... */
+
+@media (max-width: 767px) {
+  .search-bar {
+    width: 100% !important;   /* Full width on mobile */
+    max-width: none !important;
+    margin: 5px 0;            /* Add some vertical breathing room */
+    background-color: #fff;   /* Make it solid white for better contrast in the menu */
+
+    &:focus-within {
+      width: 100% !important; /* Prevent it from jumping/expanding on mobile */
+    }
+  }
+
+  /* Make the dropdown panel wider on mobile to match the input */
+  ::ng-deep .mat-mdc-autocomplete-panel {
+    min-width: calc(100vw - 60px) !important;
+    margin-left: 0;
+  }
+}

@@ -91,9 +91,6 @@
   </div>
 </div>
 
-
-
-
 <!-- Navigation Bar -->
 <nav class="d-none d-md-block navbar navbar-expand-lg main-nav">
   <div class="">
@@ -131,6 +128,12 @@
           </li>
         </ul>
       </li>
+      <div class="ms-auto d-flex align-items-center">
+        <app-search-navigation
+          [searchQuery]="searchQuery"
+          (searchQueryChange)="onSearch($event)">
+        </app-search-navigation>
+      </div>
     </ul>
   </div>
 </nav>
@@ -153,6 +156,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
+
       <ul class="navbar-nav" id="main-menu">
         <li
           class="nav-item"
@@ -202,6 +206,12 @@
             </li>
           </ul>
         </li>
+        <div class="py-3 ps-0 pe-3 border-bottom border-light">
+          <app-search-navigation
+            [searchQuery]="searchQuery"
+            (searchQueryChange)="onSearch($event)">
+          </app-search-navigation>
+        </div>
       </ul>
     </div>
   </div>

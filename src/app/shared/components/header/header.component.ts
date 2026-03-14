@@ -19,6 +19,7 @@ import {
 
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import {SearchNavigationComponent} from '../search-navigation/search-navigation.component';
 @Component({
   standalone: true,
   selector: 'app-header',
@@ -31,6 +32,7 @@ import { MatButtonModule } from '@angular/material/button';
     MatIconModule,
     MatButtonModule,
     FontAwesomeModule,
+    SearchNavigationComponent
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
@@ -38,6 +40,10 @@ import { MatButtonModule } from '@angular/material/button';
 export class HeaderComponent implements AfterViewInit {
   translate = inject(TranslateService);
   activeMenu: any = null;
+  searchQuery: string = '';
+  onSearch(query: string) {
+    this.searchQuery = query;
+  }
   // @ViewChild('navbarNav') navbarNav!: ElementRef;
   @ViewChild('navbarToggler') navbarToggler!: ElementRef<HTMLButtonElement>;
   collapseInstance: any;

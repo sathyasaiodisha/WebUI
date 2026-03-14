@@ -1,0 +1,25 @@
+<div class="search-bar" matAutocompleteOrigin #origin="matAutocompleteOrigin">
+  <input
+    type="text"
+    [(ngModel)]="searchQuery"
+    (input)="onSearch()"
+    (keydown.enter)="handleKeyDown($any($event))"
+    [matAutocomplete]="auto"
+    [matAutocompleteConnectedTo]="origin"
+    placeholder="Search..."
+    class="search-input"
+  >
+  <button type="button" (click)="onSearch()" class="search-btn" aria-label="Search">
+    <i class="fa fa-search"></i>
+  </button>
+</div>
+
+<mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+  <mat-option
+    *ngFor="let page of filteredPages"
+    [value]="page.title"
+    (onSelectionChange)="navigateTo(page.path)"
+  >
+    {{ page.title }}
+  </mat-option>
+</mat-autocomplete>
