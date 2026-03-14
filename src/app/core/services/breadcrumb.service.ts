@@ -1,7 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { ActivatedRouteSnapshot, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import { BehaviorSubject } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
 
 export interface Breadcrumb {
   label: string;
@@ -11,6 +12,8 @@ export interface Breadcrumb {
 
 @Injectable({ providedIn: 'root' })
 export class BreadcrumbService {
+  translate = inject(TranslateService);
+
   private breadcrumbs$ = new BehaviorSubject<Breadcrumb[]>([]);
 
   constructor(private router: Router) {
@@ -31,11 +34,13 @@ export class BreadcrumbService {
     route: ActivatedRouteSnapshot,
     url: string = '',
     link: boolean = true,
-    breadcrumbs: Breadcrumb[] = []
+    breadcrumbs: Breadcrumb[] = [],
   ): Breadcrumb[] {
     if (route.routeConfig && route.routeConfig.data) {
       const breadcrumb: Breadcrumb = {
-        label: route.routeConfig.data['breadcrumb'] ?? '',
+        label: this.translate.instant(
+          route.routeConfig.data['breadcrumb'] ?? '',
+        ),
         url: `${url}/${route.url.map((segment) => segment.path).join('/')}`,
         link: (route.routeConfig.data['link'] ?? 1) === 0 ? false : link,
       };
@@ -47,7 +52,7 @@ export class BreadcrumbService {
         route.firstChild,
         `${url}/${route.url.map((segment) => segment.path).join('/')}`,
         true,
-        breadcrumbs
+        breadcrumbs,
       );
     }
 

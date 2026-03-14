@@ -678,7 +678,7 @@ export const routes: Routes = [
   },
   {
     path: 'sssBPTOdisha',
-    data: { breadcrumb: 'sssBPTOdisha' },
+    data: { breadcrumb: 'SSSBPT-Odisha' },
     loadComponent: () =>
       import('./features/wings/bookTrust.component').then(
         (c) => c.BookTrustComponent,
@@ -687,7 +687,7 @@ export const routes: Routes = [
 
   {
     path: 'sssTrustOdisha',
-    data: { breadcrumb: 'sssTrustOdisha', link: 0 },
+    data: { breadcrumb: 'SSS Trust, Odisha', link: 0 },
     children: [
       {
         path: 'centralTrust',
@@ -793,7 +793,7 @@ export const routes: Routes = [
       },
       {
         path: 'messageFromStatePresident',
-        data: { breadcrumb: 'messageFromStatePresident' },
+        data: { breadcrumb: "From State President's desk" },
         loadComponent: () =>
           import('./features/statePresidentMessage').then(
             (c) => c.StatePresidentMessageComponent,

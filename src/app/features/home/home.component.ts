@@ -325,33 +325,35 @@ export class HomeComponent implements OnInit, AfterViewInit {
     });
   }
   ngAfterViewInit() {
-    // If SDK is loaded, parse FB tags inside the component
-    if (typeof FB !== 'undefined' && FB !== null) {
-      FB.XFBML.parse();
-    }
-
-    const script = document.createElement('script');
-    script.src = 'https://platform.twitter.com/widgets.js';
-    script.async = true;
-    // Swiper is initialized automatically for <swiper-container> in Swiper 11+
-    document.body.appendChild(script);
-
-    const swiperEl = this.tweetSwiper.nativeElement as any;
-
-    const startAutoplay = () => {
-      this.swiper = swiperEl.swiper;
-      if (this.swiper && this.swiper.autoplay) this.swiper.autoplay.start();
-    };
-
-    // Delay start until visible
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        startAutoplay();
-        observer.disconnect();
+    setTimeout(() => {
+      // If SDK is loaded, parse FB tags inside the component
+      if (typeof FB !== 'undefined' && FB !== null) {
+        FB.XFBML.parse();
       }
-    });
+      /*
+      const script = document.createElement('script');
+      script.src = 'https://platform.twitter.com/widgets.js';
+      script.async = true;
+      // Swiper is initialized automatically for <swiper-container> in Swiper 11+
+      document.body.appendChild(script);
 
-    observer.observe(swiperEl);
+      const swiperEl = this.tweetSwiper.nativeElement as any;
+
+      const startAutoplay = () => {
+        this.swiper = swiperEl.swiper;
+        if (this.swiper && this.swiper.autoplay) this.swiper.autoplay.start();
+      };
+
+      // Delay start until visible
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          startAutoplay();
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(swiperEl);*/
+    });
   }
 
   slidePrev() {

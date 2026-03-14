@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FixedMenuComponent } from './components/fixed-menu/fixed-menu.component';
 import { SlideShowImageComponent } from './components/slideshow_image/slideshowimage.component';
 import { SlideShowTextComponent } from './components/slideshow_text/slideshowtext.component';
-import { BreadcrumbComponent } from './components/breadcrumb.component';
 import { SubSectionComponent } from './components/page_sub_sections';
 import { CarouselComponent } from './components/carousel.component';
 import { CountUpDirective } from './directives/count-up.directive';
@@ -28,7 +27,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
     FixedMenuComponent,
     SlideShowImageComponent,
     SlideShowTextComponent,
-    BreadcrumbComponent,
     SubSectionComponent,
     MatCardModule,
     MatGridListModule,
@@ -45,7 +43,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
     FixedMenuComponent,
     SlideShowImageComponent,
     SlideShowTextComponent,
-    BreadcrumbComponent,
     SubSectionComponent,
     MatCardModule,
     MatGridListModule,
