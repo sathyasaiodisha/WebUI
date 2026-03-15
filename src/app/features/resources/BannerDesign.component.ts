@@ -72,8 +72,12 @@ export class BannerDesignComponent implements OnInit {
       link: 'https://drive.google.com/file/d/1ZWv9j-zo9n4r-MVH-AvKTpqIOBOzU-9H/view?usp=sharing',
     },
     {
-      title: 'District Conference',
-      link: 'https://drive.google.com/drive/folders/17u9pwZWvxmgF_lJoVP5KDcjI3ZLC8X11?usp=sharing',
+      title: 'District Conference 2026',
+      link: 'https://drive.google.com/drive/folders/1nHEZDwDe9f6W5gouBnnHb5mFX-WBcGnu?usp=sharing',
+    },
+    {
+      title: 'District Level Office Bearers Meet 2026',
+      link: 'https://drive.google.com/drive/folders/1398XVqs3sJ4Ab2lZ_HtmHKksTf0Uaip4?usp=sharing'
     },
     {
       title: 'QR CODE BANNER SSSSO, Odisha',
