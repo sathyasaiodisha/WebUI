@@ -1,0 +1,85 @@
+/* Full width background bar */
+.ticker-boundary {
+  width: 100%;
+  background: #fdfdfd;
+  border-bottom: 1px solid #eee;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+/* This must match your Nav Bar's width/constraints */
+.ticker-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ticker-label {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  background: linear-gradient(to bottom, #edc685, #bf623f);
+  color: white;
+  padding: 0 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.ticker-window {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  /* Start the first item after the label width */
+  padding-left: 140px;
+  animation: marquee 30s linear infinite;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 5vw;
+  font-size: 12px;
+  color: #333;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ticker-item:hover {
+  color: #007bff;
+}
+
+/* Hover to pause */
+.ticker-container:hover .ticker-wrapper {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  /* 1. Shrink the overall bar height */
+  .ticker-boundary,
+  .ticker-container {
+    height: 28px;
+  }
+
+  .ticker-label {
+    padding: 0 10px;
+    font-size: 8px; /* Slightly smaller text */
+    letter-spacing: 0.5px;
+  }
+}

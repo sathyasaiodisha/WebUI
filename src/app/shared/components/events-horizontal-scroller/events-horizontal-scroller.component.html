@@ -1,0 +1,15 @@
+<div class="ticker-boundary">
+<div class="ticker-container">
+  <div class="ticker-label">UPCOMING EVENTS</div>
+  <div class="ticker-window">
+  <div class="ticker-wrapper">
+    <span *ngFor="let item of items" [routerLink]="item.route" class="ticker-item">
+      {{ item.title }}
+    </span>
+    <span *ngFor="let item of items" [routerLink]="item.route" class="ticker-item">
+      {{ item.title }}
+    </span>
+  </div>
+  </div>
+</div>
+</div>

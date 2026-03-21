@@ -58,6 +58,7 @@ export class SearchNavigationComponent {
     { path: '/wings/spiritual/swadhyaya', title: 'Swadhyaya' },
     { path: '/wings/spiritual/vahiniParayana', title: 'Vahini Parayana' },
     { path: '/wings/spiritual/devoteesMeet', title: 'Devotees meet' },
+    { path: '/wings/spiritual/bhaktosavam', title: 'Bhaktosavam' },
 
     { path: '/wings/education/SriSathyaSaiBalVikas', title: 'Sri Sathya Sai BalVikas' },
     { path: '/wings/education/SriSathyaSaiVidyaJyothi', title: 'Sri Sathya Sai VidyaJyothi' },

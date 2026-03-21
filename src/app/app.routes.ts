@@ -350,6 +350,13 @@ export const routes: Routes = [
               import('./features/wings/spiritual/devoteesMeet.component').then(
                 (c) => c.DevoteesMeetComponent,
               ),
+          },{
+            path: 'bhaktosavam',
+            data: { breadcrumb: 'Devotees meet' },
+            loadComponent: () =>
+              import('./features/bhaktosavam').then(
+                (c) => c.BhaktosavamComponent,
+              ),
           },
           {
             path: ':page',

@@ -30,6 +30,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { ImageModalComponent } from '../../shared/components/image-modal.component';
 
 import Map from 'ol/Map';
+import {
+  EventsHorizontalScrollerComponent
+} from '../../shared/components/events-horizontal-scroller/events-horizontal-scroller.component';
 declare var FB: any;
 //import View from 'ol/View';
 //import TileLayer from 'ol/layer/Tile';
@@ -53,6 +56,7 @@ export interface StatItem {
     MatProgressSpinnerModule,
     MatIconModule,
     MatToolbarModule,
+    EventsHorizontalScrollerComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
