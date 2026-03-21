@@ -31,7 +31,7 @@ import { CommonModule } from '@angular/common';
           <h2 class="section-title">Detailed program:</h2>
 
           <p>
-            We are planning to organize a combined program of chanting 100 Hanuman Chalisa and Bhajans at various Ram & Hanuman temple across the state from April 6 (Ram Navami) to April 14 (Hanuman Jayanti) for a duration of 9 days.
+            We are planning to organize a combined program of chanting 100 Hanuman Chalisa and Bhajans at various Ram & Hanuman temple across the state from March 26 to April 14.
           </p>
 
           <h3 class="sub-title">Program</h3>
@@ -41,13 +41,13 @@ import { CommonModule } from '@angular/common';
             <li>-Bhajan</li>
             <li>(Total duration of Hanuman Chalisha chanting and Bhajan to continue as per samithi discretion)</li>
             <li>-Om Shanti, Shanti, Shanti</li>
-            <li>-Satsangh On - Hanuman, The role model for Youths. ( Satsangh on this topic shall be held on 04.04.2025 during the weekly Friday Satsangh)</li>
+            <li>-Satsangh On - Hanuman, The role model for Youths.</li>
             <li>- Handing over of the Hanuman Photo to Mandir Committee (to be fixed on wall or Positioned in the sanctum sanctorum before leaving as discussed beforehand)</li>
             <li>- ⁠Aarati</li>
             <li>(No Sarvadharma prayer & Silent sitting and Asatoma)</li>
           </ul>
 
-          <h2 class="section-title">Reporting:</h2>
+          <!--<h2 class="section-title">Reporting:</h2>
           <p>After the program, report via Google Form, including:</p>
           <ul class="list-style">
             <li>- Name of the Sai District</li>
@@ -55,11 +55,7 @@ import { CommonModule } from '@angular/common';
             <li>- ⁠Name of the temple / location</li>
             <li>- ⁠The number of youth participants.</li>
             <li>- ⁠3 photos (Max) from the program. At least one photo should be with the Hanuman placed in the Mandir.</li>
-          </ul>
-
-          <p>
-            Districts to collect the Photo of Hanuman Statue Hanuman statue photo during the bhajan mahotsav going on in Sai Janani on 22 & 23rd this month.
-          </p>
+          </ul>-->
 
           <p>
             The photographs to be beautifully framed and gifted to the Hanuman or Ram temple.

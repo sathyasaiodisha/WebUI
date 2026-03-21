@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class EventsHorizontalScrollerComponent {
   items = [
-    { title: 'Bhaktosavam (26th Match to 14th April)', route: '/wings/spiritual/bhaktosavam' },
+    { title: 'Bhaktosavam (26th March to 14th April)', route: '/wings/youth/bhaktosavam' },
     { title: 'Summer Course Samithi Level', route: '/wings/youth/SummerCourse' },
     { title: 'Zonal level youth Retreat at Khurda district (Participants Khurda, Bhubaneswar, Puri, Nayagarh)', route: '/' },
   ];
